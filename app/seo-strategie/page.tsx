@@ -1,5 +1,4 @@
 import { Navigation } from '@/components/navigation';
-import { ReviewBanner } from '@/components/review-banner';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { ArrowRight, Target, BarChart3, FileSearch, TrendingUp, Settings, MapPin } from 'lucide-react';
@@ -84,7 +83,6 @@ export default function SEOStrategiePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Navigation />
-      <ReviewBanner />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">

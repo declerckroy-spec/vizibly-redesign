@@ -1,7 +1,6 @@
 'use client';
 
 import { Navigation } from '@/components/navigation';
-import { ReviewBanner } from '@/components/review-banner';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, ArrowRight, Send } from 'lucide-react';
 import Link from 'next/link';
@@ -33,7 +32,6 @@ export default function ContactPage() {
   return (
     <>
       <Navigation />
-      <ReviewBanner />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black pt-32 pb-20 lg:pt-40 lg:pb-28">
