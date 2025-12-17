@@ -1,0 +1,24 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- V Block met lime accent -->
+  <g>
+    <!-- Lime achtergrond blok -->
+    <rect x="0" y="0" width="60" height="60" fill="#CCFF00"/>
+
+    <!-- Zwarte border (brutalist 4px) -->
+    <rect x="0" y="0" width="60" height="4" fill="#000000"/>
+    <rect x="0" y="56" width="60" height="4" fill="#000000"/>
+    <rect x="0" y="0" width="4" height="60" fill="#000000"/>
+    <rect x="56" y="0" width="4" height="60" fill="#000000"/>
+
+    <!-- V letter (bold en scherp) -->
+    <path d="M14 12 L30 48 L46 12" stroke="#000000" stroke-width="8" stroke-linecap="square" fill="none"/>
+  </g>
+
+  <!-- VIZIBLY text (WIT voor zwarte backgrounds) -->
+  <text x="72" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="-3">
+    VIZIBLY
+  </text>
+
+  <!-- Onderste lime accent lijn -->
+  <rect x="72" y="52" width="100" height="4" fill="#CCFF00"/>
+</svg>

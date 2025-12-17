@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lime achtergrond -->
+  <rect width="16" height="16" fill="#CCFF00"/>
+  <!-- V letter (simplified voor kleine size) -->
+  <path d="M4 3 L8 13 L12 3" stroke="#000000" stroke-width="2" stroke-linecap="square" fill="none"/>
+</svg>
