@@ -1,13 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* FORCE 16px base - fixes Vercel rendering difference */
-html {
-  font-size: 16px !important;
-  -webkit-text-size-adjust: 100% !important;
-  text-size-adjust: 100% !important;
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
