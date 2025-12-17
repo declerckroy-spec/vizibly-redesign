@@ -39,22 +39,22 @@ export function Navigation() {
             >
               ★★★★★ 5/5
             </a>
-            <Link href="/" className="text-lg font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Home
             </Link>
-            <Link href="/seo-strategie" className="text-lg font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">
               SEO Strategie
             </Link>
-            <Link href="/seo-copy" className="text-lg font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/seo-copy" className="text-base font-bold uppercase hover:text-accent transition-colors">
               SEO Copy
             </Link>
-            <Link href="/linkbuilding" className="text-lg font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/linkbuilding" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Linkbuilding
             </Link>
-            <Link href="/cases" className="text-lg font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Cases
             </Link>
-            <Link href="/over-ons" className="text-lg font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Over Ons
             </Link>
             <Button asChild size="lg" className="ml-4 bg-accent text-black border-accent hover:bg-white text-lg px-8 py-6">
@@ -75,13 +75,13 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="mt-6 flex flex-col gap-4 border-t-2 border-accent pt-6 md:hidden">
-            <Link href="/" className="text-lg font-bold uppercase hover:text-accent transition-colors">Home</Link>
-            <Link href="/seo-strategie" className="text-lg font-bold uppercase hover:text-accent transition-colors">SEO Strategie</Link>
-            <Link href="/seo-copy" className="text-lg font-bold uppercase hover:text-accent transition-colors">SEO Copy</Link>
-            <Link href="/linkbuilding" className="text-lg font-bold uppercase hover:text-accent transition-colors">Linkbuilding</Link>
-            <Link href="/cases" className="text-lg font-bold uppercase hover:text-accent transition-colors">Cases</Link>
-            <Link href="/over-ons" className="text-lg font-bold uppercase hover:text-accent transition-colors">Over Ons</Link>
-            <Button asChild size="lg" className="w-full bg-accent text-black border-accent text-lg">
+            <Link href="/" className="text-base font-bold uppercase hover:text-accent transition-colors">Home</Link>
+            <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO Strategie</Link>
+            <Link href="/seo-copy" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO Copy</Link>
+            <Link href="/linkbuilding" className="text-base font-bold uppercase hover:text-accent transition-colors">Linkbuilding</Link>
+            <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">Cases</Link>
+            <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">Over Ons</Link>
+            <Button asChild size="lg" className="w-full bg-accent text-black border-accent text-base">
               <Link href="/contact">CONTACT</Link>
             </Button>
           </div>

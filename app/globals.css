@@ -223,7 +223,13 @@
   }
 
   .animate-scroll-left {
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 12s linear infinite;
+  }
+
+  @media (min-width: 1024px) {
+    .animate-scroll-left {
+      animation: scroll-left 25s linear infinite;
+    }
   }
 
   /* Scrollbar */

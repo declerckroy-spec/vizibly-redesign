@@ -126,7 +126,7 @@ export function ClientsCarouselStandalone() {
 
       {/* Bottom text */}
       <div className="relative mx-auto max-w-screen-2xl px-6 mt-12 text-center">
-        <p className="text-lg font-bold text-white xl:text-xl">
+        <p className="text-base font-bold text-white lg:text-lg">
           En nog <span className="inline-block border-4 border-black bg-accent px-3 py-1 font-black text-black">25+</span> andere ondernemers die vandaag hun concurrenten voorbij schieten
         </p>
       </div>

@@ -164,7 +164,7 @@ export default function Home() {
             </h1>
 
             <div className="mb-16 border-l-8 border-black pl-8">
-              <p className="text-3xl font-bold uppercase tracking-tight lg:text-4xl">
+              <p className="text-xl font-bold uppercase tracking-tight lg:text-2xl">
                 Klaar om de rollen<br />om te draaien?
               </p>
             </div>
@@ -217,11 +217,11 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="mb-6 text-xl font-bold xl:text-2xl 2xl:text-3xl">
+              <p className="mb-6 text-base font-bold lg:text-lg xl:text-xl">
                 Als ondernemer wil je resultaat. Je wilt meer klanten, leads en omzet. Terwijl je
                 concurrenten al op pagina 1 in Google staan, is jouw website nog onvindbaar.
               </p>
-              <p className="mb-10 text-xl font-bold text-white/80 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-10 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
                 Vizibly zorgt dat potentiële klanten jóu vinden, niet je concurrent.
               </p>
 
@@ -236,7 +236,7 @@ export default function Home() {
                   'Google Ads voor direct verkeer en conversies'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-4 border-l-4 border-accent pl-4">
-                    <span className="text-xl font-bold text-white">{item}</span>
+                    <span className="text-base font-bold text-white lg:text-lg">{item}</span>
                   </div>
                 ))}
               </div>
@@ -316,7 +316,7 @@ export default function Home() {
                     <CardTitle className="text-2xl font-black uppercase">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-xl text-black">
+                    <CardDescription className="text-base text-black lg:text-lg">
                       {service.description}
                     </CardDescription>
                   </CardContent>
@@ -347,7 +347,7 @@ export default function Home() {
 
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div className="flex flex-col justify-center">
-              <p className="mb-12 text-xl font-bold text-white/90 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-12 text-base font-bold text-white/90 lg:text-lg xl:text-xl">
                 SEO is net als topsport: een cyclus van uitvoeren, meten, testen en verbeteren.
                 Wat vandaag werkt, kan morgen achterhaald zijn.
               </p>
@@ -363,7 +363,7 @@ export default function Home() {
                     <div className="mb-2 text-6xl font-bold text-accent/30">
                       {step.number}
                     </div>
-                    <p className="text-xl font-bold text-white xl:text-2xl 2xl:text-3xl">{step.text}</p>
+                    <p className="text-base font-bold text-white lg:text-lg xl:text-xl">{step.text}</p>
                   </div>
                 ))}
               </div>
@@ -506,7 +506,7 @@ export default function Home() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="bg-white">
-                    <CardDescription className="line-clamp-3 text-xl font-bold text-black/70">
+                    <CardDescription className="line-clamp-3 text-base font-bold text-black/70 lg:text-lg">
                       {article.excerpt}
                     </CardDescription>
                   </CardContent>
@@ -530,7 +530,7 @@ export default function Home() {
             <h2 className="mb-6 text-brutalist-h2 text-black">
               Veelgestelde vragen
             </h2>
-            <p className="text-xl font-bold uppercase text-black lg:text-2xl">
+            <p className="text-base font-bold uppercase text-black lg:text-lg xl:text-xl">
               WAT JE MISSCHIEN NOG WIL WETEN
             </p>
           </div>
@@ -538,10 +538,10 @@ export default function Home() {
           <Accordion type="single" collapsible className="space-y-4">
             {faqData.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-4 border-black bg-white px-8 py-2 hover:border-accent transition-colors last:border-b-4">
-                <AccordionTrigger className="text-left text-xl font-bold uppercase hover:no-underline transition-colors">
+                <AccordionTrigger className="text-left text-base font-bold uppercase hover:no-underline transition-colors lg:text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-xl text-black/80 border-t-2 border-black/10 pt-4 mt-4">
+                <AccordionContent className="text-base text-black/80 border-t-2 border-black/10 pt-4 mt-4 lg:text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -569,31 +569,31 @@ export default function Home() {
                   className="h-auto w-48"
                 />
               </Link>
-              <p className="text-xl font-bold text-white/80">
+              <p className="text-base font-bold text-white/80 lg:text-lg">
                 SEO specialist die zorgt dat je gevonden wordt.
               </p>
             </div>
             <div>
               <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
               <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
+                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
+                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
+                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
+                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
               <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
-                <li><Link href="/contact" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
+                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
+                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
+                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-lg font-bold text-white/80">
+              <ul className="space-y-4 text-base font-bold text-white/80">
                 <li>Vizibly</li>
                 <li>'t Zanddorp 55</li>
                 <li>4335 AE Middelburg</li>
