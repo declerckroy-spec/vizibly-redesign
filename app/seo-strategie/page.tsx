@@ -101,7 +101,7 @@ export default function SEOStrategiePage() {
               <h1 className="mb-8 text-brutalist-hero leading-none">
                 SEO{' '}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-2 bg-accent skew-y-1"></span>
+                  <span className="absolute -inset-1 bg-accent"></span>
                   <span className="relative">Strategie</span>
                 </span>
               </h1>

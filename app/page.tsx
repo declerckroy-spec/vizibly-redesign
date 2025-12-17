@@ -158,7 +158,7 @@ export default function Home() {
             <h1 className="mb-12 text-brutalist-hero leading-none">
               Terwijl jij deze zin leest, klikt iemand op{' '}
               <span className="relative inline-block animate-glitch">
-                <span className="absolute -inset-2 bg-accent skew-y-1 animate-glitch-skew"></span>
+                <span className="absolute -inset-1 bg-accent"></span>
                 <span className="relative">je concurrent</span>
               </span>
             </h1>

@@ -39,9 +39,6 @@ export function Navigation() {
             >
               ★★★★★ 5/5
             </a>
-            <Link href="/" className="text-base font-bold uppercase hover:text-accent transition-colors">
-              Home
-            </Link>
             <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">
               SEO Strategie
             </Link>
@@ -75,7 +72,6 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="mt-6 flex flex-col gap-4 border-t-2 border-accent pt-6 md:hidden">
-            <Link href="/" className="text-base font-bold uppercase hover:text-accent transition-colors">Home</Link>
             <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO Strategie</Link>
             <Link href="/seo-copy" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO Copy</Link>
             <Link href="/linkbuilding" className="text-base font-bold uppercase hover:text-accent transition-colors">Linkbuilding</Link>
