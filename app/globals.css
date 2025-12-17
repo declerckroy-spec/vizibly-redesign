@@ -201,9 +201,9 @@
     border-color: #000000;
   }
 
-  /* BRUTALIST TYPOGRAPHY UTILITIES - Fixed responsive sizes for consistency */
+  /* BRUTALIST TYPOGRAPHY UTILITIES - PIXEL VALUES for absolute consistency */
   .text-brutalist-hero {
-    font-size: 2rem !important;
+    font-size: 40px !important;
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -0.05em;
@@ -211,30 +211,30 @@
 
   @media (min-width: 640px) {
     .text-brutalist-hero {
-      font-size: 2.5rem !important;
+      font-size: 56px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .text-brutalist-hero {
-      font-size: 3.5rem !important;
+      font-size: 80px !important;
     }
   }
 
   @media (min-width: 1280px) {
     .text-brutalist-hero {
-      font-size: 4.5rem !important;
+      font-size: 96px !important;
     }
   }
 
   @media (min-width: 1536px) {
     .text-brutalist-hero {
-      font-size: 5.5rem !important;
+      font-size: 112px !important;
     }
   }
 
   .text-brutalist-h1 {
-    font-size: 2rem !important;
+    font-size: 36px !important;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.05em;
@@ -242,24 +242,24 @@
 
   @media (min-width: 640px) {
     .text-brutalist-h1 {
-      font-size: 2.25rem !important;
+      font-size: 48px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .text-brutalist-h1 {
-      font-size: 3rem !important;
+      font-size: 64px !important;
     }
   }
 
   @media (min-width: 1280px) {
     .text-brutalist-h1 {
-      font-size: 3.5rem !important;
+      font-size: 80px !important;
     }
   }
 
   .text-brutalist-h2 {
-    font-size: 1.5rem !important;
+    font-size: 28px !important;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.04em;
@@ -267,24 +267,24 @@
 
   @media (min-width: 640px) {
     .text-brutalist-h2 {
-      font-size: 1.75rem !important;
+      font-size: 36px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .text-brutalist-h2 {
-      font-size: 2.25rem !important;
+      font-size: 48px !important;
     }
   }
 
   @media (min-width: 1280px) {
     .text-brutalist-h2 {
-      font-size: 2.75rem !important;
+      font-size: 56px !important;
     }
   }
 
   .text-brutalist-h3 {
-    font-size: 1.25rem !important;
+    font-size: 24px !important;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.03em;
@@ -292,19 +292,19 @@
 
   @media (min-width: 640px) {
     .text-brutalist-h3 {
-      font-size: 1.5rem !important;
+      font-size: 28px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .text-brutalist-h3 {
-      font-size: 1.75rem !important;
+      font-size: 36px !important;
     }
   }
 
   @media (min-width: 1280px) {
     .text-brutalist-h3 {
-      font-size: 2.25rem !important;
+      font-size: 44px !important;
     }
   }
 
