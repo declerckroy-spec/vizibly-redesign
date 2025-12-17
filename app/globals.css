@@ -135,33 +135,52 @@
     border-color: #000000;
   }
 
-  /* SIMPLE TYPOGRAPHY - no breakpoints, just one size each */
+  /* RESPONSIVE TYPOGRAPHY - mobile first, scale up for desktop */
   .text-brutalist-hero {
-    font-size: 72px;
+    font-size: 36px;
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -0.05em;
   }
 
   .text-brutalist-h1 {
-    font-size: 54px;
+    font-size: 28px;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.05em;
   }
 
   .text-brutalist-h2 {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.04em;
   }
 
   .text-brutalist-h3 {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.03em;
+  }
+
+  /* Desktop breakpoint (1024px+) */
+  @media (min-width: 1024px) {
+    .text-brutalist-hero {
+      font-size: 72px;
+    }
+
+    .text-brutalist-h1 {
+      font-size: 54px;
+    }
+
+    .text-brutalist-h2 {
+      font-size: 42px;
+    }
+
+    .text-brutalist-h3 {
+      font-size: 32px;
+    }
   }
 
   /* Animations */
