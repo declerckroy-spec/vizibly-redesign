@@ -21,9 +21,9 @@ const testimonials: Testimonial[] = [
     highlight: 'IJzersterke teksten'
   },
   {
-    name: 'M.C.',
-    text: 'De toon is precies zoals we het voor ogen hadden: professioneel, duidelijk én persoonlijk.',
-    highlight: 'Precies goed'
+    name: 'Tijmen Teunissen',
+    text: 'Een echte win-win. Hun gestructureerde aanpak, persoonlijke benadering en enthousiasme maken dat we graag blijven samenwerken.',
+    highlight: 'Win-win'
   },
   {
     name: 'Ron Slaats',
@@ -38,7 +38,7 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-screen-2xl px-6">
         <div className="mb-16 text-center">
           <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
-            WAT KLANTEN ZEGGEN
+            FANS VAN VIZIBLY
           </p>
           <h2 className="mb-6 text-brutalist-h2 text-black">
             5/5 sterren op Google
