@@ -87,6 +87,7 @@
     @apply border-border outline-ring/50;
   }
   html {
+    font-size: 16px;
     overflow-x: clip;
   }
   body {
@@ -136,28 +137,28 @@
 
   /* SIMPLE TYPOGRAPHY - no breakpoints, just one size each */
   .text-brutalist-hero {
-    font-size: 48px;
+    font-size: 72px;
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -0.05em;
   }
 
   .text-brutalist-h1 {
-    font-size: 36px;
+    font-size: 54px;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.05em;
   }
 
   .text-brutalist-h2 {
-    font-size: 28px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.04em;
   }
 
   .text-brutalist-h3 {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.03em;
