@@ -31,14 +31,6 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:gap-6 lg:gap-10">
-            <a
-              href="https://www.google.com/maps/place/Vizibly/@52.1909763,5.2795551,7z/data=!3m1!4b1!4m6!3m5!1s0x47c5ef6bd13e8765:0xc924944bbf7fa195!8m2!3d52.1909763!4d5.2795551!16s%2Fg%2F11vs4r0223?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base font-black uppercase border-r-2 border-accent pr-6 lg:pr-10 text-accent hover:text-white transition-colors"
-            >
-              ★★★★★ 5/5
-            </a>
             <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">
               SEO Strategie
             </Link>

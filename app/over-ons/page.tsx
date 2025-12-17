@@ -1,4 +1,5 @@
 import { Navigation } from '@/components/navigation';
+import { ReviewBanner } from '@/components/review-banner';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, Users, TrendingUp, Euro, Phone, Mail, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -63,6 +64,7 @@ export default function OverOnsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Navigation />
+      <ReviewBanner />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-28">

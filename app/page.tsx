@@ -1,4 +1,5 @@
 import { Navigation } from '@/components/navigation';
+import { ReviewBanner } from '@/components/review-banner';
 import { StatsOnly } from '@/components/stats-only';
 import { ClientsCarouselStandalone } from '@/components/clients-carousel-standalone';
 import { CTAWithImage } from '@/components/cta-with-image';
@@ -136,6 +137,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Navigation />
+      <ReviewBanner />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white pt-24 pb-40 lg:pt-32 lg:pb-48">
