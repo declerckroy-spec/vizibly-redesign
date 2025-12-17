@@ -38,10 +38,10 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-screen-2xl px-6">
         <div className="mb-16 text-center">
           <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
-            FANS VAN VIZIBLY
+            5/5 STERREN OP GOOGLE
           </p>
           <h2 className="mb-6 text-brutalist-h2 text-black">
-            5/5 sterren op Google
+            Fans van Vizibly aan het woord
           </h2>
           <div className="flex justify-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
