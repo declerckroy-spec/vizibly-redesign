@@ -151,7 +151,7 @@ export default function Home() {
               ████████████████████████████████████████████████████████
             </div>
 
-            <Badge variant="secondary" className="mb-12 border-4 border-black px-8 py-3 text-lg font-bold lg:text-xl">
+            <Badge variant="secondary" className="mb-12 border-4 border-black px-4 py-2 text-sm font-bold sm:px-8 sm:py-3 sm:text-lg lg:text-xl">
               STOP MET VERSTOPPERTJE SPELEN VOOR JE KLANTEN
             </Badge>
 
