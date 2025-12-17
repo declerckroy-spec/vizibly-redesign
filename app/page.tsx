@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation';
 import { StatsOnly } from '@/components/stats-only';
 import { ClientsCarouselStandalone } from '@/components/clients-carousel-standalone';
+import { TestimonialsSection } from '@/components/testimonials-section';
 import { CTAWithImage } from '@/components/cta-with-image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -447,6 +448,9 @@ export default function Home() {
 
       {/* Klanten Carousel - Social proof na cases */}
       <ClientsCarouselStandalone />
+
+      {/* Testimonials - Reviews van klanten */}
+      <TestimonialsSection />
 
       {/* CTA met foto - Direct na social proof voor conversie */}
       <CTAWithImage />

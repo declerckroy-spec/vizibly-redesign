@@ -1,4 +1,5 @@
 import { Navigation } from '@/components/navigation';
+import { TestimonialsSection } from '@/components/testimonials-section';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, Users, TrendingUp, Euro, Phone, Mail, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -205,6 +206,9 @@ export default function OverOnsPage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <TestimonialsSection />
 
       {/* Waarom ik anders kijk naar SEO */}
       <section className="relative bg-white py-24 lg:py-32">
