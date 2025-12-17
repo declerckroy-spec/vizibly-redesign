@@ -106,18 +106,18 @@ export default function SEOStrategiePage() {
                 </span>
               </h1>
 
-              <p className="mb-8 text-xl font-bold text-black/80 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Wil je structureel beter scoren in Google? Een doordachte SEO strategie is de basis voor online succes. Bij Vizibly maken we een strategisch plan dat perfect aansluit bij jouw doelen en situatie.
               </p>
 
-              <p className="mb-10 text-xl font-bold text-black/70 xl:text-2xl">
+              <p className="mb-10 text-base font-bold text-black/70 lg:text-lg xl:text-xl">
                 Met onze data-gedreven aanpak weet je precies wat er nodig is om jouw online vindbaarheid te verbeteren.
               </p>
 
-              <Button size="lg" asChild className="text-lg px-12 py-8">
+              <Button size="lg" asChild className="text-base px-8 py-5">
                 <Link href="/contact">
                   NEEM CONTACT OP
-                  <ArrowRight className="ml-3 h-6 w-6" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
@@ -154,11 +154,11 @@ export default function SEOStrategiePage() {
               </h2>
               <div className="h-1 w-32 bg-accent mb-8"></div>
 
-              <p className="mb-8 text-xl font-bold text-white/90 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-8 text-base font-bold text-white/90 lg:text-lg xl:text-xl">
                 Een SEO strategie is meer dan alleen wat losse optimalisaties. Het is een doordacht plan waarin we vastleggen hoe we jouw online vindbaarheid gaan verbeteren.
               </p>
 
-              <p className="text-xl font-bold text-white/80 xl:text-2xl">
+              <p className="text-base font-bold text-white/80 lg:text-lg xl:text-xl">
                 We kijken naar drie cruciale pijlers: content, techniek en autoriteit. Door deze elementen strategisch in te zetten, zorgen we voor maximaal resultaat uit je SEO inspanningen.
               </p>
             </div>
@@ -174,8 +174,8 @@ export default function SEOStrategiePage() {
                   className="flex flex-col items-center gap-4 border-4 border-accent bg-black p-6 text-center transition-all duration-300 hover:-translate-y-1"
                   style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
                 >
-                  <div className="flex h-16 w-16 items-center justify-center border-4 border-accent bg-accent text-black">
-                    <pillar.icon className="h-8 w-8" />
+                  <div className="flex h-12 w-12 items-center justify-center border-4 border-accent bg-accent text-black">
+                    <pillar.icon className="h-6 w-6" />
                   </div>
                   <span className="text-sm font-bold uppercase tracking-wider text-white lg:text-base">
                     {pillar.label}
@@ -201,7 +201,7 @@ export default function SEOStrategiePage() {
               </h2>
               <div className="h-1 w-32 bg-black mb-8"></div>
 
-              <p className="mb-10 text-xl font-bold text-black/80 xl:text-2xl">
+              <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Voordat we aan de slag gaan met de uitvoering, brengen we eerst de huidige situatie volledig in kaart met een 360-graden analyse. We onderzoeken:
               </p>
 
@@ -216,12 +216,12 @@ export default function SEOStrategiePage() {
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-4 border-l-4 border-black pl-4 py-2 hover:border-accent transition-colors">
                     <item.icon className="h-6 w-6 text-black/60 flex-shrink-0" />
-                    <span className="text-xl font-bold text-black xl:text-2xl">{item.text}</span>
+                    <span className="text-base font-bold text-black lg:text-lg xl:text-xl">{item.text}</span>
                   </div>
                 ))}
               </div>
 
-              <p className="text-xl font-bold text-black/70 xl:text-2xl">
+              <p className="text-base font-bold text-black/70 lg:text-lg xl:text-xl">
                 Op basis van deze inzichten stellen we een strategisch plan op voor 6 tot 12 maanden, waarin we precies aangeven welke acties wanneer uitgevoerd worden. Van zoekwoordenonderzoek en <Link href="/seo-copy" className="underline hover:text-accent transition-colors">contentstrategie</Link> tot <Link href="/design-techniek" className="underline hover:text-accent transition-colors">technische optimalisatie</Link> en <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">linkbuilding</Link> - alles krijgt zijn plek in een logische volgorde.
               </p>
             </div>
@@ -265,15 +265,15 @@ export default function SEOStrategiePage() {
               Begin met een doordacht plan van Vizibly
             </h2>
 
-            <p className="mb-10 text-xl font-bold text-white/90 xl:text-2xl 2xl:text-3xl">
+            <p className="mb-10 text-base font-bold text-white/90 lg:text-lg xl:text-xl">
               Een goede SEO strategie is cruciaal voor langdurig succes in Google. Of je nu wilt starten met SEO of je huidige aanpak wilt verbeteren, we helpen je graag met een plan op maat.
             </p>
 
-            <p className="mb-12 text-xl font-bold text-white/70 xl:text-2xl">
+            <p className="mb-12 text-base font-bold text-white/70 lg:text-lg xl:text-xl">
               Meestal zie je de eerste resultaten al na 3-6 maanden, met een stevige groei in verkeer en posities na 9-12 maanden.
             </p>
 
-            <Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white px-12 py-8 text-lg">
+            <Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
               <Link href="/contact">
                 NEEM CONTACT OP
                 <ArrowRight className="ml-3 h-6 w-6" />
@@ -299,10 +299,10 @@ export default function SEOStrategiePage() {
           <Accordion type="single" collapsible className="space-y-4">
             {faqData.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-4 border-black bg-white px-8 py-2 hover:border-accent transition-colors last:border-b-4">
-                <AccordionTrigger className="text-left text-xl font-bold uppercase hover:no-underline transition-colors">
+                <AccordionTrigger className="text-left text-base font-bold uppercase hover:no-underline transition-colors lg:text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-xl text-black/80 border-t-2 border-black/10 pt-4 mt-4">
+                <AccordionContent className="text-base text-black/80 border-t-2 border-black/10 pt-4 mt-4 lg:text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -323,10 +323,10 @@ export default function SEOStrategiePage() {
               Nog maar een stap verwijderd van succes!
             </h2>
 
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-12 py-8 text-lg">
+            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
               <Link href="/contact">
                 LET'S GO!!
-                <ArrowRight className="ml-3 h-6 w-6" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -352,31 +352,31 @@ export default function SEOStrategiePage() {
                   className="h-auto w-48"
                 />
               </Link>
-              <p className="text-xl font-bold text-white/80">
+              <p className="text-base font-bold text-white/80 lg:text-lg">
                 SEO specialist die zorgt dat je gevonden wordt.
               </p>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
               <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-lg font-bold text-accent hover:text-white transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
+                <li><Link href="/seo-strategie" className="text-base font-bold text-accent hover:text-white transition-colors">SEO Strategie</Link></li>
+                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
+                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
+                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
               <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
-                <li><Link href="/contact" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
+                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
+                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
+                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-lg font-bold text-white/80">
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
+              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
                 <li>Vizibly</li>
                 <li>'t Zanddorp 55</li>
                 <li>4335 AE Middelburg</li>

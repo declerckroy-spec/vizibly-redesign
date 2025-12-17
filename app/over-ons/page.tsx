@@ -131,11 +131,11 @@ export default function OverOnsPage() {
               </h2>
               <div className="h-1 w-32 bg-accent mb-8"></div>
 
-              <p className="mb-8 text-xl font-bold text-black/80 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Vizibly staat voor zichtbaarheid. Bedrijven met goede producten en diensten moeten gevonden worden door mensen die ernaar zoeken.
               </p>
 
-              <p className="text-xl font-bold text-black/70 xl:text-2xl">
+              <p className="text-base font-bold text-black/70 lg:text-lg xl:text-xl">
                 Dat is waar ik, Roy de Clerck, voor zorg.
               </p>
             </div>
@@ -158,16 +158,16 @@ export default function OverOnsPage() {
               </h2>
               <div className="h-1 w-32 bg-accent mb-8"></div>
 
-              <p className="mb-8 text-xl font-bold text-white/90 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-8 text-base font-bold text-white/90 lg:text-lg xl:text-xl">
                 Kleine en middelgrote bedrijven met ambities. Bedrijven die echt iets goeds willen doen en willen groeien. Die zelf ook met korte lijnen werken en snel schakelen.
               </p>
 
-              <p className="mb-8 text-xl font-bold text-white/80 xl:text-2xl">
+              <p className="mb-8 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
                 Ook werk ik voor marketingbureaus en marketeers die SEO uitbesteden of extra capaciteit nodig hebben.
               </p>
 
               <div className="border-l-4 border-accent pl-6 py-4 bg-white/5">
-                <p className="text-xl font-bold text-accent xl:text-2xl">
+                <p className="text-base font-bold text-accent lg:text-lg xl:text-xl">
                   Geen grote corporates met eindeloze overleggen. Gewoon directe samenwerking met mensen die vooruit willen.
                 </p>
               </div>
@@ -188,8 +188,8 @@ export default function OverOnsPage() {
                     <div className="flex items-start gap-4">
                       <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <h4 className="mb-2 text-xl font-black uppercase text-white">{item.title}</h4>
-                        <p className="text-lg font-bold text-white/80">{item.description}</p>
+                        <h4 className="mb-2 text-base font-black uppercase text-white lg:text-lg">{item.title}</h4>
+                        <p className="text-base font-bold text-white/80">{item.description}</p>
                       </div>
                     </div>
                   </div>
@@ -199,7 +199,7 @@ export default function OverOnsPage() {
           </div>
 
           <div className="mt-16 pt-16 border-t-4 border-white/10">
-            <p className="text-xl font-bold text-white/80 xl:text-2xl max-w-4xl">
+            <p className="text-base font-bold text-white/80 lg:text-lg xl:text-xl max-w-4xl">
               SEO is een systeem. Website, content, techniek, links, gebruikerservaring: alles hangt samen. Mijn focus ligt op content en strategie. Voor Google Ads, complexe techniek en linkbuilding werk ik met specialisten. Ik stuur alles aan.
             </p>
           </div>
@@ -216,7 +216,7 @@ export default function OverOnsPage() {
               </h2>
               <div className="h-1 w-32 bg-black mb-8"></div>
 
-              <p className="mb-8 text-xl font-bold text-black/80 xl:text-2xl">
+              <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Voordat ik met SEO begon, studeerde ik filosofie en werkte als copywriter (zie ook{' '}
                 <a href="https://roydeclerck.nl/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent transition-colors">
                   roydeclerck.nl
@@ -225,39 +225,39 @@ export default function OverOnsPage() {
               </p>
 
               <div className="mb-8 border-4 border-black p-6 bg-accent/10" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
-                <p className="text-xl font-bold text-black xl:text-2xl">
+                <p className="text-base font-bold text-black lg:text-lg xl:text-xl">
                   Een voorbeeld: zijn en schijn. Hoe verschijnen dingen aan ons versus hoe zijn ze werkelijk?
                 </p>
               </div>
 
-              <p className="mb-6 text-xl font-bold text-black/80 xl:text-2xl">
+              <p className="mb-6 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Je ziet bezoekersaantallen in een dashboard. Lijkt duidelijk. Maar klopt dat cijfer? Hoe is die data tot stand gekomen? Wat meet je eigenlijk? En belangrijker: wat betekent het voor je bedrijf?
               </p>
 
-              <p className="text-xl font-bold text-black/80 xl:text-2xl">
+              <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Veel SEO-specialisten nemen data voor waar aan. Ze zien een cijfer en trekken conclusies. Door te begrijpen hoe data tot stand komt - het verschil tussen schijn en werkelijkheid - vermijd ik valkuilen waar anderen intrappen.
               </p>
             </div>
 
             <div>
               <div className="mb-8 border-l-4 border-accent pl-6">
-                <p className="text-xl font-bold text-black xl:text-2xl">
+                <p className="text-base font-bold text-black lg:text-lg xl:text-xl">
                   Daarnaast vind ik SEO gewoon interessant werk. Niemand kent het volledige algoritme van Google. Het verandert constant. Analyseren en puzzelen blijft altijd belangrijk, net zoals in de filosofie.
                 </p>
               </div>
 
-              <p className="mb-12 text-xl font-bold text-black/80 xl:text-2xl">
+              <p className="mb-12 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 En als je het goed hebt, levert het resultaat op. Klanten worden blij. Dat vind ik mooi om te zien.
               </p>
 
               <div className="border-4 border-black p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
-                <h3 className="mb-6 text-2xl font-black uppercase text-black">
+                <h3 className="mb-6 text-xl font-black uppercase text-black lg:text-2xl">
                   Wie ik ben
                 </h3>
-                <p className="mb-4 text-xl font-bold text-black/80 xl:text-2xl">
+                <p className="mb-4 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                   Ik ben Roy de Clerck. Verder vrij gewoon. Ik drink koffie, speel graag voetbal, drink af en toe een biertje.
                 </p>
-                <p className="text-xl font-bold text-black xl:text-2xl">
+                <p className="text-base font-bold text-black lg:text-lg xl:text-xl">
                   En ik vind het leuk om bedrijven te helpen groeien. Vooral als ze zelf gemotiveerd zijn en er echt voor gaan.
                 </p>
               </div>
@@ -301,10 +301,10 @@ export default function OverOnsPage() {
               Nog maar een stap verwijderd van succes!
             </h2>
 
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-12 py-8 text-lg">
+            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
               <Link href="/contact">
                 LET'S GO!!
-                <ArrowRight className="ml-3 h-6 w-6" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -330,31 +330,31 @@ export default function OverOnsPage() {
                   className="h-auto w-48"
                 />
               </Link>
-              <p className="text-xl font-bold text-white/80">
+              <p className="text-base font-bold text-white/80 lg:text-lg">
                 SEO specialist die zorgt dat je gevonden wordt.
               </p>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
               <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
+                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
+                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
+                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
+                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
               <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-lg font-bold text-accent hover:text-white transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
-                <li><Link href="/contact" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
+                <li><Link href="/over-ons" className="text-base font-bold text-accent hover:text-white transition-colors">Over Ons</Link></li>
+                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
+                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-lg font-bold text-white/80">
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
+              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
                 <li>Vizibly</li>
                 <li>'t Zanddorp 55</li>
                 <li>4335 AE Middelburg</li>

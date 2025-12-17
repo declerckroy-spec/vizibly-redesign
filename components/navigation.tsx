@@ -57,7 +57,7 @@ export function Navigation() {
             <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Over Ons
             </Link>
-            <Button asChild size="lg" className="ml-4 bg-accent text-black border-accent hover:bg-white text-lg px-8 py-6">
+            <Button asChild size="lg" className="ml-4 bg-accent text-black border-accent hover:bg-white text-base px-6 py-4">
               <Link href="/contact">CONTACT</Link>
             </Button>
           </div>

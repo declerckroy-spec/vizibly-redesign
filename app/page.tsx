@@ -138,7 +138,7 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-56 lg:pt-40 lg:pb-64">
+      <section className="relative overflow-hidden bg-white pt-24 pb-40 lg:pt-32 lg:pb-48">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -170,13 +170,13 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-6 sm:flex-row">
-              <Button size="lg" asChild className="text-lg px-12 py-8">
+              <Button size="lg" asChild className="text-base px-8 py-5">
                 <Link href="/contact">
                   NEEM CONTACT OP
-                  <ArrowRight className="ml-3 h-6 w-6" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="text-lg px-12 py-8">
+              <Button size="lg" variant="outline" asChild className="text-base px-8 py-5">
                 <Link href="/over-ons">OVER VIZIBLY</Link>
               </Button>
             </div>
@@ -310,10 +310,10 @@ export default function Home() {
               <Link key={index} href={service.href} className={`block ${service.span}`}>
                 <Card className="group relative h-full overflow-hidden border-4 border-black bg-white text-black transition-all hover:translate-x-1 hover:translate-y-1 cursor-pointer" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
                   <CardHeader>
-                    <div className="mb-4 flex h-20 w-20 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
-                      <service.icon className="h-10 w-10" />
+                    <div className="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
+                      <service.icon className="h-7 w-7" />
                     </div>
-                    <CardTitle className="text-2xl font-black uppercase">{service.title}</CardTitle>
+                    <CardTitle className="text-xl font-black uppercase">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-base text-black lg:text-lg">
@@ -516,7 +516,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="bg-accent text-black border-accent hover:bg-white px-12 py-8 text-lg">
+            <Button asChild size="lg" className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
               <Link href="/vizie">BEKIJK ALLES</Link>
             </Button>
           </div>

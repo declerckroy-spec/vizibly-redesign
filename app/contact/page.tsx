@@ -55,7 +55,7 @@ export default function ContactPage() {
               {' '}Op
             </h1>
 
-            <p className="text-xl font-bold text-white/80 xl:text-2xl 2xl:text-3xl">
+            <p className="text-base font-bold text-white/80 lg:text-lg xl:text-xl">
               Vraag? Bel of mail me direct. Of vul het formulier in en ik reageer binnen 24 uur.
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
               </h2>
               <div className="h-1 w-32 bg-accent mb-12"></div>
 
-              <p className="mb-12 text-xl font-bold text-black/80 xl:text-2xl 2xl:text-3xl">
+              <p className="mb-12 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Liever direct schakelen? Pak de telefoon of stuur een mail. Geen wachttijden, geen doorverbinden.
               </p>
 
@@ -84,8 +84,8 @@ export default function ContactPage() {
                   className="group flex items-center gap-6 border-4 border-black p-6 transition-all hover:border-accent hover:-translate-y-1"
                   style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
                 >
-                  <div className="flex h-16 w-16 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
-                    <Phone className="h-8 w-8" />
+                  <div className="flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
+                    <Phone className="h-7 w-7" />
                   </div>
                   <div>
                     <p className="text-sm font-bold uppercase tracking-wider text-black/60">Bel direct</p>
@@ -98,8 +98,8 @@ export default function ContactPage() {
                   className="group flex items-center gap-6 border-4 border-black p-6 transition-all hover:border-accent hover:-translate-y-1"
                   style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
                 >
-                  <div className="flex h-16 w-16 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
-                    <Mail className="h-8 w-8" />
+                  <div className="flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
+                    <Mail className="h-7 w-7" />
                   </div>
                   <div>
                     <p className="text-sm font-bold uppercase tracking-wider text-black/60">Mail me</p>
@@ -116,11 +116,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="mb-4 text-xl font-black uppercase text-black">Vizibly</h3>
-                    <p className="text-xl font-bold text-black/80">
+                    <p className="text-base font-bold text-black/80 lg:text-lg">
                       't Zanddorp 55<br />
                       4335 AE Middelburg
                     </p>
-                    <p className="mt-4 text-lg font-bold text-black/60">
+                    <p className="mt-4 text-base font-bold text-black/60">
                       KvK: 68478143
                     </p>
                   </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
               {/* Response Time */}
               <div className="mt-8 flex items-center gap-4 border-l-4 border-black pl-6 bg-accent/10 py-4">
                 <Clock className="h-6 w-6 text-black" />
-                <p className="text-xl font-bold text-black">
+                <p className="text-base font-bold text-black lg:text-lg">
                   Reactie binnen 24 uur op werkdagen
                 </p>
               </div>
@@ -224,9 +224,9 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-black text-white border-black hover:bg-accent hover:text-black px-12 py-8 text-lg">
+                  <Button type="submit" size="lg" className="w-full bg-black text-white border-black hover:bg-accent hover:text-black px-8 py-5 text-base">
                     VERSTUUR BERICHT
-                    <Send className="ml-3 h-6 w-6" />
+                    <Send className="ml-2 h-5 w-5" />
                   </Button>
                 </form>
               </div>
@@ -243,17 +243,17 @@ export default function ContactPage() {
               <h2 className="text-3xl font-black uppercase text-black lg:text-4xl">
                 Liever eerst meer weten?
               </h2>
-              <p className="mt-2 text-xl font-bold text-black/80">
+              <p className="mt-2 text-base font-bold text-black/80 lg:text-lg">
                 Bekijk onze aanpak en resultaten
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-6 text-base">
+              <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-6 py-4 text-base">
                 <Link href="/over-ons">
                   OVER VIZIBLY
                 </Link>
               </Button>
-              <Button size="lg" asChild variant="outline" className="border-black text-black hover:bg-black hover:text-white px-8 py-6 text-base">
+              <Button size="lg" asChild variant="outline" className="border-black text-black hover:bg-black hover:text-white px-6 py-4 text-base">
                 <Link href="/cases">
                   BEKIJK CASES
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -283,31 +283,31 @@ export default function ContactPage() {
                   className="h-auto w-48"
                 />
               </Link>
-              <p className="text-xl font-bold text-white/80">
+              <p className="text-base font-bold text-white/80 lg:text-lg">
                 SEO specialist die zorgt dat je gevonden wordt.
               </p>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
               <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
+                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
+                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
+                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
+                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
               <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-lg font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
-                <li><Link href="/contact" className="text-lg font-bold text-accent hover:text-white transition-colors">Contact</Link></li>
+                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
+                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
+                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/contact" className="text-base font-bold text-accent hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-lg font-bold text-white/80">
+              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
+              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
                 <li>Vizibly</li>
                 <li>'t Zanddorp 55</li>
                 <li>4335 AE Middelburg</li>
