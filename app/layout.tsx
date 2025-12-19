@@ -17,8 +17,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://vizibly.nl'),
   title: {
-    default: "Vizibly - SEO Bureau dat Groei Levert | Meer Omzet uit Google",
-    template: "%s | Vizibly SEO"
+    default: "Vizibly: jouw SEO specialist",
+    template: "%s"
   },
   description: "Meer omzet uit zoekmachines met bewezen SEO strategieën. 7+ jaar ervaring, 25+ klanten laten groeien, +120% gemiddelde traffic groei. Plan je groeigesprek.",
   keywords: ["SEO bureau", "SEO specialist", "zoekmachine optimalisatie", "Google ranking", "SEO strategie", "linkbuilding", "SEO teksten", "local SEO", "technische SEO"],

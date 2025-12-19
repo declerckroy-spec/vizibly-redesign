@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 interface Testimonial {
   name: string;
-  text: string;
+  text?: string;
   highlight?: string;
 }
 
@@ -29,6 +29,15 @@ const testimonials: Testimonial[] = [
     name: 'Ron Slaats',
     text: 'Roy is betrokken en kijkt integraal naar manieren om zeer doeltreffend resultaten te bereiken. Aanrader!',
     highlight: 'Aanrader'
+  },
+  {
+    name: 'Marriët Cruson',
+    text: 'De teksten die Roy schreef zijn professioneel, persoonlijk en goed vindbaar in Google. Perfect voor onze doelgroep en een echt visitekaartje van ons bedrijf!',
+    highlight: 'Scherpe pen'
+  },
+  {
+    name: 'Ben van Dee',
+    highlight: '5 sterren'
   }
 ];
 
@@ -50,7 +59,7 @@ export function TestimonialsSection() {
           </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -62,9 +71,11 @@ export function TestimonialsSection() {
                   {testimonial.highlight}
                 </span>
               )}
-              <p className="mb-6 text-base font-bold text-black lg:text-lg">
-                "{testimonial.text}"
-              </p>
+              {testimonial.text && (
+                <p className="mb-6 text-base font-bold text-black lg:text-lg">
+                  "{testimonial.text}"
+                </p>
+              )}
               <div className="flex items-center justify-between">
                 <p className="text-sm font-black uppercase tracking-wider text-black/60">
                   — {testimonial.name}

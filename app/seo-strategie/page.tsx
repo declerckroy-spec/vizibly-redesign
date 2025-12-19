@@ -7,10 +7,10 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SEO Strategie - Vizibly',
+  title: 'SEO strategie | Data-gedreven groeiplan',
   description: 'Krijg inzicht in jouw online prestaties met onze 360-graden SEO analyse. Data-gedreven strategie met tools als Ahrefs voor maximale groei.',
   openGraph: {
-    title: 'SEO Strategie - Vizibly',
+    title: 'SEO strategie | Data-gedreven groeiplan',
     description: 'Krijg inzicht in jouw online prestaties met onze 360-graden SEO analyse. Data-gedreven strategie met tools als Ahrefs voor maximale groei.',
     url: 'https://vizibly.nl/seo-strategie/',
     siteName: 'Vizibly',
@@ -370,7 +370,7 @@ export default function SEOStrategiePage() {
               <ul className="space-y-4">
                 <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
                 <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
                 <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
               </ul>
             </div>

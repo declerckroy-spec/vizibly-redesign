@@ -301,7 +301,7 @@ export default function ContactPage() {
               <ul className="space-y-4">
                 <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
                 <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Blog</Link></li>
+                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
                 <li><Link href="/contact" className="text-base font-bold text-accent hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>

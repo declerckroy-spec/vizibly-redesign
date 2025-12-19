@@ -126,6 +126,19 @@
     border-color: #000000;
   }
 
+  /* Glow effect on hover - only on desktop, pure CSS for performance */
+  @media (min-width: 1024px) and (hover: hover) {
+    /* Links in navigation and footer get visible glow */
+    nav a:hover, footer a:hover {
+      text-shadow: 0 0 8px rgba(204, 255, 0, 0.9), 0 0 20px rgba(204, 255, 0, 0.6), 0 0 35px rgba(204, 255, 0, 0.3);
+    }
+
+    /* Buttons get strong glow ring effect */
+    button:hover, .btn:hover {
+      box-shadow: 0 0 0 4px rgba(204, 255, 0, 0.5), 0 0 25px rgba(204, 255, 0, 0.6), 0 0 50px rgba(204, 255, 0, 0.3);
+    }
+  }
+
   .card {
     border: 4px solid #000000;
     background: #ffffff;

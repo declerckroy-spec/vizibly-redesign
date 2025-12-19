@@ -31,6 +31,9 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:gap-6 lg:gap-10">
+            <Link href="/full-service-seo" className="text-base font-bold uppercase text-accent hover:text-white transition-colors">
+              Full Service SEO
+            </Link>
             <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">
               SEO Strategie
             </Link>
@@ -42,6 +45,9 @@ export function Navigation() {
             </Link>
             <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Cases
+            </Link>
+            <Link href="/vizie" className="text-base font-bold uppercase hover:text-accent transition-colors">
+              Vizie
             </Link>
             <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Over Ons
@@ -64,10 +70,12 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="mt-6 flex flex-col gap-4 border-t-2 border-accent pt-6 md:hidden">
+            <Link href="/full-service-seo" className="text-base font-bold uppercase text-accent hover:text-white transition-colors">Full Service SEO</Link>
             <Link href="/seo-strategie" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO Strategie</Link>
             <Link href="/seo-copy" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO Copy</Link>
             <Link href="/linkbuilding" className="text-base font-bold uppercase hover:text-accent transition-colors">Linkbuilding</Link>
             <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">Cases</Link>
+            <Link href="/vizie" className="text-base font-bold uppercase hover:text-accent transition-colors">Vizie</Link>
             <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">Over Ons</Link>
             <Button asChild size="lg" className="w-full bg-accent text-black border-accent text-base">
               <Link href="/contact">CONTACT</Link>

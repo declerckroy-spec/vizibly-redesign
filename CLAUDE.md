@@ -1,533 +1,652 @@
-# CLAUDE.md
+# CLAUDE.md - Vizibly Redesign Project
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Dit bestand geeft Claude Code richtlijnen voor het werken aan deze codebase.
+
+---
 
 ## Project Overview
 
-This is a **Next.js 16** (App Router) website redesign for Vizibly, a Dutch SEO agency. The site uses a **brutalist design aesthetic** with strict design rules documented in accompanying files.
+**Project:** Website redesign voor Vizibly, een Nederlands SEO bureau
+**Design:** Brutalist design aesthetic met strikte regels
+**Taal:** Nederlands (nl-NL) - alle content en UI tekst is in het Nederlands
 
-**Stack:** Next.js 16.0.10, React 19, TypeScript 5, Tailwind CSS 4, shadcn/ui components
+### Tech Stack
 
-**Language:** Dutch (nl-NL) - all content and UI text is in Dutch
+| Technologie | Versie |
+|-------------|--------|
+| Next.js | 16.0.10 (App Router) |
+| React | 19 |
+| TypeScript | 5 |
+| Tailwind CSS | 4 |
+| UI Components | shadcn/ui |
 
-## Development Commands
+### Development Commands
 
 ```bash
-# Development server (hot reload enabled)
-npm run dev
-
-# Production build (includes TypeScript checking)
-npm run build
-
-# Start production server
-npm start
-
-# Linting
-npm run lint
+npm run dev      # Development server
+npm run build    # Production build
+npm start        # Start production server
+npm run lint     # Linting
 ```
 
-## Critical Architecture Rules
+---
 
-### 1. Brutalist Design System V2.0 (HIGH-END)
+## Documentation Hierarchy
 
-**MUST READ FIRST:** `DESIGN_GUIDE.md` contains the complete design system. Every new page/component MUST follow these rules:
+Raadpleeg documentatie in deze volgorde:
 
-- **NO rounded corners** - Everything is sharp 90° angles (`--radius: 0px`)
-- **4px borders** everywhere - No exceptions
-- **Color palette ONLY:** Black (#000000), White (#ffffff), Lime (#ccff00)
-- **Brutalist shadows REQUIRED** - All cards/elements get `boxShadow: '8px 8px 0 0 #CCFF00'` (lime) or `'8px 8px 0 0 #000000'` (black)
-- **Typography:** Responsive scaling with `xl:` and `2xl:` breakpoints required
-- **Patterns:** Black sections get subtle diagonal patterns (opacity 0.03), white sections stay clean
+| Prioriteit | Bestand | Inhoud |
+|------------|---------|--------|
+| 1 | `STYLE_GUIDE.md` | Complete design system V2.3 - kleuren, typografie, componenten, blog artikelen |
+| 2 | `CLAUDE.md` | Project overview, architectuur, technische implementatie |
+| 3 | `app/page.tsx` | Reference implementation - kopieer patronen hieruit |
+| 4 | `globals.css` | CSS variabelen, animaties, custom classes |
 
-#### HIGH-END Shadow Standards (V2.0)
+---
 
-**CRITICAL RULE:** Every card, interactive element, or featured content needs brutalist shadows for that "tegel effect" (tile effect).
+## Project Status
 
-```jsx
-// Stats cards, featured elements, important metrics
-style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}  // Lime accent shadow
+### Completed Pages
 
-// Service cards, standard cards
-style={{ boxShadow: '8px 8px 0 0 #000000' }}  // Black shadow
+| Pagina | Route | Status |
+|--------|-------|--------|
+| Homepage | `/` | Done |
+| SEO Strategie | `/seo-strategie` | Done |
+| Over Ons | `/over-ons` | Done |
+| Contact | `/contact` | Done |
+| Blog/Vizie | `/vizie` | Done |
+| SEO Copy | `/seo-copy` | Done |
+| Linkbuilding | `/linkbuilding` | Done |
+| Local SEO | `/local-seo` | Done |
+| Design & Techniek | `/design-techniek` | Done |
+| Google Ads | `/google-ads-sea` | Done |
+| Cases | `/cases` | Done |
+| Full Service SEO | `/full-service-seo` | Done |
 
-// Case cards, large featured elements
-style={{ boxShadow: '12px 12px 0 0 #000000' }}  // Larger black shadow
+### Completed Components
+
+| Component | Bestand | Beschrijving |
+|-----------|---------|--------------|
+| Navigation | `navigation.tsx` | Sticky header met mobile menu |
+| Stats | `stats-only.tsx` | Animated stats counter (homepage) |
+| Cases Stats | `cases-stats.tsx` | Animated stats counter (cases pagina) |
+| Clients Carousel | `clients-carousel-standalone.tsx` | Infinite scroll logo's |
+| Testimonials | `testimonials-section.tsx` | Google reviews (6 reviews, 3-kolom grid) |
+| CTA with Image | `cta-with-image.tsx` | CTA sectie met foto |
+| Footer | (inline in pages) | 4-kolom footer |
+
+### To Build
+
+- Geen - alle pagina's zijn af!
+
+### Blog Artikelen (Gemigreerd van WordPress)
+
+| Artikel | Route | Status |
+|---------|-------|--------|
+| SEO strategie: zo bouw je aan duurzame groei via Google | `/seo-strategie-zo-bouw-je-aan-duurzame-groei-via-google` | Done |
+| Een snelle WordPress website: technische optimalisatie | `/een-snelle-wordpress-website-technische-optimalisatie-die-echt-werkt` | Done |
+| Waarom SEO relevanter is dan ooit ondanks AI | `/waarom-seo-relevanter-is-dan-ooit-ondanks-wat-je-hoort-over-ai` | Done |
+| 12 bewezen manieren voor fysiotherapeuten in Google | `/12-bewezen-manieren-om-als-fysiotherapeut-zichtbaar-te-worden-in-google` | Done |
+| SEO voor dakdekkers: bovenaan in Google | `/seo-voor-dakdekkers-zo-kom-je-als-dakdekkersbedrijf-bovenaan-in-google` | Done |
+| SEO uitbesteden of zelf doen (2025) | `/seo-uitbesteden-of-zelf-doen-alles-wat-je-in-2025-moet-weten` | Done |
+| SEO mythe ontkracht: meer links = hogere rankings | `/seo-mythe-ontkracht-meer-links-leiden-automatisch-tot-hogere-rankings` | Done |
+| Word gevonden door AI: de toekomst van SEO is GEO | `/word-gevonden-door-ai-de-toekomst-van-seo-is-geo` | Done |
+| SEO voor beginners: belangrijkste termen uitgelegd | `/seo-voor-beginners-de-belangrijkste-termen-uitgelegd` | Done |
+
+**Referentie artikel:** `app/een-snelle-wordpress-website-technische-optimalisatie-die-echt-werkt/page.tsx`
+
+### Case Study Pagina's
+
+| Case | Route | Status |
+|------|-------|--------|
+| Online Bloemist | `/online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet` | Done |
+| Technische Webshop | `/145-omzet-uit-organisch-verkeer-voor-technische-webshop` | Done |
+| Tak Makelaardij | `/klantinterview-seo-voor-een-makelaarskantoor` | Done |
+| Dakdekker Haarlem | `/seo-succesverhaal-dakdekker-in-haarlem` | Done |
+
+**Referentie case:** `app/online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet/page.tsx`
+
+**Key Features:**
+- Breadcrumb navigatie direct onder header
+- Hero met "CASE STUDY" of "KLANTINTERVIEW" label (text-black/60)
+- Featured image met 12px lime shadow
+- Meerdere content secties (elk met border-b-4)
+- Quote blocks met border-left voor klantinterviews
+- Resultaten lijsten met ▸ bullets
+- Final CTA met 2 buttons (Full Service SEO + Contact)
+
+---
+
+## Blog URL Structuur (KRITISCH)
+
+**Blog artikelen staan op ROOT niveau, NIET onder /vizie/!**
+
+Dit is essentieel voor SEO omdat:
+1. De originele URLs op vizibly.nl zijn al geïndexeerd door Google
+2. URL wijzigingen verliezen bestaande SEO waarde
+3. Backlinks naar originele URLs zouden 404 geven
+
+**Correcte structuur:**
+```
+/vizie                    -> Blog listing pagina
+/seo-strategie-zo-bouw-je-aan-duurzame-groei-via-google  -> Artikel (ROOT niveau!)
+/een-snelle-wordpress-website-technische-optimalisatie   -> Artikel (ROOT niveau!)
 ```
 
-**When to use lime vs black shadows:**
-- **Lime (#CCFF00):** Stats, metrics, client logos, blog cards, featured content
-- **Black (#000000):** Service cards, standard cards, most interactive elements
-
-#### HIGH-END Hover Effects (V2.0)
-
-**Standard hover patterns:**
-
-```jsx
-// Stats cards - subtle lift
-className="transition-all duration-300 hover:-translate-y-1"
-
-// Logo/client cards - lift + rotate + glow (ADVANCED)
-className="group transition-all duration-300
-           hover:border-accent hover:-translate-y-2 hover:rotate-1"
-// Plus glow overlay inside:
-<div className="absolute inset-0 bg-accent opacity-0
-                group-hover:opacity-10 transition-opacity duration-300"></div>
-
-// Service cards - shadow shift
-className="transition-all duration-300
-           hover:translate-x-1 hover:translate-y-1 hover:border-accent"
-
-// Logo grayscale to color
-className="relative grayscale group-hover:grayscale-0 transition-all duration-300"
+**FOUT:**
+```
+/vizie/seo-strategie-zo-bouw-je-aan-duurzame-groei-via-google  -> VERKEERD!
 ```
 
-### 2. Typography System
+Bij het maken van nieuwe blog artikelen:
+1. Maak een map aan op ROOT niveau: `/app/[artikel-slug]/page.tsx`
+2. Gebruik de exacte slug van de originele URL
+3. Link vanuit `/vizie` naar `/${slug}` (niet `/vizie/${slug}`)
 
-Custom Tailwind classes defined in `globals.css`:
+## Case Study URL Structuur (KRITISCH)
 
-```css
-.text-brutalist-hero  /* Hero headings - responsive clamp() */
-.text-brutalist-h1    /* H1 headings */
-.text-brutalist-h2    /* H2 headings */
-.text-brutalist-h3    /* H3 headings */
+**Case study pagina's staan op ROOT niveau, NIET onder /cases/!**
+
+Dit is essentieel voor SEO omdat:
+1. De originele URLs op vizibly.nl zijn al geïndexeerd door Google
+2. URL wijzigingen verliezen bestaande SEO waarde
+3. Backlinks naar originele URLs zouden 404 geven
+
+**Correcte structuur:**
+```
+/cases                   -> Cases overzichtspagina
+/online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet  -> Case (ROOT niveau!)
+/klantinterview-seo-voor-een-makelaarskantoor  -> Case (ROOT niveau!)
 ```
 
-**Body text pattern (CRITICAL - always include font-bold!):**
-```jsx
-<p className="text-xl font-bold xl:text-2xl 2xl:text-3xl">
+**FOUT:**
+```
+/cases/online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet  -> VERKEERD!
 ```
 
-**IMPORTANT:** ALL body text MUST have `font-bold`. Without it, text looks thin and weak.
+Bij het maken van nieuwe case studies:
+1. Maak een map aan op ROOT niveau: `/app/[case-slug]/page.tsx`
+2. Gebruik de exacte slug van de originele URL
+3. Link vanuit `/cases` naar `/${slug}` (niet `/cases/${slug}`)
+4. Voeg breadcrumb toe: `← Alle cases` die linkt naar `/cases`
 
-Always use responsive sizing for readability on 1440px-4K displays.
-
-### 3. Overlapping Sections Pattern (V2.0)
-
-**CRITICAL HIGH-END TECHNIQUE:** Stats and hero sections overlap for seamless integration.
-
-```jsx
-// Hero section - extra padding bottom for overlap space
-<section className="relative overflow-hidden bg-white
-                   pt-32 pb-56 lg:pt-40 lg:pb-64">
-  {/* Grid pattern */}
-  <div className="absolute inset-0 opacity-5" style={{
-    backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
-  }}></div>
-  {/* Content */}
-</section>
-
-// Stats section - negative margin pulls it up over hero
-<section className="relative border-b-4 border-black bg-white
-                   py-16 lg:py-24 -mt-32 lg:-mt-40">
-  {/* Same grid pattern extends seamlessly */}
-  <div className="absolute inset-0 opacity-5" style={{
-    backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
-  }}></div>
-
-  <div className="relative z-10 mx-auto max-w-screen-2xl px-6">
-    {/* Stats content floats above with z-10 */}
-  </div>
-</section>
-```
-
-**Rules for overlapping:**
-- Hero gets `pb-56 lg:pb-64` (extra padding bottom)
-- Stats gets `-mt-32 lg:-mt-40` (negative margin top)
-- Stats content needs `z-10` to float above hero
-- **NO border between sections** - extend pattern seamlessly
-- Same pattern background on both sections for continuity
-
-### 4. Content Rules
-
-**Critical:** NEVER use em dashes (—) or en dashes (–). Only use hyphens (-) for compound words like:
-- ✅ "360-graden", "data-driven", "on-page"
-- ❌ "analysis - detailed approach" (use comma/period instead)
-
-**Always preserve original Vizibly text** unless explicitly asked to shorten.
-
-### 5. Component Patterns (V2.0 HIGH-END)
-
-#### Stats Cards (HIGH-END - with lime shadows)
-```jsx
-<div
-  className="relative flex flex-col items-center gap-3
-             border-4 border-accent bg-black p-8 text-center
-             transition-all duration-300 hover:-translate-y-1"
-  style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
->
-  <div className="text-5xl font-bold tracking-tight text-accent lg:text-6xl">
-    {prefix}{count}{suffix}
-  </div>
-  <div className="text-xs font-bold uppercase tracking-wider text-white lg:text-sm">
-    {label}
-  </div>
-</div>
-```
-
-#### Client/Logo Cards (HIGH-END - advanced hover)
-```jsx
-<div
-  className="group flex-shrink-0 flex items-center justify-center h-24 px-8
-             border-4 border-black bg-white
-             transition-all duration-300
-             hover:border-accent hover:-translate-y-2 hover:rotate-1"
-  style={{ boxShadow: '8px 8px 0 0 #CCFF00', minWidth: '200px' }}
->
-  <div className="relative grayscale group-hover:grayscale-0 transition-all duration-300">
-    <Image src={logo} alt={name} width={250} height={80}
-           className="object-contain max-h-16 w-auto" />
-  </div>
-  {/* Subtle glow on hover */}
-  <div className="absolute inset-0 bg-accent opacity-0
-                  group-hover:opacity-10 transition-opacity duration-300
-                  pointer-events-none"></div>
-</div>
-```
-
-#### Service/Feature Cards (STANDARD - black shadows)
-```jsx
-<Link href="/url" className="block">
-  <Card className="group h-full border-4 border-black transition-all
-                   hover:translate-x-1 hover:translate-y-1 hover:border-accent"
-        style={{ boxShadow: '8px 8px 0 0 #000000' }}>
-    <CardHeader>
-      <div className="mb-4 flex h-20 w-20 items-center justify-center
-                      border-4 border-black bg-accent
-                      group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
-        <Icon className="h-10 w-10" />
-      </div>
-      <CardTitle className="text-2xl font-black uppercase">Title</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <CardDescription className="text-xl text-black">
-        Description text
-      </CardDescription>
-    </CardContent>
-  </Card>
-</Link>
-```
-
-**Key points:**
-- **ALL cards need shadows** - lime for featured, black for standard
-- Entire card is clickable (wrapped in `<Link>`)
-- NO "MEER INFO" text links inside cards
-- `text-xl` for descriptions (not smaller)
-- Box shadow: `8px 8px 0 0 #CCFF00` (lime) or `8px 8px 0 0 #000000` (black)
-
-### 6. Critical Technical Implementation (V2.0)
-
-#### STICKY HEADER FIX - CRITICAL
-```css
-/* globals.css - NEVER use overflow-x: hidden! */
-html {
-  overflow-x: clip;  /* NOT hidden - breaks sticky positioning */
-}
-body {
-  overflow-x: clip;
-  max-width: 100vw;
-}
-```
-
-**Why this matters:**
-- `overflow-x: hidden` creates a new containing block that breaks `position: sticky`
-- `overflow-x: clip` prevents horizontal scrolling without breaking sticky
-- This is CRITICAL for the navigation to stay sticky on scroll
-
-#### BRUTALIST SCROLLBAR (V2.0)
-```css
-/* Wider scrollbar for consistency with 4px borders */
-::-webkit-scrollbar {
-  width: 24px;  /* NOT 16px - wider for brutalist consistency */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ccff00;
-  border: 4px solid #000000;  /* 4px like everything else */
-  transition: background 0.3s ease;
-}
-
-/* Firefox */
-* {
-  scrollbar-width: auto;  /* NOT thin */
-  scrollbar-color: #ccff00 #000000;
-}
-```
-
-#### CONTAINER MAX-WIDTH
-All sections use `max-w-screen-2xl` (1536px) for consistency:
-```jsx
-<div className="mx-auto max-w-screen-2xl px-6">
-```
-
-### 7. Section Pattern Template
-
-Every section follows this structure:
-
-```jsx
-<section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
-  {/* Subtle diagonal pattern - black sections only */}
-  <div className="absolute inset-0 opacity-[0.03]" style={{
-    backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-  }}></div>
-
-  <div className="relative mx-auto max-w-7xl px-6">
-    {/* Content here */}
-  </div>
-</section>
-```
-
-**Pattern rules:**
-- Black sections: diagonal pattern at opacity 0.03
-- White sections: NO pattern (for contrast)
-- Hero/CTA sections: stronger patterns at opacity 0.05
-- Grid pattern for process/technical sections
+---
 
 ## File Architecture
 
 ```
-app/
-├── globals.css          # All animations, custom utilities, scrollbar
-├── layout.tsx           # Root layout with fonts & metadata
-├── page.tsx             # Homepage (reference implementation)
-└── [service-pages]/     # Service pages (to be created)
-
-components/
-├── navigation.tsx       # Sticky header with mobile menu
-├── stats-counter.tsx    # Animated stats component
-└── ui/                  # shadcn/ui components (Accordion, Badge, Button, Card)
-
-lib/
-└── utils.ts             # cn() utility (clsx + tailwind-merge)
+vizibly-redesign/
+├── app/
+│   ├── globals.css              # CSS variabelen, animaties, typography classes
+│   ├── layout.tsx               # Root layout met fonts & metadata
+│   ├── page.tsx                 # Homepage (reference implementation)
+│   ├── contact/page.tsx         # Contact pagina
+│   ├── over-ons/page.tsx        # Over Ons pagina
+│   ├── seo-strategie/page.tsx   # SEO Strategie pagina
+│   ├── vizie/page.tsx           # Blog listing pagina
+│   ├── seo-copy/page.tsx        # SEO Copy dienst pagina
+│   ├── linkbuilding/page.tsx    # Linkbuilding dienst pagina
+│   ├── local-seo/page.tsx       # Local SEO dienst pagina
+│   ├── design-techniek/page.tsx # Design & Techniek pagina
+│   ├── google-ads-sea/page.tsx  # Google Ads dienst pagina
+│   ├── cases/page.tsx           # Cases overzichtspagina
+│   ├── online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet/page.tsx  # Case study
+│   ├── 145-omzet-uit-organisch-verkeer-voor-technische-webshop/page.tsx  # Case study
+│   ├── klantinterview-seo-voor-een-makelaarskantoor/page.tsx  # Case study
+│   └── seo-succesverhaal-dakdekker-in-haarlem/page.tsx  # Case study
+│
+├── components/
+│   ├── navigation.tsx           # Sticky header + mobile menu
+│   ├── stats-only.tsx           # Animated stats counter (homepage)
+│   ├── cases-stats.tsx          # Animated stats counter (cases pagina)
+│   ├── clients-carousel-standalone.tsx  # Infinite scroll client logos
+│   ├── testimonials-section.tsx # Google reviews sectie (6 reviews)
+│   ├── cta-with-image.tsx       # CTA met foto
+│   └── ui/                      # shadcn/ui components
+│       ├── accordion.tsx
+│       ├── badge.tsx
+│       ├── button.tsx
+│       └── card.tsx
+│
+├── lib/
+│   └── utils.ts                 # cn() utility (clsx + tailwind-merge)
+│
+├── public/
+│   ├── clients/                 # Client logo's
+│   ├── cases/                   # Case study afbeeldingen
+│   ├── logo-brutalist-white.svg # Wit logo
+│   └── Bestaande afbeeldingen/  # Lokale afbeeldingen
+│
+├── STYLE_GUIDE.md               # Complete design system V2.3
+└── CLAUDE.md                    # Dit bestand
 ```
 
-## Using Homepage as Reference
+---
 
-`app/page.tsx` (29.9KB) is the **complete reference implementation**. When creating new pages:
+## Design System V2.3 - Quick Reference
 
-1. Copy section structure from homepage
-2. Maintain heading hierarchy: Label → H2 → Accent line
-3. Use same responsive font sizes
-4. Apply patterns to black sections only
-5. Reuse component patterns (cards, accordions)
+**Volledige documentatie: zie `STYLE_GUIDE.md`**
 
-## Animations & Effects
+### Kleuren
 
-**All animations are CSS-based** (no JavaScript) for performance:
+| Kleur | Hex | Gebruik |
+|-------|-----|---------|
+| Zwart | `#000000` | Tekst, borders, achtergrond |
+| Wit | `#ffffff` | Achtergrond, cards |
+| Lime/Accent | `#CCFF00` | Highlights, CTA's, shadows |
 
-- **Glitch effect:** `animate-glitch` and `animate-glitch-skew` classes
-- **Float animation:** `animate-float` class (ASCII blocks)
-- **Hover glow:** Automatic on all `<a>` and `<button>` elements via CSS `::before` pseudo-element
+### Kleur Contrast Regels (KRITISCH)
 
-**Custom scrollbar** is defined globally in `globals.css` (lime green thumb on black track).
+**NOOIT lime tekst op witte achtergrond!** Lime (#CCFF00) heeft te weinig contrast met wit.
 
-## Image Handling
+| Achtergrond | Toegestane tekstkleuren | Verboden |
+|-------------|------------------------|----------|
+| Wit | Zwart, zwart/70 | ❌ Lime tekst |
+| Zwart | Wit, lime | ✓ Alles OK |
+| Lime | Zwart | ❌ Witte tekst |
+
+**Hover states op witte achtergrond:**
+```jsx
+// ❌ FOUT - onleesbaar
+className="text-black group-hover:text-accent"
+
+// ✓ GOED - behoud zwarte tekst, gebruik andere hover indicator
+className="text-black group-hover:underline"
+className="text-black"  // card zelf heeft al hover effect
+```
+
+### Typografie
+
+**Base font-size:** 14px (ingesteld in globals.css)
+
+| Class | Mobile | Desktop (lg:) |
+|-------|--------|---------------|
+| `.text-brutalist-hero` | 36px | 72px |
+| `.text-brutalist-h1` | 28px | 54px |
+| `.text-brutalist-h2` | 24px | 42px |
+| `.text-brutalist-h3` | 20px | 32px |
+
+**Body text:** `text-base font-bold lg:text-lg xl:text-xl`
+
+**KRITISCH:** Alle body tekst MOET `font-bold` hebben!
+
+### Borders & Shadows
+
+**Alle borders:** 4px dik, geen uitzonderingen
 
 ```jsx
-import Image from 'next/image';
+// Lime shadow - stats, logo's, featured
+style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
 
-// Local images
-<Image src="/logo.svg" alt="..." width={180} height={60} priority />
+// Zwarte shadow - service cards, standaard
+style={{ boxShadow: '8px 8px 0 0 #000000' }}
 
-// Remote images (from vizibly.nl WordPress)
-<Image src="https://vizibly.nl/wp-content/..." alt="..." fill className="object-cover" />
+// Grote shadow - case cards, featured images
+style={{ boxShadow: '12px 12px 0 0 #000000' }}
 ```
 
-Remote domain `vizibly.nl` is configured in `next.config.ts`.
+### Container
 
-## Responsive Breakpoints
-
-```
-base:    < 640px      (Mobile)
-md:      768px+       (Tablet)
-lg:      1024px+      (Desktop)
-xl:      1280px+      (Large desktop)
-2xl:     1536px+      (Extra large)
-
-Custom scaling at 1920px+ and 2560px+ (see globals.css)
-```
-
-**Container max-width scaling** prevents content from becoming too small on large displays (4K).
-
-## SEO & Metadata
-
-Each page should include:
-- JSON-LD structured data (Organization, Service, FAQ schemas)
-- Proper meta tags (title, description, OG, Twitter)
-- Dutch language metadata (`lang="nl-NL"`)
-
-See `app/layout.tsx` and `app/page.tsx` for examples.
-
-## Performance Requirements
-
-- **LCP target:** < 2.5s
-- Use Next.js `<Image>` component for all images
-- Lazy load images outside viewport
-- CSS animations (GPU accelerated)
-- No heavy JavaScript libraries
-
-## Testing Checklist (V2.0 HIGH-END)
-
-Before considering a page complete:
-
-### Design V2.0 Checks
-- [ ] **ALL cards have brutalist shadows** - lime or black, minimum 8px offset
-- [ ] **Hover effects on all interactive elements** - lift, rotate, or glow
-- [ ] **Overlapping sections use negative margins** with z-10 on content
-- [ ] **NO borders between same-color sections** - extend patterns seamlessly
-- [ ] **Sticky header works** - verify overflow-x: clip (not hidden)
-
-### Standard Checks
-- [ ] Responsive tested: 375px, 768px, 1440px, 1920px, 2560px
-- [ ] All font sizes use responsive breakpoints (xl:, 2xl:)
-- [ ] Patterns applied to black sections only
-- [ ] All borders are 4px thick
-- [ ] No rounded corners anywhere
-- [ ] Cards are fully clickable (wrapped in Link)
-- [ ] Images optimized with Next.js Image
-- [ ] Heading hierarchy correct (no skipped levels)
-- [ ] Container uses max-w-screen-2xl
-- [ ] Tested in Chrome, Safari, Firefox
-
-## Documentation Priority
-
-When working on this codebase, consult in this order:
-
-1. **DESIGN_GUIDE.md** - Complete design system, typography, colors, patterns, components
-2. **TECHNICAL_REFERENCE.md** - CSS architecture, animations, performance patterns
-3. **PROJECT_STATUS.md** - Current progress, what's done, what's next
-4. **app/page.tsx** - Reference implementation to copy patterns from
-
-## Common Patterns
-
-**Heading structure:**
 ```jsx
-<p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg xl:text-xl">
-  SECTION LABEL
-</p>
-<h2 className="text-brutalist-h1 text-black">
-  Main Heading
-</h2>
-<div className="h-1 w-32 bg-accent"></div>
+<div className="mx-auto max-w-screen-2xl px-6">
 ```
 
-**Bulletpoint list:**
+### Sectie Padding
+
 ```jsx
-<div className="grid gap-4">
-  {items.map((item, index) => (
-    <div key={index} className="border-l-4 border-accent pl-4">
-      <span className="text-lg font-bold text-white xl:text-xl 2xl:text-2xl">
-        {item}
-      </span>
+// Standaard
+className="py-24 lg:py-32"
+
+// Compact
+className="py-16 lg:py-20"
+
+// Groot
+className="py-28 lg:py-40"
+```
+
+---
+
+## Critical Implementation Rules
+
+### 1. NO Rounded Corners
+
+```css
+--radius: 0px;
+* { border-radius: 0 !important; }
+```
+
+### 2. Sticky Header Fix
+
+```css
+/* globals.css - GEBRUIK overflow-x: clip, NIET hidden! */
+html {
+  overflow-x: clip;  /* hidden breekt sticky positioning */
+}
+```
+
+### 3. Accent Highlight
+
+```jsx
+<span className="relative inline-block">
+  <span className="absolute -inset-1 bg-accent"></span>  {/* -inset-1, niet -inset-2! */}
+  <span className="relative">gehighlight</span>
+</span>
+```
+
+### 4. Background Patterns
+
+```jsx
+// Zwarte secties - diagonaal patroon
+<div className="absolute inset-0 opacity-[0.03]" style={{
+  backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
+}}></div>
+
+// Witte hero secties - grid patroon
+<div className="absolute inset-0 opacity-5" style={{
+  backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
+}}></div>
+
+// Witte content secties - GEEN patroon
+```
+
+---
+
+## Section Templates
+
+### Zwarte Sectie
+
+```jsx
+<section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+  {/* Diagonal pattern */}
+  <div className="absolute inset-0 opacity-[0.03]" style={{
+    backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
+  }}></div>
+
+  <div className="relative mx-auto max-w-screen-2xl px-6">
+    {/* Content */}
+  </div>
+</section>
+```
+
+### Witte Sectie
+
+```jsx
+<section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+  <div className="mx-auto max-w-screen-2xl px-6">
+    {/* Content */}
+  </div>
+</section>
+```
+
+### Accent/Lime Sectie (Final CTA)
+
+```jsx
+<section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+  <div className="mx-auto max-w-screen-2xl px-6">
+    <div className="mx-auto max-w-4xl text-center">
+      {/* Content */}
     </div>
-  ))}
-</div>
+  </div>
+</section>
 ```
 
-**CTA button (Primary):**
+---
+
+## Button Patterns
+
 ```jsx
-<Button asChild size="lg" className="bg-accent text-black border-accent hover:bg-white px-12 py-8 text-lg">
+// Primary (default achtergrond)
+<Button size="lg" asChild className="text-base px-8 py-5">
   <Link href="/contact">
     NEEM CONTACT OP
-    <ArrowRight className="ml-3 h-6 w-6" />
+    <ArrowRight className="ml-2 h-5 w-5" />
   </Link>
 </Button>
-```
 
-**CTA button (Final - lime section):**
-```jsx
-<Button asChild size="lg" className="bg-black text-white border-black hover:bg-white hover:text-black px-12 py-8 text-lg">
+// Op zwarte achtergrond
+<Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
+  <Link href="/contact">NEEM CONTACT OP</Link>
+</Button>
+
+// Final CTA (op lime achtergrond)
+<Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
   <Link href="/contact">
     LET'S GO!!
-    <ArrowRight className="ml-3 h-6 w-6" />
+    <ArrowRight className="ml-2 h-5 w-5" />
   </Link>
 </Button>
 ```
 
-**Service/Feature cards with icons:**
-```jsx
-import { Search, FileText, Link2, Code, MapPin, Megaphone } from 'lucide-react';
+---
 
-<Link href="/url" className="block">
-  <Card className="group h-full border-4 border-black transition-all hover:translate-x-1 hover:translate-y-1">
-    <CardHeader>
-      <div className="mb-4 flex h-20 w-20 items-center justify-center
-                      border-4 border-black bg-accent text-black
-                      group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
-        <Search className="h-10 w-10" />
-      </div>
-      <CardTitle className="text-2xl font-black uppercase">Title</CardTitle>
-    </CardHeader>
-  </Card>
-</Link>
+## Heading Structure
+
+```jsx
+// Label boven kop
+<p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+  SECTION LABEL
+</p>
+
+// Hoofdkop
+<h2 className="mb-8 text-brutalist-h1 text-black">
+  Sectie Titel
+</h2>
+
+// Accent lijn
+<div className="h-1 w-32 bg-accent mb-8"></div>
 ```
 
-## Icons & Visual Elements
+---
 
-**CRITICAL:** Never use emoticons (📆 🏢 📈 💶 etc.). Always use Lucide Icons instead.
+## Hover Effects
 
-**Common icon imports:**
+```jsx
+// Lift effect (stats, testimonials)
+className="transition-all duration-300 hover:-translate-y-1"
+
+// Lift + rotate (logo's, clients)
+className="transition-all duration-300 hover:border-accent hover:-translate-y-2 hover:rotate-1"
+
+// Shadow shift (service cards)
+className="transition-all hover:translate-x-1 hover:translate-y-1"
+
+// Icon rotate in cards
+className="group-hover:bg-black group-hover:text-accent group-hover:rotate-3"
+
+// Grayscale naar kleur
+className="grayscale group-hover:grayscale-0 transition-all duration-300"
+```
+
+---
+
+## Content Rules
+
+### Tekst
+
+- **Geen em-dash (—) of en-dash (–)** - gebruik hyphen (-) voor samengestelde woorden
+- ✅ "360-graden", "data-driven", "on-page"
+- ❌ "analysis — detailed approach"
+
+### Icons
+
+**Gebruik ALTIJD Lucide Icons, NOOIT emoticons!**
+
 ```tsx
 import {
-  Search,      // Analyse & Research
-  FileText,    // Content & Copywriting
+  Search,      // Analyse
+  FileText,    // Content
   Link2,       // Linkbuilding
-  Code,        // Techniek & Development
+  Code,        // Techniek
   MapPin,      // Local SEO
-  Megaphone,   // Google Ads & Marketing
-  ArrowRight,  // Navigation & CTAs
-  BarChart,    // Analytics & Data
-  TrendingUp,  // Groei & Succes
-  Target,      // Strategie & Focus
-  Zap,         // Snelheid & Performance
-  Eye          // Zichtbaarheid & Rankings
+  Megaphone,   // Google Ads
+  ArrowRight,  // CTAs
+  Phone,       // Contact
+  Mail,        // Email
+  Star,        // Reviews
+  Check,       // Checkmarks
 } from 'lucide-react';
 ```
 
 **Icon sizes:**
-- `h-4 w-4` - kleine accenten (16px)
-- `h-6 w-6` - buttons & navigatie (24px)
-- `h-10 w-10` - service cards standaard (40px)
-- `h-12 w-12` - hero sections (48px)
+- `h-4 w-4` - kleine accenten
+- `h-5 w-5` - buttons
+- `h-6 w-6` - navigatie, lijsten
+- `h-7 w-7` - cards
+- `h-8 w-8` - grote cards
 
-## What NOT to Do (V2.1 HIGH-END)
+---
 
-### Typography Don'ts (CRITICAL!)
-- ❌ **Body text without `font-bold`** - looks thin and weak
-- ❌ **Using text-base/text-sm for body text** - too small for brutalist style
-- ❌ **Inconsistent CTA button text** - no "Plan je groeigesprek" variations, use "NEEM CONTACT OP"
-- ❌ Use em/en dashes instead of hyphens
-- ❌ Skip responsive breakpoints for text sizing
+## SEO & Metadata
 
-### Design Don'ts
-- ❌ Add rounded corners (border-radius)
-- ❌ Use colors outside black/white/lime palette
-- ❌ Put patterns on white sections
-- ❌ Make font sizes smaller than documented minimums
-- ❌ Add "MEER INFO" text on cards (whole card should be clickable)
-- ❌ Use JavaScript for animations (CSS only)
-- ❌ **Use emoticons (📆 🏢 📈 💶 etc.) - ALWAYS use Lucide Icons instead**
+### Page Title Regels (KRITISCH)
 
-### V2.1 HIGH-END Don'ts (CRITICAL)
-- ❌ **Create cards without brutalist shadows** - looks flat and cheap
-- ❌ **Use shadows smaller than 8px offset** - minimum is 8px 8px
-- ❌ **Add borders between hero and stats sections** - breaks seamless flow
-- ❌ **Use `overflow-x: hidden`** - breaks sticky positioning (use `clip` instead)
-- ❌ **Forget hover effects** - all interactive elements need lift/rotate/glow
-- ❌ **Skip the z-10 on overlapping content** - won't float properly
-- ❌ **Use thin scrollbar** - 24px width for brutalist consistency
-- ❌ **Mix shadow colors randomly** - lime for featured, black for standard
-- ❌ **Create white gaps with borders** - extend patterns seamlessly
+**Format:** `Dienst/onderwerp | USP of prijs`
 
-## Project Status
+| Regel | Voorbeeld |
+|-------|-----------|
+| Format | "Dienst \| USP/prijs" met pipe als scheidingsteken |
+| Max 50 tekens | "SEO teksten laten schrijven \| Vanaf €70" |
+| Concrete USP | Prijs, score, belofte - iets meetbaars/aantrekkelijks |
+| Nederlandse schrijfwijze | Alleen eerste woord hoofdletter, geen title case |
+| "Vizibly" alleen op | Homepage, Over Ons, Contact |
 
-**Completed:** Homepage, SEO Strategie, Over Ons, Contact, Navigation, Footer, Core Components
-**In Progress:** SEO Copy, Linkbuilding, Local SEO, Cases, Blog (Vizie)
+**Huidige Page Titles (referentie):**
 
-When creating new pages, follow the exact patterns from homepage to maintain consistency.
+| Pagina | Title |
+|--------|-------|
+| Homepage | Vizibly: jouw SEO specialist |
+| SEO Strategie | SEO strategie \| Data-gedreven groeiplan |
+| SEO Copy | SEO teksten laten schrijven \| Vanaf €70 |
+| Linkbuilding | Linkbuilding uitbesteden \| Vanaf €200/maand |
+| Local SEO | Local SEO \| Word #1 in jouw regio |
+| Design & Techniek | Technische SEO \| 100/100 PageSpeed score |
+| Google Ads | Google Ads specialist \| Direct meer leads |
+| Full Service SEO | Full service SEO \| Vanaf €500/maand |
+| Cases | SEO cases \| Bewezen resultaten |
+| Vizie | Vizie \| SEO tips en inzichten |
+| Over Ons | Over Vizibly |
+| Contact | Contact - Vizibly |
 
-### V2.1 Key Rules Summary
-- **ALL body text needs `font-bold`** - no exceptions
-- **Standard body text: `text-xl font-bold xl:text-2xl`**
-- **CTA buttons: "NEEM CONTACT OP"** for primary, **"LET'S GO!!"** for final
-- **Header:** Nav links `text-lg`, button `size="lg"`, gap `gap-10`
-- **Footer:** Headers `text-xl font-black`, links `text-lg font-bold`, spacing `space-y-4`
+**Voorbeelden:**
+
+```
+✅ GOED:
+- "SEO teksten laten schrijven | Vanaf €70" (wervend met prijs)
+- "Linkbuilding uitbesteden | Vanaf €200/maand" (wervend met prijs)
+- "Technische SEO | 100/100 PageSpeed score" (wervend met score)
+- "Local SEO | Word #1 in jouw regio" (wervend met belofte)
+
+❌ FOUT:
+- "SEO Strategie - Vizibly" (geen Vizibly op dienstpagina's, niet wervend)
+- "Linkbuilding diensten" (niet wervend, geen USP)
+- "SEO Teksten Laten Schrijven" (title case)
+```
+
+### Metadata Template
+
+Elke pagina moet bevatten:
+
+```tsx
+// Next.js Metadata export
+export const metadata: Metadata = {
+  title: 'Zoekterm vooraan, max 50 tekens',  // Geen Vizibly behalve homepage/over-ons/contact
+  description: 'Beschrijving...',
+  openGraph: {
+    title: 'Zoekterm vooraan, max 50 tekens',
+    description: 'Beschrijving...',
+    url: 'https://vizibly.nl/pagina/',
+    siteName: 'Vizibly',
+    locale: 'nl_NL',
+    type: 'website',
+  },
+};
+
+// JSON-LD structured data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service", // of Organization, FAQPage, etc.
+  // ...
+};
+
+// In return:
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+/>
+```
+
+---
+
+## Testing Checklist
+
+Voordat een pagina klaar is:
+
+### Design
+- [ ] Alle cards hebben brutalist shadows (8px+ offset)
+- [ ] Hover effects op alle interactieve elementen
+- [ ] Geen afgeronde hoeken
+- [ ] Alle borders 4px dik
+- [ ] Alleen zwart/wit/lime kleuren
+
+### Responsiviteit
+- [ ] Getest op 375px (mobile)
+- [ ] Getest op 768px (tablet)
+- [ ] Getest op 1440px (desktop)
+- [ ] Getest op 1920px+ (large desktop)
+
+### Technisch
+- [ ] Sticky header werkt (overflow-x: clip)
+- [ ] Images gebruiken Next.js Image component
+- [ ] Heading hierarchy correct (geen skipped levels)
+- [ ] Container is max-w-screen-2xl
+
+### Content
+- [ ] Alle tekst heeft font-bold
+- [ ] Responsive text classes (lg:, xl:)
+- [ ] Geen emoticons (alleen Lucide icons)
+- [ ] Geen em/en dashes
+
+---
+
+## Quick Reference
+
+### Meest Gebruikte Classes
+
+```jsx
+// Container
+"mx-auto max-w-screen-2xl px-6"
+
+// Sectie zwart
+"relative border-y-4 border-black bg-black py-24 text-white lg:py-32"
+
+// Sectie wit
+"relative border-b-4 border-black bg-white py-24 lg:py-32"
+
+// Body text
+"text-base font-bold lg:text-lg xl:text-xl"
+
+// Label
+"text-base font-bold uppercase tracking-wider"
+
+// Lime shadow
+style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
+
+// Zwarte shadow
+style={{ boxShadow: '8px 8px 0 0 #000000' }}
+```
+
+### Belangrijke Regels
+
+| Regel | Waarde |
+|-------|--------|
+| Border dikte | 4px |
+| Shadow offset | 8px minimum |
+| Base font-size | 14px |
+| Container max-width | 1536px (screen-2xl) |
+| Accent kleur | #CCFF00 |
+| Radius | 0px (geen rounded corners) |
+
+---
+
+*Laatst bijgewerkt: December 2025*
+*Design System Versie: 2.3*
