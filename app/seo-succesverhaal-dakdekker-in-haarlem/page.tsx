@@ -116,7 +116,7 @@ export default function DakdekkerCase() {
                 </p>
 
                 <p>
-                  Het bedrijf was volledig afhankelijk van Google Ads en gaf maandelijks ruim €600 uit om zichtbaar te zijn. Organische leads kwamen vrijwel niet binnen – alle nieuwe klanten kwamen via betaalde advertenties. Milo had iemand met echte SEO-kennis nodig om zijn website goed op te bouwen, met effectieve teksten en een doordachte strategie.
+                  Het bedrijf was volledig afhankelijk van Google Ads en gaf maandelijks ruim €600 uit om zichtbaar te zijn. Organische leads kwamen vrijwel niet binnen: alle nieuwe klanten kwamen via betaalde advertenties. Milo had iemand met echte SEO-kennis nodig om zijn website goed op te bouwen, met effectieve teksten en een doordachte strategie.
                 </p>
               </div>
 
@@ -176,7 +176,7 @@ export default function DakdekkerCase() {
                 </p>
 
                 <p className="mt-8">
-                  Wat dit project bijzonder maakte, was de uitstekende samenwerking met Milo zelf. Hij nam eigenhandig de <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">linkbuilding</Link> en local SEO voor zijn rekening en wist – mede dankzij zijn perfecte vakmanschap – een indrukwekkende verzameling vijfsterren-reviews op te bouwen. Deze combinatie van technische SEO-expertise en Milo's eigen inzet zorgde voor het uiteindelijke succes.
+                  Wat dit project bijzonder maakte, was de uitstekende samenwerking met Milo zelf. Hij nam eigenhandig de <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">linkbuilding</Link> en local SEO voor zijn rekening en wist, mede dankzij zijn perfecte vakmanschap, een indrukwekkende verzameling vijfsterren-reviews op te bouwen. Deze combinatie van technische SEO-expertise en Milo's eigen inzet zorgde voor het uiteindelijke succes.
                 </p>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function DakdekkerCase() {
                 </ul>
 
                 <p className="mt-8">
-                  Het organische verkeer groeide naar meer dan 3.600 klikken en 463.000 vertoningen per jaar. Op drukke dagen – vooral als het regent – krijgt Milo soms wel 10 leads per dag binnen via de website. Van vrijwel geen organische leads naar tientallen per maand: een transformatie die direct zichtbaar is in de bedrijfsgroei.
+                  Het organische verkeer groeide naar meer dan 3.600 klikken en 463.000 vertoningen per jaar. Op drukke dagen, vooral als het regent, krijgt Milo soms wel 10 leads per dag binnen via de website. Van vrijwel geen organische leads naar tientallen per maand: een transformatie die direct zichtbaar is in de bedrijfsgroei.
                 </p>
               </div>
 

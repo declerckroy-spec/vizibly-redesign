@@ -11,6 +11,50 @@ const nextConfig: NextConfig = {
     ],
   },
   trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: '/seo-specialist-vlissingen',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/seo-specialist-vlissingen/',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/seo-specialist-goes',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/seo-specialist-goes/',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/seo-bureau-terneuzen',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/seo-bureau-terneuzen/',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/SEO-bureau-terneuzen',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+      {
+        source: '/SEO-bureau-terneuzen/',
+        destination: '/seo-specialist-zeeland/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

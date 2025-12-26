@@ -434,17 +434,17 @@ export default function FullServiceSeoPage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/10/Online-bloemenwinkel.jpg.webp',
+                image: '/cases/online-bloemenwinkel.webp',
                 title: 'Online bloemist groeit van 1.700 naar 10.000 bezoekers p/m: +1500% omzet',
                 href: '/online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet'
               },
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/10/Webshop-in-ventilatie-en-elektra.jpg.webp',
+                image: '/cases/webshop-ventilatie.webp',
                 title: '+145% omzet uit organisch verkeer voor technische webshop',
                 href: '/145-omzet-uit-organisch-verkeer-voor-technische-webshop'
               },
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/06/Portretten-Kleur-Tak-oktober-2024-Ekkow-Photography-22.jpg.webp',
+                image: '/cases/portretten-kleur-tak.webp',
                 title: 'SEO voor een makelaarskantoor: steady op #1 voor de belangrijkste zoektermen',
                 href: '/klantinterview-seo-voor-een-makelaarskantoor'
               }

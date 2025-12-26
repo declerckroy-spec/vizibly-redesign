@@ -239,7 +239,7 @@ export default function MakelaarCase() {
                 </p>
 
                 <p>
-                  Dit sluit perfect aan bij wat ik steeds vaker zie in de vastgoedbranche. Nederland telt meer dan 15.000 makelaars, en die concurrentie neemt alleen maar toe. In deze markt is online zichtbaarheid cruciaal – niet alleen voor woningzoekenden, maar ook voor verkopers die jouw expertise nodig hebben.
+                  Dit sluit perfect aan bij wat ik steeds vaker zie in de vastgoedbranche. Nederland telt meer dan 15.000 makelaars, en die concurrentie neemt alleen maar toe. In deze markt is online zichtbaarheid cruciaal: niet alleen voor woningzoekenden, maar ook voor verkopers die jouw expertise nodig hebben.
                 </p>
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function MakelaarCase() {
                 </p>
 
                 <p>
-                  Het verhaal van Tak Makelaardij laat zien dat SEO vooral draait om de juiste strategie, goede teksten en een persoonlijke aanpak. Van een onzichtbare website naar een goed vindbare makelaar – dat is de kracht van slimme copywriting en SEO.
+                  Het verhaal van Tak Makelaardij laat zien dat SEO vooral draait om de juiste strategie, goede teksten en een persoonlijke aanpak. Van een onzichtbare website naar een goed vindbare makelaar. Dat is de kracht van slimme copywriting en SEO.
                 </p>
 
                 <p className="mt-8">

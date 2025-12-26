@@ -1191,9 +1191,9 @@ import Navigation from '@/components/navigation';
 Voorbeeld:
 ```tsx
 // Als je linkt naar /seo-strategie-zo-bouw-je-aan-duurzame-groei-via-google
-// Kijk welke afbeelding daar gebruikt wordt en gebruik die:
-src="https://vizibly.nl/wp-content/uploads/2025/11/SEO-strategie.jpg.webp"
-// of lokaal:
+// Gebruik de lokale afbeelding:
+src="/images/seo-strategie.webp"
+// of voor blog thumbnails:
 src="/blog/seo-strategie.jpg"
 ```
 

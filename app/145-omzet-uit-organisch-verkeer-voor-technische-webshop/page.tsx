@@ -110,7 +110,7 @@ export default function TechnischeWebshopCase() {
                 </p>
 
                 <p>
-                  Het probleem: bezoekers kwamen vooral binnen via content, niet via de pagina's waar verkocht wordt. En de producten met hoge marges – ventilatieboxen, WTW-units – bleven achter. Daar zat de groei.
+                  Het probleem: bezoekers kwamen vooral binnen via content, niet via de pagina's waar verkocht wordt. En de producten met hoge marges, zoals ventilatieboxen en WTW-units, bleven achter. Daar zat de groei.
                 </p>
 
                 <p>

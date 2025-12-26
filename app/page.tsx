@@ -41,7 +41,8 @@ export default function Home() {
         "url": "https://vizibly.nl",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://vizibly.nl/logo.png"
+          "url": "https://vizibly.nl/logo.png",
+          "contentUrl": "/logo.png"
         },
         "description": "SEO bureau gespecialiseerd in zoekmachine optimalisatie voor meer omzet uit Google",
         "address": {
@@ -211,7 +212,7 @@ export default function Home() {
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div className="relative aspect-square overflow-hidden border-4 border-accent">
               <Image
-                src="https://vizibly.nl/wp-content/uploads/2024/02/Foto-Roy.jpg.webp"
+                src="/team/roy.webp"
                 alt="Roy de Clerck"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
@@ -376,7 +377,7 @@ export default function Home() {
 
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-accent">
               <Image
-                src="https://vizibly.nl/wp-content/uploads/2025/06/Vizibly-Sports-1024x771.jpg.webp"
+                src="/team/vizibly-sports.webp"
                 alt="Vizibly Sports"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
@@ -402,17 +403,17 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/10/Online-bloemenwinkel.jpg.webp',
+                image: '/cases/online-bloemenwinkel.webp',
                 title: 'Online bloemist groeit van 1.700 naar 10.000 bezoekers p/m: +1500% omzet',
                 href: '/online-bloemist-groeit-van-1-700-naar-10-000-bezoekers-p-m-1500-omzet'
               },
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/10/Webshop-in-ventilatie-en-elektra.jpg.webp',
+                image: '/cases/webshop-ventilatie.webp',
                 title: '+145% omzet uit organisch verkeer voor technische webshop',
                 href: '/145-omzet-uit-organisch-verkeer-voor-technische-webshop'
               },
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/06/Portretten-Kleur-Tak-oktober-2024-Ekkow-Photography-22.jpg.webp',
+                image: '/cases/portretten-kleur-tak.webp',
                 title: 'SEO voor een makelaarskantoor: steady op #1 voor de belangrijkste zoektermen',
                 href: '/klantinterview-seo-voor-een-makelaarskantoor'
               }
@@ -475,19 +476,19 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/11/SEO-strategie-768x701.jpg.webp',
+                image: '/images/seo-strategie-thumb.webp',
                 title: 'SEO strategie: zo bouw je aan duurzame groei via Google',
                 excerpt: 'Een goede SEO strategie bepaalt het verschil tussen €3.000 en €30.000 organisch verkeer per maand.',
                 href: '/seo-strategie-zo-bouw-je-aan-duurzame-groei-via-google'
               },
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/10/Wordpress-snelheid-768x768.jpg.webp',
+                image: '/blog/wordpress-snelheid.jpg',
                 title: 'Een snelle WordPress website: technische optimalisatie die echt werkt',
                 excerpt: 'Je site laadt in 6 seconden. Je concurrent in 2. Hij staat op plek 2, jij op pagina 3. Waarom?',
                 href: '/een-snelle-wordpress-website-technische-optimalisatie-die-echt-werkt'
               },
               {
-                image: 'https://vizibly.nl/wp-content/uploads/2025/10/SEO-gaat-door-768x768.jpg.webp',
+                image: '/blog/seo-gaat-door.jpg',
                 title: 'Waarom SEO relevanter is dan ooit (ondanks wat je hoort over AI)',
                 excerpt: 'Ik merk het steeds vaker in gesprekken: ondernemers die twijfelen over SEO. Ze lezen artikelen over ChatGPT...',
                 href: '/waarom-seo-relevanter-is-dan-ooit-ondanks-wat-je-hoort-over-ai'

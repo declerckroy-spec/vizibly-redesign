@@ -118,7 +118,7 @@ export default function OverOnsPage() {
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="relative aspect-[3/4] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
               <Image
-                src="https://vizibly.nl/wp-content/uploads/2024/02/Foto-Roy.jpg.webp"
+                src="/team/roy.webp"
                 alt="Roy de Clerck - Vizibly"
                 fill
                 className="object-cover"
@@ -274,7 +274,7 @@ export default function OverOnsPage() {
       <section className="relative border-y-4 border-black">
         <div className="relative aspect-[21/9] overflow-hidden">
           <Image
-            src="https://vizibly.nl/wp-content/uploads/2025/06/Vizibly-Sports.jpg.webp"
+            src="/team/vizibly-sports.webp"
             alt="Vizibly Sports"
             fill
             className="object-cover"

@@ -31,6 +31,47 @@ npm run lint     # Linting
 
 ---
 
+## Afbeeldingen (KRITISCH)
+
+**NOOIT externe URLs gebruiken voor afbeeldingen!** Alle afbeeldingen moeten lokaal in de codebase staan.
+
+### Regels
+
+1. **Geen externe URLs** - Gebruik NOOIT `https://vizibly.nl/wp-content/...` of andere externe URLs
+2. **Altijd lokaal** - Download afbeeldingen en plaats ze in `/public/`
+3. **Georganiseerde structuur** - Gebruik de juiste subfolders
+
+### Folder Structuur
+
+| Folder | Inhoud |
+|--------|--------|
+| `/public/team/` | Teamfoto's (roy.webp, vizibly-sports.webp) |
+| `/public/images/` | Algemene afbeeldingen voor pagina's |
+| `/public/blog/` | Blog artikel afbeeldingen |
+| `/public/cases/` | Case study afbeeldingen |
+| `/public/clients/` | Klant logo's |
+
+### Voorbeeld
+
+```tsx
+// ❌ FOUT - externe URL
+src="https://vizibly.nl/wp-content/uploads/2024/02/Foto-Roy.jpg.webp"
+
+// ✅ GOED - lokaal pad
+src="/team/roy.webp"
+```
+
+### Uitzondering: OpenGraph & Structured Data
+
+OpenGraph images en Schema.org structured data MOETEN absolute URLs gebruiken voor SEO:
+
+```tsx
+// Dit is OK voor openGraph/structured data:
+images: [{ url: 'https://vizibly.nl/blog/seo-strategie.jpg' }]
+```
+
+---
+
 ## Documentation Hierarchy
 
 Raadpleeg documentatie in deze volgorde:

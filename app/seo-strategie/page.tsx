@@ -124,7 +124,7 @@ export default function SEOStrategiePage() {
 
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
               <Image
-                src="https://vizibly.nl/wp-content/uploads/2024/02/a-person-browsing-google-on-imac.jpeg.webp"
+                src="/images/person-browsing-google-imac.webp"
                 alt="Person browsing Google on iMac"
                 fill
                 className="object-cover"
@@ -229,7 +229,7 @@ export default function SEOStrategiePage() {
             <div className="flex flex-col gap-6">
               <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
                 <Image
-                  src="https://vizibly.nl/wp-content/uploads/2024/02/three-white-and-black-scrabble-tiles-on-brown-wooden-surface-270637-1024x680.jpg.webp"
+                  src="/images/scrabble-seo.webp"
                   alt="SEO Scrabble tiles"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
@@ -237,7 +237,7 @@ export default function SEOStrategiePage() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
                 <Image
-                  src="https://vizibly.nl/wp-content/uploads/2024/02/person-using-macbook-pro-with-google-website.jpeg.webp"
+                  src="/images/macbook-google.webp"
                   alt="Person using MacBook Pro with Google"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
