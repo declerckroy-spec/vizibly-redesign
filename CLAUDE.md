@@ -100,6 +100,8 @@ export default function NieuwArtikel() {
 1. **Geen externe URLs** - Gebruik NOOIT `https://vizibly.nl/wp-content/...` of andere externe URLs
 2. **Altijd lokaal** - Download afbeeldingen en plaats ze in `/public/`
 3. **Georganiseerde structuur** - Gebruik de juiste subfolders
+4. **Altijd blur placeholder** - Voorkomt layout shift en zichtbare image pop-in
+5. **Priority voor above-the-fold** - Eerste/featured afbeeldingen krijgen `priority`
 
 ### Folder Structuur
 
@@ -120,6 +122,51 @@ src="https://vizibly.nl/wp-content/uploads/2024/02/Foto-Roy.jpg.webp"
 // ✅ GOED - lokaal pad
 src="/team/roy.webp"
 ```
+
+### Image Component Gebruik (VERPLICHT)
+
+**Elke Image component MOET placeholder en blurDataURL hebben!**
+
+```tsx
+// Standaard blur data URL - kopieer deze voor alle afbeeldingen:
+const BLUR_DATA_URL = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q==";
+```
+
+**Above-the-fold (hero/featured image):**
+
+```tsx
+<Image
+  src="/blog/seo-strategie.jpg"
+  alt="SEO Strategie"
+  fill
+  priority                           // VERPLICHT voor above-the-fold
+  placeholder="blur"                 // VERPLICHT
+  blurDataURL={BLUR_DATA_URL}        // VERPLICHT
+  className="object-cover"
+/>
+```
+
+**Below-the-fold (overige afbeeldingen):**
+
+```tsx
+<Image
+  src="/blog/linkbuilding.jpg"
+  alt="Linkbuilding"
+  fill
+  placeholder="blur"                 // VERPLICHT
+  blurDataURL={BLUR_DATA_URL}        // VERPLICHT
+  className="object-cover"
+/>
+```
+
+### Wanneer priority gebruiken?
+
+| Situatie | priority? |
+|----------|-----------|
+| Hero/featured image bovenaan pagina | Ja |
+| Eerste afbeelding in blog artikel | Ja |
+| Afbeeldingen in cards/grids lager op pagina | Nee |
+| Afbeeldingen in footer/CTA sectie | Nee |
 
 ### Uitzondering: OpenGraph & Structured Data
 

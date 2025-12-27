@@ -267,11 +267,14 @@ export default async function ViziePage({
                         {/* Image */}
                         <div className="relative aspect-video md:aspect-square md:col-span-2 overflow-hidden border-b-4 md:border-b-0 md:border-r-4 border-black">
                           <Image
-                            src={article.image}
+                src={article.image}
                             alt={article.title}
                             fill
                             className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
-                          />
+                priority
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
+              />
                         </div>
 
                         {/* Content */}

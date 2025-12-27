@@ -137,13 +137,15 @@ export default function GeoSeoAiPage() {
                 style={{ boxShadow: "12px 12px 0 0 #CCFF00" }}
               >
                 <Image
-                  src="/blog/geo-seo-ai.jpg"
+                src="/blog/geo-seo-ai.jpg"
                   alt="GEO - Generative Engine Optimization voor AI"
                   width={800}
                   height={1200}
                   className="h-auto w-full"
                   priority
-                />
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
+              />
               </div>
             </div>
           </div>
@@ -551,12 +553,14 @@ export default function GeoSeoAiPage() {
             <div>
               <Link href="/" className="mb-6 inline-block">
                 <Image
-                  src="/logo-brutalist-white.svg"
+                src="/logo-brutalist-white.svg"
                   alt="Vizibly"
                   width={120}
                   height={40}
                   className="h-10 w-auto"
-                />
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
+              />
               </Link>
               <p className="mb-6 text-base font-bold text-white/70">
                 SEO bureau met een missie: jouw bedrijf zichtbaar maken in Google.
