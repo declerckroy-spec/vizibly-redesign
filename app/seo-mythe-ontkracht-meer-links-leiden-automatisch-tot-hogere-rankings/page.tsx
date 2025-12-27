@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowLeft, Phone, Mail, MapPin, Clock, ExternalLink, User } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { ArrowLeft, Phone, Mail, MapPin, Clock, User } from "lucide-react";
 import { Navigation } from "@/components/navigation";
+import { FinalCTA } from "@/components/final-cta";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "SEO mythe ontkracht: meer links = hogere rankings?",
@@ -217,7 +217,7 @@ export default function SeoMytheLinkbuildingPage() {
                 op de kwaliteit en kwantiteit van inkomende links. Maar de nadruk ligt op <strong>kwaliteit</strong>.
                 Een link van de BBC is meer waard dan 100 links van spammy directories.
               </p>
-              <div className="mt-6 border-4 border-black bg-accent/10 p-6" style={{ boxShadow: "4px 4px 0 0 #000000" }}>
+              <div className="mt-6 border-4 border-black bg-accent/10 p-6" style={{ boxShadow: "6px 6px 0 0 #000000" }}>
                 <p className="text-base font-bold text-black lg:text-lg">
                   <strong>Feitelijk bewijs:</strong> Een case study van On The Map Marketing toont aan
                   dat hun artikel over &quot;local SEO for law firms&quot; op de 7e positie rankt, ondanks dat
@@ -295,7 +295,7 @@ export default function SeoMytheLinkbuildingPage() {
                 Recent onderzoek toont aan waarom kwaliteit over kwantiteit gaat:
               </p>
 
-              <div className="mt-6 border-4 border-black p-6" style={{ boxShadow: "4px 4px 0 0 #CCFF00" }}>
+              <div className="mt-6 border-4 border-black p-6" style={{ boxShadow: "6px 6px 0 0 #CCFF00" }}>
                 <p className="mb-4 text-base font-bold text-black lg:text-lg">
                   <strong>Backlinko studie resultaten:</strong>
                 </p>
@@ -519,81 +519,13 @@ export default function SeoMytheLinkbuildingPage() {
       </section>
 
       {/* Related Articles */}
-      
-
+      <RelatedArticles articles={relatedArticles} />
 
       {/* Final CTA Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-brutalist-h1 mb-6 text-black">
-              Klaar om je{" "}
-              <span className="relative inline-block">
-                <span className="absolute -inset-1 bg-black"></span>
-                <span className="relative text-accent">linkbuilding</span>
-              </span>{" "}
-              naar een hoger niveau te tillen?
-            </h2>
-            <p className="mb-10 text-lg font-bold text-black/80 lg:text-xl">
-              Geen spam, geen bulklinks. Alleen kwalitatieve backlinks die echt
-              bijdragen aan je rankings en autoriteit.
-            </p>
-            <Button
-              size="lg"
-              asChild
-              className="border-black bg-black px-8 py-5 text-base text-white hover:bg-white hover:text-black"
-            >
-              <Link href="/contact">
-                VRAAG EEN LINKPROFIEL ANALYSE AAN
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-      {/* Related Articles Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 lg:py-32">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <h2 className="mb-12 text-brutalist-h2 text-white">
-            Lees meer
-          </h2>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedArticles.map((related, index) => (
-              <Link key={index} href={`/${related.slug}`} className="group block">
-                <Card className="overflow-hidden border-4 border-white transition-all hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
-                  <div className="relative aspect-video overflow-hidden border-b-4 border-black bg-black">
-                    <Image
-                      src={related.image}
-                      alt={related.title}
-                      fill
-                      className="object-cover transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <CardHeader className="bg-white">
-                    <CardTitle className="line-clamp-2 text-lg font-black uppercase leading-tight lg:text-xl">
-                      {related.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="bg-white">
-                    <p className="mb-4 text-sm font-bold text-black/70 line-clamp-2">
-                      {related.excerpt}
-                    </p>
-                    <span className="inline-flex items-center border-b-2 border-black pb-1 text-sm font-bold uppercase transition-colors group-hover:bg-black group-hover:text-white px-2 py-1">
-                      LEES ARTIKEL
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FinalCTA
+        heading="Klaar om te groeien?"
+        description="Geen spam, geen bulklinks. Alleen kwalitatieve backlinks die echt bijdragen aan je rankings en autoriteit."
+      />
 
 
 

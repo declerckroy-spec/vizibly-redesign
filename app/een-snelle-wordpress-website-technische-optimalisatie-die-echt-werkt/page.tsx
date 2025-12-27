@@ -1,6 +1,8 @@
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { FinalCTA } from '@/components/final-cta';
+import { RelatedArticles } from '@/components/related-articles';
 import { ArrowRight, ArrowLeft, Clock, User } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -110,7 +112,7 @@ export default function WordPressSnelheidPage() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
+            <div className="relative aspect-[4/3] overflow-hidden border-4 border-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
                 src="/blog/wordpress-snelheid.jpg"
                 alt="WordPress snelheid optimaliseren"
@@ -181,7 +183,7 @@ export default function WordPressSnelheidPage() {
           </p>
 
           {/* Inline image */}
-          <div className="mb-12 relative aspect-video overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+          <div className="mb-12 relative aspect-video overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
             <Image
               src="/blog/supersnelle-wordpress.jpg"
               alt="Ultrasnelle WordPress site"
@@ -344,7 +346,7 @@ export default function WordPressSnelheidPage() {
           </p>
 
           {/* CTA Box */}
-          <div className="mb-12 border-4 border-black bg-black p-8 lg:p-10 text-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
+          <div className="mb-12 border-4 border-black bg-black p-8 lg:p-10 text-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
             <h2 className="mb-6 text-brutalist-h3 text-white">
               Wil je weten waar je site vertraagt?
             </h2>
@@ -364,135 +366,14 @@ export default function WordPressSnelheidPage() {
         </div>
       </article>
 
-      {/* Related Articles Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 lg:py-32">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
+      <RelatedArticles articles={relatedArticles} />
 
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <h2 className="mb-12 text-brutalist-h2 text-white">
-            Lees meer
-          </h2>
+      <FinalCTA
+        heading="Klaar om te groeien?"
+        description="Neem contact op voor een vrijblijvend gesprek over jouw SEO-mogelijkheden."
+      />
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedArticles.map((related, index) => (
-              <Link key={index} href={`/${related.slug}`} className="group block">
-                <Card className="overflow-hidden border-4 border-white transition-all hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
-                  <div className="relative aspect-video overflow-hidden border-b-4 border-black bg-black">
-                    <Image
-                      src={related.image}
-                      alt={related.title}
-                      fill
-                      className="object-cover transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <CardHeader className="bg-white">
-                    <CardTitle className="line-clamp-2 text-lg font-black uppercase leading-tight lg:text-xl">
-                      {related.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="bg-white">
-                    <p className="mb-4 text-sm font-bold text-black/70 line-clamp-2">
-                      {related.excerpt}
-                    </p>
-                    <span className="inline-flex items-center border-b-2 border-black pb-1 text-sm font-bold uppercase transition-colors group-hover:bg-black group-hover:text-white px-2 py-1">
-                      LEES ARTIKEL
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-8 text-brutalist-h1 text-black">
-              Klaar om te groeien?
-            </h2>
-            <p className="mb-12 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-              Neem contact op voor een vrijblijvend gesprek over jouw SEO-mogelijkheden.
-            </p>
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                NEEM CONTACT OP
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/full-service-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Full Service SEO</Link></li>
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-accent hover:text-white transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

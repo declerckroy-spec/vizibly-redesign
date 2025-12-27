@@ -1,7 +1,9 @@
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
 import { TestimonialsSection } from '@/components/testimonials-section';
+import { FinalCTA } from '@/components/final-cta';
+import { FAQSection } from '@/components/faq-section';
 import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { ArrowRight, FileText, Search, Target, PenTool, BarChart3, Check, Sparkles, Code, MessageSquare, ShoppingBag, Building2, Leaf, Briefcase, Link2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -134,7 +136,7 @@ export default function SeoCopyPage() {
             </div>
 
             <div className="relative">
-              <div className="relative border-4 border-black bg-accent p-2" style={{ boxShadow: '12px 12px 0 0 #000000' }}>
+              <div className="relative border-4 border-black bg-accent p-2" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
                 <Image
                   src="/Bestaande afbeeldingen/three-white-and-black-scrabble-tiles-on-brown-wooden.jpeg"
                   alt="SEO teksten laten schrijven"
@@ -210,7 +212,7 @@ export default function SeoCopyPage() {
               <div
                 key={index}
                 className="group border-4 border-black bg-white p-8 transition-all hover:translate-x-1 hover:translate-y-1"
-                style={{ boxShadow: '8px 8px 0 0 #000000' }}
+                style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
                   <item.icon className="h-7 w-7" />
@@ -250,7 +252,7 @@ export default function SeoCopyPage() {
               <div
                 key={index}
                 className="border-4 border-black bg-white p-6 transition-all hover:-translate-y-1"
-                style={{ boxShadow: '6px 6px 0 0 #000000' }}
+                style={{ boxShadow: '6px 6px 0 0 #000000, 0 15px 40px rgba(0, 0, 0, 0.2)' }}
               >
                 <span className="mb-4 inline-block border-4 border-black bg-black px-3 py-1 text-lg font-black text-accent">
                   {item.step}
@@ -295,7 +297,7 @@ export default function SeoCopyPage() {
               <div
                 key={index}
                 className="border-4 border-black bg-white p-8"
-                style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
+                style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black">
                   <item.icon className="h-7 w-7" />
@@ -372,7 +374,7 @@ export default function SeoCopyPage() {
           </div>
 
           <div className="grid gap-8 lg:grid-cols-3">
-            <div className="border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+            <div className="border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
               <div className="mb-6 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black">
                 <Target className="h-7 w-7" />
               </div>
@@ -400,7 +402,7 @@ export default function SeoCopyPage() {
               </ul>
             </div>
 
-            <div className="border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+            <div className="border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
               <div className="mb-6 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black">
                 <Link2 className="h-7 w-7" />
               </div>
@@ -413,7 +415,7 @@ export default function SeoCopyPage() {
               </p>
             </div>
 
-            <div className="border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+            <div className="border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
               <div className="mb-6 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black">
                 <FileText className="h-7 w-7" />
               </div>
@@ -478,7 +480,7 @@ export default function SeoCopyPage() {
               <div
                 key={index}
                 className="border-4 border-black bg-white p-6 transition-all hover:-translate-y-1"
-                style={{ boxShadow: '6px 6px 0 0 #000000' }}
+                style={{ boxShadow: '6px 6px 0 0 #000000, 0 15px 40px rgba(0, 0, 0, 0.2)' }}
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center border-4 border-black bg-accent text-black">
                   <item.icon className="h-6 w-6" />
@@ -493,7 +495,7 @@ export default function SeoCopyPage() {
             ))}
           </div>
 
-          <div className="mt-12 border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+          <div className="mt-12 border-4 border-black bg-white p-8" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
             <p className="text-base font-bold text-black/80 lg:text-lg">
               <strong>Door grondig vooronderzoek</strong> en nauwe samenwerking zorgen we dat de content perfect aansluit bij jouw vakgebied. We duiken in je branche, leren de terminologie en schrijven alsof we er zelf werken.
             </p>
@@ -519,7 +521,7 @@ export default function SeoCopyPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="group border-4 border-black bg-white p-6 transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+              <div className="group border-4 border-black bg-white p-6 transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 items-center justify-center border-4 border-black bg-accent text-black flex-shrink-0">
                     <MessageSquare className="h-6 w-6" />
@@ -531,7 +533,7 @@ export default function SeoCopyPage() {
                 </div>
               </div>
 
-              <div className="group border-4 border-black bg-white p-6 transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+              <div className="group border-4 border-black bg-white p-6 transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 items-center justify-center border-4 border-black bg-accent text-black flex-shrink-0">
                     <Sparkles className="h-6 w-6" />
@@ -543,7 +545,7 @@ export default function SeoCopyPage() {
                 </div>
               </div>
 
-              <div className="group border-4 border-black bg-white p-6 transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+              <div className="group border-4 border-black bg-white p-6 transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 items-center justify-center border-4 border-black bg-accent text-black flex-shrink-0">
                     <PenTool className="h-6 w-6" />
@@ -687,142 +689,21 @@ export default function SeoCopyPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-            <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
-                VEELGESTELDE VRAGEN
-              </p>
-              <h2 className="mb-8 text-brutalist-h1 text-black">
-                Wat je misschien nog wil weten
-              </h2>
-              <div className="h-1 w-32 bg-accent mb-8"></div>
-              <p className="text-base font-bold text-black/70 lg:text-lg">
-                Heb je een vraag die hier niet bij staat? Neem gerust contact met ons op.
-              </p>
-            </div>
-
-            <div>
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqData.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border-4 border-black bg-white px-6"
-                    style={{ boxShadow: '4px 4px 0 0 #000000' }}
-                  >
-                    <AccordionTrigger className="text-left text-base font-black uppercase hover:no-underline py-6">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-base font-bold text-black/70 pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQSection items={faqData} />
 
       {/* Testimonials */}
       <TestimonialsSection />
 
-      {/* Final CTA Section - Black background after lime testimonials */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
-              KLAAR OM TE BEGINNEN?
-            </p>
+      {/* Final CTA Section */}
+      <FinalCTA
+        variant="dark"
+        label="KLAAR OM TE BEGINNEN?"
+        heading="Laat teksten schrijven die scoren"
+        description="Klaar om te investeren in content die daadwerkelijk resultaat oplevert? Neem contact op voor een vrijblijvende kennismaking."
+        buttonText="LET'S GO!!"
+      />
 
-            <h2 className="mb-8 text-brutalist-h1 text-white">
-              Laat teksten schrijven die scoren
-            </h2>
-
-            <p className="mb-12 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
-              Klaar om te investeren in content die daadwerkelijk resultaat oplevert? Neem contact op voor een vrijblijvende kennismaking.
-            </p>
-
-            <Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                LET'S GO!!
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-accent hover:text-white transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </>
   );
 }

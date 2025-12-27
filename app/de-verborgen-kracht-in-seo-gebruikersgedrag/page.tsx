@@ -1,6 +1,8 @@
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { FinalCTA } from '@/components/final-cta';
+import { RelatedArticles } from '@/components/related-articles';
 import { ArrowRight, ArrowLeft, Clock, User } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -106,7 +108,7 @@ export default function GebruikersgedragSEOPage() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
+            <div className="relative aspect-[4/3] overflow-hidden border-4 border-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
                 src="/blog/gebruikersgedrag-seo.jpg"
                 alt="Gebruikersgedrag als SEO factor"
@@ -220,126 +222,14 @@ export default function GebruikersgedragSEOPage() {
         </div>
       </article>
 
-      {/* Related Articles */}
-      <section className="relative border-b-4 border-black bg-black py-24 lg:py-32">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
+      <RelatedArticles articles={relatedArticles} />
 
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <h2 className="mb-12 text-brutalist-h2 text-white">Lees meer</h2>
+      <FinalCTA
+        heading="Klaar om te groeien?"
+        description="Focus op de ervaring van je bezoekers en zie je rankings verbeteren. Wil je weten waar de kansen liggen?"
+      />
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedArticles.map((related, index) => (
-              <Link key={index} href={`/${related.slug}`} className="group block">
-                <Card className="overflow-hidden border-4 border-white transition-all hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
-                  <div className="relative aspect-video overflow-hidden border-b-4 border-black bg-black">
-                    <Image
-                      src={related.image}
-                      alt={related.title}
-                      fill
-                      className="object-cover transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <CardHeader className="bg-white">
-                    <CardTitle className="line-clamp-2 text-lg font-black uppercase leading-tight lg:text-xl">
-                      {related.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="bg-white">
-                    <p className="mb-4 text-sm font-bold text-black/70 line-clamp-2">{related.excerpt}</p>
-                    <span className="inline-flex items-center border-b-2 border-black pb-1 text-sm font-bold uppercase transition-colors group-hover:bg-black group-hover:text-white px-2 py-1">
-                      LEES ARTIKEL
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-8 text-brutalist-h1 text-black">
-              Klaar om te groeien?
-            </h2>
-            <p className="mb-12 text-lg font-bold text-black/80 lg:text-xl">
-              Focus op de ervaring van je bezoekers en zie je rankings verbeteren. Wil je weten waar de kansen liggen?
-            </p>
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                NEEM CONTACT OP
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white lg:py-24">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="grid gap-12 lg:grid-cols-4">
-            <div className="lg:col-span-1">
-              <Link href="/" className="mb-6 inline-block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/70">
-                SEO bureau voor bedrijven die willen groeien via Google.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-3">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/70 hover:text-accent">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/70 hover:text-accent">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/70 hover:text-accent">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/70 hover:text-accent">Local SEO</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Vizibly</h4>
-              <ul className="space-y-3">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/70 hover:text-accent">Over ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/70 hover:text-accent">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/70 hover:text-accent">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/70 hover:text-accent">Contact</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-3">
-                <li className="text-base font-bold text-white/70">Roy de Clerck</li>
-                <li><a href="tel:+31628206410" className="text-base font-bold text-white/70 hover:text-accent">06 282 064 10</a></li>
-                <li><a href="mailto:roy@vizibly.nl" className="text-base font-bold text-white/70 hover:text-accent">roy@vizibly.nl</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t-4 border-white/20 pt-8 lg:flex-row">
-            <p className="text-base font-bold text-white/50">
-              © {new Date().getFullYear()} Vizibly. Alle rechten voorbehouden.
-            </p>
-            <div className="flex gap-6">
-              <Link href="/privacy" className="text-base font-bold text-white/50 hover:text-accent">Privacy</Link>
-              <Link href="/voorwaarden" className="text-base font-bold text-white/50 hover:text-accent">Voorwaarden</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

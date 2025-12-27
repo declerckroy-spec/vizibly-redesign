@@ -1,9 +1,8 @@
 import { Navigation } from '@/components/navigation';
-import { Button } from '@/components/ui/button';
+import { Footer } from '@/components/footer';
+import { FinalCTA } from '@/components/final-cta';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -491,90 +490,12 @@ export default function FAQPage() {
       ))}
 
       {/* CTA Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-8 text-brutalist-h1 text-black">
-              Heb je een vraag die hier niet staat?
-            </h2>
-            <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-              Neem contact op voor een vrijblijvende kennismaking. We beantwoorden graag al je vragen over SEO en hoe we jouw bedrijf kunnen helpen groeien.
-            </p>
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                NEEM CONTACT OP
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <FinalCTA
+        heading="Heb je een vraag die hier niet staat?"
+        description="Neem contact op voor een vrijblijvende kennismaking. We beantwoorden graag al je vragen over SEO en hoe we jouw bedrijf kunnen helpen groeien."
+      />
 
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </>
   );
 }

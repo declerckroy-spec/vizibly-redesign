@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
 import { TestimonialsSection } from '@/components/testimonials-section';
-import { CasesStats } from '@/components/cases-stats';
+import { CasesStats } from '@/components/stats-section';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
@@ -148,7 +149,7 @@ export default function CasesPage() {
                 className={`grid gap-8 lg:grid-cols-2 lg:gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}
               >
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <div className="relative border-4 border-black bg-accent p-2" style={{ boxShadow: '12px 12px 0 0 #000000' }}>
+                  <div className="relative border-4 border-black bg-accent p-2" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
                     <Image
                       src={caseItem.image}
                       alt={`${caseItem.client} case study`}
@@ -242,71 +243,7 @@ export default function CasesPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-accent hover:text-white transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </>
   );
 }

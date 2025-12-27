@@ -58,7 +58,7 @@ export function CTAWithImage() {
           </div>
 
           {/* Foto Sectie */}
-          <div className="relative aspect-square lg:aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #000000' }}>
+          <div className="relative aspect-square lg:aspect-[4/3] overflow-hidden border-4 border-black transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
             <Image
               src="/Bestaande afbeeldingen/seo-audit-white-blocks-on-brown-wooden.jpeg"
               alt="SEO Analyse - Ontdek waar je klanten kwijtraakt"

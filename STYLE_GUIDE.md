@@ -217,41 +217,58 @@ className="border-y-4 border-black"
 className="border-b-4 border-black"
 ```
 
-### Brutalist Shadows
+### Brutalist Shadows (Premium V2.3)
 
-Shadows worden inline toegepast met `style`:
+Shadows bestaan uit twee lagen: brutalist offset + zachte ambient glow.
+
+**CSS tokens (globals.css):**
+```css
+--shadow-black: 8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25);
+--shadow-black-lg: 12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3);
+--shadow-lime: 8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35);
+--shadow-lime-lg: 12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4);
+```
+
+**Inline toepassing:**
 
 ```jsx
-// Lime shadow - voor featured content, stats, logo's
-style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
+// Premium lime shadow - voor featured content, stats, logo's
+style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}
 
-// Zwarte shadow - voor service cards, standaard cards
-style={{ boxShadow: '8px 8px 0 0 #000000' }}
+// Premium zwarte shadow - voor service cards, standaard cards
+style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}
 
-// Grote zwarte shadow - voor featured images, case cards
-style={{ boxShadow: '12px 12px 0 0 #000000' }}
+// Premium grote zwarte shadow - voor featured images, case cards
+style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}
 
-// Grote lime shadow - voor hero images
-style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}
+// Premium grote lime shadow - voor hero images
+style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}
 
 // Kleinere shadow - voor werkwijze items
-style={{ boxShadow: '6px 6px 0 0 #CCFF00' }}
+style={{ boxShadow: '6px 6px 0 0 #CCFF00, 0 15px 40px rgba(204, 255, 0, 0.3)' }}
+```
+
+### Premium Transitions
+
+Alle hover-effecten gebruiken de premium transition:
+```jsx
+className="transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
 ```
 
 ### Wanneer welke shadow?
 
 | Element | Shadow |
 |---------|--------|
-| Stats cards | `8px 8px 0 0 #CCFF00` |
-| Client/logo cards | `8px 8px 0 0 #CCFF00` |
-| Blog cards | `8px 8px 0 0 #CCFF00` |
-| Service cards | `8px 8px 0 0 #000000` |
-| Case cards | `12px 12px 0 0 #000000` |
-| Hero/featured images | `12px 12px 0 0 #CCFF00` of `#000000` |
-| Contact cards | `8px 8px 0 0 #CCFF00` |
-| Info boxes | `8px 8px 0 0 #000000` |
-| Werkwijze items | `6px 6px 0 0 #CCFF00` |
-| Testimonial cards | `8px 8px 0 0 #000000` |
+| Stats cards | `8px 8px ... #CCFF00` + lime glow |
+| Client/logo cards | `8px 8px ... #CCFF00` + lime glow |
+| Blog cards | `8px 8px ... #CCFF00` + lime glow |
+| Service cards | `8px 8px ... #000000` + black glow |
+| Case cards | `12px 12px ... #000000` + black glow |
+| Hero/featured images | `12px 12px ... #CCFF00` + lime glow |
+| Contact cards | `8px 8px ... #CCFF00` + lime glow |
+| Info boxes | `8px 8px ... #000000` + black glow |
+| Werkwijze items | `6px 6px ... #CCFF00` + lime glow |
+| Testimonial cards | `8px 8px ... #000000` + black glow |
 
 ---
 

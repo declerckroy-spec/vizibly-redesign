@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation';
-import { StatsOnly } from '@/components/stats-only';
-import { ClientsCarouselStandalone } from '@/components/clients-carousel-standalone';
+import { Footer } from '@/components/footer';
+import { StatsOnly } from '@/components/stats-section';
+import { ClientsCarouselStandalone } from '@/components/clients-section';
 import { TestimonialsSection } from '@/components/testimonials-section';
 import { CTAWithImage } from '@/components/cta-with-image';
 import { Button } from '@/components/ui/button';
@@ -215,7 +216,7 @@ export default function Home() {
                 src="/team/roy.webp"
                 alt="Roy de Clerck"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -310,7 +311,7 @@ export default function Home() {
               }
             ].map((service, index) => (
               <Link key={index} href={service.href} className={`block ${service.span}`}>
-                <Card className="group relative h-full overflow-hidden border-4 border-black bg-white text-black transition-all hover:translate-x-1 hover:translate-y-1 cursor-pointer" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+                <Card className="group relative h-full overflow-hidden border-4 border-black bg-white text-black transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-x-1 hover:translate-y-1 cursor-pointer" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
                   <CardHeader>
                     <div className="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
                       <service.icon className="h-7 w-7" />
@@ -380,7 +381,7 @@ export default function Home() {
                 src="/team/vizibly-sports.webp"
                 alt="Vizibly Sports"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
               />
             </div>
           </div>
@@ -419,7 +420,7 @@ export default function Home() {
               }
             ].map((caseStudy, index) => (
               <Link key={index} href={caseStudy.href} className="group block">
-                <Card className="overflow-hidden border-4 border-black transition-all hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #000000' }}>
+                <Card className="overflow-hidden border-4 border-black transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
                   <div className="relative aspect-video overflow-hidden border-b-4 border-black bg-black">
                     <Image
                       src={caseStudy.image}
@@ -495,7 +496,7 @@ export default function Home() {
               }
             ].map((article, index) => (
               <Link key={index} href={article.href} className="group block">
-                <Card className="h-full overflow-hidden border-4 border-accent bg-white text-black transition-all hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #ccff00' }}>
+                <Card className="h-full overflow-hidden border-4 border-accent bg-white text-black transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
                   <div className="relative aspect-video overflow-hidden border-b-4 border-accent">
                     <Image
                       src={article.image}
@@ -555,72 +556,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        {/* Subtle diagonal pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </>
   );
 }

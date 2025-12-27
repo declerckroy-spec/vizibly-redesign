@@ -31,6 +31,66 @@ npm run lint     # Linting
 
 ---
 
+## Layout Templates (KRITISCH - Altijd Gebruiken!)
+
+Bij het maken van nieuwe pagina's **MOET** je de juiste layout template gebruiken. Dit zorgt voor consistentie en bespaart veel code.
+
+### Welk Template Wanneer?
+
+| Pagina Type | Template | Wanneer Gebruiken |
+|-------------|----------|-------------------|
+| Blog artikel | `BlogArticleLayout` | Nieuwe artikelen in `/vizie`, SEO tips, how-to's |
+| Case study | `CaseStudyLayout` | Klant succesverhalen, resultaten, interviews |
+| Dienst pagina | `ServicePageLayout` | Nieuwe diensten zoals SEO, Linkbuilding, etc. |
+
+### Quick Reference
+
+```tsx
+// Blog artikel
+import { BlogArticleLayout, ArticleH2, ArticleParagraph } from '@/components/layouts';
+
+// Case study
+import { CaseStudyLayout, CaseSection, CaseStatsList } from '@/components/layouts';
+
+// Dienst pagina
+import { ServicePageLayout, ServiceWhatIsSection, ServiceWhySection } from '@/components/layouts';
+```
+
+### Volledige Documentatie
+
+Zie `TEMPLATES.md` voor uitgebreide voorbeelden en alle beschikbare props/helpers.
+
+### Voorbeeld: Nieuw Blog Artikel
+
+```tsx
+// app/nieuw-artikel/page.tsx
+import type { Metadata } from 'next';
+import { BlogArticleLayout, ArticleIntro, ArticleH2, ArticleParagraph } from '@/components/layouts';
+
+export const metadata: Metadata = {
+  title: 'Artikel Titel | Vizibly',
+  description: 'Beschrijving...',
+};
+
+export default function NieuwArtikel() {
+  return (
+    <BlogArticleLayout
+      title="De Volledige Titel"
+      category="SEO BASICS"
+      readingTime="5 min leestijd"
+      featuredImage="/blog/image.jpg"
+      featuredImageAlt="Alt tekst"
+    >
+      <ArticleIntro>Intro tekst...</ArticleIntro>
+      <ArticleH2>Eerste Sectie</ArticleH2>
+      <ArticleParagraph>Content...</ArticleParagraph>
+    </BlogArticleLayout>
+  );
+}
+```
+
+---
+
 ## Afbeeldingen (KRITISCH)
 
 **NOOIT externe URLs gebruiken voor afbeeldingen!** Alle afbeeldingen moeten lokaal in de codebase staan.

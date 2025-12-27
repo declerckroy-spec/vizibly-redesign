@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowLeft, Phone, Mail, MapPin, Clock, Check, User } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { ArrowLeft, Phone, Mail, MapPin, Clock, Check, User } from "lucide-react";
 import { Navigation } from "@/components/navigation";
+import { FinalCTA } from "@/components/final-cta";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "12 bewezen manieren om als fysio zichtbaar te worden in Google",
@@ -170,7 +170,7 @@ export default function FysiotherapeutSeoPage() {
             </div>
 
             {/* CTA Box */}
-            <div className="mb-12 border-4 border-black bg-accent/10 p-6" style={{ boxShadow: "4px 4px 0 0 #000000" }}>
+            <div className="mb-12 border-4 border-black bg-accent/10 p-6" style={{ boxShadow: "6px 6px 0 0 #000000" }}>
               <p className="text-base font-bold italic text-black lg:text-lg">
                 Geen tijd om alles zelf uit te zoeken? Bij{" "}
                 <Link
@@ -221,7 +221,7 @@ export default function FysiotherapeutSeoPage() {
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 border-4 border-black bg-black p-4" style={{ boxShadow: "4px 4px 0 0 #CCFF00" }}>
+              <div className="mt-6 border-4 border-black bg-black p-4" style={{ boxShadow: "6px 6px 0 0 #CCFF00" }}>
                 <p className="text-base font-bold text-white lg:text-lg">
                   <strong className="text-accent">Pro tip:</strong> Gebruik lokale zoekwoorden in je
                   bedrijfsbeschrijving zoals &quot;fysiotherapie [plaatsnaam]&quot; of &quot;rugklachten specialist [stad]&quot;.
@@ -387,7 +387,7 @@ export default function FysiotherapeutSeoPage() {
                 hoger te scoren in Google. <strong>72% van marketeers zegt dat content creatie de
                 meest effectieve SEO-tactiek is</strong>.
               </p>
-              <div className="mt-6 border-4 border-black p-6" style={{ boxShadow: "4px 4px 0 0 #CCFF00" }}>
+              <div className="mt-6 border-4 border-black p-6" style={{ boxShadow: "6px 6px 0 0 #CCFF00" }}>
                 <p className="mb-4 text-base font-bold text-black lg:text-lg">
                   <strong>Effectieve content-ideeen:</strong>
                 </p>
@@ -470,7 +470,7 @@ export default function FysiotherapeutSeoPage() {
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 border-4 border-black bg-black p-4" style={{ boxShadow: "4px 4px 0 0 #CCFF00" }}>
+              <div className="mt-6 border-4 border-black bg-black p-4" style={{ boxShadow: "6px 6px 0 0 #CCFF00" }}>
                 <p className="mb-2 text-base font-bold text-accent lg:text-lg">
                   Zoekwoorden waar je op moet focussen:
                 </p>
@@ -581,7 +581,7 @@ export default function FysiotherapeutSeoPage() {
                 </Link>{" "}
                 direct zichtbaarheid geven.
               </p>
-              <div className="mt-6 border-4 border-black p-6" style={{ boxShadow: "4px 4px 0 0 #CCFF00" }}>
+              <div className="mt-6 border-4 border-black p-6" style={{ boxShadow: "6px 6px 0 0 #CCFF00" }}>
                 <p className="mb-4 text-base font-bold text-black lg:text-lg">
                   <strong>Effectieve advertentiewoorden:</strong>
                 </p>
@@ -683,7 +683,7 @@ export default function FysiotherapeutSeoPage() {
                 Wat je niet meet, kun je niet verbeteren. Houd deze metrics bij:
               </p>
               <div className="mt-6 grid gap-6 md:grid-cols-2">
-                <div className="border-4 border-black p-4" style={{ boxShadow: "4px 4px 0 0 #CCFF00" }}>
+                <div className="border-4 border-black p-4" style={{ boxShadow: "6px 6px 0 0 #CCFF00" }}>
                   <p className="mb-3 text-base font-bold text-black lg:text-lg">
                     <strong>Belangrijke KPI&apos;s:</strong>
                   </p>
@@ -695,7 +695,7 @@ export default function FysiotherapeutSeoPage() {
                     <li>Conversieratio van website naar afspraak</li>
                   </ul>
                 </div>
-                <div className="border-4 border-black p-4" style={{ boxShadow: "4px 4px 0 0 #000000" }}>
+                <div className="border-4 border-black p-4" style={{ boxShadow: "6px 6px 0 0 #000000" }}>
                   <p className="mb-3 text-base font-bold text-black lg:text-lg">
                     <strong>Tools die helpen:</strong>
                   </p>
@@ -748,7 +748,7 @@ export default function FysiotherapeutSeoPage() {
                 zie je meestal na 3-6 maanden, echte groei na 6-12 maanden</strong>. Maar het is de
                 investering waard.
               </p>
-              <div className="mt-6 border-4 border-black bg-accent p-6" style={{ boxShadow: "4px 4px 0 0 #000000" }}>
+              <div className="mt-6 border-4 border-black bg-accent p-6" style={{ boxShadow: "6px 6px 0 0 #000000" }}>
                 <p className="mb-4 text-base font-bold text-black lg:text-lg">
                   Een fysiotherapeut uit Middelburg die onze adviezen opvolgde, zag binnen 8 maanden:
                 </p>
@@ -813,81 +813,13 @@ export default function FysiotherapeutSeoPage() {
       </section>
 
       {/* Related Articles */}
-      
-
+      <RelatedArticles articles={relatedArticles} />
 
       {/* Final CTA Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-brutalist-h1 mb-6 text-black">
-              Klaar om je praktijk te laten{" "}
-              <span className="relative inline-block">
-                <span className="absolute -inset-1 bg-black"></span>
-                <span className="relative text-accent">groeien</span>
-              </span>
-              ?
-            </h2>
-            <p className="mb-10 text-lg font-bold text-black/80 lg:text-xl">
-              Van onzichtbaar naar de go-to fysiotherapeut in jouw regio.
-              Wij helpen je praktijk groeien met bewezen SEO-strategieen.
-            </p>
-            <Button
-              size="lg"
-              asChild
-              className="border-black bg-black px-8 py-5 text-base text-white hover:bg-white hover:text-black"
-            >
-              <Link href="/contact">
-                VRAAG EEN GRATIS ANALYSE AAN
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-      {/* Related Articles Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 lg:py-32">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <h2 className="mb-12 text-brutalist-h2 text-white">
-            Lees meer
-          </h2>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedArticles.map((related, index) => (
-              <Link key={index} href={`/${related.slug}`} className="group block">
-                <Card className="overflow-hidden border-4 border-white transition-all hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
-                  <div className="relative aspect-video overflow-hidden border-b-4 border-black bg-black">
-                    <Image
-                      src={related.image}
-                      alt={related.title}
-                      fill
-                      className="object-cover transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <CardHeader className="bg-white">
-                    <CardTitle className="line-clamp-2 text-lg font-black uppercase leading-tight lg:text-xl">
-                      {related.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="bg-white">
-                    <p className="mb-4 text-sm font-bold text-black/70 line-clamp-2">
-                      {related.excerpt}
-                    </p>
-                    <span className="inline-flex items-center border-b-2 border-black pb-1 text-sm font-bold uppercase transition-colors group-hover:bg-black group-hover:text-white px-2 py-1">
-                      LEES ARTIKEL
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FinalCTA
+        heading="Klaar om te groeien?"
+        description="Van onzichtbaar naar de go-to fysiotherapeut in jouw regio. Wij helpen je praktijk groeien met bewezen SEO-strategieen."
+      />
 
 
 

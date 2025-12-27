@@ -1,6 +1,8 @@
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
+import { FinalCTA } from '@/components/final-cta';
+import { FAQSection } from '@/components/faq-section';
 import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { ArrowRight, Target, BarChart3, FileSearch, TrendingUp, Settings, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -122,7 +124,7 @@ export default function SEOStrategiePage() {
               </Button>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
+            <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
                 src="/images/person-browsing-google-imac.webp"
                 alt="Person browsing Google on iMac"
@@ -171,8 +173,8 @@ export default function SEOStrategiePage() {
               ].map((pillar, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center gap-4 border-4 border-accent bg-black p-6 text-center transition-all duration-300 hover:-translate-y-1"
-                  style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
+                  className="flex flex-col items-center gap-4 border-4 border-accent bg-black p-6 text-center transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-1"
+                  style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}
                 >
                   <div className="flex h-12 w-12 items-center justify-center border-4 border-accent bg-accent text-black">
                     <pillar.icon className="h-6 w-6" />
@@ -227,20 +229,20 @@ export default function SEOStrategiePage() {
             </div>
 
             <div className="flex flex-col gap-6">
-              <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+              <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
                 <Image
                   src="/images/scrabble-seo.webp"
                   alt="SEO Scrabble tiles"
                   fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
                 />
               </div>
-              <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+              <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
                 <Image
                   src="/images/macbook-google.webp"
                   alt="Person using MacBook Pro with Google"
                   fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
                 />
               </div>
             </div>
@@ -284,121 +286,16 @@ export default function SEOStrategiePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="border-b-4 border-black bg-white py-24 lg:py-32">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
-              WAT JE MISSCHIEN NOG WIL WETEN
-            </p>
-            <h2 className="mb-6 text-brutalist-h2 text-black">
-              Veelgestelde vragen
-            </h2>
-            <div className="h-1 w-32 bg-black"></div>
-          </div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-4 border-black bg-white px-8 py-2 hover:border-accent transition-colors last:border-b-4">
-                <AccordionTrigger className="text-left text-base font-bold uppercase hover:no-underline transition-colors lg:text-lg">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-black/80 border-t-2 border-black/10 pt-4 mt-4 lg:text-lg">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
+      <FAQSection items={faqData} />
 
       {/* Final CTA Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
-              MAAK KENNIS MET HET #1 SEO STRATEGIE BUREAU
-            </p>
+      <FinalCTA
+        label="MAAK KENNIS MET HET #1 SEO STRATEGIE BUREAU"
+        heading="Nog maar een stap verwijderd van succes!"
+        buttonText="LET'S GO!!"
+      />
 
-            <h2 className="mb-12 text-brutalist-h1 text-black">
-              Nog maar een stap verwijderd van succes!
-            </h2>
-
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                LET'S GO!!
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        {/* Subtle diagonal pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-accent hover:text-white transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </>
   );
 }

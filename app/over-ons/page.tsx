@@ -1,7 +1,8 @@
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
 import { TestimonialsSection } from '@/components/testimonials-section';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Clock, Users, TrendingUp, Euro, Phone, Mail, CheckCircle } from 'lucide-react';
+import { FinalCTA } from '@/components/final-cta';
+import { Clock, Users, TrendingUp, Euro, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -96,8 +97,8 @@ export default function OverOnsPage() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-center gap-3 border-4 border-accent bg-black p-6 text-center transition-all duration-300 hover:-translate-y-1 lg:p-8"
-                style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
+                className="relative flex flex-col items-center gap-3 border-4 border-accent bg-black p-6 text-center transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-1 lg:p-8"
+                style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}
               >
                 <stat.icon className="h-8 w-8 text-accent lg:h-10 lg:w-10" />
                 <div className="text-4xl font-black tracking-tight text-accent lg:text-5xl xl:text-6xl">
@@ -116,7 +117,7 @@ export default function OverOnsPage() {
       <section className="relative bg-white py-24 lg:py-32">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
-            <div className="relative aspect-[3/4] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
+            <div className="relative aspect-[3/4] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
                 src="/team/roy.webp"
                 alt="Roy de Clerck - Vizibly"
@@ -184,7 +185,7 @@ export default function OverOnsPage() {
                   <div
                     key={index}
                     className="border-4 border-white/20 bg-white/5 p-6 transition-all hover:border-accent"
-                    style={{ boxShadow: '6px 6px 0 0 #CCFF00' }}
+                    style={{ boxShadow: '6px 6px 0 0 #CCFF00, 0 15px 40px rgba(204, 255, 0, 0.3)' }}
                   >
                     <div className="flex items-start gap-4">
                       <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
@@ -228,7 +229,7 @@ export default function OverOnsPage() {
                 ). Die achtergrond helpt me dagelijks.
               </p>
 
-              <div className="mb-8 border-4 border-black p-6 bg-accent/10" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+              <div className="mb-8 border-4 border-black p-6 bg-accent/10" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
                 <p className="text-base font-bold text-black lg:text-lg xl:text-xl">
                   Een voorbeeld: zijn en schijn. Hoe verschijnen dingen aan ons versus hoe zijn ze werkelijk?
                 </p>
@@ -254,7 +255,7 @@ export default function OverOnsPage() {
                 En als je het goed hebt, levert het resultaat op. Klanten worden blij. Dat vind ik mooi om te zien.
               </p>
 
-              <div className="border-4 border-black p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+              <div className="border-4 border-black p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
                 <h3 className="mb-6 text-xl font-black uppercase text-black lg:text-2xl">
                   Wie ik ben
                 </h3>
@@ -294,93 +295,13 @@ export default function OverOnsPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
-              MAAK KENNIS MET HET #1 SEO BUREAU
-            </p>
+      <FinalCTA
+        label="MAAK KENNIS MET HET #1 SEO BUREAU"
+        heading="Nog maar een stap verwijderd van succes!"
+        buttonText="LET'S GO!!"
+      />
 
-            <h2 className="mb-12 text-brutalist-h1 text-black">
-              Nog maar een stap verwijderd van succes!
-            </h2>
-
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                LET'S GO!!
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative bg-black py-16 text-white">
-        {/* Subtle diagonal pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <Link href="/" className="mb-6 block">
-                <Image
-                  src="/logo-brutalist-white.svg"
-                  alt="Vizibly Logo"
-                  width={200}
-                  height={50}
-                  className="h-auto w-48"
-                />
-              </Link>
-              <p className="text-base font-bold text-white/80 lg:text-lg">
-                SEO specialist die zorgt dat je gevonden wordt.
-              </p>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-4">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/80 hover:text-accent transition-colors">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Local SEO</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Bedrijf</h4>
-              <ul className="space-y-4">
-                <li><Link href="/over-ons" className="text-base font-bold text-accent hover:text-white transition-colors">Over Ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/80 hover:text-accent transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-6 border-b-2 border-accent pb-2 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-4 text-base font-bold text-white/80 lg:text-lg">
-                <li>Vizibly</li>
-                <li>'t Zanddorp 55</li>
-                <li>4335 AE Middelburg</li>
-                <li>
-                  <a href="tel:0628206410" className="hover:text-accent transition-colors">
-                    0628206410
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@vizibly.nl" className="hover:text-accent transition-colors">
-                    info@vizibly.nl
-                  </a>
-                </li>
-                <li>KvK: 68478143</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-4 border-white/20 pt-8 text-center">
-            <p className="text-base font-bold uppercase text-white/60">&copy; {new Date().getFullYear()} VIZIBLY. ALLE RECHTEN VOORBEHOUDEN.</p>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </>
   );
 }

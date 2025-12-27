@@ -1,7 +1,7 @@
 import { Navigation } from '@/components/navigation';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, ArrowLeft, Clock, User } from 'lucide-react';
+import { FinalCTA } from '@/components/final-cta';
+import { RelatedArticles } from '@/components/related-articles';
+import { ArrowLeft, Clock, User } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -106,7 +106,7 @@ export default function SEOInstellingenPage() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
+            <div className="relative aspect-[4/3] overflow-hidden border-4 border-white" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
                 src="/blog/seo-instellingen.jpg"
                 alt="SEO instellingen - 7 cruciale configuraties"
@@ -289,64 +289,13 @@ export default function SEOInstellingenPage() {
       </article>
 
       {/* Related Articles */}
-      <section className="relative border-b-4 border-black bg-black py-24 lg:py-32">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
-        }}></div>
-
-        <div className="relative mx-auto max-w-screen-2xl px-6">
-          <h2 className="mb-12 text-brutalist-h2 text-white">Lees meer</h2>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedArticles.map((related, index) => (
-              <Link key={index} href={`/${related.slug}`} className="group block">
-                <Card className="overflow-hidden border-4 border-white transition-all hover:translate-x-1 hover:translate-y-1 hover:border-accent" style={{ boxShadow: '12px 12px 0 0 #CCFF00' }}>
-                  <div className="relative aspect-video overflow-hidden border-b-4 border-black bg-black">
-                    <Image
-                      src={related.image}
-                      alt={related.title}
-                      fill
-                      className="object-cover transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <CardHeader className="bg-white">
-                    <CardTitle className="line-clamp-2 text-lg font-black uppercase leading-tight lg:text-xl">
-                      {related.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="bg-white">
-                    <p className="mb-4 text-sm font-bold text-black/70 line-clamp-2">{related.excerpt}</p>
-                    <span className="inline-flex items-center border-b-2 border-black pb-1 text-sm font-bold uppercase transition-colors group-hover:bg-black group-hover:text-white px-2 py-1">
-                      LEES ARTIKEL
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <RelatedArticles articles={relatedArticles} />
 
       {/* Final CTA */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-8 text-brutalist-h1 text-black">
-              Klaar om te groeien?
-            </h2>
-            <p className="mb-12 text-lg font-bold text-black/80 lg:text-xl">
-              Een grondige technische audit laat zien waar je kansen liggen. Bel of mail voor een gratis kennismakingsgesprek.
-            </p>
-            <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-              <Link href="/contact">
-                NEEM CONTACT OP
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <FinalCTA
+        heading="Klaar om te groeien?"
+        description="Een grondige technische audit laat zien waar je kansen liggen. Bel of mail voor een gratis kennismakingsgesprek."
+      />
 
       {/* Footer */}
       <footer className="border-t-4 border-black bg-black py-16 text-white lg:py-24">

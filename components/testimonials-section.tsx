@@ -63,8 +63,8 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group border-4 border-black bg-white p-8 transition-all duration-300 hover:-translate-y-1"
-              style={{ boxShadow: '8px 8px 0 0 #000000' }}
+              className="group border-4 border-black bg-white p-8 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-1"
+              style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}
             >
               {testimonial.highlight && (
                 <span className="mb-4 inline-block border-4 border-black bg-black px-3 py-1 text-sm font-black uppercase text-accent">
