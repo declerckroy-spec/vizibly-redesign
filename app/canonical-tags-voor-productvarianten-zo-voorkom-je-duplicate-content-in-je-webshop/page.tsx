@@ -81,7 +81,7 @@ export default function CanonicalTagsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -95,7 +95,7 @@ export default function CanonicalTagsPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 TECHNISCHE SEO
               </p>
 
@@ -132,7 +132,7 @@ export default function CanonicalTagsPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -255,7 +255,7 @@ export default function CanonicalTagsPage() {
             Praktische implementatie
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            De meeste webshop-platforms (Shopify, WooCommerce, Magento) bieden ingebouwde ondersteuning voor canonical tags. Configureer deze in je productinstellingen. Voor complexere implementaties kan <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">professionele SEO ondersteuning</Link> helpen.
+            De meeste webshop-platforms (Shopify, WooCommerce, Magento) bieden ingebouwde ondersteuning voor canonical tags. Configureer deze in je productinstellingen. Voor complexere implementaties kan <Link href="/full-service-seo" className="font-bold">professionele SEO ondersteuning</Link> helpen.
           </p>
 
           <div className="mb-12 border-4 border-black bg-black/5 p-6 lg:p-8">

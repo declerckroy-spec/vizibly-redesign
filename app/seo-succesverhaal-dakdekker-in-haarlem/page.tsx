@@ -25,11 +25,11 @@ export default function DakdekkerCase() {
       <Navigation />
 
       {/* Breadcrumb */}
-      <section className="border-b-4 border-black bg-white py-4">
+      <section className="border-b-4 border-black bg-[#fafaf8] py-4">
         <div className="mx-auto max-w-screen-2xl px-6">
           <Link
             href="/cases"
-            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-black/60 transition-colors hover:text-black"
+            className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-black/60 transition-colors hover:text-black"
           >
             <ArrowLeft className="h-4 w-4" />
             Alle cases
@@ -38,7 +38,7 @@ export default function DakdekkerCase() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -46,7 +46,7 @@ export default function DakdekkerCase() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               CASE STUDY
             </p>
             <h1 className="mb-8 text-brutalist-hero text-black">
@@ -61,7 +61,7 @@ export default function DakdekkerCase() {
       </section>
 
       {/* Featured Image */}
-      <section className="relative border-b-4 border-black bg-black py-16 lg:py-20">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-20 lg:py-24">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="relative mx-auto max-w-5xl">
             <div className="relative border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
@@ -81,9 +81,9 @@ export default function DakdekkerCase() {
       </section>
 
       {/* Article Content */}
-      <article className="relative bg-white">
+      <article className="relative bg-[#fafaf8]">
         {/* Het bedrijf */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -92,7 +92,7 @@ export default function DakdekkerCase() {
 
               <div className="space-y-6 text-base font-bold text-black lg:text-lg xl:text-xl">
                 <p>
-                  <a href="https://tolmeijerdakdekkers.nl/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent transition-colors">Tolmeijer Dakdekkers</a> uit Haarlem is gespecialiseerd in vakwerk aan daken. Met meer dan twintig jaar ervaring in de dakdekkerij bedient het bedrijf klanten in Haarlem en omgeving voor alles van dakbedekking en isolatie tot lood- en zinkwerk. Wat Tolmeijer onderscheidt is hun perfectionalistische aanpak, 10 jaar garantie op hun werk, en een 24/7 spoedservice. Ondernemer Milo Tolmeijer staat bekend om zijn vakkundig advies en het meedenken met klanten om tot de beste oplossing te komen.
+                  <a href="https://tolmeijerdakdekkers.nl/" target="_blank" rel="noopener noreferrer" className="font-bold">Tolmeijer Dakdekkers</a> uit Haarlem is gespecialiseerd in vakwerk aan daken. Met meer dan twintig jaar ervaring in de dakdekkerij bedient het bedrijf klanten in Haarlem en omgeving voor alles van dakbedekking en isolatie tot lood- en zinkwerk. Wat Tolmeijer onderscheidt is hun perfectionalistische aanpak, 10 jaar garantie op hun werk, en een 24/7 spoedservice. Ondernemer Milo Tolmeijer staat bekend om zijn vakkundig advies en het meedenken met klanten om tot de beste oplossing te komen.
                 </p>
 
                 <div className="border-l-4 border-accent pl-6 my-12">
@@ -106,7 +106,7 @@ export default function DakdekkerCase() {
         </section>
 
         {/* De uitdaging */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -140,7 +140,7 @@ export default function DakdekkerCase() {
         </section>
 
         {/* Onze aanpak */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -153,7 +153,7 @@ export default function DakdekkerCase() {
                 </p>
 
                 <p>
-                  Vervolgens ontwikkelden we een <Link href="/full-service-seo" className="underline hover:text-accent transition-colors">SEO-plan op maat</Link> dat bestond uit drie hoofdpijlers:
+                  Vervolgens ontwikkelden we een <Link href="/full-service-seo" className="font-bold">SEO-plan op maat</Link> dat bestond uit drie hoofdpijlers:
                 </p>
 
                 <h3 className="text-brutalist-h3 text-black mt-12 mb-6">
@@ -161,7 +161,7 @@ export default function DakdekkerCase() {
                 </h3>
 
                 <p>
-                  We bouwden een volledig nieuwe WordPress website met een doordachte structuur en interne linkopbouw. Elke pagina werd strategisch gepositioneerd om maximale SEO-waarde te creëren. Meer over onze <Link href="/design-techniek" className="underline hover:text-accent transition-colors">webdesign en techniek aanpak</Link>.
+                  We bouwden een volledig nieuwe WordPress website met een doordachte structuur en interne linkopbouw. Elke pagina werd strategisch gepositioneerd om maximale SEO-waarde te creëren. Meer over onze <Link href="/design-techniek" className="font-bold">webdesign en techniek aanpak</Link>.
                 </p>
 
                 <h3 className="text-brutalist-h3 text-black mt-12 mb-6">
@@ -169,7 +169,7 @@ export default function DakdekkerCase() {
                 </h3>
 
                 <p>
-                  We schreven <Link href="/seo-copy" className="underline hover:text-accent transition-colors">geoptimaliseerde content</Link> die niet alleen goed scoorde in Google, maar ook Milo's vakmanschap en unieke aanpak perfect weergaf. De teksten benadrukte zijn perfectionalistische instelling, ervaring en klantgerichte aanpak.
+                  We schreven <Link href="/seo-copy" className="font-bold">geoptimaliseerde content</Link> die niet alleen goed scoorde in Google, maar ook Milo's vakmanschap en unieke aanpak perfect weergaf. De teksten benadrukte zijn perfectionalistische instelling, ervaring en klantgerichte aanpak.
                 </p>
 
                 <h3 className="text-brutalist-h3 text-black mt-12 mb-6">
@@ -177,11 +177,11 @@ export default function DakdekkerCase() {
                 </h3>
 
                 <p>
-                  We optimaliseerden specifiek voor Haarlem en omliggende gebieden zoals Hoofddorp, Hillegom, Heemstede, Zandvoort en Nieuw-Vennep. Onze <Link href="/local-seo" className="underline hover:text-accent transition-colors">local SEO expertise</Link> was cruciaal voor dit lokale succes.
+                  We optimaliseerden specifiek voor Haarlem en omliggende gebieden zoals Hoofddorp, Hillegom, Heemstede, Zandvoort en Nieuw-Vennep. Onze <Link href="/local-seo" className="font-bold">local SEO expertise</Link> was cruciaal voor dit lokale succes.
                 </p>
 
                 <p className="mt-8">
-                  Wat dit project bijzonder maakte, was de uitstekende samenwerking met Milo zelf. Hij nam eigenhandig de <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">linkbuilding</Link> en local SEO voor zijn rekening en wist, mede dankzij zijn perfecte vakmanschap, een indrukwekkende verzameling vijfsterren-reviews op te bouwen. Deze combinatie van technische SEO-expertise en Milo's eigen inzet zorgde voor het uiteindelijke succes.
+                  Wat dit project bijzonder maakte, was de uitstekende samenwerking met Milo zelf. Hij nam eigenhandig de <Link href="/linkbuilding" className="font-bold">linkbuilding</Link> en local SEO voor zijn rekening en wist, mede dankzij zijn perfecte vakmanschap, een indrukwekkende verzameling vijfsterren-reviews op te bouwen. Deze combinatie van technische SEO-expertise en Milo's eigen inzet zorgde voor het uiteindelijke succes.
                 </p>
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function DakdekkerCase() {
         </section>
 
         {/* De resultaten */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -270,7 +270,7 @@ export default function DakdekkerCase() {
         </section>
 
         {/* Waarom dit project succesvol was */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -283,15 +283,15 @@ export default function DakdekkerCase() {
                 </p>
 
                 <p>
-                  Voor lokale dienstverleners zoals dakdekkers is deze aanpak bijzonder effectief: door excellent vakwerk te combineren met sterke online zichtbaarheid, kun je uitgroeien tot dé specialist in je regio. Meer over <Link href="/seo-voor-bouwbedrijven" className="underline hover:text-accent transition-colors">SEO voor bouwbedrijven</Link> en specifiek onze <Link href="/seo-voor-dakdekkers-zo-kom-je-als-dakdekkersbedrijf-bovenaan-in-google" className="underline hover:text-accent transition-colors">SEO aanpak voor dakdekkers</Link>.
+                  Voor lokale dienstverleners zoals dakdekkers is deze aanpak bijzonder effectief: door excellent vakwerk te combineren met sterke online zichtbaarheid, kun je uitgroeien tot dé specialist in je regio. Meer over <Link href="/seo-voor-bouwbedrijven" className="font-bold">SEO voor bouwbedrijven</Link> en specifiek onze <Link href="/seo-voor-dakdekkers-zo-kom-je-als-dakdekkersbedrijf-bovenaan-in-google" className="font-bold">SEO aanpak voor dakdekkers</Link>.
                 </p>
 
                 <p>
-                  De strategische opbouw van <Link href="/content-clusters-topic-authority-opbouwen" className="underline hover:text-accent transition-colors">content clusters</Link> speelde ook een cruciale rol in het opbouwen van topical authority voor dakdekker-gerelateerde onderwerpen.
+                  De strategische opbouw van <Link href="/content-clusters-topic-authority-opbouwen" className="font-bold">content clusters</Link> speelde ook een cruciale rol in het opbouwen van topical authority voor dakdekker-gerelateerde onderwerpen.
                 </p>
 
                 <p className="mt-8">
-                  Wil je ook meer klanten via Google zonder afhankelijk te zijn van dure advertenties? Neem <Link href="/contact" className="underline hover:text-accent transition-colors">contact</Link> op voor een vrijblijvende analyse van jouw SEO-mogelijkheden.
+                  Wil je ook meer klanten via Google zonder afhankelijk te zijn van dure advertenties? Neem <Link href="/contact" className="font-bold">contact</Link> op voor een vrijblijvende analyse van jouw SEO-mogelijkheden.
                 </p>
               </div>
             </div>

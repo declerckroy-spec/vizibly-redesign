@@ -81,7 +81,7 @@ export default function GoogleSEOBureauRegelsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -95,7 +95,7 @@ export default function GoogleSEOBureauRegelsPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 SEO TIPS
               </p>
 
@@ -132,7 +132,7 @@ export default function GoogleSEOBureauRegelsPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -144,13 +144,13 @@ export default function GoogleSEOBureauRegelsPage() {
             1. Huur een SEO bureau in voor specialistische expertise
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Mueller erkent dat ondernemers al <a href="https://www.youtube.com/watch?v=BKDymFYpvL8&list=PLKoqnv2vTMUMxMs2PdBlDULqybdlPZxrk&index=1&ab_channel=GoogleSearchCentral" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">"500 hats to wear" hebben</a> en benadrukt het belang van ervaring: "Someone else, ideally, would be someone who has more experience doing SEO."
+            Mueller erkent dat ondernemers al <a href="https://www.youtube.com/watch?v=BKDymFYpvL8&list=PLKoqnv2vTMUMxMs2PdBlDULqybdlPZxrk&index=1&ab_channel=GoogleSearchCentral" target="_blank" rel="noopener noreferrer" className="font-bold">"500 hats to wear" hebben</a> en benadrukt het belang van ervaring: "Someone else, ideally, would be someone who has more experience doing SEO."
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             SEO lijkt soms simpel, maar de spelregels veranderen voortdurend. Google rolt regelmatig updates uit die je strategie kunnen beinvloeden. Daarom is ervaring zo waardevol.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Onze <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">360-graden SEO aanpak</Link> combineert jaren ervaring met de nieuwste inzichten voor maximaal resultaat.
+            Onze <Link href="/full-service-seo" className="font-bold">360-graden SEO aanpak</Link> combineert jaren ervaring met de nieuwste inzichten voor maximaal resultaat.
           </p>
 
           {/* Section 2 */}
@@ -169,7 +169,7 @@ export default function GoogleSEOBureauRegelsPage() {
           </div>
 
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Onze <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO copywriting</Link> is daarom specifiek gericht op conversie, niet alleen vindbaarheid. Dat is iets wat we merken dat veel bureaus over het hoofd zien.
+            Onze <Link href="/seo-copy" className="font-bold">SEO copywriting</Link> is daarom specifiek gericht op conversie, niet alleen vindbaarheid. Dat is iets wat we merken dat veel bureaus over het hoofd zien.
           </p>
 
           {/* Section 3 */}
@@ -182,7 +182,7 @@ export default function GoogleSEOBureauRegelsPage() {
           <ul className="mb-12 space-y-3 pl-6">
             <li className="flex items-start gap-3 text-base font-bold text-black/80 lg:text-lg">
               <span className="mt-2 h-2 w-2 flex-shrink-0 bg-accent"></span>
-              <Link href="/cases" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Aantoonbare ervaring</Link>
+              <Link href="/cases" className="font-bold">Aantoonbare ervaring</Link>
             </li>
             <li className="flex items-start gap-3 text-base font-bold text-black/80 lg:text-lg">
               <span className="mt-2 h-2 w-2 flex-shrink-0 bg-accent"></span>

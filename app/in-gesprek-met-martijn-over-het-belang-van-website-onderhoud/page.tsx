@@ -73,7 +73,7 @@ export default function WebsiteOnderhoudPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -86,7 +86,7 @@ export default function WebsiteOnderhoudPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 INTERVIEW
               </p>
 
@@ -122,10 +122,10 @@ export default function WebsiteOnderhoudPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
-            Bij Vizibly werken we regelmatig samen met Martijn van 072DESIGN als het gaat om webdesign en onderhoud. Terwijl wij ons focussen op online vindbaarheid, blinkt <a href="https://072design.nl/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">072DESIGN</a> uit in het technische aspect van websites. We spraken met Martijn over het belang van regelmatig website onderhoud.
+            Bij Vizibly werken we regelmatig samen met Martijn van 072DESIGN als het gaat om webdesign en onderhoud. Terwijl wij ons focussen op online vindbaarheid, blinkt <a href="https://072design.nl/" target="_blank" rel="noopener noreferrer" className="font-bold">072DESIGN</a> uit in het technische aspect van websites. We spraken met Martijn over het belang van regelmatig website onderhoud.
           </p>
 
           <div className="my-12 border-l-4 border-accent bg-black/5 p-8">
@@ -172,7 +172,7 @@ export default function WebsiteOnderhoudPage() {
             Een goed onderhouden website presteert ook beter in Google. &quot;Op het gebied van performance maakt onderhoud een duidelijk verschil,&quot; legt Martijn uit. &quot;Bij websites die traag laden of foutmeldingen geven, haken bezoekers sneller af. Google houdt bovendien rekening met technische prestaties bij het bepalen van je positie in de zoekresultaten.&quot;
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Door je website snel, mobielvriendelijk en goed gestructureerd te houden, werk je dus ook direct <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">aan je SEO</Link>.
+            Door je website snel, mobielvriendelijk en goed gestructureerd te houden, werk je dus ook direct <Link href="/full-service-seo" className="font-bold">aan je SEO</Link>.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -189,7 +189,7 @@ export default function WebsiteOnderhoudPage() {
             Een investering die loont
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Een goed onderhouden <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">website</Link> blijft snel, veilig en stabiel functioneren. &quot;Daarnaast is een goed onderhouden website <a href="https://072design.nl/website-onderhoud/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">klaar voor de toekomst</a>,&quot; benadrukt Martijn. &quot;Nieuwe functionaliteiten kunnen makkelijker worden toegevoegd, zonder dat de technische basis wankelt.&quot;
+            Een goed onderhouden <Link href="/design-techniek" className="font-bold">website</Link> blijft snel, veilig en stabiel functioneren. &quot;Daarnaast is een goed onderhouden website <a href="https://072design.nl/website-onderhoud/" target="_blank" rel="noopener noreferrer" className="font-bold">klaar voor de toekomst</a>,&quot; benadrukt Martijn. &quot;Nieuwe functionaliteiten kunnen makkelijker worden toegevoegd, zonder dat de technische basis wankelt.&quot;
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Martijn sluit af met een belangrijke boodschap: &quot;Een website is geen eenmalig product, maar een doorlopend proces. Regelmatig onderhoud is geen luxe, maar een noodzaak. Met goed onderhoud bescherm je je investering en zorg je dat je digitale visitekaartje altijd op zijn best presteert.&quot;
@@ -207,7 +207,7 @@ export default function WebsiteOnderhoudPage() {
       />
 
       {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white lg:py-24">
+      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white lg:py-32">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-4">
             <div className="lg:col-span-1">

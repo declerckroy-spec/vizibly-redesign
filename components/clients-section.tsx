@@ -94,18 +94,18 @@ export function ClientsSection({
 
   const styles = {
     white: {
-      sectionClass: 'relative border-y-4 border-black bg-white py-16 lg:py-20 overflow-hidden',
+      sectionClass: 'relative border-y-4 border-black bg-[#fafaf8] py-20 lg:py-28 overflow-hidden',
       pattern: null,
       labelClass: 'text-black',
       headingClass: 'text-black',
-      gradientFrom: 'from-white',
+      gradientFrom: 'from-[#fafaf8]',
       cardClass: 'border-4 border-black bg-white hover:border-accent hover:-translate-y-1 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]',
       cardShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)',
       bottomTextClass: 'text-black',
       badgeClass: 'border-4 border-black bg-accent text-black',
     },
     black: {
-      sectionClass: 'relative border-y-4 border-black bg-black py-16 lg:py-24 overflow-hidden',
+      sectionClass: 'relative border-y-4 border-black bg-[#0a0a0a] py-20 lg:py-28 overflow-hidden',
       pattern: (
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -113,7 +113,7 @@ export function ClientsSection({
       ),
       labelClass: 'text-accent',
       headingClass: 'text-white',
-      gradientFrom: 'from-black',
+      gradientFrom: 'from-[#0a0a0a]',
       cardClass: 'group border-4 border-black bg-white hover:border-accent hover:-translate-y-2 hover:rotate-1 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]',
       cardShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)',
       bottomTextClass: 'text-white',
@@ -130,7 +130,7 @@ export function ClientsSection({
 
       <div className="relative mx-auto max-w-screen-2xl px-6 mb-12">
         <div className="text-center">
-          <p className={`mb-4 text-base font-bold uppercase tracking-wider lg:text-lg xl:text-xl ${styles.labelClass}`}>
+          <p className={`mb-4 text-base font-semibold uppercase tracking-widest lg:text-lg xl:text-xl ${styles.labelClass}`}>
             {label}
           </p>
           <h2 className={`text-brutalist-h2 ${styles.headingClass}`}>

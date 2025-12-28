@@ -75,7 +75,7 @@ export default function WordPressSEOPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-28">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -88,7 +88,7 @@ export default function WordPressSEOPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 WORDPRESS SEO
               </p>
 
@@ -124,7 +124,7 @@ export default function WordPressSEOPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
             Je hebt alle Yoast-vinkjes op groen. Je concurrent ook. Hij staat op plek 3. Jij op pagina 2. Waarom? Omdat echte WordPress SEO niks te maken heeft met een plugin die tevreden is. Het gaat om wat Google ziet, wat bezoekers doen, en hoe jouw site zich verhoudt tot de concurrentie.
@@ -143,7 +143,7 @@ export default function WordPressSEOPage() {
             SEO-plugins zoals Yoast SEO, Rank Math of All in One SEO zijn handige tools voor on-page basics. Ze helpen met title tags, meta descriptions en XML sitemaps. Prima. Maar ze zien niet hoe sterk je concurrenten zijn. Ze zien niet of je content de zoekintentie matcht. Ze zien niet de volledige technische staat van je site. En ze zien niet wat bezoekers doen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Plugins geven je een checklist. Maar <Link href="/de-verborgen-kracht-in-seo-gebruikersgedrag" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">gebruikersgedrag beïnvloedt je Google-positie</Link> net zo hard als je title tag.
+            Plugins geven je een checklist. Maar <Link href="/de-verborgen-kracht-in-seo-gebruikersgedrag" className="font-bold">gebruikersgedrag beïnvloedt je Google-positie</Link> net zo hard als je title tag.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -200,7 +200,7 @@ export default function WordPressSEOPage() {
             Google&apos;s algoritme is goed in begrijpen wat iemand wil. Jouw content moet dat ook zijn. Voorbeeld: &quot;WordPress installeren&quot; heeft een andere intentie dan &quot;beste WordPress hosting&quot;. Het eerste vraagt om een handleiding. Het tweede vraagt om een vergelijking.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            Check voor elk artikel: wat wil de zoeker precies? <Link href="/content-clusters-topic-authority-opbouwen" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Content clusters</Link> helpen je hier systematisch mee. In plaats van losse artikelen schrijf je clusters rond hoofdonderwerpen.
+            Check voor elk artikel: wat wil de zoeker precies? <Link href="/content-clusters-topic-authority-opbouwen" className="font-bold">Content clusters</Link> helpen je hier systematisch mee. In plaats van losse artikelen schrijf je clusters rond hoofdonderwerpen.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -234,7 +234,7 @@ export default function WordPressSEOPage() {
             Core Web Vitals specifiek voor WordPress
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/een-perfecte-google-pagespeed-score-zin-en-onzin-van-100-100" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Een perfecte PageSpeed score is geen doel op zich</Link>, maar Core Web Vitals zijn wél een ranking factor.
+            <Link href="/een-perfecte-google-pagespeed-score-zin-en-onzin-van-100-100" className="font-bold">Een perfecte PageSpeed score is geen doel op zich</Link>, maar Core Web Vitals zijn wél een ranking factor.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             <strong>LCP (Largest Contentful Paint) - onder 2,5 seconden:</strong> Optimaliseer featured images met WebP-formaat en lazy loading. Preload kritieke fonts.

@@ -123,7 +123,7 @@ export default function SeoSpecialistZeelandPage() {
       title: 'Local SEO',
       description: (
         <>
-          Als ondernemer in Zeeland is lokale vindbaarheid essentieel. We optimaliseren je Google Business Profiel, zorgen voor nauwkeurige vermeldingen op Google Maps en maximaliseren je zichtbaarheid in de lokale zoekresultaten. Zo vinden potentiële klanten je gemakkelijk, of ze nu op zoek zijn in <Link href="/seo-specialist-middelburg" className="underline hover:text-accent transition-colors">Middelburg</Link>, Vlissingen, Goes, Terneuzen of Zierikzee.
+          Als ondernemer in Zeeland is lokale vindbaarheid essentieel. We optimaliseren je Google Business Profiel, zorgen voor nauwkeurige vermeldingen op Google Maps en maximaliseren je zichtbaarheid in de lokale zoekresultaten. Zo vinden potentiële klanten je gemakkelijk, of ze nu op zoek zijn in <Link href="/seo-specialist-middelburg" className="font-bold">Middelburg</Link>, Vlissingen, Goes, Terneuzen of Zierikzee.
         </>
       ),
       link: '/local-seo',
@@ -231,7 +231,7 @@ export default function SeoSpecialistZeelandPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-36 pb-24 lg:pt-44 lg:pb-36">
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
         }}></div>
@@ -247,7 +247,7 @@ export default function SeoSpecialistZeelandPage() {
               <h1 className="mb-8 text-brutalist-hero leading-none text-black">
                 SEO specialist in{' '}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative">Zeeland</span>
                 </span>
                 : jouw bedrijf optimaal zichtbaar
@@ -286,7 +286,7 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="relative border-y-4 border-black bg-black py-16 text-white lg:py-20">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-16 text-white lg:py-20">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -313,11 +313,11 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* Allround SEO Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 COMPLETE BEGELEIDING VOOR DUURZAME GROEI
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -341,10 +341,10 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* Services Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-accent py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               ALLES WAT JE NODIG HEBT OM OPTIMAAL ZICHTBAAR TE WORDEN IN ZEELAND
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -387,14 +387,14 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* Business Types Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
             <h2 className="mb-8 text-brutalist-h1 text-black">
               Onze SEO services voor Zeeuwse ondernemers
             </h2>
             <p className="max-w-3xl text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-              Of je nu een <Link href="/seo-voor-webshop" className="underline hover:text-accent transition-colors">webshop</Link> runt, een lokale dienstverlener bent of in de B2B-sector opereert - als SEO specialist in Zeeland hebben wij de expertise om jouw online zichtbaarheid te verbeteren. We bieden gespecialiseerde SEO-strategieën voor verschillende bedrijfstypen:
+              Of je nu een <Link href="/seo-voor-webshop" className="font-bold">webshop</Link> runt, een lokale dienstverlener bent of in de B2B-sector opereert - als SEO specialist in Zeeland hebben wij de expertise om jouw online zichtbaarheid te verbeteren. We bieden gespecialiseerde SEO-strategieën voor verschillende bedrijfstypen:
             </p>
           </div>
 
@@ -437,7 +437,7 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* Cases Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -491,7 +491,7 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* About Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="relative">
@@ -509,7 +509,7 @@ export default function SeoSpecialistZeelandPage() {
             </div>
 
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 MOK OK EH!
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -534,14 +534,14 @@ export default function SeoSpecialistZeelandPage() {
       <TestimonialsSection />
 
       {/* Blog Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               KENNIS & INZICHTEN
             </p>
             <h2 className="mb-4 text-brutalist-h1 text-white">
@@ -580,7 +580,7 @@ export default function SeoSpecialistZeelandPage() {
           </div>
 
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
+            <Button asChild size="lg" variant="lime" className="px-8 py-5 text-base">
               <Link href="/vizie">BEKIJK ALLES</Link>
             </Button>
           </div>
@@ -588,11 +588,11 @@ export default function SeoSpecialistZeelandPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 WAT JE MISSCHIEN NOG WIL WETEN
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">

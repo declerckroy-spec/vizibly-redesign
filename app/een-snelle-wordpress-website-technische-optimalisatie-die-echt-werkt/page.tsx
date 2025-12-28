@@ -77,7 +77,7 @@ export default function WordPressSnelheidPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-28">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -91,7 +91,7 @@ export default function WordPressSnelheidPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 TECHNISCHE SEO
               </p>
 
@@ -128,11 +128,11 @@ export default function WordPressSnelheidPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
-            Je site laadt in 6 seconden. Je concurrent in 2. Hij staat op plek 2, jij op pagina 3. Waarom? Niet omdat <Link href="/seo-voor-wordpress-meer-dan-wat-groene-yoast-vinkjes" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">zijn Yoast overal groene bolletjes voor geeft</Link>. Maar omdat hij begon met de juiste basis: een snel thema, goede hosting, en selectieve plugins. Pas daarna ging hij optimaliseren. In 2025 is snelheid geen extra: het is een rankingfactor die direct je omzet beinvloedt.
+            Je site laadt in 6 seconden. Je concurrent in 2. Hij staat op plek 2, jij op pagina 3. Waarom? Niet omdat <Link href="/seo-voor-wordpress-meer-dan-wat-groene-yoast-vinkjes" className="font-bold">zijn Yoast overal groene bolletjes voor geeft</Link>. Maar omdat hij begon met de juiste basis: een snel thema, goede hosting, en selectieve plugins. Pas daarna ging hij optimaliseren. In 2025 is snelheid geen extra: het is een rankingfactor die direct je omzet beinvloedt.
           </p>
 
           {/* Section 1 */}
@@ -140,7 +140,7 @@ export default function WordPressSnelheidPage() {
             Waarom snelheid bij WordPress rankings en conversies bepaalt
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            De impact is meetbaar. <a href="https://blog.hubspot.com/marketing/page-load-time-conversion-rates" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Elke seconde vertraging kost je 7% conversie</a>. Voor webshops kan elke seconde sneller 17% meer conversie betekenen. Bijna de helft van je bezoekers verwacht dat je site in 2 seconden laadt, 40% verlaat een site die langer dan 3 seconden nodig heeft.
+            De impact is meetbaar. <a href="https://blog.hubspot.com/marketing/page-load-time-conversion-rates" target="_blank" rel="noopener noreferrer" className="font-bold">Elke seconde vertraging kost je 7% conversie</a>. Voor webshops kan elke seconde sneller 17% meer conversie betekenen. Bijna de helft van je bezoekers verwacht dat je site in 2 seconden laadt, 40% verlaat een site die langer dan 3 seconden nodig heeft.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             WordPress draait 43,6% van alle websites wereldwijd. Maar WordPress zelf is niet traag. WordPress met een zwaar thema, 30 plugins en ongeoptimaliseerde afbeeldingen is traag. Het verschil tussen 2 en 6 seconden laadtijd zit in technische keuzes. En die begin je bij de basis.
@@ -171,7 +171,7 @@ export default function WordPressSnelheidPage() {
             Thema's die het moeilijk maken
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Page builders met eigen thema's voegen duizenden regels CSS en JavaScript toe. Elementor voegt extra CSS/JS toe per element, maar kan snel zijn als je het slim gebruikt. Minimale widgets, performance settings aan, lokale fonts. <a href="https://elementor.com/blog/slow-wordpress-website/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Met optimalisatie kan het</a>, maar het vraagt meer werk.
+            Page builders met eigen thema's voegen duizenden regels CSS en JavaScript toe. Elementor voegt extra CSS/JS toe per element, maar kan snel zijn als je het slim gebruikt. Minimale widgets, performance settings aan, lokale fonts. <a href="https://elementor.com/blog/slow-wordpress-website/" target="_blank" rel="noopener noreferrer" className="font-bold">Met optimalisatie kan het</a>, maar het vraagt meer werk.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
             Avada, Divi en vergelijkbare all-in-one thema's: design-rijk maar zwaar. Zonder optimalisatie laadt een lege pagina al traag. Met builder: 2,8+ seconden laadtijd versus 1,3 seconde voor GeneratePress.
@@ -181,7 +181,7 @@ export default function WordPressSnelheidPage() {
             Test de snelheid van je thema voordat je kiest
           </h3>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Installeer het thema op een staging-omgeving, voeg een pagina toe, test in <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">PageSpeed Insights</a>. Score onder 70 op mobiel? Dan wordt het optimaliseren met de handrem aan. Check hoeveel HTTP-requests een lege pagina doet. Meer dan 25? Te veel.
+            Installeer het thema op een staging-omgeving, voeg een pagina toe, test in <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer" className="font-bold">PageSpeed Insights</a>. Score onder 70 op mobiel? Dan wordt het optimaliseren met de handrem aan. Check hoeveel HTTP-requests een lege pagina doet. Meer dan 25? Te veel.
           </p>
 
           {/* Inline image */}
@@ -232,7 +232,7 @@ export default function WordPressSnelheidPage() {
             Nu de basis staat, ga je optimaliseren. Afbeeldingen zijn 50-70% van je paginagewicht. Een foto van 5MB als 400px thumbnail? Direct probleem.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Comprimeer voor upload via <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">TinyPNG</a> of <a href="https://squoosh.app/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Squoosh</a>. WebP-formaat is 30% kleiner dan JPEG zonder kwaliteitsverlies. ShortPixel of Smush automatiseren dit. De gratis versie van ShortPixel converteert naar WebP, Smush niet.
+            Comprimeer voor upload via <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" className="font-bold">TinyPNG</a> of <a href="https://squoosh.app/" target="_blank" rel="noopener noreferrer" className="font-bold">Squoosh</a>. WebP-formaat is 30% kleiner dan JPEG zonder kwaliteitsverlies. ShortPixel of Smush automatiseren dit. De gratis versie van ShortPixel converteert naar WebP, Smush niet.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Lazy loading laadt afbeeldingen pas als ze in beeld komen. Goed voor lange pagina's, maar niet voor je hero image. Anders zie je eerst niks. Alt-teksten beschrijvend maar geen keyword stuffing.
@@ -293,7 +293,7 @@ export default function WordPressSnelheidPage() {
             De 100/100-score: nuttig maar niet heilig
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/een-perfecte-google-pagespeed-score-zin-en-onzin-van-100-100" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Een perfecte PageSpeed score</Link> lijkt het ultieme doel, maar is dat niet. Bij Vizibly scoren we 100/100 op mobiel en desktop, maar belangrijker is dat onze site converteert. Een site met 85/100 die alle belangrijke optimalisaties heeft doorgevoerd, presteert vaak beter dan een kale site met 100/100.
+            <Link href="/een-perfecte-google-pagespeed-score-zin-en-onzin-van-100-100" className="font-bold">Een perfecte PageSpeed score</Link> lijkt het ultieme doel, maar is dat niet. Bij Vizibly scoren we 100/100 op mobiel en desktop, maar belangrijker is dat onze site converteert. Een site met 85/100 die alle belangrijke optimalisaties heeft doorgevoerd, presteert vaak beter dan een kale site met 100/100.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Focus op de aanbevelingen die PageSpeed Insights geeft, niet op het getal. Fix render-blocking resources, optimaliseer LCP, reduceer JavaScript. Die verbeteringen maken het verschil, niet het cijfer zelf.
@@ -337,16 +337,16 @@ export default function WordPressSnelheidPage() {
             Je site is traag. De server reageert langzaam, afbeeldingen zijn te groot, je thema is zwaar, plugins stapelen scripts. Elke dag verliezen bezoekers hun geduld.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            WordPress draait 43,6% van het web, maar dat maakt het niet automatisch snel. Het verschil tussen een site die rankt en een die dat niet doet, zit in begrip. Begrip van techniek, <Link href="/de-verborgen-kracht-in-seo-zo-beinvloedt-gebruikersgedrag-jouw-google-positie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">gebruikersgedrag</Link>, en strategie via <Link href="/content-clusters-topic-authority-opbouwen" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">content clusters</Link>.
+            WordPress draait 43,6% van het web, maar dat maakt het niet automatisch snel. Het verschil tussen een site die rankt en een die dat niet doet, zit in begrip. Begrip van techniek, <Link href="/de-verborgen-kracht-in-seo-zo-beinvloedt-gebruikersgedrag-jouw-google-positie" className="font-bold">gebruikersgedrag</Link>, en strategie via <Link href="/content-clusters-topic-authority-opbouwen" className="font-bold">content clusters</Link>.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/seo-voor-wordpress-meer-dan-wat-groene-yoast-vinkjes" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">WordPress SEO</Link> is meer dan groene Yoast-vinkjes. Begin met een snel thema, goede hosting, selectieve plugins. Dan pas optimaliseren met caching, afbeeldingen, database.
+            <Link href="/seo-voor-wordpress-meer-dan-wat-groene-yoast-vinkjes" className="font-bold">WordPress SEO</Link> is meer dan groene Yoast-vinkjes. Begin met een snel thema, goede hosting, selectieve plugins. Dan pas optimaliseren met caching, afbeeldingen, database.
           </p>
           <p className="mb-8 text-base font-bold text-black/80 lg:text-lg">
             Check waar je nu staat. Thema, hosting, plugins? Wat zijn je quick wins? Bel me: 06 282 064 10. In 15 minuten weet je precies wat je site vertraagt.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Of bekijk wat <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">full-service SEO</Link> voor jouw WordPress-site betekent.
+            Of bekijk wat <Link href="/full-service-seo" className="font-bold">full-service SEO</Link> voor jouw WordPress-site betekent.
           </p>
 
           {/* CTA Box */}

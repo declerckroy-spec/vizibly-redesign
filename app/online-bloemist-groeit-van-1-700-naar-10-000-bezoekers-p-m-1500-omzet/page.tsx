@@ -25,11 +25,11 @@ export default function BloemistCase() {
       <Navigation />
 
       {/* Breadcrumb */}
-      <section className="border-b-4 border-black bg-white py-4">
+      <section className="border-b-4 border-black bg-[#fafaf8] py-4">
         <div className="mx-auto max-w-screen-2xl px-6">
           <Link
             href="/cases"
-            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-black/60 transition-colors hover:text-black"
+            className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-black/60 transition-colors hover:text-black"
           >
             <ArrowLeft className="h-4 w-4" />
             Alle cases
@@ -38,7 +38,7 @@ export default function BloemistCase() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -46,7 +46,7 @@ export default function BloemistCase() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               CASE STUDY
             </p>
             <h1 className="mb-8 text-brutalist-hero text-black">
@@ -61,7 +61,7 @@ export default function BloemistCase() {
       </section>
 
       {/* Featured Image */}
-      <section className="relative border-b-4 border-black bg-black py-16 lg:py-20">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-20 lg:py-24">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="relative mx-auto max-w-5xl">
             <div className="relative border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
@@ -81,9 +81,9 @@ export default function BloemistCase() {
       </section>
 
       {/* Article Content */}
-      <article className="relative bg-white">
+      <article className="relative bg-[#fafaf8]">
         {/* De uitdaging */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -104,7 +104,7 @@ export default function BloemistCase() {
                 </h3>
 
                 <p>
-                  Een concrete <Link href="/seo-strategie" className="underline hover:text-accent transition-colors">SEO-strategie</Link>. Geen plan voor welke pagina's nodig waren. Teksten die er wel stonden maar niet geoptimaliseerd waren. Geo-pagina's zonder focus. En een linkprofiel dat te zwak was om op te vallen tussen grote spelers als Fleurop en Topbloemen.
+                  Een concrete <Link href="/seo-strategie" className="font-bold">SEO-strategie</Link>. Geen plan voor welke pagina's nodig waren. Teksten die er wel stonden maar niet geoptimaliseerd waren. Geo-pagina's zonder focus. En een linkprofiel dat te zwak was om op te vallen tussen grote spelers als Fleurop en Topbloemen.
                 </p>
 
                 <p>
@@ -129,7 +129,7 @@ export default function BloemistCase() {
         </section>
 
         {/* De aanpak */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -199,7 +199,7 @@ export default function BloemistCase() {
         </section>
 
         {/* De resultaten */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -267,7 +267,7 @@ export default function BloemistCase() {
         </section>
 
         {/* Wat dit laat zien */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -280,11 +280,11 @@ export default function BloemistCase() {
                 </p>
 
                 <p>
-                  Deze online bloemist had een goed product en sterke marketing. CRO, UX, mailmarketing: dat stond. Ze misten alleen de <Link href="/seo-voor-webshop" className="underline hover:text-accent transition-colors">webshop SEO-expertise</Link> om nieuwe klanten binnen te halen. Met die aanvulling groei je van "onvindbaar" naar "eerste keuze" in twee jaar.
+                  Deze online bloemist had een goed product en sterke marketing. CRO, UX, mailmarketing: dat stond. Ze misten alleen de <Link href="/seo-voor-webshop" className="font-bold">webshop SEO-expertise</Link> om nieuwe klanten binnen te halen. Met die aanvulling groei je van "onvindbaar" naar "eerste keuze" in twee jaar.
                 </p>
 
                 <p>
-                  Wil je ook meer klanten via Google? Bel me: <a href="tel:0628206410" className="underline hover:text-accent transition-colors">06 282 064 10.</a> In 15 minuten vertel ik je wat er moet gebeuren.
+                  Wil je ook meer klanten via Google? Bel me: <a href="tel:0628206410" className="font-bold">06 282 064 10.</a> In 15 minuten vertel ik je wat er moet gebeuren.
                 </p>
               </div>
             </div>

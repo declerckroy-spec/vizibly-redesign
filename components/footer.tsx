@@ -4,7 +4,7 @@ import { siteConfig, navLinks } from '@/lib/config';
 
 export function Footer() {
   return (
-    <footer className="relative bg-black py-16 text-white">
+    <footer className="relative bg-[#0a0a0a] py-20 text-white">
       {/* Subtle diagonal pattern */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'

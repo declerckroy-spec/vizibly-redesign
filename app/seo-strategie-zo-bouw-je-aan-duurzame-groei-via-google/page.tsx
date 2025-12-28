@@ -121,7 +121,7 @@ export default function SeoStrategiePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-28">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -135,7 +135,7 @@ export default function SeoStrategiePage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 SEO STRATEGIE
               </p>
 
@@ -176,7 +176,7 @@ export default function SeoStrategiePage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -211,10 +211,10 @@ export default function SeoStrategiePage() {
             Resultaat na drie maanden: geen omzet. Conclusie: SEO werkt niet.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Maar <Link href="/waarom-seo-relevanter-is-dan-ooit-ondanks-wat-je-hoort-over-ai" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO werkt wel</Link>. Een verkeerde aanpak niet.
+            Maar <Link href="/waarom-seo-relevanter-is-dan-ooit-ondanks-wat-je-hoort-over-ai" className="font-bold">SEO werkt wel</Link>. Een verkeerde aanpak niet.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Volgens <a href="https://firstpagesage.com/reports/seo-roi-statistics-fc/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">First Page Sage</a> halen bedrijven gemiddeld 200% tot 700% rendement uit SEO. Sommige sectoren zelfs meer dan 500%. Voorwaarde: je strategie moet kloppen.
+            Volgens <a href="https://firstpagesage.com/reports/seo-roi-statistics-fc/" target="_blank" rel="noopener noreferrer" className="font-bold">First Page Sage</a> halen bedrijven gemiddeld 200% tot 700% rendement uit SEO. Sommige sectoren zelfs meer dan 500%. Voorwaarde: je strategie moet kloppen.
           </p>
 
           {/* Section 3 */}
@@ -265,7 +265,7 @@ export default function SeoStrategiePage() {
             Analyseer je markt. Waarvoor staan anderen bovenaan? Welke termen brengen hen klanten? Programmas zoals Ahrefs of Semrush tonen zoekvolumes en hoe moeilijk het is om hoog te scoren.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            Zoektermen met "kopen", "bestellen", "prijs" of "vergelijken" wijzen op koopintentie. Informatieve zoekopdrachten helpen voor gezag en <Link href="/linkbuilding" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">linkbuilding</Link>, maar leveren zelden direct omzet.
+            Zoektermen met "kopen", "bestellen", "prijs" of "vergelijken" wijzen op koopintentie. Informatieve zoekopdrachten helpen voor gezag en <Link href="/linkbuilding" className="font-bold">linkbuilding</Link>, maar leveren zelden direct omzet.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -297,7 +297,7 @@ export default function SeoStrategiePage() {
             Schrijf voor mensen die overwegen te kopen. Welke vragen hebben ze? Welke twijfels? Wat moeten ze weten?
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Goede SEO-content</Link> geeft direct antwoord, laat zien waarom jouw oplossing past, en helpt bezoekers kiezen.
+            <Link href="/seo-copy" className="font-bold">Goede SEO-content</Link> geeft direct antwoord, laat zien waarom jouw oplossing past, en helpt bezoekers kiezen.
           </p>
 
           <p className="mb-4 text-base font-black uppercase text-black lg:text-lg">Techniek die werkt</p>
@@ -305,7 +305,7 @@ export default function SeoStrategiePage() {
             De beste inhoud faalt als je website niet werkt. Trage laadtijd jaagt bezoekers weg. Een website die niet werkt op mobiel verliest meer dan de helft van het verkeer.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            Check de basis: laadt je website binnen twee seconden? Werkt alles op mobiel? Zijn er dode koppelingen? Kan Google alle paginas vinden? Meer over <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">technische verbetering</Link>.
+            Check de basis: laadt je website binnen twee seconden? Werkt alles op mobiel? Zijn er dode koppelingen? Kan Google alle paginas vinden? Meer over <Link href="/design-techniek" className="font-bold">technische verbetering</Link>.
           </p>
 
           <p className="mb-4 text-base font-black uppercase text-black lg:text-lg">Gezag via sterke koppelingen</p>
@@ -324,13 +324,13 @@ export default function SeoStrategiePage() {
             Mensen zoeken ook via ChatGPT, Claude, Perplexity en de AI-overzichten van Google. Deze programmas geven direct antwoorden, maar halen informatie van websites. Ook van jouw website, als je het goed aanpakt.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Welke websites vermelden deze AI-systemen? Volgens <a href="https://www.searchenginejournal.com/is-seo-still-relevant-in-the-ai-era-new-research-says-yes/547929/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Search Engine Journal</a> verschijnen websites op positie 1 in Google in 25% van de gevallen ook in AI-zoekresultaten. Lagere posities betekenen minder kans om genoemd te worden.
+            Welke websites vermelden deze AI-systemen? Volgens <a href="https://www.searchenginejournal.com/is-seo-still-relevant-in-the-ai-era-new-research-says-yes/547929/" target="_blank" rel="noopener noreferrer" className="font-bold">Search Engine Journal</a> verschijnen websites op positie 1 in Google in 25% van de gevallen ook in AI-zoekresultaten. Lagere posities betekenen minder kans om genoemd te worden.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Dezelfde principes die voor Google werken, werken voor AI-programmas. Duidelijke opbouw, inhoudelijke diepgang, vakkennis, specifieke antwoorden.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Geen aparte aanpak nodig. Goede SEO werkt overal. <Link href="/waarom-seo-relevanter-is-dan-ooit-ondanks-wat-je-hoort-over-ai" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Lees waarom SEO relevanter is dan ooit</Link>.
+            Geen aparte aanpak nodig. Goede SEO werkt overal. <Link href="/waarom-seo-relevanter-is-dan-ooit-ondanks-wat-je-hoort-over-ai" className="font-bold">Lees waarom SEO relevanter is dan ooit</Link>.
           </p>
 
           {/* Section 5 */}
@@ -375,7 +375,7 @@ export default function SeoStrategiePage() {
             </li>
           </ul>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Je besteedt het eerste half jaar intensief aan <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">complete SEO</Link>. Na zes maanden levert organisch verkeer structureel €8.000 per maand. De investering verdient zich terug. En die €8.000 blijft komen, maand na maand.
+            Je besteedt het eerste half jaar intensief aan <Link href="/full-service-seo" className="font-bold">complete SEO</Link>. Na zes maanden levert organisch verkeer structureel €8.000 per maand. De investering verdient zich terug. En die €8.000 blijft komen, maand na maand.
           </p>
 
           {/* Section 7 */}
@@ -386,7 +386,7 @@ export default function SeoStrategiePage() {
             Wat werkt voor een webwinkel, faalt bij een plaatselijke dienstverlener. En wat werkt voor particulieren, past niet bij zakelijke klanten.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Een <Link href="/local-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">plaatselijke dienstverlener</Link> richt zich op geografische zoektermen en beoordelingen. Een webwinkel werkt aan productpaginas en categorieën. Een zakelijk bedrijf bouwt gezag via uitgebreide inhoud.
+            Een <Link href="/local-seo" className="font-bold">plaatselijke dienstverlener</Link> richt zich op geografische zoektermen en beoordelingen. Een webwinkel werkt aan productpaginas en categorieën. Een zakelijk bedrijf bouwt gezag via uitgebreide inhoud.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             De basis blijft: weet wat je wilt, vind de zoektermen die dat opleveren, maak inhoud die antwoorden geeft, zorg dat de techniek klopt, bouw autoriteit, blijf meten en verbeteren. Het verschil tussen bedrijven die groeien en bedrijven die stilstaan? De eerste groep heeft een plan en voert het uit. De tweede blijft hopen dat het vanzelf komt.

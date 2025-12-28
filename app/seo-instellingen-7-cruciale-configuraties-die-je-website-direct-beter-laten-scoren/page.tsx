@@ -73,7 +73,7 @@ export default function SEOInstellingenPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -86,7 +86,7 @@ export default function SEOInstellingenPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 TECHNISCHE SEO
               </p>
 
@@ -122,7 +122,7 @@ export default function SEOInstellingenPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
             Ben je gefrustreerd omdat je website niet goed scoort in Google? Of heb je het gevoel dat je technische SEO-kennis tekortschiet? Je bent niet alleen. Veel ondernemers worstelen met de juiste SEO instellingen voor hun website. In dit artikel ontdek je de 7 belangrijkste technische configuraties die je vandaag nog kunt implementeren voor betere zoekresultaten.
@@ -132,7 +132,7 @@ export default function SEOInstellingenPage() {
             Waarom de juiste SEO instellingen cruciaal zijn
           </h2>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Voordat we dieper ingaan op specifieke instellingen, is het belangrijk om te begrijpen waarom <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">technische SEO</Link> zo belangrijk is. Google gebruikt meer dan 200 factoren om websites te rangschikken, en veel daarvan zijn technisch van aard. Zonder de juiste configuratie kunnen zelfs de beste <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">content</Link> en <Link href="/linkbuilding" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">backlinks</Link> niet tot hun recht komen.
+            Voordat we dieper ingaan op specifieke instellingen, is het belangrijk om te begrijpen waarom <Link href="/design-techniek" className="font-bold">technische SEO</Link> zo belangrijk is. Google gebruikt meer dan 200 factoren om websites te rangschikken, en veel daarvan zijn technisch van aard. Zonder de juiste configuratie kunnen zelfs de beste <Link href="/seo-copy" className="font-bold">content</Link> en <Link href="/linkbuilding" className="font-bold">backlinks</Link> niet tot hun recht komen.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -247,7 +247,7 @@ export default function SEOInstellingenPage() {
             <li>Minimaliseer Cumulative Layout Shift (CLS): elementen mogen niet verschuiven tijdens het laden</li>
           </ul>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Tools voor Core Web Vitals optimalisatie:</strong> <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">PageSpeed Insights</a>, Google Search Console (Core Web Vitals rapport), en Lighthouse audits in Chrome DevTools.
+            <strong>Tools voor Core Web Vitals optimalisatie:</strong> <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer" className="font-bold">PageSpeed Insights</a>, Google Search Console (Core Web Vitals rapport), en Lighthouse audits in Chrome DevTools.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -285,7 +285,7 @@ export default function SEOInstellingenPage() {
             Onthoud dat technische SEO slechts één aspect is van een succesvolle strategie. Combineer deze instellingen met hoogwaardige content, een sterke linkbuilding strategie en een goede gebruikerservaring voor de beste resultaten.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Heb je hulp nodig bij het implementeren van deze technische SEO instellingen? Bij Vizibly hebben we ruime ervaring met het optimaliseren van websites voor betere zoekresultaten. <Link href="/contact" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Neem contact met ons op</Link> voor een gratis kennismakingsgesprek.
+            Heb je hulp nodig bij het implementeren van deze technische SEO instellingen? Bij Vizibly hebben we ruime ervaring met het optimaliseren van websites voor betere zoekresultaten. <Link href="/contact" className="font-bold">Neem contact met ons op</Link> voor een gratis kennismakingsgesprek.
           </p>
         </div>
       </article>
@@ -300,7 +300,7 @@ export default function SEOInstellingenPage() {
       />
 
       {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white lg:py-24">
+      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white lg:py-32">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-4">
             <div className="lg:col-span-1">

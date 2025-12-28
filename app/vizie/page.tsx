@@ -223,7 +223,7 @@ export default async function ViziePage({
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-24 lg:pt-48 lg:pb-32">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -231,13 +231,13 @@ export default async function ViziePage({
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               SEO KENNIS & INZICHTEN
             </p>
 
             <h1 className="mb-8 text-brutalist-hero leading-none text-white">
               <span className="relative inline-block">
-                <span className="absolute -inset-1 bg-accent"></span>
+                <span className="absolute inset-0 bg-accent"></span>
                 <span className="relative text-black">Vizie</span>
               </span>
             </h1>
@@ -251,7 +251,7 @@ export default async function ViziePage({
       </section>
 
       {/* Blog Grid Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-3 lg:gap-16">
             {/* Main Content - Blog Articles */}
@@ -394,10 +394,10 @@ export default async function ViziePage({
       <TestimonialsSection />
 
       {/* Final CTA Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               KLAAR OM TE GROEIEN?
             </p>
 

@@ -25,11 +25,11 @@ export default function TechnischeWebshopCase() {
       <Navigation />
 
       {/* Breadcrumb */}
-      <section className="border-b-4 border-black bg-white py-4">
+      <section className="border-b-4 border-black bg-[#fafaf8] py-4">
         <div className="mx-auto max-w-screen-2xl px-6">
           <Link
             href="/cases"
-            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-black/60 transition-colors hover:text-black"
+            className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-black/60 transition-colors hover:text-black"
           >
             <ArrowLeft className="h-4 w-4" />
             Alle cases
@@ -38,7 +38,7 @@ export default function TechnischeWebshopCase() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -46,7 +46,7 @@ export default function TechnischeWebshopCase() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               CASE STUDY
             </p>
             <h1 className="mb-8 text-brutalist-hero text-black">
@@ -61,7 +61,7 @@ export default function TechnischeWebshopCase() {
       </section>
 
       {/* Featured Image */}
-      <section className="relative border-b-4 border-black bg-black py-16 lg:py-20">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-20 lg:py-24">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="relative mx-auto max-w-5xl">
             <div className="relative border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
@@ -81,9 +81,9 @@ export default function TechnischeWebshopCase() {
       </section>
 
       {/* Article Content */}
-      <article className="relative bg-white">
+      <article className="relative bg-[#fafaf8]">
         {/* De klant */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -100,7 +100,7 @@ export default function TechnischeWebshopCase() {
         </section>
 
         {/* Het probleem */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -121,7 +121,7 @@ export default function TechnischeWebshopCase() {
                 </p>
 
                 <p>
-                  Dit was hun eerste <Link href="/full-service-seo" className="underline hover:text-accent transition-colors">serieuze SEO-traject</Link>. Ze hadden al basis op orde, maar wilden doorgroeien.
+                  Dit was hun eerste <Link href="/full-service-seo" className="font-bold">serieuze SEO-traject</Link>. Ze hadden al basis op orde, maar wilden doorgroeien.
                 </p>
               </div>
 
@@ -142,7 +142,7 @@ export default function TechnischeWebshopCase() {
         </section>
 
         {/* Wat we gedaan hebben */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -161,7 +161,7 @@ export default function TechnischeWebshopCase() {
                 <ul className="space-y-4 list-none">
                   <li className="flex items-start">
                     <span className="mr-3 text-accent">▸</span>
-                    <span><Link href="/seo-copy" className="underline hover:text-accent transition-colors">Contentplan gemaakt</Link> op basis van winstgevendheid. Niet op basis van zoekvolume. Waar verdient deze webshop het meeste aan? Daar schrijven we voor.</span>
+                    <span><Link href="/seo-copy" className="font-bold">Contentplan gemaakt</Link> op basis van winstgevendheid. Niet op basis van zoekvolume. Waar verdient deze webshop het meeste aan? Daar schrijven we voor.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-accent">▸</span>
@@ -173,7 +173,7 @@ export default function TechnischeWebshopCase() {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-accent">▸</span>
-                    <span>Maandelijks <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">sterke backlinks</Link> verzameld. Geen spam. Alleen links van websites die écht relevant zijn voor de branche.</span>
+                    <span>Maandelijks <Link href="/linkbuilding" className="font-bold">sterke backlinks</Link> verzameld. Geen spam. Alleen links van websites die écht relevant zijn voor de branche.</span>
                   </li>
                 </ul>
               </div>
@@ -182,7 +182,7 @@ export default function TechnischeWebshopCase() {
         </section>
 
         {/* Resultaten */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -250,7 +250,7 @@ export default function TechnischeWebshopCase() {
         </section>
 
         {/* SEO is meer dan bezoekers alleen */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -263,7 +263,7 @@ export default function TechnischeWebshopCase() {
                 </p>
 
                 <p>
-                  Deze <Link href="/seo-voor-webshop" className="underline hover:text-accent transition-colors">webshop</Link> had al bezoekers. Maar die bezoekers kostten meer dan ze opbrachten. Door focus te leggen op producten met hoge marges en die pagina's vindbaar te maken, verandert de hele business case.
+                  Deze <Link href="/seo-voor-webshop" className="font-bold">webshop</Link> had al bezoekers. Maar die bezoekers kostten meer dan ze opbrachten. Door focus te leggen op producten met hoge marges en die pagina's vindbaar te maken, verandert de hele business case.
                 </p>
 
                 <p>
@@ -271,7 +271,7 @@ export default function TechnischeWebshopCase() {
                 </p>
 
                 <p className="mt-8">
-                  Wil je ook meer omzet uit Google? Bel me: <a href="tel:0628206410" className="underline hover:text-accent transition-colors">06 282 064 10</a>. In 15 minuten weet je waar jouw kansen liggen.
+                  Wil je ook meer omzet uit Google? Bel me: <a href="tel:0628206410" className="font-bold">06 282 064 10</a>. In 15 minuten weet je waar jouw kansen liggen.
                 </p>
               </div>
             </div>

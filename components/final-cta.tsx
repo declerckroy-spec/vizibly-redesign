@@ -40,8 +40,8 @@ export function FinalCTA({
 
   return (
     <section
-      className={`relative border-b-4 border-black py-24 lg:py-32 ${
-        isDefault ? 'bg-accent' : 'bg-black text-white'
+      className={`relative border-b-4 border-black py-32 lg:py-40 ${
+        isDefault ? 'bg-accent' : 'bg-[#0a0a0a] text-white'
       }`}
     >
       {/* Background pattern for dark variant */}
@@ -60,7 +60,7 @@ export function FinalCTA({
           {/* Optional Label */}
           {label && (
             <p
-              className={`mb-6 text-base font-bold uppercase tracking-wider lg:text-lg ${
+              className={`mb-6 text-base font-semibold uppercase tracking-widest lg:text-lg ${
                 isDefault ? 'text-black/60' : 'text-accent'
               }`}
             >

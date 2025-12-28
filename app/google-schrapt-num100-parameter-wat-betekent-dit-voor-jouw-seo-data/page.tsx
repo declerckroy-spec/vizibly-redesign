@@ -77,7 +77,7 @@ export default function GoogleNum100Page() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -91,7 +91,7 @@ export default function GoogleNum100Page() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 GOOGLE UPDATE
               </p>
 
@@ -128,7 +128,7 @@ export default function GoogleNum100Page() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -157,7 +157,7 @@ export default function GoogleNum100Page() {
             Waarom heeft Google dit gedaan?
           </h2>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Google heeft geen officiele verklaring gegeven, maar volgens <a href="https://www.seroundtable.com/google-search-console-reporting-off-40106.html" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Search Engine Roundtable</a> wijzen experts naar bescherming tegen AI-scrapers, kostenbesparing en anti-bot maatregelen. De explosieve groei van AI-tools die Google's data scrapen heeft waarschijnlijk tot deze maatregel geleid.
+            Google heeft geen officiele verklaring gegeven, maar volgens <a href="https://www.seroundtable.com/google-search-console-reporting-off-40106.html" target="_blank" rel="noopener noreferrer" className="font-bold">Search Engine Roundtable</a> wijzen experts naar bescherming tegen AI-scrapers, kostenbesparing en anti-bot maatregelen. De explosieve groei van AI-tools die Google's data scrapen heeft waarschijnlijk tot deze maatregel geleid.
           </p>
 
           {/* Section 3 */}
@@ -246,10 +246,10 @@ export default function GoogleNum100Page() {
             Uitdaging voor SEO-specialisten
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Voor website-eigenaren verandert er weinig, maar <Link href="/" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-specialisten</Link> staan voor nieuwe uitdagingen. Ze hebben nu aanzienlijk minder data tot hun beschikking om <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">strategieen</Link> mee te ontwikkelen en moeten nieuwe manieren vinden om SEO-prestaties te monitoren met beperktere data. Voor <Link href="/local-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">lokale SEO</Link> is de impact gelukkig beperkt omdat hier voornamelijk top-10 posities relevant zijn.
+            Voor website-eigenaren verandert er weinig, maar <Link href="/" className="font-bold">SEO-specialisten</Link> staan voor nieuwe uitdagingen. Ze hebben nu aanzienlijk minder data tot hun beschikking om <Link href="/full-service-seo" className="font-bold">strategieen</Link> mee te ontwikkelen en moeten nieuwe manieren vinden om SEO-prestaties te monitoren met beperktere data. Voor <Link href="/local-seo" className="font-bold">lokale SEO</Link> is de impact gelukkig beperkt omdat hier voornamelijk top-10 posities relevant zijn.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Deze wijziging markeert een belangrijke verschuiving in data-toegang, maar voor website-eigenaren verandert de kern van SEO niet: <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">kwalitatieve content</Link>, <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">technische optimalisatie</Link> en gebruiksvriendelijkheid blijven de pijlers van online succes. Laat je niet misleiden door schijnbare data-verliezen. Focus op wat echt telt: je bezoekers en hun ervaring.
+            Deze wijziging markeert een belangrijke verschuiving in data-toegang, maar voor website-eigenaren verandert de kern van SEO niet: <Link href="/seo-copy" className="font-bold">kwalitatieve content</Link>, <Link href="/design-techniek" className="font-bold">technische optimalisatie</Link> en gebruiksvriendelijkheid blijven de pijlers van online succes. Laat je niet misleiden door schijnbare data-verliezen. Focus op wat echt telt: je bezoekers en hun ervaring.
           </p>
 
           {/* CTA Box */}

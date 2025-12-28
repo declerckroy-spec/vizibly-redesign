@@ -43,10 +43,10 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialsSection() {
   return (
-    <section className="relative border-y-4 border-black bg-accent py-24 lg:py-32">
+    <section className="relative border-y-4 border-black bg-accent py-32 lg:py-40">
       <div className="mx-auto max-w-screen-2xl px-6">
-        <div className="mb-16 text-center">
-          <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+        <div className="mb-20 text-center">
+          <p className="mb-8 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
             5/5 STERREN OP GOOGLE
           </p>
           <h2 className="mb-6 text-brutalist-h2 text-black">
@@ -95,7 +95,7 @@ export function TestimonialsSection() {
             href="https://www.google.com/maps/place/Vizibly/@52.1909763,5.2795551,7z/data=!4m8!3m7!1s0x47c5ef6bd13e8765:0xc924944bbf7fa195!8m2!3d52.1909763!4d5.2795551!9m1!1b1!16s%2Fg%2F11vs4r0223"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border-4 border-black bg-black px-6 py-3 text-base font-black uppercase text-white transition-all hover:bg-white hover:text-black"
+            className="inline-block border-4 border-black bg-black px-6 py-3 text-base font-black uppercase text-white transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-white hover:text-black hover:shadow-[6px_6px_0_0_#000000] hover:-translate-x-0.5 hover:-translate-y-0.5"
           >
             Bekijk alle reviews op Google
           </a>

@@ -81,7 +81,7 @@ export default function ContentClustersPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -95,7 +95,7 @@ export default function ContentClustersPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 CONTENT STRATEGIE
               </p>
 
@@ -132,7 +132,7 @@ export default function ContentClustersPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -172,7 +172,7 @@ export default function ContentClustersPage() {
             Waarom content clusters essentieel voor je SEO-strategie in 2025 zijn
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <a href="https://developers.google.com/search/blog/2023/05/understanding-news-topic-authority" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Google introduceerde</a> het concept van "topic authority" officieel op 23 mei 2023, maar slimme SEO's werkten hier al jaren mee. Het algoritme is verschoven van individuele zoektermen naar complete onderwerpen. Je moet niet meer denken in keywords, maar in thema's.
+            <a href="https://developers.google.com/search/blog/2023/05/understanding-news-topic-authority" target="_blank" rel="noopener noreferrer" className="font-bold">Google introduceerde</a> het concept van "topic authority" officieel op 23 mei 2023, maar slimme SEO's werkten hier al jaren mee. Het algoritme is verschoven van individuele zoektermen naar complete onderwerpen. Je moet niet meer denken in keywords, maar in thema's.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Dit heeft alles te maken met hoe mensen tegenwoordig zoeken. Ze typen geen robotachtige zoektermen meer in, maar stellen complete vragen. Ze willen diepgaande informatie van bronnen die ze kunnen vertrouwen. En Google's AI-gedreven algoritmes begrijpen steeds beter wat gebruikers echt zoeken - niet alleen wat ze intypen.
@@ -394,7 +394,7 @@ export default function ContentClustersPage() {
             Content clusters zijn geen quick fix, maar een langetermijnstrategie die je website transformeert tot de autoriteit in jouw niche. Begin klein met een cluster rond je belangrijkste onderwerp. Bouw dit uit, meet de resultaten en breid dan uit naar andere thema's.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Wil je hulp bij het opzetten van content clusters? Bij Vizibly ontwikkelen we complete <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-strategieen</Link> inclusief content clusters. We schrijven niet alleen <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">vlijmscherpe SEO-teksten</Link> die scoren, maar zorgen ook voor de technische optimalisatie en linkbuilding die je clusters naar de top stuwen.
+            Wil je hulp bij het opzetten van content clusters? Bij Vizibly ontwikkelen we complete <Link href="/seo-strategie" className="font-bold">SEO-strategieen</Link> inclusief content clusters. We schrijven niet alleen <Link href="/seo-copy" className="font-bold">vlijmscherpe SEO-teksten</Link> die scoren, maar zorgen ook voor de technische optimalisatie en linkbuilding die je clusters naar de top stuwen.
           </p>
 
           {/* CTA Box */}

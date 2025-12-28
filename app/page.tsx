@@ -161,7 +161,7 @@ export default function Home() {
             <h1 className="mb-12 text-brutalist-hero leading-none">
               Terwijl jij deze zin leest, klikt iemand op{' '}
               <span className="relative inline-block animate-glitch">
-                <span className="absolute -inset-1 bg-accent"></span>
+                <span className="absolute inset-0 bg-accent"></span>
                 <span className="relative">je concurrent</span>
               </span>
             </h1>
@@ -196,7 +196,7 @@ export default function Home() {
       <StatsOnly />
 
       {/* Main Intro Section - Generous spacing voor storytelling */}
-      <section className="relative border-b-4 border-black bg-black py-28 text-white lg:py-40">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-48">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -247,7 +247,7 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button asChild size="lg" className="w-fit bg-accent text-black border-accent hover:bg-white">
+              <Button asChild size="lg" variant="lime" className="w-fit">
                 <Link href="/contact">NEEM CONTACT OP</Link>
               </Button>
             </div>
@@ -256,10 +256,10 @@ export default function Home() {
       </section>
 
       {/* Services Section - Extra padding voor emphasis */}
-      <section className="relative z-10 border-b-4 border-black bg-white py-32 lg:py-40 -mb-20">
+      <section className="relative z-10 border-b-4 border-black bg-[#fafaf8] py-36 lg:py-48 -mb-20">
         <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black lg:text-lg xl:text-xl">
+          <div className="mb-20 text-center">
+            <p className="mb-8 text-base font-semibold uppercase tracking-widest text-black/70 lg:text-lg">
               VOOR ONDERNEMERS DIE KLAAR ZIJN MET ZOEKPAGINA 2
             </p>
             <h2 className="text-brutalist-h1 text-black">
@@ -334,7 +334,7 @@ export default function Home() {
       </section>
 
       {/* Process Section - Variërende spacing voor dynamiek */}
-      <section className="relative z-0 border-b-4 border-black bg-black py-32 text-white lg:py-48 pt-44">
+      <section className="relative z-0 border-b-4 border-black bg-[#0a0a0a] py-36 text-white lg:py-56 pt-48">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 40px), repeating-linear-gradient(90deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 40px)'
@@ -346,7 +346,7 @@ export default function Home() {
             <h2 className="mb-6 text-brutalist-h1 text-white">
               Continu verbeteren,<br />continu resultaat
             </h2>
-            <p className="text-base font-bold uppercase tracking-wider text-accent lg:text-lg xl:text-xl">
+            <p className="text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               SEO IS GEEN SPRINT MAAR EEN MARATHON DIE JE WINT
             </p>
           </div>
@@ -374,7 +374,7 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button asChild size="lg" className="mt-12 w-fit bg-accent text-black border-accent hover:bg-white">
+              <Button asChild size="lg" variant="lime" className="mt-12 w-fit">
                 <Link href="/full-service-seo">MEER OVER ONZE AANPAK</Link>
               </Button>
             </div>
@@ -394,7 +394,7 @@ export default function Home() {
       </section>
 
       {/* Cases Section - Standard spacing */}
-      <section className="border-b-4 border-black bg-white py-24 lg:py-36">
+      <section className="border-b-4 border-black bg-[#fafaf8] py-32 lg:py-44">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-20">
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -465,7 +465,7 @@ export default function Home() {
       <CTAWithImage />
 
       {/* Blog Articles Section - Compact spacing */}
-      <section className="relative border-b-4 border-black bg-black py-20 text-white lg:py-28">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -473,7 +473,7 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-20">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg xl:text-xl">
+            <p className="mb-8 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               KENNIS & INZICHTEN
             </p>
             <h2 className="mb-4 text-brutalist-h1 text-white">
@@ -531,7 +531,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
+            <Button asChild size="lg" variant="lime" className="px-8 py-5 text-base">
               <Link href="/vizie">BEKIJK ALLES</Link>
             </Button>
           </div>
@@ -539,7 +539,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-20">
             <h2 className="mb-6 text-brutalist-h2 text-black">

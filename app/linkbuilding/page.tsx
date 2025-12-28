@@ -100,7 +100,7 @@ export default function LinkbuildingPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-36 pb-24 lg:pt-44 lg:pb-36">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -109,13 +109,13 @@ export default function LinkbuildingPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 BOUW AUTORITEIT IN GOOGLE
               </p>
 
               <h1 className="mb-8 text-brutalist-hero leading-none text-black">
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative">Linkbuilding</span>
                 </span>
                 {' '}die werkt
@@ -154,7 +154,7 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* What is Linkbuilding Section */}
-      <section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -162,7 +162,7 @@ export default function LinkbuildingPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 DE BASIS
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-white">
@@ -183,10 +183,10 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* Why Linkbuilding Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               WAAROM HET WERKT
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -233,10 +233,10 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* Process Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-accent py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               ONZE AANPAK
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -272,10 +272,10 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* Advanced Strategies Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               GEAVANCEERDE METHODEN
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -339,7 +339,7 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* Citations Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -347,7 +347,7 @@ export default function LinkbuildingPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 CITATIONS & VERMELDINGEN
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-white">
@@ -395,11 +395,11 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* Internal Linkbuilding Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 INTERNE LINKBUILDING
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -453,10 +453,10 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* AI Era Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-accent py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               DE TOEKOMST
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -512,14 +512,14 @@ export default function LinkbuildingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               PAKKETTEN
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-white">
@@ -574,7 +574,8 @@ export default function LinkbuildingPage() {
                 <Button
                   asChild
                   size="lg"
-                  className={`w-full ${pkg.featured ? 'bg-black text-accent border-black hover:bg-white hover:text-black' : 'bg-accent text-black border-accent hover:bg-white'}`}
+                  variant={pkg.featured ? undefined : "lime"}
+                  className={`w-full ${pkg.featured ? 'bg-black text-accent border-black hover:bg-white hover:text-black' : ''}`}
                 >
                   <Link href="/contact">
                     START NU

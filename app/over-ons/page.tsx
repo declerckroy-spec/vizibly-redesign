@@ -67,7 +67,7 @@ export default function OverOnsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-40 pb-24 lg:pt-48 lg:pb-32">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -75,14 +75,14 @@ export default function OverOnsPage() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               DIRECT CONTACT, ALTIJD EEN PLAN
             </p>
 
             <h1 className="mb-8 text-brutalist-hero leading-none">
               Over{' '}
               <span className="relative inline-block">
-                <span className="absolute -inset-1 bg-accent"></span>
+                <span className="absolute inset-0 bg-accent"></span>
                 <span className="relative">Vizibly</span>
               </span>
             </h1>
@@ -91,7 +91,7 @@ export default function OverOnsPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="relative border-y-4 border-black bg-black py-16 lg:py-20">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-20 lg:py-24">
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
             {stats.map((stat, index) => (
@@ -104,7 +104,7 @@ export default function OverOnsPage() {
                 <div className="text-4xl font-black tracking-tight text-accent lg:text-5xl xl:text-6xl">
                   {stat.value}
                 </div>
-                <div className="text-xs font-bold uppercase tracking-wider text-white lg:text-sm">
+                <div className="text-xs font-semibold uppercase tracking-widest text-white lg:text-sm">
                   {stat.label}
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function OverOnsPage() {
       </section>
 
       {/* Waarom Vizibly bestaat */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="relative aspect-[3/4] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
@@ -148,7 +148,7 @@ export default function OverOnsPage() {
       </section>
 
       {/* Voor wie ik werk */}
-      <section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -214,7 +214,7 @@ export default function OverOnsPage() {
       <TestimonialsSection />
 
       {/* Waarom ik anders kijk naar SEO */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div>
@@ -225,7 +225,7 @@ export default function OverOnsPage() {
 
               <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Voordat ik met SEO begon, studeerde ik filosofie en werkte als copywriter (zie ook{' '}
-                <a href="https://roydeclerck.nl/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent transition-colors">
+                <a href="https://roydeclerck.nl/" target="_blank" rel="noopener noreferrer" className="font-bold">
                   roydeclerck.nl
                 </a>
                 ). Die achtergrond helpt me dagelijks.
@@ -287,7 +287,7 @@ export default function OverOnsPage() {
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
-              <p className="text-lg font-bold uppercase tracking-wider text-white/80 lg:text-xl">
+              <p className="text-lg font-semibold uppercase tracking-widest text-white/80 lg:text-xl">
                 VIZIBLY
               </p>
               <p className="text-4xl font-black uppercase text-white lg:text-6xl">

@@ -87,7 +87,7 @@ export default function SEOStrategiePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-36 pb-24 lg:pt-44 lg:pb-36">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -96,14 +96,14 @@ export default function SEOStrategiePage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 DE FUNDERING VOOR ONLINE GROEI
               </p>
 
               <h1 className="mb-8 text-brutalist-hero leading-none">
                 SEO{' '}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative">Strategie</span>
                 </span>
               </h1>
@@ -140,7 +140,7 @@ export default function SEOStrategiePage() {
       </section>
 
       {/* Wat is een SEO strategie Section */}
-      <section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -149,7 +149,7 @@ export default function SEOStrategiePage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 DE FUNDERING VOOR ONLINE GROEI
               </p>
 
@@ -192,11 +192,11 @@ export default function SEOStrategiePage() {
       </section>
 
       {/* 360-graden analyse Section */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 DOELGERICHT EN MEETBAAR
               </p>
 
@@ -226,7 +226,7 @@ export default function SEOStrategiePage() {
               </div>
 
               <p className="text-base font-bold text-black/70 lg:text-lg xl:text-xl">
-                Op basis van deze inzichten stellen we een strategisch plan op voor 6 tot 12 maanden, waarin we precies aangeven welke acties wanneer uitgevoerd worden. Van zoekwoordenonderzoek en <Link href="/seo-copy" className="underline hover:text-accent transition-colors">contentstrategie</Link> tot <Link href="/design-techniek" className="underline hover:text-accent transition-colors">technische optimalisatie</Link> en <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">linkbuilding</Link> - alles krijgt zijn plek in een logische volgorde.
+                Op basis van deze inzichten stellen we een strategisch plan op voor 6 tot 12 maanden, waarin we precies aangeven welke acties wanneer uitgevoerd worden. Van zoekwoordenonderzoek en <Link href="/seo-copy" className="font-bold">contentstrategie</Link> tot <Link href="/design-techniek" className="font-bold">technische optimalisatie</Link> en <Link href="/linkbuilding" className="font-bold">linkbuilding</Link> - alles krijgt zijn plek in een logische volgorde.
               </p>
             </div>
 
@@ -257,7 +257,7 @@ export default function SEOStrategiePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -265,7 +265,7 @@ export default function SEOStrategiePage() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               VAN STRATEGIE NAAR MEETBAAR RESULTAAT
             </p>
 
@@ -281,7 +281,7 @@ export default function SEOStrategiePage() {
               Meestal zie je de eerste resultaten al na 3-6 maanden, met een stevige groei in verkeer en posities na 9-12 maanden.
             </p>
 
-            <Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
+            <Button size="lg" asChild variant="lime" className="px-8 py-5 text-base">
               <Link href="/contact">
                 NEEM CONTACT OP
                 <ArrowRight className="ml-3 h-6 w-6" />

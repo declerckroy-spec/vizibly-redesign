@@ -1,6 +1,16 @@
-# Vizibly Design System - Style Guide V2.3
+# Vizibly Design System - Style Guide V3.0 (Premium)
 
 Deze style guide documenteert het complete design systeem voor de Vizibly website. Volg deze regels strikt bij het bouwen van nieuwe pagina's en componenten.
+
+## Wat is nieuw in V3.0?
+
+| Verbetering | Omschrijving |
+|-------------|--------------|
+| **Zachte kleurtonen** | Near-black (#0a0a0a) en warm-white (#fafaf8) voor minder vermoeiend contrast |
+| **Meer spacing** | Grotere verticale ruimte (`py-32 lg:py-40`) voor luxer gevoel |
+| **Expressievere typografie** | letter-spacing -0.03em, line-height 1.75 voor body |
+| **Micro-interacties** | Link underline animaties, input focus glow, button lift |
+| **Content ritme** | Afwisseling in achtergrondkleuren voor lange pagina's |
 
 ---
 
@@ -39,20 +49,45 @@ Vizibly gebruikt een **brutalist design aesthetic** - een strakke, ongepolijste 
 
 ## Kleuren
 
-### Primaire Kleuren
+### Primaire Kleuren (Premium V3)
 
 | Naam | Hex | CSS Variable | Gebruik |
 |------|-----|--------------|---------|
-| Zwart | `#000000` | `--primary`, `--foreground` | Tekst, borders, achtergrond |
-| Wit | `#ffffff` | `--background`, `--card` | Achtergrond, cards |
-| Lime/Accent | `#CCFF00` | `--accent` | Highlights, CTA's, shadows |
+| Pure Black | `#000000` | `--color-black` | Borders, tekst op lichte achtergrond |
+| **Near Black** | `#0a0a0a` | `--color-near-black` | **Donkere secties achtergrond (NIEUW)** |
+| Soft Black | `#111111` | `--color-soft-black` | Alternatief voor subtielere contrast |
+| Pure White | `#ffffff` | `--color-white` | Cards, hero secties |
+| **Warm White** | `#fafaf8` | `--color-warm-white` | **Content secties achtergrond (NIEUW)** |
+| Cream | `#f5f5f3` | `--color-cream` | Alternatief voor content blokken |
+| Lime/Accent | `#CCFF00` | `--color-lime`, `--accent` | Highlights, CTA's, shadows |
 
-### Kleurgebruik per Context
+### Kleurgebruik per Context (Premium V3)
 
+```jsx
+// Donkere secties - gebruik near-black i.p.v. pure black
+<section style={{ backgroundColor: '#0a0a0a' }} className="text-white">
+
+// Witte content secties - gebruik warm-white voor rustiger gevoel
+<section style={{ backgroundColor: '#fafaf8' }} className="text-black">
+
+// Hero secties - pure white voor maximaal contrast
+<section className="bg-white text-black">
+
+// Accent secties - onveranderd
+<section className="bg-accent text-black">
 ```
-Zwarte secties:    bg-black text-white
-Witte secties:     bg-white text-black
-Accent secties:    bg-accent text-black
+
+### Tailwind Classes (Nieuw)
+
+```jsx
+// Near-black achtergrond
+className="bg-[#0a0a0a]"
+
+// Warm-white achtergrond
+className="bg-[#fafaf8]"
+
+// Cream achtergrond (voor content ritme)
+className="bg-[#f5f5f3]"
 ```
 
 ### Tekst Opacity (op zwart)
@@ -101,13 +136,18 @@ html {
 | `.text-brutalist-h2` | 24px | 42px | Subkoppen |
 | `.text-brutalist-h3` | 20px | 32px | Kleine koppen |
 
-### Heading Styling
+### Heading Styling (Premium V3)
 
 ```css
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;  /* Was -0.05em, nu expressiever */
   line-height: 1.1;
+}
+
+/* Body text heeft nu meer line-height */
+p, li, span {
+  line-height: 1.75;  /* Was 1.5, nu luxer en leesbaarder */
 }
 ```
 
@@ -131,16 +171,78 @@ h1, h2, h3, h4, h5, h6 {
 <p className="text-xs font-bold uppercase tracking-wider lg:text-sm">
 ```
 
-### Text Styling Regels
+### Text Styling Regels (Premium V3)
 
 | Element | Styling |
 |---------|---------|
-| Labels boven koppen | `text-base font-bold uppercase tracking-wider text-accent lg:text-lg` |
+| Labels boven koppen | `text-base font-semibold uppercase tracking-widest text-accent lg:text-lg` |
 | Hero subtitel | `text-xl font-bold uppercase tracking-tight lg:text-2xl` |
 | Card titel | `text-xl font-black uppercase` of `text-2xl font-black uppercase` |
 | Card beschrijving | `text-base font-bold lg:text-lg` |
 | Footer kopjes | `text-lg font-black uppercase` |
 | Footer links | `text-base font-bold` |
+
+**Let op:** Labels gebruiken nu `font-semibold` (600) i.p.v. `font-bold` (700) en `tracking-widest` voor meer lucht.
+
+---
+
+## Micro-interacties (Premium V3)
+
+### Link Hover Animatie (Automatisch)
+
+**Inline links in content krijgen automatisch de micro-interactie via CSS.** Geen classes nodig voor links in:
+- Paragraphs (`<p>`)
+- Lijsten (`<li>`)
+- Artikelen (`<article>`)
+- Prose content (`.prose`)
+
+```jsx
+// Automatische styling - geen extra classes nodig!
+<p className="text-base font-bold text-black/80 lg:text-lg">
+  Lees meer over <Link href="/seo-strategie">SEO strategie</Link> en
+  <a href="https://example.com">externe bronnen</a>.
+</p>
+```
+
+**Wat gebeurt er automatisch:**
+1. Lime underline (4px) verschijnt onder de link
+2. Bij hover groeit de underline uit tot volledige achtergrond
+3. Tekst blijft leesbaar (wordt zwart op lime)
+
+**Let op:** Links met button-achtige classes (`className="...Button..."`) worden uitgesloten.
+
+### Button Hover met Brutalist Klik Effect
+
+Alle Button componenten hebben automatisch het brutalist klik effect via variants:
+
+| Variant | Shadow op hover |
+|---------|-----------------|
+| `default` | Zwarte 6px offset shadow |
+| `lime` | Lime 6px offset shadow |
+| `outline` | Zwarte 6px offset shadow |
+
+```jsx
+// Default (lichte achtergrond) - zwarte shadow
+<Button size="lg">NEEM CONTACT OP</Button>
+
+// Lime (donkere achtergrond) - lime shadow
+<Button size="lg" variant="lime">NEEM CONTACT OP</Button>
+```
+
+Zie de **Buttons** sectie onder Componenten voor volledige documentatie.
+
+### Input Focus Glow
+
+Inputs krijgen automatisch een glow via globals.css. Geen extra classes nodig:
+
+```jsx
+<input
+  type="email"
+  className="w-full border-4 border-black bg-white px-4 py-3 text-lg font-bold"
+  placeholder="je@email.nl"
+/>
+// Focus state wordt automatisch toegepast: border-accent + zachte glow
+```
 
 ---
 
@@ -157,14 +259,16 @@ Alle secties gebruiken dezelfde container:
 - `max-w-screen-2xl` = 1536px maximum breedte
 - `px-6` = 24px padding links/rechts
 
-### Sectie Padding
+### Sectie Padding (Premium V3 - meer "adem")
 
-| Type | Mobile | Desktop |
-|------|--------|---------|
-| Standaard | `py-24` | `lg:py-32` |
-| Compact | `py-16` | `lg:py-20` |
-| Groot | `py-28` | `lg:py-40` |
-| Extra groot | `py-32` | `lg:py-48` |
+| Type | Mobile | Desktop | Wanneer |
+|------|--------|---------|---------|
+| **Standaard (NIEUW)** | `py-32` | `lg:py-40` | Meeste secties |
+| Compact | `py-20` | `lg:py-24` | Tussen gerelateerde content |
+| Groot | `py-36` | `lg:py-48` | Hero's, belangrijke secties |
+| Extra groot | `py-40` | `lg:py-56` | Final CTA, testimonials |
+
+**Let op:** V3 gebruikt grotere padding dan V2 voor een luxer gevoel!
 
 ### Grid Gaps
 
@@ -276,7 +380,24 @@ className="transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
 
 ### Buttons
 
-#### Default Button (Primary)
+#### Brutalist Klik Effect (KRITISCH)
+
+Alle buttons hebben een brutalist "klik" effect op hover:
+- **Offset shadow**: 6px offset in de juiste kleur
+- **Lift beweging**: Button beweegt omhoog/links (-translate-x-0.5 -translate-y-0.5)
+- **Premium transitie**: 400ms cubic-bezier(0.4, 0, 0.2, 1)
+
+Dit effect is ingebouwd in de Button component via variants.
+
+#### Button Variants
+
+| Variant | Achtergrond | Hover Effect | Shadow Kleur |
+|---------|-------------|--------------|--------------|
+| `default` | Licht (wit/crème) | Lime bg, zwarte shadow | `#000000` |
+| `lime` | Donker (zwart) | Witte bg, lime shadow | `#CCFF00` |
+| `outline` | Licht | Lime bg, zwarte shadow | `#000000` |
+
+#### Default Button (op lichte achtergrond)
 
 ```jsx
 <Button size="lg" asChild className="text-base px-8 py-5">
@@ -286,28 +407,21 @@ className="transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
   </Link>
 </Button>
 ```
+- Zwart → lime op hover
+- Zwarte offset shadow op hover
 
-#### Accent Button (op zwarte achtergrond)
+#### Lime Button (op donkere achtergrond)
 
 ```jsx
-<Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
+<Button size="lg" variant="lime" asChild className="text-base px-8 py-5">
   <Link href="/contact">
     NEEM CONTACT OP
     <ArrowRight className="ml-2 h-5 w-5" />
   </Link>
 </Button>
 ```
-
-#### Final CTA Button (op lime achtergrond)
-
-```jsx
-<Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
-  <Link href="/contact">
-    LET'S GO!!
-    <ArrowRight className="ml-2 h-5 w-5" />
-  </Link>
-</Button>
-```
+- Lime → wit op hover
+- Lime offset shadow op hover
 
 #### Outline Button
 
@@ -315,6 +429,34 @@ className="transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
 <Button size="lg" variant="outline" asChild className="text-base px-8 py-5">
   <Link href="/over-ons">OVER VIZIBLY</Link>
 </Button>
+```
+- Transparant → lime op hover
+- Zwarte offset shadow op hover
+
+#### Final CTA Button (op lime achtergrond)
+
+Op lime achtergrond gebruik je custom classes (geen variant):
+
+```jsx
+<Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black hover:shadow-[6px_6px_0_0_#000000] hover:-translate-x-0.5 hover:-translate-y-0.5 px-8 py-5 text-base">
+  <Link href="/contact">
+    LET'S GO!!
+    <ArrowRight className="ml-2 h-5 w-5" />
+  </Link>
+</Button>
+```
+
+#### Custom Buttons (niet-Button component)
+
+Voor `<a>` tags of andere elementen, voeg handmatig het effect toe:
+
+```jsx
+<a
+  href="/contact"
+  className="inline-block border-4 border-black bg-black px-6 py-3 text-base font-black uppercase text-white transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-white hover:text-black hover:shadow-[6px_6px_0_0_#000000] hover:-translate-x-0.5 hover:-translate-y-0.5"
+>
+  Button tekst
+</a>
 ```
 
 ### Button Sizing
@@ -515,10 +657,10 @@ Bij size="lg" voeg toe: `px-8 py-5 text-base`
 </section>
 ```
 
-### Zwarte Sectie (met diagonaal patroon)
+### Donkere Sectie (Premium V3 - near-black)
 
 ```jsx
-<section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+<section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
   {/* Subtle diagonal pattern */}
   <div className="absolute inset-0 opacity-[0.03]" style={{
     backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -530,29 +672,39 @@ Bij size="lg" voeg toe: `px-8 py-5 text-base`
 </section>
 ```
 
-### Witte Sectie (zonder patroon)
+### Content Sectie (Premium V3 - warm-white)
 
 ```jsx
-<section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+<section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
   <div className="mx-auto max-w-screen-2xl px-6">
     {/* Content */}
   </div>
 </section>
 ```
 
-### Accent/Lime Sectie (Final CTA)
+### Hero Sectie (blijft pure white voor contrast)
 
 ```jsx
-<section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+<section className="relative border-b-4 border-black bg-white py-32 lg:py-40">
+  <div className="mx-auto max-w-screen-2xl px-6">
+    {/* Content */}
+  </div>
+</section>
+```
+
+### Accent/Lime Sectie (Final CTA - Premium V3)
+
+```jsx
+<section className="relative border-b-4 border-black bg-accent py-40 lg:py-56">
   <div className="mx-auto max-w-screen-2xl px-6">
     <div className="mx-auto max-w-4xl text-center">
-      <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+      <p className="mb-8 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
         MAAK KENNIS MET HET #1 SEO BUREAU
       </p>
-      <h2 className="mb-12 text-brutalist-h1 text-black">
+      <h2 className="mb-16 text-brutalist-h1 text-black">
         Nog maar een stap verwijderd van succes!
       </h2>
-      <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
+      <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base transition-all duration-300 hover:-translate-y-1">
         <Link href="/contact">
           LET'S GO!!
           <ArrowRight className="ml-2 h-5 w-5" />
@@ -561,6 +713,60 @@ Bij size="lg" voeg toe: `px-8 py-5 text-base`
     </div>
   </div>
 </section>
+```
+
+---
+
+## Content Ritme (Premium V3)
+
+Voor lange pagina's (blog artikelen, dienst pagina's) gebruik afwisseling in achtergrondkleuren en visuele breaks voor beter leesritme.
+
+### Achtergrond Afwisseling
+
+```jsx
+{/* Sectie 1 - warm white */}
+<section className="bg-[#fafaf8] py-32 lg:py-40">
+  {/* Content */}
+</section>
+
+{/* Sectie 2 - cream voor contrast */}
+<section className="bg-[#f5f5f3] py-32 lg:py-40">
+  {/* Content */}
+</section>
+
+{/* Sectie 3 - terug naar warm white */}
+<section className="bg-[#fafaf8] py-32 lg:py-40">
+  {/* Content */}
+</section>
+```
+
+### Visuele Breaks
+
+```jsx
+{/* Optie 1: Lijn met label */}
+<div className="flex items-center gap-4 py-8">
+  <div className="h-px flex-1 bg-accent"></div>
+  <span className="text-xs font-black uppercase text-black/60">Verdieping</span>
+  <div className="h-px flex-1 bg-accent"></div>
+</div>
+
+{/* Optie 2: Dikke accent bar */}
+<div className="h-2 bg-accent my-12"></div>
+
+{/* Optie 3: Gradient fade */}
+<div className="h-8 bg-gradient-to-r from-transparent via-accent/30 to-transparent my-12"></div>
+```
+
+### Highlight Blokken in Content
+
+```jsx
+{/* Highlight block binnen artikel */}
+<div className="bg-accent/10 p-8 border-y-2 border-accent/30 my-12">
+  <h3 className="text-lg font-black uppercase mb-4">Belangrijk</h3>
+  <p className="text-base font-bold text-black/80">
+    Key takeaway of belangrijke informatie hier.
+  </p>
+</div>
 ```
 
 ### Testimonials Sectie
@@ -609,19 +815,19 @@ Bij size="lg" voeg toe: `px-8 py-5 text-base`
 </div>
 ```
 
-### Accent Highlight in Tekst
+### Accent Highlight in Tekst (Subtiel)
 
 ```jsx
 <h1 className="text-brutalist-hero">
   Dit is{' '}
   <span className="relative inline-block">
-    <span className="absolute -inset-1 bg-accent"></span>
+    <span className="absolute inset-0 bg-accent"></span>
     <span className="relative">gehighlight</span>
   </span>
 </h1>
 ```
 
-**Let op:** Gebruik `-inset-1` (niet `-inset-2`) om overlap met andere tekst te voorkomen.
+**Let op:** Gebruik `inset-0` (gelijk aan tekst) voor een subtielere highlight. Dit is minder dominant dan de oude `-inset-1` variant.
 
 ### Bullet Lists met Border
 

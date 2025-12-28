@@ -78,7 +78,7 @@ export default function GeoSeoAiPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative border-b-4 border-black bg-black pt-32 pb-20 text-white lg:pt-40 lg:pb-28">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] pt-40 pb-24 text-white lg:pt-48 lg:pb-32">
         {/* Diagonal pattern */}
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -101,13 +101,13 @@ export default function GeoSeoAiPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Text content */}
             <div className="flex flex-col justify-center">
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 GEO: GENERATIVE ENGINE OPTIMIZATION
               </p>
               <h1 className="text-brutalist-h1 mb-6">
                 Word gevonden door{" "}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative text-black">AI</span>
                 </span>
                 : De toekomst van SEO is GEO
@@ -153,7 +153,7 @@ export default function GeoSeoAiPage() {
       </section>
 
       {/* Article Content */}
-      <section className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-3xl">
             {/* Intro */}
@@ -546,7 +546,7 @@ export default function GeoSeoAiPage() {
       />
 
       {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white">
+      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
             {/* Column 1: Logo & Info */}
@@ -586,7 +586,7 @@ export default function GeoSeoAiPage() {
 
             {/* Column 2: Diensten */}
             <div>
-              <h4 className="mb-6 text-lg font-bold uppercase tracking-wider text-accent">
+              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
                 Diensten
               </h4>
               <ul className="space-y-3">
@@ -612,7 +612,7 @@ export default function GeoSeoAiPage() {
 
             {/* Column 3: Bedrijf */}
             <div>
-              <h4 className="mb-6 text-lg font-bold uppercase tracking-wider text-accent">
+              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
                 Bedrijf
               </h4>
               <ul className="space-y-3">
@@ -636,7 +636,7 @@ export default function GeoSeoAiPage() {
 
             {/* Column 4: Contact */}
             <div>
-              <h4 className="mb-6 text-lg font-bold uppercase tracking-wider text-accent">
+              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
                 Contact
               </h4>
               <ul className="space-y-4">

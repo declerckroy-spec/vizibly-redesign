@@ -99,7 +99,7 @@ export default function CasesPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-40 pb-24 lg:pt-48 lg:pb-40">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -107,14 +107,14 @@ export default function CasesPage() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               BEWEZEN RESULTATEN
             </p>
 
             <h1 className="mb-8 text-brutalist-hero leading-none text-black">
               Onze{' '}
               <span className="relative inline-block">
-                <span className="absolute -inset-1 bg-accent"></span>
+                <span className="absolute inset-0 bg-accent"></span>
                 <span className="relative">Cases</span>
               </span>
             </h1>
@@ -130,10 +130,10 @@ export default function CasesPage() {
       <CasesStats />
 
       {/* Cases Grid Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               UITGELICHTE CASES
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -217,14 +217,14 @@ export default function CasesPage() {
       <TestimonialsSection />
 
       {/* Final CTA Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               WORD JIJ DE VOLGENDE CASE?
             </p>
 
@@ -236,7 +236,7 @@ export default function CasesPage() {
               Klaar om te groeien zoals deze bedrijven? Neem contact op voor een vrijblijvend gesprek over jouw mogelijkheden.
             </p>
 
-            <Button size="lg" asChild className="bg-accent text-black border-accent hover:bg-white hover:text-black px-8 py-5 text-base">
+            <Button size="lg" asChild variant="lime" className="px-8 py-5 text-base">
               <Link href="/contact">
                 LET'S GO!!
                 <ArrowRight className="ml-2 h-5 w-5" />

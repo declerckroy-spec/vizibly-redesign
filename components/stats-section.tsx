@@ -127,7 +127,7 @@ export function StatsSection({
 }: StatsSectionProps) {
   const sectionStyles = {
     white: {
-      className: 'relative border-b-4 border-black bg-white py-16 lg:py-24',
+      className: 'relative border-b-4 border-black bg-[#fafaf8] py-20 lg:py-28',
       pattern: (
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -135,7 +135,7 @@ export function StatsSection({
       ),
     },
     black: {
-      className: 'relative border-y-4 border-black bg-black py-16 lg:py-20',
+      className: 'relative border-y-4 border-black bg-[#0a0a0a] py-20 lg:py-28',
       pattern: (
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'

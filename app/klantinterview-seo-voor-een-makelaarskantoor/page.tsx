@@ -25,11 +25,11 @@ export default function MakelaarCase() {
       <Navigation />
 
       {/* Breadcrumb */}
-      <section className="border-b-4 border-black bg-white py-4">
+      <section className="border-b-4 border-black bg-[#fafaf8] py-4">
         <div className="mx-auto max-w-screen-2xl px-6">
           <Link
             href="/cases"
-            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-black/60 transition-colors hover:text-black"
+            className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-black/60 transition-colors hover:text-black"
           >
             <ArrowLeft className="h-4 w-4" />
             Alle cases
@@ -38,7 +38,7 @@ export default function MakelaarCase() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -46,7 +46,7 @@ export default function MakelaarCase() {
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               KLANTINTERVIEW
             </p>
             <h1 className="mb-8 text-brutalist-hero text-black">
@@ -61,7 +61,7 @@ export default function MakelaarCase() {
       </section>
 
       {/* Featured Image */}
-      <section className="relative border-b-4 border-black bg-black py-16 lg:py-20">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-20 lg:py-24">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="relative mx-auto max-w-5xl">
             <div className="relative border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
@@ -81,9 +81,9 @@ export default function MakelaarCase() {
       </section>
 
       {/* Article Content */}
-      <article className="relative bg-white">
+      <article className="relative bg-[#fafaf8]">
         {/* Over de klant */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -92,7 +92,7 @@ export default function MakelaarCase() {
 
               <div className="space-y-6 text-base font-bold text-black lg:text-lg xl:text-xl">
                 <p>
-                  <a href="https://www.takmakelaardij.nl/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent transition-colors">Tak Makelaardij</a> was een van mijn eerste klanten toen ik begon met SEO-dienstverlening. Het is een bijzonder makelaarskantoor in Cadzand, gespecialiseerd in zowel reguliere als recreatieve woningen. Als verkoopmakelaar én NWWI-gevalideerd taxateur bedienen zij West-Zeeuws-Vlaanderen, met veel internationale klanten uit België en Duitsland.
+                  <a href="https://www.takmakelaardij.nl/" target="_blank" rel="noopener noreferrer" className="font-bold">Tak Makelaardij</a> was een van mijn eerste klanten toen ik begon met SEO-dienstverlening. Het is een bijzonder makelaarskantoor in Cadzand, gespecialiseerd in zowel reguliere als recreatieve woningen. Als verkoopmakelaar én NWWI-gevalideerd taxateur bedienen zij West-Zeeuws-Vlaanderen, met veel internationale klanten uit België en Duitsland.
                 </p>
 
                 <p>
@@ -110,7 +110,7 @@ export default function MakelaarCase() {
         </section>
 
         {/* De start */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -144,7 +144,7 @@ export default function MakelaarCase() {
         </section>
 
         {/* De eerste doorbraak */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -167,7 +167,7 @@ export default function MakelaarCase() {
                 </p>
 
                 <p>
-                  Naast het schrijven van de teksten hielp ik ook met <Link href="/linkbuilding" className="underline hover:text-accent transition-colors">linkbuilding</Link>: het verkrijgen van kwalitatieve backlinks van andere websites. Toen deze links eenmaal actief werden, zagen we de posities snel omhoog gaan. De combinatie van goede, geoptimaliseerde teksten én relevante backlinks zorgde ervoor dat Tak Makelaardij steeds hoger kwam te staan in Google.
+                  Naast het schrijven van de teksten hielp ik ook met <Link href="/linkbuilding" className="font-bold">linkbuilding</Link>: het verkrijgen van kwalitatieve backlinks van andere websites. Toen deze links eenmaal actief werden, zagen we de posities snel omhoog gaan. De combinatie van goede, geoptimaliseerde teksten én relevante backlinks zorgde ervoor dat Tak Makelaardij steeds hoger kwam te staan in Google.
                 </p>
 
                 <div className="border-l-4 border-accent pl-6 my-8">
@@ -181,7 +181,7 @@ export default function MakelaarCase() {
         </section>
 
         {/* Een omweg */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -206,7 +206,7 @@ export default function MakelaarCase() {
         </section>
 
         {/* Terug naar wat werkt */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -227,7 +227,7 @@ export default function MakelaarCase() {
         </section>
 
         {/* De waarde */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -252,7 +252,7 @@ export default function MakelaarCase() {
         </section>
 
         {/* Blijven groeien */}
-        <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+        <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
           <div className="mx-auto max-w-screen-2xl px-6">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-brutalist-h2 text-black">
@@ -269,7 +269,7 @@ export default function MakelaarCase() {
                 </p>
 
                 <p className="mt-8">
-                  Ook beter vindbaar worden als makelaar? Ontdek hoe mijn <Link href="/seo-voor-makelaars-en-vastgoedbedrijven" className="underline hover:text-accent transition-colors">speciale SEO voor makelaars</Link> jouw vastgoedbedrijf kan helpen groeien.
+                  Ook beter vindbaar worden als makelaar? Ontdek hoe mijn <Link href="/seo-voor-makelaars-en-vastgoedbedrijven" className="font-bold">speciale SEO voor makelaars</Link> jouw vastgoedbedrijf kan helpen groeien.
                 </p>
               </div>
             </div>

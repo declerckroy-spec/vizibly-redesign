@@ -77,7 +77,7 @@ export default function SeoRelevantAIPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-28">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -91,7 +91,7 @@ export default function SeoRelevantAIPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 SEO & AI
               </p>
 
@@ -128,7 +128,7 @@ export default function SeoRelevantAIPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-6 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -160,13 +160,13 @@ export default function SeoRelevantAIPage() {
             Feit 1: Google is nog steeds de baas (en blijft dat voorlopig)
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            De cijfers liegen niet. Google heeft <a href="https://gs.statcounter.com/search-engine-market-share" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">89-90% marktaandeel</a> wereldwijd. Dat is voor het eerst sinds 2015 onder de 90% gezakt, maar dat is nog steeds enorm dominant.
+            De cijfers liegen niet. Google heeft <a href="https://gs.statcounter.com/search-engine-market-share" target="_blank" rel="noopener noreferrer" className="font-bold">89-90% marktaandeel</a> wereldwijd. Dat is voor het eerst sinds 2015 onder de 90% gezakt, maar dat is nog steeds enorm dominant.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Google verwerkt <a href="https://www.semrush.com/blog/google-search-statistics/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">meer dan 5 biljoen</a> zoekopdrachten per jaar. Dat zijn 9,5 miljoen per minuut. Elke minuut.
+            Google verwerkt <a href="https://www.semrush.com/blog/google-search-statistics/" target="_blank" rel="noopener noreferrer" className="font-bold">meer dan 5 biljoen</a> zoekopdrachten per jaar. Dat zijn 9,5 miljoen per minuut. Elke minuut.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            ChatGPT groeit hard, dat klopt. Het heeft inmiddels ongeveer <a href="https://firstpagesage.com/seo-blog/google-vs-chatgpt-market-share-report/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">9% digitale queries</a>. Maar begin 2025 kreeg Google nog steeds <a href="https://searchengineland.com/google-search-bigger-chatgpt-search-453142" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">373 keer zoveel</a> zoekopdrachten als ChatGPT.
+            ChatGPT groeit hard, dat klopt. Het heeft inmiddels ongeveer <a href="https://firstpagesage.com/seo-blog/google-vs-chatgpt-market-share-report/" target="_blank" rel="noopener noreferrer" className="font-bold">9% digitale queries</a>. Maar begin 2025 kreeg Google nog steeds <a href="https://searchengineland.com/google-search-bigger-chatgpt-search-453142" target="_blank" rel="noopener noreferrer" className="font-bold">373 keer zoveel</a> zoekopdrachten als ChatGPT.
           </p>
 
           {/* Highlight box */}
@@ -204,13 +204,13 @@ export default function SeoRelevantAIPage() {
             AI-tools zoals ChatGPT, Gemini en Perplexity hebben een groot probleem: ze verzinnen dingen. Dat noemen we in de industrie "hallucinaties", maar noem het gewoon wat het is: het systeem geeft antwoorden die niet kloppen, met volle overtuiging.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <a href="https://www.allaboutai.com/resources/ai-statistics/ai-hallucinations/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">De beste AI-modellen</a> hallucineren nog steeds in minimaal 0,7% van de gevallen. Sommige modellen halen percentages van 25% of hoger. En dan komt het probleem: <a href="https://www.techopedia.com/ai-hallucinations-rise" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">de nieuwste reasoning models</a> hallucineren MEER dan de oudere versies. Het o3 model hallucineerde in 33% van de gevallen, het o4-mini model zelfs in 48%.
+            <a href="https://www.allaboutai.com/resources/ai-statistics/ai-hallucinations/" target="_blank" rel="noopener noreferrer" className="font-bold">De beste AI-modellen</a> hallucineren nog steeds in minimaal 0,7% van de gevallen. Sommige modellen halen percentages van 25% of hoger. En dan komt het probleem: <a href="https://www.techopedia.com/ai-hallucinations-rise" target="_blank" rel="noopener noreferrer" className="font-bold">de nieuwste reasoning models</a> hallucineren MEER dan de oudere versies. Het o3 model hallucineerde in 33% van de gevallen, het o4-mini model zelfs in 48%.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Hoe slimmer de AI wordt in complexe berekeningen, hoe vaker het dingen verzint.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Waarom gebeurt dit? <a href="https://www.computerworld.com/article/4059383/openai-admits-ai-hallucinations-are-mathematically-inevitable-not-just-engineering-flaws.html" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">OpenAI geeft het toe</a>: hallucinaties zijn mathematisch onvermijdelijk. Het is geen bug die ze kunnen fixen. Het zit ingebakken in hoe deze systemen werken. Ze voorspellen het meest waarschijnlijke volgende woord op basis van patronen, niet op basis van waarheid.
+            Waarom gebeurt dit? <a href="https://www.computerworld.com/article/4059383/openai-admits-ai-hallucinations-are-mathematically-inevitable-not-just-engineering-flaws.html" target="_blank" rel="noopener noreferrer" className="font-bold">OpenAI geeft het toe</a>: hallucinaties zijn mathematisch onvermijdelijk. Het is geen bug die ze kunnen fixen. Het zit ingebakken in hoe deze systemen werken. Ze voorspellen het meest waarschijnlijke volgende woord op basis van patronen, niet op basis van waarheid.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             En mensen beginnen dit te merken. Wanneer je iets belangrijks wilt weten (welk product je moet kopen, welke dienstverlener je moet inhuren, of een medische beslissing moet nemen), vertrouw je dan op een systeem dat regelmatig dingen verzint? Of zoek je betrouwbare bronnen?
@@ -227,7 +227,7 @@ export default function SeoRelevantAIPage() {
             Nu komen we bij het meest onderschatte inzicht. Dit is waarom ik zo zeker weet dat SEO niet verdwijnt, maar evolueert.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            ChatGPT Search, Gemini, Claude: <a href="https://medium.com/research-highlights-by-winston-wang/how-rag-technology-powers-ai-driven-search-engines-a-deep-dive-into-tech-behind-perplexity-ai-252f8fe4f197" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">ze gebruiken allemaal RAG</a>: Retrieval-Augmented Generation. Klinkt ingewikkeld, maar het betekent gewoon dit: de AI zoekt eerst op het web voordat het een antwoord geeft.
+            ChatGPT Search, Gemini, Claude: <a href="https://medium.com/research-highlights-by-winston-wang/how-rag-technology-powers-ai-driven-search-engines-a-deep-dive-into-tech-behind-perplexity-ai-252f8fe4f197" target="_blank" rel="noopener noreferrer" className="font-bold">ze gebruiken allemaal RAG</a>: Retrieval-Augmented Generation. Klinkt ingewikkeld, maar het betekent gewoon dit: de AI zoekt eerst op het web voordat het een antwoord geeft.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Zonder die zoekresultaten? Geen accurate antwoorden.
@@ -255,7 +255,7 @@ export default function SeoRelevantAIPage() {
             En waarom is dat zo belangrijk? Die AI-tools moeten ergens hun informatie vandaan halen. Ze citeren bronnen. Ze linken naar websites. En welke websites citeren ze? Degenen die hoog scoren op dezelfde factoren waar Google al jaren om geeft: autoriteit, expertise, betrouwbaarheid, originele content.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <a href="https://www.searchenginejournal.com/is-seo-still-relevant-in-the-ai-era-new-research-says-yes/547929/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Een recent onderzoek</a> toonde aan dat websites die #1 staan in Google in 25% van de gevallen ook verschijnen in AI-zoekresultaten. Lagere rankings? Lagere kans om geciteerd te worden door AI.
+            <a href="https://www.searchenginejournal.com/is-seo-still-relevant-in-the-ai-era-new-research-says-yes/547929/" target="_blank" rel="noopener noreferrer" className="font-bold">Een recent onderzoek</a> toonde aan dat websites die #1 staan in Google in 25% van de gevallen ook verschijnen in AI-zoekresultaten. Lagere rankings? Lagere kans om geciteerd te worden door AI.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Zie je het patroon? SEO wordt niet minder belangrijk. Het wordt belangrijker, omdat het nu voor meerdere platformen werkt.
@@ -315,7 +315,7 @@ export default function SeoRelevantAIPage() {
             Ik wil eerlijk zijn: niet alles blijft hetzelfde. Er zijn verschuivingen waar je rekening mee moet houden.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Clicks naar websites dalen. In de VS zijn <a href="https://www.salesforce.com/blog/future-of-seo/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">clickless queries gestegen</a> met 11% jaar-op-jaar, terwijl clicks naar organische resultaten met 9% daalden. AI Overviews geven antwoorden direct in Google, zonder dat mensen doorklikken.
+            Clicks naar websites dalen. In de VS zijn <a href="https://www.salesforce.com/blog/future-of-seo/" target="_blank" rel="noopener noreferrer" className="font-bold">clickless queries gestegen</a> met 11% jaar-op-jaar, terwijl clicks naar organische resultaten met 9% daalden. AI Overviews geven antwoorden direct in Google, zonder dat mensen doorklikken.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             De clicks die je nog wel krijgt, zijn waardevoller. Mensen die doorklikken na een AI-overzicht zijn verder in hun zoektocht, hebben meer context, en zijn dichter bij een beslissing.
@@ -324,7 +324,7 @@ export default function SeoRelevantAIPage() {
             <strong>Denk in conversies, niet in traffic.</strong>
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Daarnaast zien we een perceptieverschuiving. In onderzoek zegt <a href="https://searchengineland.com/how-ai-is-reshaping-seo-challenges-opportunities-and-brand-strategies-for-2025-456926" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">82% van de consumenten</a> dat AI-search nuttiger is dan traditionele zoekmachines. Vooral jongere gebruikers experimenteren met tools zoals ChatGPT, Gemini en Claude. Wat mensen zeggen te gaan doen en wat ze daadwerkelijk doen, zijn twee dingen. Maar de trend is duidelijk.
+            Daarnaast zien we een perceptieverschuiving. In onderzoek zegt <a href="https://searchengineland.com/how-ai-is-reshaping-seo-challenges-opportunities-and-brand-strategies-for-2025-456926" target="_blank" rel="noopener noreferrer" className="font-bold">82% van de consumenten</a> dat AI-search nuttiger is dan traditionele zoekmachines. Vooral jongere gebruikers experimenteren met tools zoals ChatGPT, Gemini en Claude. Wat mensen zeggen te gaan doen en wat ze daadwerkelijk doen, zijn twee dingen. Maar de trend is duidelijk.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Dus ja, je moet je aanpassen. Nee, dat betekent niet dat je alles moet veranderen.
@@ -347,7 +347,7 @@ export default function SeoRelevantAIPage() {
             Voor jou betekent dit: als je nu investeert in solide SEO (content die autoriteit toont, techniek die klopt, een merkpositie die AI-tools kunnen begrijpen), dan bouw je iets wat werkt op meerdere fronten. Je bent zichtbaar in Google en je wordt geciteerd door AI-tools.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <a href="https://searchengineland.com/ai-search-booming-seo-still-not-dead-458935" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">De principes die Lily Ray benadrukt</a>, een van de meest gerespecteerde SEO-experts wereldwijd, blijven overeind: focus op authenticiteit, originele content, sterke personal brands en thought leadership. Dit zijn strategieen die zoekmachines niet kunnen wegnemen.
+            <a href="https://searchengineland.com/ai-search-booming-seo-still-not-dead-458935" target="_blank" rel="noopener noreferrer" className="font-bold">De principes die Lily Ray benadrukt</a>, een van de meest gerespecteerde SEO-experts wereldwijd, blijven overeind: focus op authenticiteit, originele content, sterke personal brands en thought leadership. Dit zijn strategieen die zoekmachines niet kunnen wegnemen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Goede SEO betekent niet langer "trucjes toepassen om Google te manipuleren". Het betekent: de beste bron zijn voor je onderwerp. Zo goed dat zowel Google als ChatGPT niet om je heen kunnen.
@@ -368,13 +368,13 @@ export default function SeoRelevantAIPage() {
               <span className="font-black text-black">Check waar je nu staat.</span> Hoe zichtbaar ben je in Google? Hoe sterk is je content? Hoe snel is je website? Dit zijn je basis.
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
-              <span className="font-black text-black">Bouw autoriteit op.</span> Zorg dat je niet zomaar een website bent, maar een bron. <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Schrijf content</Link> die niemand anders kan schrijven omdat jij de expertise hebt. Gebruik data, cases, concrete voorbeelden.
+              <span className="font-black text-black">Bouw autoriteit op.</span> Zorg dat je niet zomaar een website bent, maar een bron. <Link href="/seo-copy" className="font-bold">Schrijf content</Link> die niemand anders kan schrijven omdat jij de expertise hebt. Gebruik data, cases, concrete voorbeelden.
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
               <span className="font-black text-black">Denk in antwoorden, niet in pagina's.</span> AI-tools willen specifieke antwoorden op specifieke vragen. Heb je die? In heldere, citeerbare vorm?
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
-              <span className="font-black text-black">Maak het <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">technisch</Link> waterdicht.</span> Snelheid, structured data, duidelijke headers: dit helpt zowel Google als AI om je content te begrijpen en te gebruiken.
+              <span className="font-black text-black">Maak het <Link href="/design-techniek" className="font-bold">technisch</Link> waterdicht.</span> Snelheid, structured data, duidelijke headers: dit helpt zowel Google als AI om je content te begrijpen en te gebruiken.
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
               <span className="font-black text-black">Blijf consistent.</span> Goede SEO is geen sprintje. Op de lange termijn wint autoriteit van trucs.
@@ -398,7 +398,7 @@ export default function SeoRelevantAIPage() {
             De vraag is niet: heeft SEO nog zin?
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            De vraag is: ga jij investeren in een <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">strategie</Link> die werkt op meerdere platformen?
+            De vraag is: ga jij investeren in een <Link href="/seo-strategie" className="font-bold">strategie</Link> die werkt op meerdere platformen?
           </p>
 
           {/* CTA Box */}

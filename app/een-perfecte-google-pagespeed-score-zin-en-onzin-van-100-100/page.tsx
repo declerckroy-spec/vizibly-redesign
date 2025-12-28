@@ -81,7 +81,7 @@ export default function PageSpeedScorePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -95,7 +95,7 @@ export default function PageSpeedScorePage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 TECHNISCHE SEO
               </p>
 
@@ -132,7 +132,7 @@ export default function PageSpeedScorePage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black/80 lg:text-xl xl:text-2xl leading-relaxed italic">
@@ -161,7 +161,7 @@ export default function PageSpeedScorePage() {
             Laten we eerlijk zijn: je bezoekers geven niets om je PageSpeed score. Maar ze geven wel om hoe snel jouw website laadt. En dat verschil is merkbaar in je omzetcijfers.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Een B2B-website die in 1 seconde laadt heeft een <a href="https://blog.hubspot.com/marketing/page-load-time-conversion-rates" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">conversieratio die 3x hoger is</a> dan een website die 5 seconden nodig heeft. Voor e-commerce is dit verschil nog dramatischer. <a href="https://www.bidnamic.com/resources/how-website-speed-affects-your-conversion-rates" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Onderzoek van Bidnamic</a> toont aan dat voor elke seconde dat een site sneller laadt, de conversieratio verbetert met 17%.
+            Een B2B-website die in 1 seconde laadt heeft een <a href="https://blog.hubspot.com/marketing/page-load-time-conversion-rates" target="_blank" rel="noopener noreferrer" className="font-bold">conversieratio die 3x hoger is</a> dan een website die 5 seconden nodig heeft. Voor e-commerce is dit verschil nog dramatischer. <a href="https://www.bidnamic.com/resources/how-website-speed-affects-your-conversion-rates" target="_blank" rel="noopener noreferrer" className="font-bold">Onderzoek van Bidnamic</a> toont aan dat voor elke seconde dat een site sneller laadt, de conversieratio verbetert met 17%.
           </p>
 
           <div className="mb-12 border-4 border-black bg-accent p-6 lg:p-8" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
@@ -175,7 +175,7 @@ export default function PageSpeedScorePage() {
             De keerzijde van een extreem snelle website
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Hier wordt het interessant. <a href="https://www.webfx.com/blog/seo/site-speed-statistics/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Slechts 34% van de top 100 websites</a> slaagt voor Core Web Vitals, maar dat betekent niet dat 66% van de grootste websites slecht presteert. Veel van deze sites kiezen bewust voor functionaliteit over perfecte scores.
+            Hier wordt het interessant. <a href="https://www.webfx.com/blog/seo/site-speed-statistics/" target="_blank" rel="noopener noreferrer" className="font-bold">Slechts 34% van de top 100 websites</a> slaagt voor Core Web Vitals, maar dat betekent niet dat 66% van de grootste websites slecht presteert. Veel van deze sites kiezen bewust voor functionaliteit over perfecte scores.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Een perfecte PageSpeed score kan namelijk betekenen dat je essentiele functionaliteiten hebt weggelaten. Tracking voor marketing, chatbots voor klantenservice, of uitgebreide productafbeeldingen - allemaal kunnen ze je score drukken terwijl ze wel waarde toevoegen voor bezoekers.
@@ -196,7 +196,7 @@ export default function PageSpeedScorePage() {
             Technische optimalisatie
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            We kozen voor een schone codebase zonder onnodige bloatware. Elke regel code heeft een doel, elk script wordt asynchroon geladen waar mogelijk. Onze afbeeldingen zijn gecomprimeerd naar moderne formaten zoals WebP, en we gebruiken een krachtige caching strategie. Meer over onze technische aanpak lees je op onze <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">design & techniek pagina</Link>.
+            We kozen voor een schone codebase zonder onnodige bloatware. Elke regel code heeft een doel, elk script wordt asynchroon geladen waar mogelijk. Onze afbeeldingen zijn gecomprimeerd naar moderne formaten zoals WebP, en we gebruiken een krachtige caching strategie. Meer over onze technische aanpak lees je op onze <Link href="/design-techniek" className="font-bold">design & techniek pagina</Link>.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -228,7 +228,7 @@ export default function PageSpeedScorePage() {
             De realiteit voor jouw bedrijf
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            De vraag is niet of je een perfecte PageSpeed score moet nastreven, maar of je website snel genoeg is voor je bezoekers en doelen. <a href="https://seomator.com/blog/website-load-time-statistics" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Studies tonen aan</a> dat langzaam ladende websites leiden tot een jaarlijks verlies van $2,6 miljard aan verkopen.
+            De vraag is niet of je een perfecte PageSpeed score moet nastreven, maar of je website snel genoeg is voor je bezoekers en doelen. <a href="https://seomator.com/blog/website-load-time-statistics" target="_blank" rel="noopener noreferrer" className="font-bold">Studies tonen aan</a> dat langzaam ladende websites leiden tot een jaarlijks verlies van $2,6 miljard aan verkopen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Voor een gemiddelde webshop kan het verschil tussen een snelle en langzame website duizenden euro's per maand schelen in gemiste omzet. Niet vanwege de score zelf, maar vanwege bezoekers die afhaken voordat ze je aanbod kunnen bekijken.
@@ -245,7 +245,7 @@ export default function PageSpeedScorePage() {
             Voor onze klanten betekent dit dat we altijd kijken naar de balans tussen technische perfectie en bedrijfsdoelstellingen. Soms betekent dat een score van 95 accepteren om cruciale functionaliteit te behouden. Andere keren kunnen we die perfecte 100 behalen zonder compromissen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Het belangrijkste is dat je website doet wat hij moet doen: bezoekers omzetten in klanten, snel en zonder frustratie. Dat is de kern van onze <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-strategie</Link>: technische perfectie in dienst van bedrijfsresultaten.
+            Het belangrijkste is dat je website doet wat hij moet doen: bezoekers omzetten in klanten, snel en zonder frustratie. Dat is de kern van onze <Link href="/seo-strategie" className="font-bold">SEO-strategie</Link>: technische perfectie in dienst van bedrijfsresultaten.
           </p>
 
           {/* CTA Box */}

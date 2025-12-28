@@ -84,7 +84,7 @@ export default function GoogleAdsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-36 pb-24 lg:pt-44 lg:pb-36">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -93,13 +93,13 @@ export default function GoogleAdsPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 DIRECT RESULTAAT
               </p>
 
               <h1 className="mb-8 text-brutalist-hero leading-none text-black">
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative">Google Ads</span>
                 </span>
               </h1>
@@ -137,7 +137,7 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Why Google Ads Section */}
-      <section className="relative border-y-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -145,7 +145,7 @@ export default function GoogleAdsPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 WAAROM GOOGLE ADS
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-white">
@@ -166,10 +166,10 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               VOORDELEN
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -216,7 +216,7 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Simple CTA Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-accent py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>

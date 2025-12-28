@@ -75,7 +75,7 @@ export default function GebruikersgedragSEOPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -88,7 +88,7 @@ export default function GebruikersgedragSEOPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 GEBRUIKERSGEDRAG
               </p>
 
@@ -124,7 +124,7 @@ export default function GebruikersgedragSEOPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
             Je kent het wel: je investeert in SEO, volgt alle best practices op, maar toch stijgt je website niet zoals verwacht in Google. Wat veel ondernemers over het hoofd zien? De manier waarop bezoekers met je website omgaan heeft een grote invloed op je ranking.
@@ -166,14 +166,14 @@ export default function GebruikersgedragSEOPage() {
             1. Haak direct in op de zoekvraag
           </h3>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            Begin artikelen met de kern: wat wil de bezoeker weten? Een tuinbedrijf dat direct tuinproblemen aanpakte in plaats van bedrijfsgeschiedenis te delen, zag bezoekers langer blijven. Dit is ook waarom we bij het schrijven van <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-teksten</Link> altijd beginnen met het identificeren van de zoekintentie.
+            Begin artikelen met de kern: wat wil de bezoeker weten? Een tuinbedrijf dat direct tuinproblemen aanpakte in plaats van bedrijfsgeschiedenis te delen, zag bezoekers langer blijven. Dit is ook waarom we bij het schrijven van <Link href="/seo-copy" className="font-bold">SEO-teksten</Link> altijd beginnen met het identificeren van de zoekintentie.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
             2. Maak je site prettig leesbaar
           </h3>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            Zorg voor goed contrast, leesbare lettergrootte en korte alinea&apos;s. Een simpele aanpassing van tekstkleur kan al een groot verschil maken in hoe lang mensen blijven. Bij de <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">design en technische optimalisatie</Link> letten we hier scherp op.
+            Zorg voor goed contrast, leesbare lettergrootte en korte alinea&apos;s. Een simpele aanpassing van tekstkleur kan al een groot verschil maken in hoe lang mensen blijven. Bij de <Link href="/design-techniek" className="font-bold">design en technische optimalisatie</Link> letten we hier scherp op.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -219,7 +219,7 @@ export default function GebruikersgedragSEOPage() {
             Door te zorgen dat bezoekers een goede ervaring hebben, verbeter je niet alleen je conversies maar waarschijnlijk ook je rankings. Uiteindelijk wil Google hetzelfde als jij: tevreden gebruikers.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Lees meer over onze aanpak</Link> en ontdek hoe gebruikerservaring wordt geïntegreerd in de SEO-strategie.
+            <Link href="/seo-strategie" className="font-bold">Lees meer over onze aanpak</Link> en ontdek hoe gebruikerservaring wordt geïntegreerd in de SEO-strategie.
           </p>
         </div>
       </article>

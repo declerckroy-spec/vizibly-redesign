@@ -73,7 +73,7 @@ export default function SEOGoogleAdsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -86,7 +86,7 @@ export default function SEOGoogleAdsPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 SEO + SEA
               </p>
 
@@ -122,7 +122,7 @@ export default function SEOGoogleAdsPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
             Veel bedrijven zien SEO en Google Ads als concurrenten voor hun marketingbudget. Dat is jammer, want ze werken juist uitstekend samen. In dit artikel ontdek je hoe je het beste uit beide werelden kunt halen.
@@ -132,7 +132,7 @@ export default function SEOGoogleAdsPage() {
             Een echte marketingmix: SEO + Google Ads
           </h2>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Mark begon zijn online fietsenwinkel met alleen Google Ads. Zijn traffic steeg snel, maar hij betaalde flink voor elke klik. Toen hij <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO</Link> toevoegde, zag hij niet alleen zijn advertentiekosten dalen, maar ook zijn totale conversies stijgen.
+            Mark begon zijn online fietsenwinkel met alleen Google Ads. Zijn traffic steeg snel, maar hij betaalde flink voor elke klik. Toen hij <Link href="/seo-strategie" className="font-bold">SEO</Link> toevoegde, zag hij niet alleen zijn advertentiekosten dalen, maar ook zijn totale conversies stijgen.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -143,7 +143,7 @@ export default function SEOGoogleAdsPage() {
             1. Ontdek de meest waardevolle zoekwoorden
           </h3>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/google-ads-sea" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Google Ads</Link> laat direct zien welke zoekwoorden conversies opleveren. Een webshop voor duurzame kleding ontdekte via Google Ads dat &quot;biologisch katoenen t-shirts&quot; vier keer meer conversies opleverde dan &quot;eco-vriendelijke shirts&quot;. Door vervolgens hun <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-teksten</Link> op deze bewezen term te focussen, verdubbelden ze hun organische conversies.
+            <Link href="/google-ads-sea" className="font-bold">Google Ads</Link> laat direct zien welke zoekwoorden conversies opleveren. Een webshop voor duurzame kleding ontdekte via Google Ads dat &quot;biologisch katoenen t-shirts&quot; vier keer meer conversies opleverde dan &quot;eco-vriendelijke shirts&quot;. Door vervolgens hun <Link href="/seo-copy" className="font-bold">SEO-teksten</Link> op deze bewezen term te focussen, verdubbelden ze hun organische conversies.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -174,10 +174,10 @@ export default function SEOGoogleAdsPage() {
             5. Compenseer tijdelijke SEO-dalingen
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            SEO kan fluctueren door algoritme-updates. Met <Link href="/google-ads-sea" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Google Ads</Link> kun je snel bijsturen wanneer je organische traffic daalt.
+            SEO kan fluctueren door algoritme-updates. Met <Link href="/google-ads-sea" className="font-bold">Google Ads</Link> kun je snel bijsturen wanneer je organische traffic daalt.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Een webwinkel voor tuingereedschap zag hun organische traffic dalen na een Google-update. Door tijdelijk meer te investeren in Google Ads voor hun belangrijkste zoekwoorden, konden ze de omzetdaling beperken terwijl ze werkten aan het verbeteren van hun <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">technische SEO</Link>.
+            Een webwinkel voor tuingereedschap zag hun organische traffic dalen na een Google-update. Door tijdelijk meer te investeren in Google Ads voor hun belangrijkste zoekwoorden, konden ze de omzetdaling beperken terwijl ze werkten aan het verbeteren van hun <Link href="/design-techniek" className="font-bold">technische SEO</Link>.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -224,7 +224,7 @@ export default function SEOGoogleAdsPage() {
       />
 
       {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white lg:py-24">
+      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white lg:py-32">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-4">
             <div className="lg:col-span-1">

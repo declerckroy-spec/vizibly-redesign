@@ -10,7 +10,7 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b-4 border-black bg-black text-white shadow-[0_4px_20px_rgba(204,255,0,0.15)]">
+    <nav className="sticky top-0 z-50 border-b-4 border-black bg-[#0a0a0a] text-white shadow-[0_4px_20px_rgba(204,255,0,0.15)]">
       {/* Subtle diagonal stripes background */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 2px, transparent 2px, transparent 30px)'
@@ -54,7 +54,7 @@ export function Navigation() {
             <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Over Ons
             </Link>
-            <Button asChild size="lg" className="ml-4 bg-accent text-black border-accent hover:bg-white text-base px-6 py-4">
+            <Button asChild size="lg" variant="lime" className="ml-4 text-base px-6 py-4">
               <Link href="/contact">CONTACT</Link>
             </Button>
           </div>
@@ -79,7 +79,7 @@ export function Navigation() {
             <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">Cases</Link>
             <Link href="/vizie" className="text-base font-bold uppercase hover:text-accent transition-colors">Vizie</Link>
             <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">Over Ons</Link>
-            <Button asChild size="lg" className="w-full bg-accent text-black border-accent text-base">
+            <Button asChild size="lg" variant="lime" className="w-full text-base">
               <Link href="/contact">CONTACT</Link>
             </Button>
           </div>

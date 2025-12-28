@@ -77,7 +77,7 @@ export default function SeoDakdekkersPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative border-b-4 border-black bg-black pt-32 pb-20 text-white lg:pt-40 lg:pb-28">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] pt-40 pb-24 text-white lg:pt-48 lg:pb-32">
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -97,13 +97,13 @@ export default function SeoDakdekkersPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col justify-center">
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 SEO VOOR DAKDEKKERS
               </p>
               <h1 className="text-brutalist-h1 mb-6">
                 10 tips om als dakdekker{" "}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative text-black">bovenaan</span>
                 </span>{" "}
                 in Google te komen
@@ -162,7 +162,7 @@ export default function SeoDakdekkersPage() {
 
 
       {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white">
+      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
             <div>
@@ -198,7 +198,7 @@ export default function SeoDakdekkersPage() {
             </div>
 
             <div>
-              <h4 className="mb-6 text-lg font-bold uppercase tracking-wider text-accent">Diensten</h4>
+              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">Diensten</h4>
               <ul className="space-y-3">
                 {[
                   { name: "SEO Strategie", href: "/seo-strategie" },
@@ -218,7 +218,7 @@ export default function SeoDakdekkersPage() {
             </div>
 
             <div>
-              <h4 className="mb-6 text-lg font-bold uppercase tracking-wider text-accent">Bedrijf</h4>
+              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">Bedrijf</h4>
               <ul className="space-y-3">
                 {[
                   { name: "Over ons", href: "/over-ons" },
@@ -236,7 +236,7 @@ export default function SeoDakdekkersPage() {
             </div>
 
             <div>
-              <h4 className="mb-6 text-lg font-bold uppercase tracking-wider text-accent">Contact</h4>
+              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">Contact</h4>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <Phone className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />

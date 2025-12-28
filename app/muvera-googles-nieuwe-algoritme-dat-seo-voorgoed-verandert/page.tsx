@@ -81,7 +81,7 @@ export default function MuveraPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -95,7 +95,7 @@ export default function MuveraPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 GOOGLE ALGORITME
               </p>
 
@@ -132,7 +132,7 @@ export default function MuveraPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -147,7 +147,7 @@ export default function MuveraPage() {
             Stel je voor dat Google tot nu toe zoekopdrachten en websites vergeleek zoals je puzzelstukjes in elkaar probeert te passen: een stukje per keer. MUVERA doet het anders: het kijkt naar het hele plaatje vanuit meerdere perspectieven tegelijk.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Technisch gezien lost MUVERA een probleem op waar Google al tien jaar mee worstelt. Multi-vector modellen (zoals ColBERT) leverden geweldige zoekresultaten, maar waren ongeveer net zo snel als een slak op een teerbaan. <a href="https://research.google/blog/muvera-making-multi-vector-retrieval-as-fast-as-single-vector-search/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">MUVERA</a> comprimeert deze complexe multi-vector representaties tot Fixed Dimensional Encodings (FDEs), waardoor Google 90% sneller kan zoeken met 10% betere resultaten. Best indrukwekkend voor een stukje wiskunde.
+            Technisch gezien lost MUVERA een probleem op waar Google al tien jaar mee worstelt. Multi-vector modellen (zoals ColBERT) leverden geweldige zoekresultaten, maar waren ongeveer net zo snel als een slak op een teerbaan. <a href="https://research.google/blog/muvera-making-multi-vector-retrieval-as-fast-as-single-vector-search/" target="_blank" rel="noopener noreferrer" className="font-bold">MUVERA</a> comprimeert deze complexe multi-vector representaties tot Fixed Dimensional Encodings (FDEs), waardoor Google 90% sneller kan zoeken met 10% betere resultaten. Best indrukwekkend voor een stukje wiskunde.
           </p>
 
           {/* Section 2 */}
@@ -177,7 +177,7 @@ export default function MuveraPage() {
             1. Topische autoriteit wint
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Losse blogjes schrijven over van alles en nog wat? Vergeet het maar. MUVERA beloont websites die zich focussen op samenhangende onderwerpen. Websites met sterke <Link href="/content-clusters-topic-authority-opbouwen" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">topische clusters</Link> presteren consistent beter.
+            Losse blogjes schrijven over van alles en nog wat? Vergeet het maar. MUVERA beloont websites die zich focussen op samenhangende onderwerpen. Websites met sterke <Link href="/content-clusters-topic-authority-opbouwen" className="font-bold">topische clusters</Link> presteren consistent beter.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
             Een praktisch voorbeeld: heb je een webshop? Creeer dan niet alleen productpagina's, maar bouw een compleet kenniscentrum rond je producten. Handleidingen, vergelijkingen, troubleshooting... het hele pakket.
@@ -242,7 +242,7 @@ export default function MuveraPage() {
             MUVERA is geen reden voor paniek, maar wel voor actie. Het beloont wat eigenlijk altijd al de beste aanpak was: waardevolle content maken voor echte mensen met echte vragen. De tijd van quick wins en SEO-trucjes? Die is nu echt voorbij.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Het goede nieuws: als je website al focust op kwaliteit en gebruikerservaring, ben je waarschijnlijk al op de goede weg. Zo niet? Dan is het tijd om je <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-strategie</Link> tegen het licht te houden.
+            Het goede nieuws: als je website al focust op kwaliteit en gebruikerservaring, ben je waarschijnlijk al op de goede weg. Zo niet? Dan is het tijd om je <Link href="/seo-strategie" className="font-bold">SEO-strategie</Link> tegen het licht te houden.
           </p>
 
           {/* CTA Box */}

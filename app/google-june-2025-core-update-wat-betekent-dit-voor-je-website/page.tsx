@@ -81,7 +81,7 @@ export default function GoogleCoreUpdatePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -95,7 +95,7 @@ export default function GoogleCoreUpdatePage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 GOOGLE UPDATE
               </p>
 
@@ -132,7 +132,7 @@ export default function GoogleCoreUpdatePage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           {/* Intro */}
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
@@ -147,7 +147,7 @@ export default function GoogleCoreUpdatePage() {
             De June 2025 core update begon op 30 juni en was volledig uitgerold op 17 juli. Bijna 3 weken dus en dat is langer dan gebruikelijk. Google omschrijft het als een reguliere update om relevante content beter naar voren te brengen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            <a href="https://www.seroundtable.com/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Search Engine Roundtable</a> rapporteerde al ranking volatiliteit op 28 juni, en experts merkten bewegingen op sinds begin juni.
+            <a href="https://www.seroundtable.com/" target="_blank" rel="noopener noreferrer" className="font-bold">Search Engine Roundtable</a> rapporteerde al ranking volatiliteit op 28 juni, en experts merkten bewegingen op sinds begin juni.
           </p>
 
           {/* Section 2 */}
@@ -158,7 +158,7 @@ export default function GoogleCoreUpdatePage() {
             De eerste effecten van de update zijn zichtbaar geworden. Sommige websites ervaren traffic dalingen tot 20%, terwijl andere juist verbeteringen zien. Een opvallend patroon is dat rankings vaak stabiel blijven, maar conversies kunnen sterk dalen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            SEO professionals observeren dat de impact varieert per sector en website type. Vooral sites met dunne of over-geoptimaliseerde content lijken <a href="https://www.webmasterworld.com/" target="_blank" rel="noopener noreferrer" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">sterker getroffen</a> te worden.
+            SEO professionals observeren dat de impact varieert per sector en website type. Vooral sites met dunne of over-geoptimaliseerde content lijken <a href="https://www.webmasterworld.com/" target="_blank" rel="noopener noreferrer" className="font-bold">sterker getroffen</a> te worden.
           </p>
 
           {/* Section 3 */}
@@ -176,10 +176,10 @@ export default function GoogleCoreUpdatePage() {
             Een belangrijke observatie die wij en anderen in de SEO community maken, is dat er een plotselinge verandering plaatsvindt in het type zoekopdrachten waarvoor pagina's worden getoond. Pagina's verliezen rankings voor minder relevante zoektermen, maar presteren juist beter voor zoekopdrachten die perfect aansluiten bij de inhoud.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Dit duidt op een verfijnde interpretatie van content door Google's nieuwe technologie, mogelijk <Link href="/muvera-googles-nieuwe-algoritme-dat-seo-voorgoed-verandert" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">MUVERA</Link> (Multi-Vector Retrieval Algorithm). MUVERA gebruikt geavanceerde AI om niet alleen naar keywords te kijken, maar om de echte betekenis en context van content te begrijpen. In plaats van losse woorden te matchen, analyseert het algoritme complete concepten en gebruikersintentie.
+            Dit duidt op een verfijnde interpretatie van content door Google's nieuwe technologie, mogelijk <Link href="/muvera-googles-nieuwe-algoritme-dat-seo-voorgoed-verandert" className="font-bold">MUVERA</Link> (Multi-Vector Retrieval Algorithm). MUVERA gebruikt geavanceerde AI om niet alleen naar keywords te kijken, maar om de echte betekenis en context van content te begrijpen. In plaats van losse woorden te matchen, analyseert het algoritme complete concepten en gebruikersintentie.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Voor onze klanten betekent dit dat onze focus op <Link href="/seo-copy" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">kwalitatieve SEO teksten</Link> belangrijker is dan ooit.
+            Voor onze klanten betekent dit dat onze focus op <Link href="/seo-copy" className="font-bold">kwalitatieve SEO teksten</Link> belangrijker is dan ooit.
           </p>
 
           {/* Section 4 */}
@@ -224,7 +224,7 @@ export default function GoogleCoreUpdatePage() {
             Onze aanpak
           </h2>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Bij Vizibly volgen we deze ontwikkelingen nauwlettend. Onze <Link href="/full-service-seo" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">volledige SEO aanpak</Link> richt zich op duurzame, waardevolle content. De eerste signalen suggereren dat Google opnieuw inzet op sites die echte waarde toevoegen.
+            Bij Vizibly volgen we deze ontwikkelingen nauwlettend. Onze <Link href="/full-service-seo" className="font-bold">volledige SEO aanpak</Link> richt zich op duurzame, waardevolle content. De eerste signalen suggereren dat Google opnieuw inzet op sites die echte waarde toevoegen.
           </p>
 
           {/* CTA Box */}

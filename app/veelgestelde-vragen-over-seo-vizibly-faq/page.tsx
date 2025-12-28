@@ -27,7 +27,7 @@ export default function FAQPage() {
           question: 'Wat is SEO?',
           answer: (
             <>
-              SEO staat voor Search Engine Optimization (zoekmachineoptimalisatie). Het is het proces van het optimaliseren van je website zodat deze hoger scoort in de organische zoekresultaten van Google en andere zoekmachines. Dit zorgt ervoor dat meer potentiële klanten je website vinden wanneer ze zoeken naar producten of diensten die jij aanbiedt. Meer weten? Lees onze <Link href="/seo-voor-beginners-de-belangrijkste-termen-uitgelegd" className="underline hover:text-accent transition-colors">SEO voor beginners gids</Link>.
+              SEO staat voor Search Engine Optimization (zoekmachineoptimalisatie). Het is het proces van het optimaliseren van je website zodat deze hoger scoort in de organische zoekresultaten van Google en andere zoekmachines. Dit zorgt ervoor dat meer potentiële klanten je website vinden wanneer ze zoeken naar producten of diensten die jij aanbiedt. Meer weten? Lees onze <Link href="/seo-voor-beginners-de-belangrijkste-termen-uitgelegd" className="font-bold">SEO voor beginners gids</Link>.
             </>
           )
         },
@@ -43,7 +43,7 @@ export default function FAQPage() {
           question: 'Wat is het verschil tussen SEO en Google Ads?',
           answer: (
             <>
-              SEO richt zich op organische (onbetaalde) zoekresultaten en bouwt langdurige waarde op. <Link href="/google-ads-sea" className="underline hover:text-accent transition-colors">Google Ads</Link> levert directe, betaalde resultaten maar stopt zodra je stopt met betalen. SEO kost meer tijd maar heeft vaak een betere ROI op lange termijn. De beste aanpak is vaak een combinatie van beide - lees meer over <Link href="/hoe-seo-en-google-ads-elkaar-versterken-de-kracht-van-een-gecombineerde-aanpak" className="underline hover:text-accent transition-colors">hoe SEO en Google Ads elkaar versterken</Link>.
+              SEO richt zich op organische (onbetaalde) zoekresultaten en bouwt langdurige waarde op. <Link href="/google-ads-sea" className="font-bold">Google Ads</Link> levert directe, betaalde resultaten maar stopt zodra je stopt met betalen. SEO kost meer tijd maar heeft vaak een betere ROI op lange termijn. De beste aanpak is vaak een combinatie van beide - lees meer over <Link href="/hoe-seo-en-google-ads-elkaar-versterken-de-kracht-van-een-gecombineerde-aanpak" className="font-bold">hoe SEO en Google Ads elkaar versterken</Link>.
             </>
           )
         },
@@ -60,7 +60,7 @@ export default function FAQPage() {
           question: 'Wat maakt Vizibly anders dan andere SEO bureaus?',
           answer: (
             <>
-              Vizibly hanteert een data-gedreven, maatwerk aanpak. We beginnen altijd met een grondige 360-graden analyse van je huidige situatie en ontwikkelen een plan specifiek voor jouw bedrijf, sector en doelen. We werken transparant en houden je altijd op de hoogte van wat we doen en welke resultaten we behalen. Lees meer <Link href="/over-ons" className="underline hover:text-accent transition-colors">over ons</Link> en onze werkwijze.
+              Vizibly hanteert een data-gedreven, maatwerk aanpak. We beginnen altijd met een grondige 360-graden analyse van je huidige situatie en ontwikkelen een plan specifiek voor jouw bedrijf, sector en doelen. We werken transparant en houden je altijd op de hoogte van wat we doen en welke resultaten we behalen. Lees meer <Link href="/over-ons" className="font-bold">over ons</Link> en onze werkwijze.
             </>
           )
         },
@@ -71,11 +71,11 @@ export default function FAQPage() {
               We bieden een volledig pakket aan SEO diensten:
               <ul className="mt-4 space-y-2">
                 <li><strong>360-graden analyse & strategie</strong>: uitgebreide analyse van je huidige prestaties</li>
-                <li><strong><Link href="/seo-copy" className="underline hover:text-accent transition-colors">SEO copywriting</Link></strong>: geoptimaliseerde teksten die ook converteren</li>
-                <li><strong><Link href="/design-techniek" className="underline hover:text-accent transition-colors">Technische optimalisatie</Link></strong>: snelheid, mobiele weergave, site-structuur</li>
-                <li><strong><Link href="/linkbuilding" className="underline hover:text-accent transition-colors">Linkbuilding</Link></strong>: het opbouwen van autoriteit met relevante backlinks</li>
-                <li><strong><Link href="/local-seo" className="underline hover:text-accent transition-colors">Local SEO</Link></strong>: optimalisatie voor lokaal vindbaar zijn</li>
-                <li><strong><Link href="/google-ads-sea" className="underline hover:text-accent transition-colors">Google Ads</Link></strong>: betaalde advertenties voor direct resultaat</li>
+                <li><strong><Link href="/seo-copy" className="font-bold">SEO copywriting</Link></strong>: geoptimaliseerde teksten die ook converteren</li>
+                <li><strong><Link href="/design-techniek" className="font-bold">Technische optimalisatie</Link></strong>: snelheid, mobiele weergave, site-structuur</li>
+                <li><strong><Link href="/linkbuilding" className="font-bold">Linkbuilding</Link></strong>: het opbouwen van autoriteit met relevante backlinks</li>
+                <li><strong><Link href="/local-seo" className="font-bold">Local SEO</Link></strong>: optimalisatie voor lokaal vindbaar zijn</li>
+                <li><strong><Link href="/google-ads-sea" className="font-bold">Google Ads</Link></strong>: betaalde advertenties voor direct resultaat</li>
                 <li><strong>Continue rapportage</strong>: transparante voortgangsrapportage</li>
               </ul>
             </>
@@ -93,7 +93,7 @@ export default function FAQPage() {
           question: 'Voor welke bedrijven werkt Vizibly?',
           answer: (
             <>
-              We werken voornamelijk voor het MKB en hebben veel ervaring met <Link href="/seo-voor-webshop" className="underline hover:text-accent transition-colors">e-commerce</Link>, <Link href="/seo-voor-bouwbedrijven" className="underline hover:text-accent transition-colors">bouw</Link>, duurzaamheid en commerciële dienstverlening. We geloven dat elke sector baat heeft bij goede SEO, dus neem gerust <Link href="/contact" className="underline hover:text-accent transition-colors">contact</Link> op om te bespreken hoe we jouw bedrijf kunnen helpen groeien.
+              We werken voornamelijk voor het MKB en hebben veel ervaring met <Link href="/seo-voor-webshop" className="font-bold">e-commerce</Link>, <Link href="/seo-voor-bouwbedrijven" className="font-bold">bouw</Link>, duurzaamheid en commerciële dienstverlening. We geloven dat elke sector baat heeft bij goede SEO, dus neem gerust <Link href="/contact" className="font-bold">contact</Link> op om te bespreken hoe we jouw bedrijf kunnen helpen groeien.
             </>
           )
         }
@@ -118,7 +118,7 @@ export default function FAQPage() {
           question: 'Wat is Local SEO en heb ik dat nodig?',
           answer: (
             <>
-              <Link href="/local-seo" className="underline hover:text-accent transition-colors">Local SEO</Link> richt zich op vindbaar zijn voor lokale zoekopdrachten, zoals "tandarts Amsterdam" of "loodgieter Den Haag". Als je een fysieke locatie hebt of diensten in specifieke gebieden aanbiedt, is Local SEO essentieel. Dit omvat het optimaliseren van je Google Business Profiel, lokale zoektermen en het verkrijgen van lokale recensies.
+              <Link href="/local-seo" className="font-bold">Local SEO</Link> richt zich op vindbaar zijn voor lokale zoekopdrachten, zoals "tandarts Amsterdam" of "loodgieter Den Haag". Als je een fysieke locatie hebt of diensten in specifieke gebieden aanbiedt, is Local SEO essentieel. Dit omvat het optimaliseren van je Google Business Profiel, lokale zoektermen en het verkrijgen van lokale recensies.
             </>
           )
         }
@@ -148,7 +148,7 @@ export default function FAQPage() {
           question: 'Hoe verloopt de samenwerking met Vizibly?',
           answer: (
             <>
-              We starten altijd met een vrijblijvende kennismaking om je situatie en doelen te bespreken. Vervolgens voeren we een grondige analyse uit en presenteren een maatwerk plan. Na akkoord starten we met de uitvoering volgens de afgesproken planning. Je krijgt regelmatig updates en rapportages over de voortgang. Wil je kennismaken? <Link href="/contact" className="underline hover:text-accent transition-colors">Neem contact op</Link> voor een vrijblijvende afspraak.
+              We starten altijd met een vrijblijvende kennismaking om je situatie en doelen te bespreken. Vervolgens voeren we een grondige analyse uit en presenteren een maatwerk plan. Na akkoord starten we met de uitvoering volgens de afgesproken planning. Je krijgt regelmatig updates en rapportages over de voortgang. Wil je kennismaken? <Link href="/contact" className="font-bold">Neem contact op</Link> voor een vrijblijvende afspraak.
             </>
           )
         },
@@ -194,7 +194,7 @@ export default function FAQPage() {
           question: 'Wat is het verschil tussen gewone content en SEO content?',
           answer: (
             <>
-              SEO content is strategisch geschreven met specifieke zoektermen in gedachten, maar blijft natuurlijk leesbaar en waardevol voor bezoekers. We doen eerst zoekwoordenonderzoek om te bepalen welke termen Google verwacht bij een bepaald onderwerp, en weven deze organisch door de tekst. Het belangrijkste verschil: SEO content is geoptimaliseerd om gevonden te worden én om te converteren. Meer weten over onze <Link href="/seo-copy" className="underline hover:text-accent transition-colors">SEO copywriting</Link> aanpak?
+              SEO content is strategisch geschreven met specifieke zoektermen in gedachten, maar blijft natuurlijk leesbaar en waardevol voor bezoekers. We doen eerst zoekwoordenonderzoek om te bepalen welke termen Google verwacht bij een bepaald onderwerp, en weven deze organisch door de tekst. Het belangrijkste verschil: SEO content is geoptimaliseerd om gevonden te worden én om te converteren. Meer weten over onze <Link href="/seo-copy" className="font-bold">SEO copywriting</Link> aanpak?
             </>
           )
         },
@@ -261,7 +261,7 @@ export default function FAQPage() {
           question: 'Werkt SEO ook voor webshops?',
           answer: (
             <>
-              SEO is cruciaal voor webshops! E-commerce SEO heeft eigen uitdagingen zoals productpagina's, categoriestructuur, reviews en technische aspecten zoals laadsnelheid. We hebben veel ervaring met <Link href="/seo-voor-webshop" className="underline hover:text-accent transition-colors">webshop-optimalisatie</Link> en weten hoe we producten beter vindbaar maken. Lees ook ons uitgebreide artikel over <Link href="/seo-optimalisatie-voor-webshops-alles-wat-je-moet-weten" className="underline hover:text-accent transition-colors">SEO optimalisatie voor webshops</Link>.
+              SEO is cruciaal voor webshops! E-commerce SEO heeft eigen uitdagingen zoals productpagina's, categoriestructuur, reviews en technische aspecten zoals laadsnelheid. We hebben veel ervaring met <Link href="/seo-voor-webshop" className="font-bold">webshop-optimalisatie</Link> en weten hoe we producten beter vindbaar maken. Lees ook ons uitgebreide artikel over <Link href="/seo-optimalisatie-voor-webshops-alles-wat-je-moet-weten" className="font-bold">SEO optimalisatie voor webshops</Link>.
             </>
           )
         },
@@ -269,7 +269,7 @@ export default function FAQPage() {
           question: 'Ik ben lokale dienstverlener, is SEO dan relevant?',
           answer: (
             <>
-              Local SEO is juist heel belangrijk voor lokale dienstverleners! Mensen zoeken steeds vaker online naar lokale services. We optimaliseren je Google Business Profiel, zorgen voor goede lokale rankings en helpen je meer lokale klanten te bereiken. We hebben ook specifieke ervaring met <Link href="/seo-voor-loodgieters-en-installatiebedrijven" className="underline hover:text-accent transition-colors">loodgieters en installatiebedrijven</Link> en <Link href="/seo-voor-dakdekkers-zo-kom-je-als-dakdekkersbedrijf-bovenaan-in-google" className="underline hover:text-accent transition-colors">dakdekkers</Link>.
+              Local SEO is juist heel belangrijk voor lokale dienstverleners! Mensen zoeken steeds vaker online naar lokale services. We optimaliseren je Google Business Profiel, zorgen voor goede lokale rankings en helpen je meer lokale klanten te bereiken. We hebben ook specifieke ervaring met <Link href="/seo-voor-loodgieters-en-installatiebedrijven" className="font-bold">loodgieters en installatiebedrijven</Link> en <Link href="/seo-voor-dakdekkers-zo-kom-je-als-dakdekkersbedrijf-bovenaan-in-google" className="font-bold">dakdekkers</Link>.
             </>
           )
         },
@@ -311,7 +311,7 @@ export default function FAQPage() {
           question: 'Hoe verschilt GEO van traditionele SEO?',
           answer: (
             <>
-              SEO richt zich op het ranken van individuele pagina's in traditionele zoekresultaten, terwijl GEO focust op hoe AI meerdere bronnen integreert en synthetiseert om uitgebreide antwoorden te geven. Traditionele zoekmachines werken als mappen die gebruikers naar bestemmingen leiden, maar AI-zoekmachines functioneren als interpreters die informatie consumeren en antwoorden genereren. Ons artikel over <Link href="/word-gevonden-door-ai-de-toekomst-van-seo-is-geo" className="underline hover:text-accent transition-colors">vindbaar worden door AI</Link> gaat hier dieper op in.
+              SEO richt zich op het ranken van individuele pagina's in traditionele zoekresultaten, terwijl GEO focust op hoe AI meerdere bronnen integreert en synthetiseert om uitgebreide antwoorden te geven. Traditionele zoekmachines werken als mappen die gebruikers naar bestemmingen leiden, maar AI-zoekmachines functioneren als interpreters die informatie consumeren en antwoorden genereren. Ons artikel over <Link href="/word-gevonden-door-ai-de-toekomst-van-seo-is-geo" className="font-bold">vindbaar worden door AI</Link> gaat hier dieper op in.
             </>
           )
         },
@@ -388,7 +388,7 @@ export default function FAQPage() {
           question: 'Begint Vizibly al met GEO voor klanten?',
           answer: (
             <>
-              Ja, we integreren GEO-principes in onze SEO-strategieën. Dit betekent dat we content structureren op manieren die zowel Google als AI-platforms begrijpen, authoriteit opbouwen met betrouwbare bronnen, en zorgen dat je expertise helder naar voren komt in alle vormen van zoeken. <Link href="/contact" className="underline hover:text-accent transition-colors">Neem contact op</Link> om te bespreken hoe we jouw content kunnen voorbereiden op de toekomst van zoeken.
+              Ja, we integreren GEO-principes in onze SEO-strategieën. Dit betekent dat we content structureren op manieren die zowel Google als AI-platforms begrijpen, authoriteit opbouwen met betrouwbare bronnen, en zorgen dat je expertise helder naar voren komt in alle vormen van zoeken. <Link href="/contact" className="font-bold">Neem contact op</Link> om te bespreken hoe we jouw content kunnen voorbereiden op de toekomst van zoeken.
             </>
           )
         }
@@ -425,21 +425,21 @@ export default function FAQPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-40 pb-28 lg:pt-48 lg:pb-36">
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               ALLES WAT JE WIL WETEN
             </p>
 
             <h1 className="mb-8 text-brutalist-hero leading-none text-black">
               Veelgestelde{' '}
               <span className="relative inline-block">
-                <span className="absolute -inset-1 bg-accent"></span>
+                <span className="absolute inset-0 bg-accent"></span>
                 <span className="relative">vragen</span>
               </span>
             </h1>
@@ -455,8 +455,8 @@ export default function FAQPage() {
       {faqCategories.map((category, categoryIndex) => (
         <section
           key={categoryIndex}
-          className={`relative py-20 lg:py-28 border-b-4 border-black ${
-            categoryIndex % 2 === 0 ? 'bg-white' : 'bg-accent'
+          className={`relative py-28 lg:py-36 border-b-4 border-black ${
+            categoryIndex % 2 === 0 ? 'bg-[#fafaf8]' : 'bg-accent'
           }`}
         >
           <div className="mx-auto max-w-screen-2xl px-6">

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function CTAWithImage() {
   return (
-    <section className="relative border-b-4 border-black bg-white py-28 lg:py-40">
+    <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-44">
       <div className="mx-auto max-w-screen-2xl px-6">
         {/* Zigzag layout: tekst links, foto rechts */}
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
@@ -49,7 +49,7 @@ export function CTAWithImage() {
               </div>
             </div>
 
-            <Button asChild size="lg" className="w-fit bg-accent text-black border-accent hover:bg-black hover:text-accent px-12 py-8 text-lg">
+            <Button asChild size="lg" className="w-fit bg-accent text-black border-accent hover:bg-black hover:text-accent hover:shadow-[6px_6px_0_0_#000000] hover:-translate-x-0.5 hover:-translate-y-0.5 px-12 py-8 text-lg">
               <Link href="/contact">
                 NEEM CONTACT OP
                 <ArrowRight className="ml-3 h-6 w-6" />

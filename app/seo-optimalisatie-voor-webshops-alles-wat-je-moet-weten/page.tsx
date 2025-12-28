@@ -73,7 +73,7 @@ export default function SEOWebshopsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="relative overflow-hidden bg-[#0a0a0a] pt-40 pb-20 lg:pt-48 lg:pb-28">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -86,7 +86,7 @@ export default function SEOWebshopsPage() {
 
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 E-COMMERCE SEO
               </p>
 
@@ -122,7 +122,7 @@ export default function SEOWebshopsPage() {
       </section>
 
       {/* Article Content */}
-      <article className="relative border-b-4 border-black bg-white py-16 lg:py-24">
+      <article className="relative border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6">
           <p className="mb-12 text-lg font-bold text-black lg:text-xl xl:text-2xl leading-relaxed">
             Als eigenaar van een webshop wil je maar één ding: meer bezoekers die omgezet worden naar betalende klanten. In een online wereld waar jaarlijks miljarden euro&apos;s worden uitgegeven, is het essentieel om je webshop optimaal vindbaar te maken in Google en andere zoekmachines.
@@ -132,7 +132,7 @@ export default function SEOWebshopsPage() {
             Wat is e-commerce SEO?
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/seo-voor-webshop" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">E-commerce SEO</Link> omvat alle optimalisaties die je doorvoert op je webshop om beter te ranken in zoekmachines als Google. Het draait niet alleen om zichtbaarheid verbeteren, maar vooral om het juiste verkeer aantrekken dat daadwerkelijk tot aankopen leidt.
+            <Link href="/seo-voor-webshop" className="font-bold">E-commerce SEO</Link> omvat alle optimalisaties die je doorvoert op je webshop om beter te ranken in zoekmachines als Google. Het draait niet alleen om zichtbaarheid verbeteren, maar vooral om het juiste verkeer aantrekken dat daadwerkelijk tot aankopen leidt.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Anders dan betaalde advertenties, die stoppen zodra je niet meer betaalt, bouwt SEO een duurzame bron van organisch verkeer op. Dit blijft doorstromen, ook lang nadat je initiële optimalisaties zijn afgerond.
@@ -142,7 +142,7 @@ export default function SEOWebshopsPage() {
             Waarom is SEO cruciaal voor webshops?
           </h2>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            De online retail groeit jaarlijks gestaag, met een toenemende concurrentie als gevolg. Een sterke <Link href="/seo-strategie" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-strategie</Link> is essentieel voor elke webshop die wil opvallen in dit drukke digitale landschap. SEO zorgt voor duurzame zichtbaarheid zonder doorlopende advertentiekosten. Daarnaast vertrouwen consumenten organische zoekresultaten meer dan advertenties, wat leidt tot hogere conversiepercentages.
+            De online retail groeit jaarlijks gestaag, met een toenemende concurrentie als gevolg. Een sterke <Link href="/seo-strategie" className="font-bold">SEO-strategie</Link> is essentieel voor elke webshop die wil opvallen in dit drukke digitale landschap. SEO zorgt voor duurzame zichtbaarheid zonder doorlopende advertentiekosten. Daarnaast vertrouwen consumenten organische zoekresultaten meer dan advertenties, wat leidt tot hogere conversiepercentages.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -183,7 +183,7 @@ export default function SEOWebshopsPage() {
             Technische SEO voor webshops
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <Link href="/design-techniek" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">Technische SEO</Link> vormt het fundament waarop je webshop staat. Zonder solide technische basis zal zelfs de beste content moeite hebben om hoog te ranken.
+            <Link href="/design-techniek" className="font-bold">Technische SEO</Link> vormt het fundament waarop je webshop staat. Zonder solide technische basis zal zelfs de beste content moeite hebben om hoog te ranken.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             <strong>Websitesnelheid</strong> is een cruciale ranking factor. Bezoekers haken massaal af bij trage laadtijden, vooral op mobiel. <strong>Een mobiel-vriendelijke webshop</strong> is geen luxe maar noodzaak. Met meer dan 60% van alle online aankopen via smartphones, moet je site perfect functioneren op kleine schermen.
@@ -209,14 +209,14 @@ export default function SEOWebshopsPage() {
             Faceted navigation (productfiltering) is essentieel voor gebruikers om snel het juiste product te vinden, maar kan SEO-uitdagingen creëren. Elke filtercombinatie kan een unieke URL genereren, wat kan leiden tot duizenden pagina&apos;s met grotendeels identieke content.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Voor filters zonder SEO-waarde: gebruik <Link href="/canonical-tags-voor-productvarianten-zo-voorkom-je-duplicate-content-in-je-webshop" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">canonical tags</Link> om naar de hoofdcategoriepagina te verwijzen, implementeer noindex tags, of overweeg een AJAX-implementatie waarbij filtering geen nieuwe URLs genereert.
+            Voor filters zonder SEO-waarde: gebruik <Link href="/canonical-tags-voor-productvarianten-zo-voorkom-je-duplicate-content-in-je-webshop" className="font-bold">canonical tags</Link> om naar de hoofdcategoriepagina te verwijzen, implementeer noindex tags, of overweeg een AJAX-implementatie waarbij filtering geen nieuwe URLs genereert.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
             Linkbuilding voor webshops
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Een <Link href="/linkbuilding" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">sterke backlink-strategie</Link> blijft cruciaal voor het verbeteren van je organische rankings. Creëer waardevolle content die natuurlijk links aantrekt, zoals uitgebreide koopgidsen, diepgaande productanalyses of origineel onderzoek.
+            Een <Link href="/linkbuilding" className="font-bold">sterke backlink-strategie</Link> blijft cruciaal voor het verbeteren van je organische rankings. Creëer waardevolle content die natuurlijk links aantrekt, zoals uitgebreide koopgidsen, diepgaande productanalyses of origineel onderzoek.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Vermijd risicovolle tactieken zoals het kopen van links of massale linkuitwisseling. Focus op kwaliteit boven kwantiteit - één link van een gezaghebbende website in je branche is waardevoller dan tientallen links van irrelevante of laagwaardige sites.
@@ -229,7 +229,7 @@ export default function SEOWebshopsPage() {
             SEO is een marathon, geen sprint. Voor een gemiddelde webshop die een solide SEO-strategie implementeert, zijn de eerste positieve signalen vaak na 3-6 maanden zichtbaar. Grotere, meer substantiële resultaten worden typisch pas na 6-12 maanden duidelijk.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Liever niet zelf aan de slag met de SEO van je webshop? Als gespecialiseerd <Link href="/seo-voor-webshop" className="text-black underline decoration-accent decoration-4 hover:bg-accent transition-colors">SEO-bureau voor webshops</Link> helpen we je graag om structureel beter te scoren in Google.
+            Liever niet zelf aan de slag met de SEO van je webshop? Als gespecialiseerd <Link href="/seo-voor-webshop" className="font-bold">SEO-bureau voor webshops</Link> helpen we je graag om structureel beter te scoren in Google.
           </p>
         </div>
       </article>
@@ -244,7 +244,7 @@ export default function SEOWebshopsPage() {
       />
 
       {/* Footer */}
-      <footer className="border-t-4 border-black bg-black py-16 text-white lg:py-24">
+      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white lg:py-32">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-4">
             <div className="lg:col-span-1">

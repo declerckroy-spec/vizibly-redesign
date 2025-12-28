@@ -234,7 +234,7 @@ export default function SeoVoorBoekhoudersPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-36 pb-24 lg:pt-44 lg:pb-36">
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
         }}></div>
@@ -250,7 +250,7 @@ export default function SeoVoorBoekhoudersPage() {
               <h1 className="mb-8 text-brutalist-hero leading-none text-black">
                 SEO voor{' '}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative">boekhouders</span>
                 </span>
                 : meer klanten
@@ -289,7 +289,7 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="relative border-y-4 border-black bg-black py-16 text-white lg:py-20">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-16 text-white lg:py-20">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -316,10 +316,10 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* Specialisaties Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               VOOR ALLE FINANCIELE DIENSTVERLENERS
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -350,11 +350,11 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-accent py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 WAAROM SEO VOOR BOEKHOUDERS?
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -378,10 +378,10 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* Services Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               ONZE SEO DIENSTEN
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -424,10 +424,10 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="relative border-b-4 border-black bg-accent py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-accent py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               TRANSPARANTE PRIJZEN
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -485,7 +485,7 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* Cases Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
@@ -493,7 +493,7 @@ export default function SeoVoorBoekhoudersPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
                 SUCCESVERHALEN
               </p>
               <h2 className="mb-4 text-brutalist-h1 text-white">
@@ -542,11 +542,11 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* About CTA Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 WAAROM VIZIBLY?
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -588,14 +588,14 @@ export default function SeoVoorBoekhoudersPage() {
       <TestimonialsSection />
 
       {/* Blog Section */}
-      <section className="relative border-b-4 border-black bg-black py-24 text-white lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-16">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
               KENNIS VOOR FINANCIELE DIENSTVERLENERS
             </p>
             <h2 className="mb-4 text-brutalist-h1 text-white">
@@ -634,7 +634,7 @@ export default function SeoVoorBoekhoudersPage() {
           </div>
 
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="bg-accent text-black border-accent hover:bg-white px-8 py-5 text-base">
+            <Button asChild size="lg" variant="lime" className="px-8 py-5 text-base">
               <Link href="/vizie">BEKIJK ALLE ARTIKELEN</Link>
             </Button>
           </div>
@@ -642,11 +642,11 @@ export default function SeoVoorBoekhoudersPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative border-b-4 border-black bg-white py-24 lg:py-32">
+      <section className="relative border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 VEELGESTELDE VRAGEN
               </p>
               <h2 className="mb-8 text-brutalist-h1 text-black">

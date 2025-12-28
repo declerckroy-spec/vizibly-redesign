@@ -35,12 +35,12 @@ export function FAQSection({
   const containerClass = maxWidth === 'narrow' ? 'max-w-5xl' : 'max-w-screen-2xl';
 
   return (
-    <section className="border-b-4 border-black bg-white py-24 lg:py-32">
+    <section className="border-b-4 border-black bg-[#fafaf8] py-32 lg:py-40">
       <div className={`mx-auto ${containerClass} px-6`}>
         {/* Header */}
         <div className="mb-16">
           {label && (
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               {label}
             </p>
           )}

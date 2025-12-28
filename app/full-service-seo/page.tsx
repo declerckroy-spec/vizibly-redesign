@@ -144,7 +144,7 @@ export default function FullServiceSeoPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <section className="relative overflow-hidden bg-[#fafaf8] pt-36 pb-24 lg:pt-44 lg:pb-36">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
@@ -153,14 +153,14 @@ export default function FullServiceSeoPage() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 COMPLETE SEO VOOR MAXIMALE GROEI
               </p>
 
               <h1 className="mb-8 text-brutalist-hero leading-none">
                 Full Service{' '}
                 <span className="relative inline-block">
-                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="absolute inset-0 bg-accent"></span>
                   <span className="relative">SEO</span>
                 </span>
               </h1>
@@ -197,7 +197,7 @@ export default function FullServiceSeoPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="relative border-y-4 border-black bg-black py-16 lg:py-20">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-16 lg:py-20">
         {/* Diagonal stripe pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -225,11 +225,11 @@ export default function FullServiceSeoPage() {
       </section>
 
       {/* Wat is Full Service SEO Section */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 COMPLETE ONDERSTEUNING
               </p>
 
@@ -273,14 +273,14 @@ export default function FullServiceSeoPage() {
       </section>
 
       {/* Services Grid Section - Black with stripes */}
-      <section className="relative border-y-4 border-black bg-black py-32 lg:py-40">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 lg:py-40">
         {/* Diagonal stripe pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-accent lg:text-lg xl:text-xl">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg xl:text-xl">
               ALLES WAT JE NODIG HEBT
             </p>
             <h2 className="text-brutalist-h1 text-white">
@@ -355,10 +355,10 @@ export default function FullServiceSeoPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-16 text-center">
-            <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+            <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
               EEN SEO PLAN DAT BIJ JE PAST
             </p>
             <h2 className="mb-8 text-brutalist-h1 text-black">
@@ -421,7 +421,7 @@ export default function FullServiceSeoPage() {
       </section>
 
       {/* Cases Section - Black with stripes */}
-      <section className="relative border-y-4 border-black bg-black py-24 lg:py-36">
+      <section className="relative border-y-4 border-black bg-[#0a0a0a] py-32 lg:py-40">
         {/* Diagonal stripe pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
@@ -487,7 +487,7 @@ export default function FullServiceSeoPage() {
       </section>
 
       {/* CTA with Image Section */}
-      <section className="relative bg-white py-24 lg:py-32">
+      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
@@ -502,7 +502,7 @@ export default function FullServiceSeoPage() {
             </div>
 
             <div>
-              <p className="mb-6 text-base font-bold uppercase tracking-wider text-black/60 lg:text-lg">
+              <p className="mb-6 text-base font-semibold uppercase tracking-widest text-black/60 lg:text-lg">
                 LAAT JE CONCURRENTIE ACHTER JE
               </p>
 
