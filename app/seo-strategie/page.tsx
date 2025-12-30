@@ -41,7 +41,7 @@ export default function SEOStrategiePage() {
     },
     {
       question: 'Passen jullie de strategie ook aan?',
-      answer: 'Absoluut. SEO is geen statisch proces - we monitoren constant de resultaten en passen de strategie aan waar nodig. Zo spelen we in op veranderingen in de markt, updates van Google en nieuwe kansen die zich voordoen.'
+      answer: 'Absoluut. SEO is geen statisch proces. Vizibly monitort constant de resultaten en past de strategie aan waar nodig. Zo spelen we in op veranderingen in de markt, updates van Google en nieuwe kansen die zich voordoen.'
     }
   ];
 
@@ -226,7 +226,7 @@ export default function SEOStrategiePage() {
               </div>
 
               <p className="text-base font-bold text-black/70 lg:text-lg xl:text-xl">
-                Op basis van deze inzichten stellen we een strategisch plan op voor 6 tot 12 maanden, waarin we precies aangeven welke acties wanneer uitgevoerd worden. Van zoekwoordenonderzoek en <Link href="/seo-copy" className="font-bold">contentstrategie</Link> tot <Link href="/design-techniek" className="font-bold">technische optimalisatie</Link> en <Link href="/linkbuilding" className="font-bold">linkbuilding</Link> - alles krijgt zijn plek in een logische volgorde.
+                Op basis van deze inzichten stelt Vizibly een strategisch plan op voor 6 tot 12 maanden, waarin precies wordt aangegeven welke acties wanneer uitgevoerd worden. Van zoekwoordenonderzoek en <Link href="/seo-copy" className="font-bold">contentstrategie</Link> tot <Link href="/design-techniek" className="font-bold">technische optimalisatie</Link> en <Link href="/linkbuilding" className="font-bold">linkbuilding</Link>: alles krijgt zijn plek in een logische volgorde.
               </p>
             </div>
 

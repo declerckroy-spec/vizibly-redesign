@@ -330,7 +330,7 @@ export default function SeoSpecialistZeelandPage() {
                 Als Zeeuwse ondernemer heb je unieke uitdagingen en kansen. Je werkt in een markt waar persoonlijke verbinding en regionale bekendheid samengaan met de behoefte om te innoveren en te groeien. Jouw ambitie verdient een online aanwezigheid die daar perfect bij aansluit.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                De Zeeuwse mentaliteit - nuchter maar vastberaden - zien we terug in jouw bedrijf. Met die eigenheid kun je uitblinken in de digitale wereld, waar authenticiteit steeds belangrijker wordt. Door jouw expertise en lokale kennis te combineren met strategische online vindbaarheid, bereik je precies die klanten die op zoek zijn naar wat jij te bieden hebt.
+                De Zeeuwse mentaliteit, nuchter maar vastberaden, zien we terug in jouw bedrijf. Met die eigenheid kun je uitblinken in de digitale wereld, waar authenticiteit steeds belangrijker wordt. Door jouw expertise en lokale kennis te combineren met strategische online vindbaarheid, bereik je precies die klanten die op zoek zijn naar wat jij te bieden hebt.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Wij ondersteunen je hierbij door onze jarenlange ervaring met het Google algoritme te verbinden met onze kennis van de Zeeuwse markt. Zo zorgen we samen dat jouw bedrijf precies daar verschijnt waar het hoort: bovenaan in de zoekresultaten, bij de mensen die jouw diensten of producten zoeken.
@@ -394,7 +394,7 @@ export default function SeoSpecialistZeelandPage() {
               Onze SEO services voor Zeeuwse ondernemers
             </h2>
             <p className="max-w-3xl text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-              Of je nu een <Link href="/seo-voor-webshop" className="font-bold">webshop</Link> runt, een lokale dienstverlener bent of in de B2B-sector opereert - als SEO specialist in Zeeland hebben wij de expertise om jouw online zichtbaarheid te verbeteren. We bieden gespecialiseerde SEO-strategieën voor verschillende bedrijfstypen:
+              Of je nu een <Link href="/seo-voor-webshop" className="font-bold">webshop</Link> runt, een lokale dienstverlener bent of in de B2B-sector opereert: als SEO specialist in Zeeland hebben wij de expertise om jouw online zichtbaarheid te verbeteren. We bieden gespecialiseerde SEO-strategieën voor verschillende bedrijfstypen:
             </p>
           </div>
 

@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation';
 import { FinalCTA } from '@/components/final-cta';
 import { RelatedArticles } from '@/components/related-articles';
+import { Footer } from '@/components/footer';
 import { ArrowLeft, Clock, User, Quote } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -142,7 +143,7 @@ export default function WebsiteOnderhoudPage() {
             Veel ondernemers denken dat het werk klaar is zodra een nieuwe website live staat. &quot;Die gedachte is begrijpelijk, maar in de praktijk onjuist,&quot; legt Martijn uit. &quot;Een website is een levend digitaal systeem dat continu onderhoud vraagt.&quot;
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Hij vergelijkt het met het onderhoud van een auto. &quot;Zonder regelmatig beheer is de kans groot dat er op den duur problemen ontstaan - vaak op het moment dat je het niet kunt gebruiken. Denk aan een contactformulier dat geen berichten meer doorstuurt, trage laadtijden die bezoekers afschrikken, of - erger nog - een beveiligingslek waardoor je website gehackt wordt.&quot;
+            Hij vergelijkt het met het onderhoud van een auto. &quot;Zonder regelmatig beheer is de kans groot dat er op den duur problemen ontstaan, vaak op het moment dat je het niet kunt gebruiken. Denk aan een contactformulier dat geen berichten meer doorstuurt, trage laadtijden die bezoekers afschrikken, of erger nog: een beveiligingslek waardoor je website gehackt wordt.&quot;
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -179,7 +180,7 @@ export default function WebsiteOnderhoudPage() {
             Zelf doen of uitbesteden?
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Hoewel website onderhoud in theorie zelf kan worden gedaan, blijkt dit in de praktijk vaak lastig. &quot;Niet omdat het technisch ondoenlijk is - er zijn genoeg handleidingen te vinden - maar omdat het kennis, structuur én tijd vereist,&quot; aldus Martijn. &quot;En in een drukke werkweek raakt het onderhoud vaak onderaan de prioriteitenlijst. Tot het misgaat.&quot;
+            Hoewel website onderhoud in theorie zelf kan worden gedaan, blijkt dit in de praktijk vaak lastig. &quot;Niet omdat het technisch ondoenlijk is, er zijn genoeg handleidingen te vinden, maar omdat het kennis, structuur én tijd vereist,&quot; aldus Martijn. &quot;En in een drukke werkweek raakt het onderhoud vaak onderaan de prioriteitenlijst. Tot het misgaat.&quot;
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             &quot;Het frustrerende is dat veel problemen voorkomen hadden kunnen worden met regelmatig onderhoud,&quot; merkt hij op. &quot;En de kosten van herstel na bijvoorbeeld een hack zijn vaak veel hoger dan preventief onderhoud zou zijn geweest.&quot;
@@ -206,68 +207,7 @@ export default function WebsiteOnderhoudPage() {
         description="Een goed onderhouden website is de basis voor betere SEO-resultaten. Laten we kijken wat er mogelijk is."
       />
 
-      {/* Footer */}
-      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="grid gap-12 lg:grid-cols-4">
-            <div className="lg:col-span-1">
-              <Link href="/" className="mb-6 inline-block">
-                <Image
-                src="/logo-brutalist-white.svg"
-                  alt="Vizibly"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
-              </Link>
-              <p className="text-base font-bold text-white/70">
-                SEO bureau voor bedrijven die willen groeien via Google.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-3">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/70 hover:text-accent">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/70 hover:text-accent">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/70 hover:text-accent">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/70 hover:text-accent">Local SEO</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Vizibly</h4>
-              <ul className="space-y-3">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/70 hover:text-accent">Over ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/70 hover:text-accent">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/70 hover:text-accent">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/70 hover:text-accent">Contact</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-3">
-                <li className="text-base font-bold text-white/70">Roy de Clerck</li>
-                <li><a href="tel:+31628206410" className="text-base font-bold text-white/70 hover:text-accent">06 282 064 10</a></li>
-                <li><a href="mailto:roy@vizibly.nl" className="text-base font-bold text-white/70 hover:text-accent">roy@vizibly.nl</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t-4 border-white/20 pt-8 lg:flex-row">
-            <p className="text-base font-bold text-white/50">
-              © {new Date().getFullYear()} Vizibly. Alle rechten voorbehouden.
-            </p>
-            <div className="flex gap-6">
-              <Link href="/privacy" className="text-base font-bold text-white/50 hover:text-accent">Privacy</Link>
-              <Link href="/voorwaarden" className="text-base font-bold text-white/50 hover:text-accent">Voorwaarden</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

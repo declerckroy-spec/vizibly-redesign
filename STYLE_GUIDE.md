@@ -16,8 +16,9 @@ Deze style guide documenteert het complete design systeem voor de Vizibly websit
 
 ## Inhoudsopgave
 
-1. [Design Filosofie](#design-filosofie)
-2. [Kleuren](#kleuren)
+1. [Tone of Voice & Copy](#tone-of-voice--copy)
+2. [Design Filosofie](#design-filosofie)
+3. [Kleuren](#kleuren)
 3. [Typografie](#typografie)
 4. [Spacing & Layout](#spacing--layout)
 5. [Borders & Shadows](#borders--shadows)
@@ -30,6 +31,194 @@ Deze style guide documenteert het complete design systeem voor de Vizibly websit
 12. [Do's en Don'ts](#dos-en-donts)
 13. [Blog Artikel Pagina's](#blog-artikel-paginas)
 14. [Case Study Pagina's](#case-study-paginas)
+
+---
+
+## Tone of Voice & Copy
+
+Vizibly communiceert direct, eerlijk en zonder omwegen. De copy is zelfverzekerd maar niet arrogant, en altijd gericht op wat de klant krijgt.
+
+### Kernprincipes
+
+| Principe | Uitleg |
+|----------|--------|
+| **Direct** | Geen omwegen, geen corporate jargon. Zeg wat je bedoelt. |
+| **Eerlijk** | Beloof niet te veel. Wees transparant over wat wel en niet kan. |
+| **Zelfverzekerd** | Weet wat je waard bent, maar blijf bescheiden. |
+| **Klantgericht** | Focus op benefits voor de klant, niet op features. |
+| **Nederlands B2B** | Professioneel maar niet stijf. Geen Amerikaanse overdrijving. |
+
+### Waar wel en niet punchy
+
+**Punchy en kort:**
+- Hero headlines
+- Openingszinnen van secties
+- Bullet points
+- Buttons en CTA's
+- Sectie koppen
+
+**Meer body en uitleg:**
+- FAQ antwoorden
+- CTA secties met uitleg (adviesgesprek, etc.)
+- Dienst beschrijvingen
+- Blog content
+- Alles waar SEO belangrijk is
+
+### Hero & Intro Copy
+
+**Hero headline:** Kort, krachtig, benefit-driven.
+
+```
+✅ GOED:
+"Premium sites die klanten opleveren"
+"Gevonden worden begint hier"
+
+❌ VERMIJD:
+"Wij maken mooie websites en doen SEO" (te generiek)
+"De beste SEO specialist van Nederland" (te schreeuwerig)
+```
+
+**Hero subtext:** Iets langer, maar nog steeds scanbaar. Max 2 zinnen.
+
+```
+✅ GOED:
+"Strakke, razendsnelle websites die scoren in Google. SEO die echt werkt.
+Alles uit één hand, zonder de overhead van een bureau."
+
+❌ VERMIJD:
+Lange opsommingen van alle diensten en features.
+```
+
+**Openingszin bij intro sectie:** Dit is de "hook". Kort en memorabel.
+
+```
+✅ GOED:
+"Wat een bureau met 5 man doet, doe ik alleen. Beter en sneller."
+
+❌ VERMIJD:
+"Ik ben Roy en ik doe al 10 jaar websites en SEO..." (saai, niet memorable)
+```
+
+### Bullet Points
+
+**Bullets zijn benefits, geen features.**
+
+| Feature (vermijd) | Benefit (gebruik) |
+|-------------------|-------------------|
+| Eén aanspreekpunt | Eén telefoontje in plaats van drie meetings |
+| Techniek en SEO uit één hand | Geen vingerwijzen tussen developer en bureau |
+| Snelle doorlooptijd | Live binnen weken, niet maanden |
+
+### Process/Stappen Copy
+
+Kort en scanbaar. Elke stap heeft een titel en één korte zin.
+
+```
+✅ GOED:
+01 Gesprek: "Jij vertelt, ik luister. 30 minuten."
+02 Voorstel: "Helder, compleet, geen kleine lettertjes."
+03 Aan de slag: "Ik bouw, jij krijgt updates. Geen radiostilte."
+04 Live: "En daarna? Ondersteuning zolang je wilt."
+
+❌ VERMIJD:
+Lange uitleg per stap. Dat hoort in een FAQ of aparte pagina.
+```
+
+### FAQ Antwoorden
+
+**FAQ's hebben meer body nodig.** Ze moeten vertrouwen wekken en vragen echt beantwoorden.
+
+```
+✅ GOED:
+"Ik ben geen bureau met accountmanagers en afdelingen. Ik bouw zelf de
+websites én doe de SEO. Dat betekent: geen miscommunicatie tussen developer
+en marketeer, snellere doorlooptijd, en een site die technisch perfect scoort.
+Je hebt één aanspreekpunt en weet altijd waar je aan toe bent."
+
+❌ TE KORT:
+"Ik ben geen bureau. Jij praat met mij, ik lever. Klaar."
+(Te kort door de bocht, wekt geen vertrouwen)
+```
+
+### CTA Secties
+
+**CTA's met uitleg (adviesgesprek, contact) hebben context nodig.**
+
+```
+✅ GOED:
+"In een kort gesprek van 30 minuten kijk ik samen met je naar je huidige
+situatie. Geen verkooppraatje, gewoon een eerlijk gesprek. Daarna weet je:
+• Of je huidige site bezoekers binnenhaalt of juist wegjaagt
+• Hoe zichtbaar je bent voor mensen die zoeken naar wat jij aanbiedt
+• Welke stap het meeste oplevert voor jouw specifieke situatie"
+
+❌ TE KORT:
+"30 minuten. Jij vertelt, ik luister."
+(Te weinig context over wat de klant krijgt)
+```
+
+### Woorden en Zinnen
+
+**Gebruik:**
+- "Ik" in plaats van "wij" (het is één persoon)
+- Actieve zinnen
+- Concrete cijfers waar mogelijk
+- Nederlandse spelling en grammatica
+
+**Vermijd:**
+- Corporate jargon ("synergie", "onboarding", "deliverables")
+- Overdrijving ("de beste", "uniek", "revolutionair")
+- Negatieve framing over concurrenten
+- Em-dashes (—) en en-dashes (–), gebruik punt of komma
+
+### Voorbeelden per Sectie Type
+
+**Sectie kop (punchy):**
+```
+"Geen gedoe, gewoon resultaat"
+"Alles wat ik weet, deel ik hier"
+"Nog vragen?"
+```
+
+**Sectie label (kort, uppercase):**
+```
+"ZO WERKT HET"
+"GEEN GEHEIMEN"
+"DE KORTE ANTWOORDEN"
+```
+
+**Dienst beschrijving (meer body):**
+```
+"Sites die laden in onder de 2 seconden. Die er net zo goed uitzien als
+die van de grote jongens. En die je zelf kunt beheren zonder developer."
+```
+
+### Tone Spectrum
+
+```
+FORMEEL ←――――――――――――――――――→ INFORMEEL
+          Vizibly zit hier: ●
+                    (direct maar professioneel)
+
+BESCHEIDEN ←――――――――――――――――→ SCHREEUWERIG
+              Vizibly zit hier: ●
+                      (zelfverzekerd maar niet arrogant)
+
+KORT ←――――――――――――――――――――→ UITGEBREID
+     Hero/Intro: ●
+                    FAQ/CTA: ●
+                           Blog: ●
+```
+
+### Checklist voor nieuwe copy
+
+- [ ] Is de hero headline kort en benefit-driven?
+- [ ] Zijn bullets benefits (niet features)?
+- [ ] Hebben FAQ's genoeg body om vertrouwen te wekken?
+- [ ] Is de CTA sectie duidelijk over wat de klant krijgt?
+- [ ] Geen em-dashes of en-dashes?
+- [ ] Geen overdreven claims?
+- [ ] Past de toon bij Nederlandse B2B?
 
 ---
 

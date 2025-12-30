@@ -79,7 +79,7 @@ export default function FullServiceSeoPage() {
     },
     {
       question: 'Voor wie is Full Service SEO geschikt?',
-      answer: 'Full Service SEO is ideaal voor bedrijven die serieus willen investeren in hun online groei. Of je nu lokaal, regionaal of landelijk actief bent - we stemmen onze aanpak af op jouw situatie en budget.'
+      answer: 'Full Service SEO is ideaal voor bedrijven die serieus willen investeren in hun online groei. Of je nu lokaal, regionaal of landelijk actief bent: Vizibly stemt de aanpak af op jouw situatie en budget.'
     },
     {
       question: 'Hoe bepalen jullie welk pakket het beste past?',
@@ -366,7 +366,7 @@ export default function FullServiceSeoPage() {
             </h2>
             <div className="mx-auto h-1 w-32 bg-black mb-8"></div>
             <p className="mx-auto max-w-2xl text-base font-bold text-black/70 lg:text-lg xl:text-xl">
-              Of je nu een lokaal bedrijf hebt of een grote webshop die landelijk wil groeien - wij hebben een pakket dat bij je past.
+              Of je nu een lokaal bedrijf hebt of een grote webshop die landelijk wil groeien, Vizibly heeft een pakket dat bij je past.
             </p>
           </div>
 

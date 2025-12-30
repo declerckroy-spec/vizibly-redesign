@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Star } from 'lucide-react';
 import { siteConfig, navLinks } from '@/lib/config';
 
 export function Footer() {
@@ -11,8 +12,9 @@ export function Footer() {
       }}></div>
 
       <div className="relative mx-auto max-w-screen-2xl px-6">
-        <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          <div>
+        <div className="mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+          {/* Logo & Tagline */}
+          <div className="lg:col-span-1">
             <Link href="/" className="mb-6 block">
               <Image
                 src="/logo-brutalist-white.svg"
@@ -27,11 +29,36 @@ export function Footer() {
             <p className="text-base font-bold text-white/80 lg:text-lg">
               {siteConfig.tagline}
             </p>
+
+            {/* Google Reviews */}
+            <a
+              href={siteConfig.googleReviews.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-1.5 transition-opacity hover:opacity-80"
+              aria-label="5 uit 5 sterren op Google"
+            >
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+              ))}
+              <span className="ml-1 text-sm font-bold text-white/60">
+                5/5 op Google
+              </span>
+            </a>
           </div>
+
+          {/* Diensten */}
           <div>
             <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Diensten</h4>
             <ul className="space-y-4">
-              {navLinks.diensten.slice(0, 4).map((link) => (
+              {navLinks.hoofdDiensten.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-base font-bold text-accent hover:text-white transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+              {navLinks.seoDiensten.slice(0, 3).map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-base font-bold text-white/80 hover:text-accent transition-colors">
                     {link.label}
@@ -40,6 +67,29 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Lokaal & Niches */}
+          <div>
+            <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Branches</h4>
+            <ul className="space-y-4">
+              {navLinks.niches.slice(0, 4).map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-base font-bold text-white/80 hover:text-accent transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+              {navLinks.lokaal.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-base font-bold text-white/80 hover:text-accent transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Bedrijf */}
           <div>
             <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Bedrijf</h4>
             <ul className="space-y-4">
@@ -52,6 +102,8 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Contact */}
           <div>
             <h4 className="mb-6 border-b-2 border-accent pb-2 text-xl font-black uppercase">Contact</h4>
             <ul className="space-y-4 text-base font-bold text-white/80">

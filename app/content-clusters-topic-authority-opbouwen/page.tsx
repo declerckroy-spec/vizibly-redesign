@@ -175,7 +175,7 @@ export default function ContentClustersPage() {
             <a href="https://developers.google.com/search/blog/2023/05/understanding-news-topic-authority" target="_blank" rel="noopener noreferrer" className="font-bold">Google introduceerde</a> het concept van "topic authority" officieel op 23 mei 2023, maar slimme SEO's werkten hier al jaren mee. Het algoritme is verschoven van individuele zoektermen naar complete onderwerpen. Je moet niet meer denken in keywords, maar in thema's.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Dit heeft alles te maken met hoe mensen tegenwoordig zoeken. Ze typen geen robotachtige zoektermen meer in, maar stellen complete vragen. Ze willen diepgaande informatie van bronnen die ze kunnen vertrouwen. En Google's AI-gedreven algoritmes begrijpen steeds beter wat gebruikers echt zoeken - niet alleen wat ze intypen.
+            Dit heeft alles te maken met hoe mensen tegenwoordig zoeken. Ze typen geen robotachtige zoektermen meer in, maar stellen complete vragen. Ze willen diepgaande informatie van bronnen die ze kunnen vertrouwen. En Google's AI-gedreven algoritmes begrijpen steeds beter wat gebruikers echt zoeken, niet alleen wat ze intypen.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Het resultaat? Websites met sterke content clusters domineren de zoekresultaten. Ze pakken niet alleen posities voor hun hoofdonderwerp, maar ranken ook voor honderden gerelateerde long-tail zoektermen. Een goed opgezet cluster kan je verkeer vertienvoudigen.
@@ -265,7 +265,7 @@ export default function ContentClustersPage() {
             </li>
           </ul>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            Het geheim zit in de variatie. Mix verschillende content-types en invalshoeken. Zo spreek je verschillende zoekintentie aan - van mensen die zich orienteren tot kopers die alleen nog dat laatste zetje nodig hebben.
+            Het geheim zit in de variatie. Mix verschillende content-types en invalshoeken. Zo spreek je verschillende zoekintentie aan: van mensen die zich orienteren tot kopers die alleen nog dat laatste zetje nodig hebben.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">

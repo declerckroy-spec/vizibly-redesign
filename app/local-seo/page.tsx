@@ -11,10 +11,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Local SEO | Word #1 in jouw regio',
-  description: 'Domineer de lokale zoekresultaten met Local SEO. Van Google Business Profile tot lokale citations - wij zorgen dat je gevonden wordt in jouw regio.',
+  description: 'Domineer de lokale zoekresultaten met Local SEO. Van Google Business Profile tot lokale citations. Vizibly zorgt dat je gevonden wordt in jouw regio.',
   openGraph: {
     title: 'Local SEO | Word #1 in jouw regio',
-    description: 'Domineer de lokale zoekresultaten met Local SEO. Van Google Business Profile tot lokale citations - wij zorgen dat je gevonden wordt in jouw regio.',
+    description: 'Domineer de lokale zoekresultaten met Local SEO. Van Google Business Profile tot lokale citations. Vizibly zorgt dat je gevonden wordt in jouw regio.',
     url: 'https://vizibly.nl/local-seo/',
     siteName: 'Vizibly',
     locale: 'nl_NL',
@@ -30,7 +30,7 @@ export default function LocalSeoPage() {
     },
     {
       question: 'Hoe belangrijk is Google Business Profile?',
-      answer: 'Essentieel. Je Google Business Profile bepaalt grotendeels of je in de Map Pack verschijnt - de top 3 lokale resultaten met kaart die Google toont. Een geoptimaliseerd profiel kan je zichtbaarheid verdubbelen.'
+      answer: 'Essentieel. Je Google Business Profile bepaalt grotendeels of je in de Map Pack verschijnt, de top 3 lokale resultaten met kaart die Google toont. Een geoptimaliseerd profiel kan je zichtbaarheid verdubbelen.'
     },
     {
       question: 'Hoe lang duurt het voordat Local SEO resultaat oplevert?',
@@ -163,7 +163,7 @@ export default function LocalSeoPage() {
                 Local SEO draait om gevonden worden door mensen in jouw regio. Wanneer iemand zoekt naar "kapper Middelburg" of "beste pizzeria bij mij in de buurt", wil je bovenaan staan.
               </p>
               <p className="text-base font-bold text-white/80 lg:text-lg xl:text-xl">
-                46% van alle Google-zoekopdrachten heeft een lokale intentie. Deze zoekers zijn vaak koopklaar - ze willen nu actie ondernemen. Mis je dit verkeer, dan mis je omzet.
+                46% van alle Google-zoekopdrachten heeft een lokale intentie. Deze zoekers zijn vaak koopklaar: ze willen nu actie ondernemen. Mis je dit verkeer, dan mis je omzet.
               </p>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function LocalSeoPage() {
               {
                 icon: Users,
                 title: 'Koopklare klanten',
-                description: '88% van de lokale zoekers neemt binnen 24 uur actie. Ze zoeken niet alleen - ze willen kopen, bellen of langskomen.'
+                description: '88% van de lokale zoekers neemt binnen 24 uur actie. Ze zoeken niet alleen, ze willen kopen, bellen of langskomen.'
               },
               {
                 icon: Building2,

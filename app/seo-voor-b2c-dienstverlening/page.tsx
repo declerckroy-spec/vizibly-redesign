@@ -84,7 +84,7 @@ export default function SeoVoorB2CPage() {
     {
       icon: Search,
       title: 'Analyse & Strategie',
-      description: 'We analyseren je werkgebied, onderzoeken de lokale concurrentie en identificeren de zoektermen die jouw ideale klanten gebruiken. Van "personal trainer Amsterdam" tot "trouwfotograaf Zeeland" - we bepalen waar de kansen liggen.',
+      description: 'We analyseren je werkgebied, onderzoeken de lokale concurrentie en identificeren de zoektermen die jouw ideale klanten gebruiken. Van "personal trainer Amsterdam" tot "trouwfotograaf Zeeland": we bepalen waar de kansen liggen.',
       link: '/seo-strategie',
       linkText: 'Meer over strategie'
     },
@@ -257,7 +257,7 @@ export default function SeoVoorB2CPage() {
               </h1>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Als lokale dienstverlener wil je gevonden worden door consumenten die actief zoeken naar wat jij aanbiedt. Of je nu kapper, personal trainer, fotograaf of rijschoolhouder bent - je potentiele klanten beginnen hun zoektocht online. Vizibly helpt B2C dienstverleners om lokaal beter vindbaar te worden en meer klanten te krijgen.
+                Als lokale dienstverlener wil je gevonden worden door consumenten die actief zoeken naar wat jij aanbiedt. Of je nu kapper, personal trainer, fotograaf of rijschoolhouder bent, je potentiele klanten beginnen hun zoektocht online. Vizibly helpt B2C dienstverleners om lokaal beter vindbaar te worden en meer klanten te krijgen.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -364,13 +364,13 @@ export default function SeoVoorB2CPage() {
             </div>
             <div className="space-y-6">
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Consumenten zoeken lokaal. "Kapper in de buurt", "rijschool Amsterdam" of "trouwfotograaf Zeeland" - dit zijn zoektermen met directe commerciele waarde. De mensen achter deze zoekopdrachten hebben nu een behoefte en willen nu geholpen worden.
+                Consumenten zoeken lokaal. "Kapper in de buurt", "rijschool Amsterdam" of "trouwfotograaf Zeeland": dit zijn zoektermen met directe commerciele waarde. De mensen achter deze zoekopdrachten hebben nu een behoefte en willen nu geholpen worden.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Door goed vindbaar te zijn in lokale zoekresultaten en Google Maps, bereik je deze potentiele klanten precies op het moment dat ze naar jou zoeken. Dit is fundamenteel anders dan adverteren aan een breed publiek.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Veel lokale dienstverleners hebben nog geen sterke online aanwezigheid. Dit biedt kansen voor voorlopers die wel investeren in SEO - je kunt relatief snel hoge posities bereiken en lokale concurrenten voorbijstreven.
+                Veel lokale dienstverleners hebben nog geen sterke online aanwezigheid. Dit biedt kansen voor voorlopers die wel investeren in SEO. Je kunt relatief snel hoge posities bereiken en lokale concurrenten voorbijstreven.
               </p>
             </div>
           </div>

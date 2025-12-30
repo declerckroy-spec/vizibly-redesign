@@ -432,7 +432,7 @@ export default function SeoSpecialistMiddelburgPage() {
               Onze SEO specialisaties voor Middelburg
             </h2>
             <p className="max-w-3xl text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-              Of je nu een webshop runt, een lokale dienstverlener bent of in de B2B-sector opereert - als SEO specialist in Middelburg hebben wij de expertise om jouw online zichtbaarheid te verbeteren. We bieden gespecialiseerde SEO-strategieën voor verschillende bedrijfstypen:
+              Of je nu een webshop runt, een lokale dienstverlener bent of in de B2B-sector opereert: als SEO specialist in Middelburg hebben wij de expertise om jouw online zichtbaarheid te verbeteren. We bieden gespecialiseerde SEO-strategieën voor verschillende bedrijfstypen:
             </p>
           </div>
 

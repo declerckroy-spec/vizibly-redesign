@@ -13,6 +13,28 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      // Nieuwe structuur redirects
+      {
+        source: '/full-service-seo',
+        destination: '/seo/',
+        permanent: true,
+      },
+      {
+        source: '/full-service-seo/',
+        destination: '/seo/',
+        permanent: true,
+      },
+      {
+        source: '/design-techniek',
+        destination: '/technische-seo/',
+        permanent: true,
+      },
+      {
+        source: '/design-techniek/',
+        destination: '/technische-seo/',
+        permanent: true,
+      },
+      // Bestaande redirects
       {
         source: '/seo-specialist-vlissingen',
         destination: '/seo-specialist-zeeland/',

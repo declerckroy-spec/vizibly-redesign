@@ -173,8 +173,8 @@
 
   /* RESPONSIVE TYPOGRAPHY - Premium V3 - meer expressief */
   .text-brutalist-hero {
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 42px;
+    font-weight: 900;
     line-height: 0.95;
     letter-spacing: -0.03em;
   }
@@ -210,7 +210,7 @@
   /* Desktop breakpoint (1024px+) */
   @media (min-width: 1024px) {
     .text-brutalist-hero {
-      font-size: 72px;
+      font-size: 84px;
     }
 
     .text-brutalist-h1 {

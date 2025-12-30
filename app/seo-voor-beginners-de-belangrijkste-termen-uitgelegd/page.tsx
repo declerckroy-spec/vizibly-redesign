@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, User, Clock, Phone, Mail, MapPin } from 'lucide-react';
+import { ArrowLeft, User, Clock } from 'lucide-react';
 import { Navigation } from '@/components/navigation';
+import { Footer } from '@/components/footer';
 import { FinalCTA } from '@/components/final-cta';
 import { RelatedArticles } from '@/components/related-articles';
 
@@ -164,19 +165,19 @@ export default function SEOVoorBeginnersPage() {
             <strong>On-page SEO</strong> omvat alle optimalisaties die je direct op je eigen website uitvoert. Hieronder vallen:
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Title tag</strong> - De titel van je webpagina die in de zoekresultaten wordt getoond. Deze verschijnt ook bovenaan in je browsertabblad. Een goede title tag bevat je belangrijkste zoekwoord en nodigt uit om te klikken.
+            <strong>Title tag:</strong> De titel van je webpagina die in de zoekresultaten wordt getoond. Deze verschijnt ook bovenaan in je browsertabblad. Een goede title tag bevat je belangrijkste zoekwoord en nodigt uit om te klikken.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Meta description</strong> - Een korte beschrijving van je webpagina die in de zoekresultaten onder de title tag kan verschijnen. Hoewel deze niet direct invloed heeft op je ranking, kan een goed geschreven meta description wel je klikratio verhogen.
+            <strong>Meta description:</strong> Een korte beschrijving van je webpagina die in de zoekresultaten onder de title tag kan verschijnen. Hoewel deze niet direct invloed heeft op je ranking, kan een goed geschreven meta description wel je klikratio verhogen.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Headings (H1, H2, H3, etc.)</strong> - Koppen in je tekst, waarvan de H1 de belangrijkste is. Elke pagina moet precies een H1 hebben die het onderwerp van de pagina duidelijk aangeeft en bij voorkeur je belangrijkste zoekwoord bevat.
+            <strong>Headings (H1, H2, H3, etc.):</strong> Koppen in je tekst, waarvan de H1 de belangrijkste is. Elke pagina moet precies een H1 hebben die het onderwerp van de pagina duidelijk aangeeft en bij voorkeur je belangrijkste zoekwoord bevat.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Alt-tekst</strong> - Beschrijvende tekst bij afbeeldingen. Zoekmachines kunnen afbeeldingen niet &apos;zien&apos;, maar wel de alt-tekst lezen. Dit helpt niet alleen bij de ranking, maar maakt je site ook toegankelijker voor mensen met een visuele beperking.
+            <strong>Alt-tekst:</strong> Beschrijvende tekst bij afbeeldingen. Zoekmachines kunnen afbeeldingen niet &apos;zien&apos;, maar wel de alt-tekst lezen. Dit helpt niet alleen bij de ranking, maar maakt je site ook toegankelijker voor mensen met een visuele beperking.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Interne links</strong> - Links van de ene pagina naar de andere binnen je eigen website. Deze helpen zoekmachines om je site te begrijpen en te indexeren, en verdelen de &apos;link juice&apos; (autoriteit) over je website.
+            <strong>Interne links:</strong> Links van de ene pagina naar de andere binnen je eigen website. Deze helpen zoekmachines om je site te begrijpen en te indexeren, en verdelen de &apos;link juice&apos; (autoriteit) over je website.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -186,10 +187,10 @@ export default function SEOVoorBeginnersPage() {
             <strong>Off-page SEO</strong> verwijst naar alle activiteiten buiten je eigen website die je positie in de zoekresultaten beinvloeden, zoals:
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Backlinks</strong> - Links van andere websites naar jouw website. Ze werken als een soort stemmen van vertrouwen in de ogen van Google. Hoe meer kwalitatieve backlinks je hebt, hoe meer autoriteit je website krijgt.
+            <strong>Backlinks:</strong> Links van andere websites naar jouw website. Ze werken als een soort stemmen van vertrouwen in de ogen van Google. Hoe meer kwalitatieve backlinks je hebt, hoe meer autoriteit je website krijgt.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Linkbuilding</strong> - Het actief verwerven van backlinks van andere websites. Dit kan via gastblogs, vermeldingen in branchegidsen, samenwerkingen met partners of door gewoon zeer waardevolle content te maken die mensen graag willen delen.
+            <strong>Linkbuilding:</strong> Het actief verwerven van backlinks van andere websites. Dit kan via gastblogs, vermeldingen in branchegidsen, samenwerkingen met partners of door gewoon zeer waardevolle content te maken die mensen graag willen delen.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -199,25 +200,25 @@ export default function SEOVoorBeginnersPage() {
             <strong>Technische SEO</strong> gaat over de technische aspecten van je website die invloed hebben op je zichtbaarheid in zoekmachines:
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Crawlen</strong> - Het proces waarbij zoekmachines het internet afstruinen en webpagina&apos;s bezoeken om nieuwe of bijgewerkte content te vinden.
+            <strong>Crawlen:</strong> Het proces waarbij zoekmachines het internet afstruinen en webpagina&apos;s bezoeken om nieuwe of bijgewerkte content te vinden.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Indexeren</strong> - Nadat een pagina is gecrawld, wordt deze toegevoegd aan de index van de zoekmachine, waardoor deze kan verschijnen in de zoekresultaten.
+            <strong>Indexeren:</strong> Nadat een pagina is gecrawld, wordt deze toegevoegd aan de index van de zoekmachine, waardoor deze kan verschijnen in de zoekresultaten.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Sitemap</strong> - Een XML-bestand dat zoekmachines helpt bij het vinden en indexeren van alle pagina&apos;s op je website.
+            <strong>Sitemap:</strong> Een XML-bestand dat zoekmachines helpt bij het vinden en indexeren van alle pagina&apos;s op je website.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Robots.txt</strong> - Een tekstbestand dat zoekmachinecrawlers vertelt welke delen van je website ze wel of niet mogen bezoeken en indexeren.
+            <strong>Robots.txt:</strong> Een tekstbestand dat zoekmachinecrawlers vertelt welke delen van je website ze wel of niet mogen bezoeken en indexeren.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Laadtijd (Page Speed)</strong> - Hoe snel je website laadt. Dit is belangrijk voor de gebruikerservaring en is ook een rankingfactor voor Google.
+            <strong>Laadtijd (Page Speed):</strong> Hoe snel je website laadt. Dit is belangrijk voor de gebruikerservaring en is ook een rankingfactor voor Google.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Mobiele optimalisatie</strong> - Zorgen dat je website goed werkt en er goed uitziet op mobiele apparaten. Google gebruikt een mobile-first index, wat betekent dat de mobiele versie van je site de belangrijkste is voor je ranking.
+            <strong>Mobiele optimalisatie:</strong> Zorgen dat je website goed werkt en er goed uitziet op mobiele apparaten. Google gebruikt een mobile-first index, wat betekent dat de mobiele versie van je site de belangrijkste is voor je ranking.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Schema markup</strong> - Code die je aan je website toevoegt om zoekmachines te helpen de inhoud beter te begrijpen, wat kan leiden tot rijke zoekresultaten (bijvoorbeeld met sterren, prijzen of beschikbaarheid).
+            <strong>Schema markup:</strong> Code die je aan je website toevoegt om zoekmachines te helpen de inhoud beter te begrijpen, wat kan leiden tot rijke zoekresultaten (bijvoorbeeld met sterren, prijzen of beschikbaarheid).
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
@@ -227,38 +228,38 @@ export default function SEOVoorBeginnersPage() {
             <strong>Lokale SEO</strong> richt zich op het optimaliseren van je online aanwezigheid om meer zichtbaarheid te krijgen in lokale zoekresultaten:
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Google Business Profile</strong> - Voorheen bekend als Google Mijn Bedrijf, dit is een gratis bedrijfsvermelding waarbij je informatie zoals openingstijden, locatie, recensies en foto&apos;s kunt beheren.
+            <strong>Google Business Profile:</strong> Voorheen bekend als Google Mijn Bedrijf, dit is een gratis bedrijfsvermelding waarbij je informatie zoals openingstijden, locatie, recensies en foto&apos;s kunt beheren.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>NAP-gegevens</strong> - Staat voor Naam, Adres en Plaatsnaam. Consistente NAP-gegevens op al je online vermeldingen zijn cruciaal voor lokale SEO.
+            <strong>NAP-gegevens:</strong> Staat voor Naam, Adres en Plaatsnaam. Consistente NAP-gegevens op al je online vermeldingen zijn cruciaal voor lokale SEO.
           </p>
           <p className="mb-10 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Local citations</strong> - Vermeldingen van je bedrijf op andere websites, vooral in online bedrijvengidsen en branchespecifieke platforms.
+            <strong>Local citations:</strong> Vermeldingen van je bedrijf op andere websites, vooral in online bedrijvengidsen en branchespecifieke platforms.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">
             Analyse en metingen
           </h3>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Google Analytics</strong> - Een gratis tool van Google om websiteverkeer te analyseren, inclusief waar bezoekers vandaan komen, hoe ze je site gebruiken en of ze converteren.
+            <strong>Google Analytics:</strong> Een gratis tool van Google om websiteverkeer te analyseren, inclusief waar bezoekers vandaan komen, hoe ze je site gebruiken en of ze converteren.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Google Search Console</strong> - Een gratis tool van Google die inzicht geeft in hoe je website presteert in de zoekresultaten, welke zoektermen leiden tot weergaven en clicks, en of er technische problemen zijn die je aandacht nodig hebben.
+            <strong>Google Search Console:</strong> Een gratis tool van Google die inzicht geeft in hoe je website presteert in de zoekresultaten, welke zoektermen leiden tot weergaven en clicks, en of er technische problemen zijn die je aandacht nodig hebben.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Conversie</strong> - Het moment waarop een bezoeker de gewenste actie uitvoert, zoals het invullen van een contactformulier, het aanvragen van een offerte of het plaatsen van een bestelling.
+            <strong>Conversie:</strong> Het moment waarop een bezoeker de gewenste actie uitvoert, zoals het invullen van een contactformulier, het aanvragen van een offerte of het plaatsen van een bestelling.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Conversieratio (CR)</strong> - Het percentage bezoekers dat een gewenste actie uitvoert. Bijvoorbeeld: als 100 mensen je site bezoeken en 5 vullen het contactformulier in, dan is je conversieratio 5%.
+            <strong>Conversieratio (CR):</strong> Het percentage bezoekers dat een gewenste actie uitvoert. Bijvoorbeeld: als 100 mensen je site bezoeken en 5 vullen het contactformulier in, dan is je conversieratio 5%.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>Bounce rate (Bouncepercentage)</strong> - Het percentage bezoekers dat je website verlaat zonder interactie, zoals het klikken op een link of het bekijken van een tweede pagina.
+            <strong>Bounce rate (Bouncepercentage):</strong> Het percentage bezoekers dat je website verlaat zonder interactie, zoals het klikken op een link of het bekijken van een tweede pagina.
           </p>
           <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
-            <strong>SERP (Search Engine Results Page)</strong> - De pagina met resultaten die je te zien krijgt nadat je een zoekopdracht hebt ingevoerd in een zoekmachine.
+            <strong>SERP (Search Engine Results Page):</strong> De pagina met resultaten die je te zien krijgt nadat je een zoekopdracht hebt ingevoerd in een zoekmachine.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            <strong>CTR (Click-Through Rate)</strong> - Het percentage mensen dat op je vermelding in de zoekresultaten klikt na het zien ervan. Een hoge CTR kan een signaal zijn voor Google dat je content relevant is.
+            <strong>CTR (Click-Through Rate):</strong> Het percentage mensen dat op je vermelding in de zoekresultaten klikt na het zien ervan. Een hoge CTR kan een signaal zijn voor Google dat je content relevant is.
           </p>
 
           {/* Hoe nu verder */}
@@ -312,157 +313,7 @@ export default function SEOVoorBeginnersPage() {
         description="Nu je de basis kent, is het tijd om actie te ondernemen. Wij helpen je graag met een SEO-strategie die echt werkt."
       />
 
-      {/* Footer */}
-      <footer className="border-t-4 border-black bg-[#0a0a0a] py-20 text-white">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            {/* Column 1: Logo & Info */}
-            <div>
-              <Link href="/" className="mb-6 inline-block">
-                <Image
-                src="/logo-brutalist-white.svg"
-                  alt="Vizibly"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
-              </Link>
-              <p className="mb-6 text-base font-bold text-white/70">
-                SEO bureau met een missie: jouw bedrijf zichtbaar maken in Google.
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="h-5 w-5 text-accent"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-sm font-bold text-white/70">
-                  5/5 Google Reviews
-                </span>
-              </div>
-            </div>
-
-            {/* Column 2: Diensten */}
-            <div>
-              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
-                Diensten
-              </h4>
-              <ul className="space-y-3">
-                {[
-                  { name: "SEO Strategie", href: "/seo-strategie" },
-                  { name: "SEO Copy", href: "/seo-copy" },
-                  { name: "Linkbuilding", href: "/linkbuilding" },
-                  { name: "Local SEO", href: "/local-seo" },
-                  { name: "Design & Techniek", href: "/design-techniek" },
-                  { name: "Google Ads", href: "/google-ads-sea" },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 3: Bedrijf */}
-            <div>
-              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
-                Bedrijf
-              </h4>
-              <ul className="space-y-3">
-                {[
-                  { name: "Over ons", href: "/over-ons" },
-                  { name: "Cases", href: "/cases" },
-                  { name: "Vizie", href: "/vizie" },
-                  { name: "Contact", href: "/contact" },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 4: Contact */}
-            <div>
-              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
-                Contact
-              </h4>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <Phone className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <a
-                    href="tel:+31642853802"
-                    className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                  >
-                    06 42 85 38 02
-                  </a>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Mail className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <a
-                    href="mailto:roy@vizibly.nl"
-                    className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                  >
-                    roy@vizibly.nl
-                  </a>
-                </li>
-                <li className="flex items-start gap-3">
-                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-base font-bold text-white/70">
-                    Eindhoven, Nederland
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-base font-bold text-white/70">
-                    Ma-Vr: 9:00 - 17:00
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t-4 border-white/10 pt-8 md:flex-row">
-            <p className="text-sm font-bold text-white/50">
-              &copy; {new Date().getFullYear()} Vizibly. Alle rechten voorbehouden.
-            </p>
-            <div className="flex gap-6">
-              <Link
-                href="/privacy"
-                className="text-sm font-bold text-white/50 transition-colors hover:text-accent"
-              >
-                Privacy
-              </Link>
-              <Link
-                href="/voorwaarden"
-                className="text-sm font-bold text-white/50 transition-colors hover:text-accent"
-              >
-                Voorwaarden
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

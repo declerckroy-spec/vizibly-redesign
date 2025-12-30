@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation';
 import { FinalCTA } from '@/components/final-cta';
 import { RelatedArticles } from '@/components/related-articles';
+import { Footer } from '@/components/footer';
 import { ArrowLeft, Clock, User } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -174,7 +175,7 @@ export default function SEOWebshopsPage() {
             Productpagina&apos;s zijn het hart van je webshop en vormen je belangrijkste conversiepunten. Het schrijven van unieke productbeschrijvingen is essentieel.
           </p>
           <ul className="mb-12 list-disc space-y-2 pl-6 text-base font-bold text-black/80 lg:text-lg">
-            <li><strong>Focussen op voordelen in plaats van kenmerken</strong> - vertel hoe het product het leven van de klant verbetert</li>
+            <li><strong>Focussen op voordelen in plaats van kenmerken:</strong> vertel hoe het product het leven van de klant verbetert</li>
             <li><strong>Natuurlijke zoekwoorden bevatten</strong> zonder geforceerd te klinken</li>
             <li><strong>Een unieke toon en stijl hebben</strong> die past bij je merk</li>
           </ul>
@@ -219,7 +220,7 @@ export default function SEOWebshopsPage() {
             Een <Link href="/linkbuilding" className="font-bold">sterke backlink-strategie</Link> blijft cruciaal voor het verbeteren van je organische rankings. Creëer waardevolle content die natuurlijk links aantrekt, zoals uitgebreide koopgidsen, diepgaande productanalyses of origineel onderzoek.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            Vermijd risicovolle tactieken zoals het kopen van links of massale linkuitwisseling. Focus op kwaliteit boven kwantiteit - één link van een gezaghebbende website in je branche is waardevoller dan tientallen links van irrelevante of laagwaardige sites.
+            Vermijd risicovolle tactieken zoals het kopen van links of massale linkuitwisseling. Focus op kwaliteit boven kwantiteit: één link van een gezaghebbende website in je branche is waardevoller dan tientallen links van irrelevante of laagwaardige sites.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">
@@ -240,71 +241,10 @@ export default function SEOWebshopsPage() {
       {/* Final CTA */}
       <FinalCTA
         heading="Klaar om te groeien?"
-        description="Van productpagina's tot technische optimalisatie - we helpen je met alle aspecten van webshop SEO."
+        description="Van productpagina's tot technische optimalisatie. We helpen je met alle aspecten van webshop SEO."
       />
 
-      {/* Footer */}
-      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white lg:py-32">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="grid gap-12 lg:grid-cols-4">
-            <div className="lg:col-span-1">
-              <Link href="/" className="mb-6 inline-block">
-                <Image
-                src="/logo-brutalist-white.svg"
-                  alt="Vizibly"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
-              </Link>
-              <p className="text-base font-bold text-white/70">
-                SEO bureau voor bedrijven die willen groeien via Google.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Diensten</h4>
-              <ul className="space-y-3">
-                <li><Link href="/seo-strategie" className="text-base font-bold text-white/70 hover:text-accent">SEO Strategie</Link></li>
-                <li><Link href="/seo-copy" className="text-base font-bold text-white/70 hover:text-accent">SEO Copy</Link></li>
-                <li><Link href="/linkbuilding" className="text-base font-bold text-white/70 hover:text-accent">Linkbuilding</Link></li>
-                <li><Link href="/local-seo" className="text-base font-bold text-white/70 hover:text-accent">Local SEO</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Vizibly</h4>
-              <ul className="space-y-3">
-                <li><Link href="/over-ons" className="text-base font-bold text-white/70 hover:text-accent">Over ons</Link></li>
-                <li><Link href="/cases" className="text-base font-bold text-white/70 hover:text-accent">Cases</Link></li>
-                <li><Link href="/vizie" className="text-base font-bold text-white/70 hover:text-accent">Vizie</Link></li>
-                <li><Link href="/contact" className="text-base font-bold text-white/70 hover:text-accent">Contact</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-lg font-black uppercase">Contact</h4>
-              <ul className="space-y-3">
-                <li className="text-base font-bold text-white/70">Roy de Clerck</li>
-                <li><a href="tel:+31628206410" className="text-base font-bold text-white/70 hover:text-accent">06 282 064 10</a></li>
-                <li><a href="mailto:roy@vizibly.nl" className="text-base font-bold text-white/70 hover:text-accent">roy@vizibly.nl</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t-4 border-white/20 pt-8 lg:flex-row">
-            <p className="text-base font-bold text-white/50">
-              © {new Date().getFullYear()} Vizibly. Alle rechten voorbehouden.
-            </p>
-            <div className="flex gap-6">
-              <Link href="/privacy" className="text-base font-bold text-white/50 hover:text-accent">Privacy</Link>
-              <Link href="/voorwaarden" className="text-base font-bold text-white/50 hover:text-accent">Voorwaarden</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

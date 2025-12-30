@@ -8,27 +8,27 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Search, FileText, Link2, Code, MapPin, Megaphone } from 'lucide-react';
+import { ArrowRight, Globe, Search, Zap, Check } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
   const faqData = [
     {
-      question: 'Wat maakt Vizibly anders dan andere SEO-bureaus?',
-      answer: 'Bij Vizibly werken we met een 360-graden analyse en een maatwerk strategie voor elk bedrijf. We combineren technische expertise met vlijmscherpe content en maken beslissingen op basis van gedegen data-onderzoek. Bovendien bieden we volledige transparantie over onze werkzaamheden en resultaten.'
+      question: 'Wat maakt jou anders dan andere bureaus?',
+      answer: 'Ik ben geen bureau met accountmanagers en afdelingen. Ik bouw zelf de websites én doe de SEO. Dat betekent: geen miscommunicatie tussen developer en marketeer, snellere doorlooptijd, en een site die technisch perfect scoort. Je hebt één aanspreekpunt en weet altijd waar je aan toe bent.'
     },
     {
-      question: 'Hoelang duurt het voordat ik resultaten zie van SEO?',
-      answer: 'SEO is een doorlopend proces waarbij resultaten tijd kosten. Hoewel eerste verbeteringen vaak binnen enkele weken zichtbaar zijn, duurt het meestal 3-6 maanden voordat significante resultaten merkbaar worden. We houden je gedurende het hele traject op de hoogte van de voortgang met duidelijke rapportages.'
+      question: 'Hoelang duurt het voordat ik resultaten zie?',
+      answer: 'Een website kan binnen 2-3 weken live staan. Voor SEO geldt: de eerste verbeteringen zijn vaak al binnen enkele weken zichtbaar, maar voor serieuze resultaten moet je rekenen op 3-6 maanden. Dat is eerlijk. Wie iets anders belooft, vertelt niet het hele verhaal.'
     },
     {
-      question: 'Wat kost een SEO-traject bij Vizibly?',
-      answer: 'We geloven in transparante prijzen die passen bij jouw specifieke situatie. Na een grondige analyse van je website stellen we een maatwerk pakket samen dat aansluit bij jouw doelen en budget. We werken met duidelijke maandelijkse pakketten, waarbij je precies weet waar je aan toe bent.'
+      question: 'Wat kost een website of SEO-traject?',
+      answer: 'Websites starten vanaf €2.500 (eenmalig). SEO-trajecten vanaf €500 per maand. De exacte prijs hangt af van wat je nodig hebt en hoe ambitieus je doelen zijn. Na een kort gesprek krijg je een heldere offerte, zonder verrassingen of kleine lettertjes.'
     },
     {
-      question: 'In welke branches is Vizibly gespecialiseerd?',
-      answer: 'Vizibly heeft uitgebreide ervaring in diverse branches, waaronder de zorg, e-commerce, bouwbedrijven, installatiebedrijven, makelaars, consultants en boekhoudkantoren. Door onze ervaring in deze specifieke sectoren kunnen we gerichte SEO-strategieën ontwikkelen die aansluiten bij de unieke uitdagingen en kansen van jouw branche.'
+      question: 'Kan ik alleen een website of alleen SEO afnemen?',
+      answer: 'Ja, beide diensten zijn los af te nemen. Maar de combinatie werkt vaak het beste: een trage site remt je SEO-resultaten, en goede SEO op een matige site is zonde van je investering. Ik adviseer je graag over wat in jouw situatie het slimste is.'
     }
   ];
 
@@ -45,7 +45,7 @@ export default function Home() {
           "url": "https://vizibly.nl/logo.png",
           "contentUrl": "/logo.png"
         },
-        "description": "SEO bureau gespecialiseerd in zoekmachine optimalisatie voor meer omzet uit Google",
+        "description": "Razendsnelle websites en SEO die werkt. Vizibly bouwt Next.js sites en zorgt dat je gevonden wordt in Google.",
         "address": {
           "@type": "PostalAddress",
           "addressRegion": "Zeeland",
@@ -68,7 +68,7 @@ export default function Home() {
       {
         "@type": "ProfessionalService",
         "@id": "https://vizibly.nl/#service",
-        "name": "Vizibly SEO Diensten",
+        "name": "Vizibly",
         "provider": {
           "@id": "https://vizibly.nl/#organization"
         },
@@ -78,30 +78,22 @@ export default function Home() {
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "SEO Diensten",
+          "name": "Diensten",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "SEO Strategie",
-                "description": "360-graden analyse en maatwerk SEO strategie"
+                "name": "Websites",
+                "description": "Razendsnelle Next.js websites met 90+ pagespeed score"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "SEO Copywriting",
-                "description": "Teksten die zowel Google als bezoekers overtuigen"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Linkbuilding",
-                "description": "Strategische linkbuilding van autoritaire websites"
+                "name": "SEO",
+                "description": "Zoekmachine optimalisatie voor meer bezoekers en omzet"
               }
             }
           ]
@@ -111,7 +103,7 @@ export default function Home() {
         "@type": "WebSite",
         "@id": "https://vizibly.nl/#website",
         "url": "https://vizibly.nl",
-        "name": "Vizibly - SEO Bureau",
+        "name": "Vizibly",
         "publisher": {
           "@id": "https://vizibly.nl/#organization"
         },
@@ -141,75 +133,65 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white pt-24 pb-40 lg:pt-32 lg:pb-48">
+      <section className="relative overflow-hidden bg-white pt-24 pb-32 lg:pt-32 lg:pb-40">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, #000 0px, #000 2px, transparent 2px, transparent 40px), repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 40px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mx-auto max-w-6xl">
-            {/* Large ASCII-style decoration */}
+          <div className="mx-auto max-w-5xl">
+            {/* Animated decoration */}
             <div className="mb-8 font-mono text-xs text-black/20 hidden lg:block animate-float">
               ████████████████████████████████████████████████████████
             </div>
 
-            <Badge variant="secondary" className="mb-12 border-4 border-black px-4 py-2 text-sm font-bold sm:px-8 sm:py-3 sm:text-lg lg:text-xl">
-              STOP MET VERSTOPPERTJE SPELEN VOOR JE KLANTEN
-            </Badge>
-
-            <h1 className="mb-12 text-brutalist-hero leading-none">
-              Terwijl jij deze zin leest, klikt iemand op{' '}
-              <span className="relative inline-block animate-glitch">
+            <h1 className="mb-10 text-brutalist-hero leading-none">
+              Premium sites die{' '}
+              <span className="relative inline-block">
                 <span className="absolute inset-0 bg-accent"></span>
-                <span className="relative">je concurrent</span>
+                <span className="relative">klanten</span>
               </span>
+              {' '}opleveren
             </h1>
 
-            <div className="mb-16 border-l-8 border-black pl-8">
-              <p className="text-xl font-bold uppercase tracking-tight lg:text-2xl">
-                Klaar om de rollen<br />om te draaien?
+            <div className="mb-12 max-w-3xl border-l-8 border-black pl-8">
+              <p className="text-lg font-bold text-black/80 lg:text-xl xl:text-2xl">
+                Strakke, razendsnelle websites die scoren in Google. SEO die echt werkt. Alles uit één hand, zonder de overhead van een bureau.
               </p>
             </div>
 
             <div className="flex flex-col gap-6 sm:flex-row">
               <Button size="lg" asChild className="text-base px-8 py-5">
                 <Link href="/contact">
-                  NEEM CONTACT OP
+                  LATEN WE KENNISMAKEN
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 py-5">
-                <Link href="/over-ons">OVER VIZIBLY</Link>
+                <Link href="/cases">BEKIJK RESULTATEN</Link>
               </Button>
             </div>
 
             {/* Bottom decoration */}
-            <div className="mt-16 font-mono text-xs text-black/20 hidden lg:block animate-float">
+            <div className="mt-12 font-mono text-xs text-black/20 hidden lg:block animate-float">
               ████████████████████████████████████████████████████████
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Counter - Direct na hero voor impact */}
+      {/* Stats Counter */}
       <StatsOnly />
 
-      {/* Main Intro Section - Generous spacing voor storytelling */}
-      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-48">
+      {/* Intro Section met Roy */}
+      <section className="relative border-b-4 border-black bg-[#0a0a0a] py-28 text-white lg:py-40">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
 
         <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="mb-16">
-            <h2 className="mb-8 text-brutalist-h1 text-white">
-              SEO die zorgt dat ze jou eindelijk goed vinden
-            </h2>
-            <div className="h-1 w-32 bg-accent"></div>
-          </div>
-
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div className="relative aspect-square overflow-hidden border-4 border-accent">
               <Image
@@ -219,27 +201,32 @@ export default function Home() {
                 priority
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+                className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
               />
             </div>
             <div className="flex flex-col justify-center">
+              <div className="h-1 w-32 bg-accent mb-6"></div>
+              <h2 className="mb-6 text-brutalist-h2 text-white">
+                Eén specialist.<br />Website én SEO.
+              </h2>
+
               <p className="mb-6 text-base font-bold lg:text-lg xl:text-xl">
-                Als ondernemer wil je resultaat. Je wilt meer klanten, leads en omzet. Terwijl je
-                concurrenten al op pagina 1 in Google staan, is jouw website nog onvindbaar.
-              </p>
-              <p className="mb-10 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
-                Vizibly zorgt dat potentiële klanten jóu vinden, niet je concurrent.
+                Wat een bureau met 5 man doet, doe ik alleen. Beter en sneller.
               </p>
 
-              <div className="mb-10 grid gap-4">
+              <p className="mb-6 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
+                De meeste ondernemers betalen te veel voor een site die te weinig oplevert. Een developer die niet snapt wat SEO is. Een SEO bureau dat niet snapt wat techniek is. En jij zit ertussenin.
+              </p>
+
+              <p className="mb-10 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
+                Ik doe beide. Eén persoon, geen overleg tussen partijen, geen vingerwijzen. Gewoon: een site die er strak uitziet, razendsnel laadt, en gevonden wordt.
+              </p>
+
+              <div className="mb-10 grid gap-3">
                 {[
-                  '360-graden analyse van waar je kansen liggen',
-                  'Data-driven verbeterpunten uit je analytics',
-                  'Op maat gemaakt groeiplan voor jouw situatie',
-                  'Teksten die Google én bezoekers overtuigen',
-                  'Technische optimalisatie voor razendsnelle laadtijd',
-                  'Strategische linkbuilding in jouw branche',
-                  'Google Ads voor direct verkeer en conversies'
+                  'Eén telefoontje in plaats van drie meetings',
+                  'Geen vingerwijzen tussen developer en bureau',
+                  'Live binnen weken, niet maanden'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-4 border-l-4 border-accent pl-4">
                     <span className="text-base font-bold text-white lg:text-lg">{item}</span>
@@ -248,92 +235,60 @@ export default function Home() {
               </div>
 
               <Button asChild size="lg" variant="lime" className="w-fit">
-                <Link href="/contact">NEEM CONTACT OP</Link>
+                <Link href="/over-ons">MEER OVER MIJ</Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section - Extra padding voor emphasis */}
-      <section className="relative z-10 border-b-4 border-black bg-[#fafaf8] py-36 lg:py-48 -mb-20">
+      {/* Diensten - Compact */}
+      <section className="relative z-10 border-b-4 border-black bg-[#fafaf8] py-24 lg:py-32 -mb-20">
         <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="mb-20 text-center">
-            <p className="mb-8 text-base font-semibold uppercase tracking-widest text-black/70 lg:text-lg">
-              VOOR ONDERNEMERS DIE KLAAR ZIJN MET ZOEKPAGINA 2
-            </p>
-            <h2 className="text-brutalist-h1 text-black">
-              Zo kom ook jij bovenaan in Google
-            </h2>
-          </div>
+          {/* Compacte diensten grid */}
+          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+            {/* Websites - Compact */}
+            <Link href="/websites" className="group block">
+              <div className="flex h-full items-start gap-6 border-4 border-black bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent lg:p-8" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:rotate-3 lg:h-16 lg:w-16">
+                  <Globe className="h-7 w-7 lg:h-8 lg:w-8" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="mb-3 text-2xl font-black uppercase text-black lg:text-3xl">Websites</h3>
+                  <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
+                    Strak design, razendsnel, en gebouwd om te groeien. Geen templates, maar een site die past bij jouw bedrijf.
+                  </p>
+                  <span className="inline-flex items-center text-sm font-black uppercase text-black transition-all group-hover:bg-black group-hover:text-white px-3 py-1 -mx-3">
+                    BEKIJK VOORBEELDEN
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </div>
+            </Link>
 
-          {/* Asymmetrische grid layout voor dynamisch effect */}
-          <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
-            {[
-              {
-                icon: Search,
-                title: 'Analyse & Strategie',
-                description: 'Met een 360-graden analyse brengen we elke zwakke plek in je website in kaart - van trage laadtijden tot gemiste zoekwoorden.',
-                href: '/seo-strategie',
-                span: 'md:col-span-6' // Large
-              },
-              {
-                icon: FileText,
-                title: 'SEO teksten',
-                description: 'Teksten die zowel Google als bezoekers overtuigen. We schrijven niet voor algoritmes, maar voor echte mensen die zoeken naar jouw oplossing.',
-                href: '/seo-copy',
-                span: 'md:col-span-4' // Normal
-              },
-              {
-                icon: Link2,
-                title: 'Linkbuilding',
-                description: 'We bouwen alleen links vanaf websites met echte autoriteit in jouw branche. Geen massa-links, maar strategische verbindingen.',
-                href: '/linkbuilding',
-                span: 'md:col-span-4' // Normal
-              },
-              {
-                icon: Code,
-                title: 'Webdesign & Techniek',
-                description: 'Een trage website kost je klanten. We maken je website niet alleen mooi, maar vooral snel en gebruiksvriendelijk.',
-                href: '/design-techniek',
-                span: 'md:col-span-6' // Large
-              },
-              {
-                icon: MapPin,
-                title: 'Local SEO',
-                description: 'Ben je lokaal actief? Dan moet je vindbaar zijn wanneer mensen in de buurt zoeken. We zorgen dat je Google Business Profiel perfect op orde is.',
-                href: '/local-seo',
-                span: 'md:col-span-5' // Medium
-              },
-              {
-                icon: Megaphone,
-                title: 'Google Ads',
-                description: 'Terwijl je organische resultaten groeien, genereren we direct verkeer en leads via strategische Google Ads campagnes.',
-                href: '/google-ads-sea',
-                span: 'md:col-span-5' // Medium
-              }
-            ].map((service, index) => (
-              <Link key={index} href={service.href} className={`block ${service.span}`}>
-                <Card className="group relative h-full overflow-hidden border-4 border-black bg-white text-black transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-x-1 hover:translate-y-1 cursor-pointer" style={{ boxShadow: '8px 8px 0 0 #000000, 0 20px 50px rgba(0, 0, 0, 0.25)' }}>
-                  <CardHeader>
-                    <div className="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-accent text-black transition-all group-hover:bg-black group-hover:text-accent group-hover:rotate-3">
-                      <service.icon className="h-7 w-7" />
-                    </div>
-                    <CardTitle className="text-xl font-black uppercase">{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base text-black lg:text-lg">
-                      {service.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+            {/* SEO - Compact */}
+            <Link href="/seo" className="group block">
+              <div className="flex h-full items-start gap-6 border-4 border-black bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent lg:p-8" style={{ boxShadow: '8px 8px 0 0 #000000' }}>
+                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center border-4 border-black bg-black text-accent transition-all group-hover:rotate-3 lg:h-16 lg:w-16">
+                  <Search className="h-7 w-7 lg:h-8 lg:w-8" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="mb-3 text-2xl font-black uppercase text-black lg:text-3xl">SEO</h3>
+                  <p className="mb-4 text-base font-bold text-black/80 lg:text-lg">
+                    Gevonden worden in Google én AI-tools zoals ChatGPT en Claude. Strategie, content en linkbuilding.
+                  </p>
+                  <span className="inline-flex items-center text-sm font-black uppercase text-black transition-all group-hover:bg-black group-hover:text-white px-3 py-1 -mx-3">
+                    LEES MEER
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Process Section - Variërende spacing voor dynamiek */}
+      {/* Process Section */}
       <section className="relative z-0 border-b-4 border-black bg-[#0a0a0a] py-36 text-white lg:py-56 pt-48">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
@@ -344,45 +299,46 @@ export default function Home() {
           <div className="mb-20">
             <div className="h-1 w-32 bg-accent mb-8"></div>
             <h2 className="mb-6 text-brutalist-h1 text-white">
-              Continu verbeteren,<br />continu resultaat
+              Geen gedoe,<br />gewoon resultaat
             </h2>
             <p className="text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
-              SEO IS GEEN SPRINT MAAR EEN MARATHON DIE JE WINT
+              ZO WERKT HET
             </p>
           </div>
 
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div className="flex flex-col justify-center">
               <p className="mb-12 text-base font-bold text-white/90 lg:text-lg xl:text-xl">
-                SEO is net als topsport: een cyclus van uitvoeren, meten, testen en verbeteren.
-                Wat vandaag werkt, kan morgen achterhaald zijn.
+                Je weet precies waar je aan toe bent. Geen eindeloze vergaderingen, geen vage beloftes. Gewoon doen.
               </p>
 
               <div className="grid gap-8">
                 {[
-                  { number: '01', text: 'We voeren uit op basis van bewezen strategieën' },
-                  { number: '02', text: 'We meten elke verandering met nauwkeurige data' },
-                  { number: '03', text: 'We testen nieuwe mogelijkheden om je positie te versterken' },
-                  { number: '04', text: 'We verbeteren waar nodig om je groeilijn stijgend te houden' }
+                  { number: '01', title: 'Gesprek', text: 'Jij vertelt, ik luister. 15 minuten.' },
+                  { number: '02', title: 'Voorstel', text: 'Helder, compleet, geen kleine lettertjes.' },
+                  { number: '03', title: 'Aan de slag', text: 'Ik bouw, jij krijgt updates. Geen radiostilte.' },
+                  { number: '04', title: 'Live', text: 'En daarna? Ondersteuning zolang je wilt.' }
                 ].map((step) => (
                   <div key={step.number} className="border-l-4 border-accent pl-6">
                     <div className="mb-2 text-6xl font-bold text-accent/30">
                       {step.number}
                     </div>
-                    <p className="text-base font-bold text-white lg:text-lg xl:text-xl">{step.text}</p>
+                    <p className="text-base font-bold text-white lg:text-lg xl:text-xl">
+                      <span className="text-accent">{step.title}:</span> {step.text}
+                    </p>
                   </div>
                 ))}
               </div>
 
               <Button asChild size="lg" variant="lime" className="mt-12 w-fit">
-                <Link href="/full-service-seo">MEER OVER ONZE AANPAK</Link>
+                <Link href="/contact">PLAN EEN GESPREK</Link>
               </Button>
             </div>
 
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-accent">
               <Image
                 src="/team/vizibly-sports.webp"
-                alt="Vizibly Sports"
+                alt="Vizibly werkwijze"
                 fill
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
@@ -393,15 +349,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cases Section - Standard spacing */}
+      {/* Cases Section */}
       <section className="border-b-4 border-black bg-[#fafaf8] py-32 lg:py-44">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="mb-20">
             <h2 className="mb-8 text-brutalist-h1 text-black">
-              Resultaten uit<br />de praktijk
+              Bewezen resultaten
             </h2>
             <Link href="/cases" className="inline-flex items-center border-b-4 border-black pb-2 text-lg font-bold uppercase hover:bg-black hover:text-white transition-colors px-3 py-1">
-              BEKIJK ALLE SEO-CASES
+              BEKIJK ALLE CASES
               <ArrowRight className="ml-3 h-6 w-6" />
             </Link>
           </div>
@@ -455,16 +411,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Klanten Carousel - Social proof na cases */}
+      {/* Klanten Carousel */}
       <ClientsCarouselStandalone />
 
-      {/* Testimonials - Reviews van klanten */}
+      {/* Testimonials */}
       <TestimonialsSection />
 
-      {/* CTA met foto - Direct na social proof voor conversie */}
+      {/* CTA met foto */}
       <CTAWithImage />
 
-      {/* Blog Articles Section - Compact spacing */}
+      {/* Blog Articles Section */}
       <section className="relative border-b-4 border-black bg-[#0a0a0a] py-32 text-white lg:py-40">
         {/* Subtle diagonal pattern */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
@@ -474,10 +430,10 @@ export default function Home() {
         <div className="relative mx-auto max-w-screen-2xl px-6">
           <div className="mb-20">
             <p className="mb-8 text-base font-semibold uppercase tracking-widest text-accent lg:text-lg">
-              KENNIS & INZICHTEN
+              GEEN GEHEIMEN
             </p>
             <h2 className="mb-4 text-brutalist-h1 text-white">
-              De vizie van Vizibly
+              Alles wat ik weet,<br />deel ik hier
             </h2>
           </div>
 
@@ -543,10 +499,10 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-20">
             <h2 className="mb-6 text-brutalist-h2 text-black">
-              Veelgestelde vragen
+              Nog vragen?
             </h2>
             <p className="text-base font-bold uppercase text-black lg:text-lg xl:text-xl">
-              WAT JE MISSCHIEN NOG WIL WETEN
+              DE KORTE ANTWOORDEN
             </p>
           </div>
 
@@ -565,7 +521,7 @@ export default function Home() {
         </div>
       </section>
 
-<Footer />
+      <Footer />
     </>
   );
 }

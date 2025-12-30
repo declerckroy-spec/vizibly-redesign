@@ -84,7 +84,7 @@ export default function SeoVoorB2BPage() {
     {
       icon: Search,
       title: 'Analyse & Strategie',
-      description: 'We analyseren je markt, identificeren zoektermen die zakelijke beslissers gebruiken en onderzoeken de concurrentie. Van "ERP implementatie" tot "logistiek uitbesteden" - we bepalen waar de kansen liggen voor jouw B2B business.',
+      description: 'We analyseren je markt, identificeren zoektermen die zakelijke beslissers gebruiken en onderzoeken de concurrentie. Van "ERP implementatie" tot "logistiek uitbesteden". We bepalen waar de kansen liggen voor jouw B2B business.',
       link: '/seo-strategie',
       linkText: 'Meer over strategie'
     },
@@ -257,7 +257,7 @@ export default function SeoVoorB2BPage() {
               </h1>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                B2B beslissers doen grondig online onderzoek voordat ze leveranciers benaderen. Ze zoeken naar oplossingen, vergelijken aanbieders en oriënteren zich op mogelijkheden. Vizibly helpt B2B dienstverleners om gevonden te worden tijdens dit oriëntatieproces - en om met thought leadership content te overtuigen.
+                B2B beslissers doen grondig online onderzoek voordat ze leveranciers benaderen. Ze zoeken naar oplossingen, vergelijken aanbieders en oriënteren zich op mogelijkheden. Vizibly helpt B2B dienstverleners om gevonden te worden tijdens dit oriëntatieproces, en om met thought leadership content te overtuigen.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -364,13 +364,13 @@ export default function SeoVoorB2BPage() {
             </div>
             <div className="space-y-6">
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Het B2B koopproces is fundamenteel anders dan B2C. Beslissers nemen de tijd, doen uitgebreid onderzoek en betrekken vaak meerdere stakeholders. Gemiddeld 70% van dit onderzoek gebeurt online - voordat er contact is met een leverancier.
+                Het B2B koopproces is fundamenteel anders dan B2C. Beslissers nemen de tijd, doen uitgebreid onderzoek en betrekken vaak meerdere stakeholders. Gemiddeld 70% van dit onderzoek gebeurt online, voordat er contact is met een leverancier.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Door goed vindbaar te zijn op relevante zoektermen, bereik je potentiele klanten in deze cruciale orientatiefase. Je bouwt al vertrouwen op voordat het eerste gesprek plaatsvindt. En met thought leadership content positioneer je jezelf als expert in je vakgebied.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                B2B leads via SEO zijn vaak van hogere kwaliteit dan leads via advertenties. Mensen die actief zoeken naar oplossingen hebben een concrete behoefte - dat maakt ze waardevoller in de salesfunnel.
+                B2B leads via SEO zijn vaak van hogere kwaliteit dan leads via advertenties. Mensen die actief zoeken naar oplossingen hebben een concrete behoefte. Dat maakt ze waardevoller in de salesfunnel.
               </p>
             </div>
           </div>

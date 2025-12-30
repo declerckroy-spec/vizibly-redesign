@@ -37,13 +37,13 @@ export default function FAQPage() {
         },
         {
           question: 'Waarom is SEO belangrijk voor mijn bedrijf?',
-          answer: 'SEO zorgt ervoor dat je bedrijf vindbaar is op het moment dat potentiële klanten actief zoeken naar jouw producten of diensten. Dit levert hoogwaardige, koopgerichte bezoekers op. Bovendien bouwt SEO langdurige waarde op - eenmaal behaalde rankings blijven vaak stabiel met minimaal onderhoud.'
+          answer: 'SEO zorgt ervoor dat je bedrijf vindbaar is op het moment dat potentiële klanten actief zoeken naar jouw producten of diensten. Dit levert hoogwaardige, koopgerichte bezoekers op. Bovendien bouwt SEO langdurige waarde op. Eenmaal behaalde rankings blijven vaak stabiel met minimaal onderhoud.'
         },
         {
           question: 'Wat is het verschil tussen SEO en Google Ads?',
           answer: (
             <>
-              SEO richt zich op organische (onbetaalde) zoekresultaten en bouwt langdurige waarde op. <Link href="/google-ads-sea" className="font-bold">Google Ads</Link> levert directe, betaalde resultaten maar stopt zodra je stopt met betalen. SEO kost meer tijd maar heeft vaak een betere ROI op lange termijn. De beste aanpak is vaak een combinatie van beide - lees meer over <Link href="/hoe-seo-en-google-ads-elkaar-versterken-de-kracht-van-een-gecombineerde-aanpak" className="font-bold">hoe SEO en Google Ads elkaar versterken</Link>.
+              SEO richt zich op organische (onbetaalde) zoekresultaten en bouwt langdurige waarde op. <Link href="/google-ads-sea" className="font-bold">Google Ads</Link> levert directe, betaalde resultaten maar stopt zodra je stopt met betalen. SEO kost meer tijd maar heeft vaak een betere ROI op lange termijn. De beste aanpak is vaak een combinatie van beide. Lees meer over <Link href="/hoe-seo-en-google-ads-elkaar-versterken-de-kracht-van-een-gecombineerde-aanpak" className="font-bold">hoe SEO en Google Ads elkaar versterken</Link>.
             </>
           )
         },
@@ -108,7 +108,7 @@ export default function FAQPage() {
         },
         {
           question: 'Wat is linkbuilding en waarom is het belangrijk?',
-          answer: "Linkbuilding is het verkrijgen van links van andere websites naar jouw website. Google beschouwt deze links als 'stemmen van vertrouwen' - hoe meer relevante, kwaliteitsvolle websites naar je linken, hoe hoger je autoriteit en rankings. Linkbuilding moet echter professioneel gebeuren, want verkeerde technieken kunnen tot Google-penalties leiden."
+          answer: "Linkbuilding is het verkrijgen van links van andere websites naar jouw website. Google beschouwt deze links als 'stemmen van vertrouwen'. Hoe meer relevante, kwaliteitsvolle websites naar je linken, hoe hoger je autoriteit en rankings. Linkbuilding moet echter professioneel gebeuren, want verkeerde technieken kunnen tot Google-penalties leiden."
         },
         {
           question: 'Schrijven jullie content voor elke sector?',
@@ -204,7 +204,7 @@ export default function FAQPage() {
         },
         {
           question: 'Hoe vaak moet ik nieuwe content publiceren?',
-          answer: 'Dit hangt af van je sector, concurrentie en doelen. Voor de meeste bedrijven raden we 1-4 nieuwe artikelen per maand aan. Consistentie is belangrijker dan frequentie - beter één kwaliteitsartikel per maand dan vier slechte artikelen. We maken altijd een contentkalender die past bij jouw situatie en budget.'
+          answer: 'Dit hangt af van je sector, concurrentie en doelen. Voor de meeste bedrijven raden we 1-4 nieuwe artikelen per maand aan. Consistentie is belangrijker dan frequentie. Beter één kwaliteitsartikel per maand dan vier slechte artikelen. We maken altijd een contentkalender die past bij jouw situatie en budget.'
         },
         {
           question: 'Schrijven jullie ook voor social media?',
@@ -348,7 +348,7 @@ export default function FAQPage() {
         },
         {
           question: 'Kan GEO mijn traditionele SEO rankings beïnvloeden?',
-          answer: 'GEO en SEO vullen elkaar aan - beide strategieën kunnen samen gebruikt worden voor maximale zichtbaarheid. Veel GEO-technieken zoals het verbeteren van contentstructuur en het toevoegen van authoriteit versterken ook je traditionele SEO. We adviseren altijd een gecombineerde aanpak waarbij we content optimaliseren voor zowel traditionele zoekmachines als AI-platforms.'
+          answer: 'GEO en SEO vullen elkaar aan. Beide strategieën kunnen samen gebruikt worden voor maximale zichtbaarheid. Veel GEO-technieken zoals het verbeteren van contentstructuur en het toevoegen van authoriteit versterken ook je traditionele SEO. We adviseren altijd een gecombineerde aanpak waarbij we content optimaliseren voor zowel traditionele zoekmachines als AI-platforms.'
         },
         {
           question: 'Hoe meet je het succes van GEO?',

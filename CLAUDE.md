@@ -4,6 +4,29 @@ Dit bestand geeft Claude Code richtlijnen voor het werken aan deze codebase.
 
 ---
 
+## KRITISCH: Tekst Regels (ALTIJD VOLGEN!)
+
+**NOOIT em-dashes (—) of en-dashes (–) gebruiken!**
+
+| Verboden | Gebruik in plaats daarvan |
+|----------|---------------------------|
+| `—` (em-dash) | `.` (punt) of `,` (komma) of herformuleren |
+| `–` (en-dash) | `-` (hyphen) voor samengestelde woorden |
+
+**Voorbeelden:**
+
+```
+❌ FOUT: "Vizibly zorgt dat je gevonden wordt — in Google én AI"
+✅ GOED: "Vizibly zorgt dat je gevonden wordt. In Google én AI."
+
+❌ FOUT: "Een 360–graden aanpak"
+✅ GOED: "Een 360-graden aanpak"
+```
+
+**Bij ELKE nieuwe tekst:** Controleer of er geen em-dash of en-dash in zit!
+
+---
+
 ## Project Overview
 
 **Project:** Website redesign voor Vizibly, een Nederlands SEO bureau

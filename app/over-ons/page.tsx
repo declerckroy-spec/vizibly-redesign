@@ -242,7 +242,7 @@ export default function OverOnsPage() {
               </p>
 
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Veel SEO-specialisten nemen data voor waar aan. Ze zien een cijfer en trekken conclusies. Door te begrijpen hoe data tot stand komt - het verschil tussen schijn en werkelijkheid - vermijd ik valkuilen waar anderen intrappen.
+                Veel SEO-specialisten nemen data voor waar aan. Ze zien een cijfer en trekken conclusies. Door te begrijpen hoe data tot stand komt, het verschil tussen schijn en werkelijkheid, vermijd ik valkuilen waar anderen intrappen.
               </p>
             </div>
 

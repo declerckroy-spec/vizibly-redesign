@@ -178,7 +178,7 @@ export default function PageSpeedScorePage() {
             Hier wordt het interessant. <a href="https://www.webfx.com/blog/seo/site-speed-statistics/" target="_blank" rel="noopener noreferrer" className="font-bold">Slechts 34% van de top 100 websites</a> slaagt voor Core Web Vitals, maar dat betekent niet dat 66% van de grootste websites slecht presteert. Veel van deze sites kiezen bewust voor functionaliteit over perfecte scores.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Een perfecte PageSpeed score kan namelijk betekenen dat je essentiele functionaliteiten hebt weggelaten. Tracking voor marketing, chatbots voor klantenservice, of uitgebreide productafbeeldingen - allemaal kunnen ze je score drukken terwijl ze wel waarde toevoegen voor bezoekers.
+            Een perfecte PageSpeed score kan namelijk betekenen dat je essentiele functionaliteiten hebt weggelaten. Tracking voor marketing, chatbots voor klantenservice, of uitgebreide productafbeeldingen: allemaal kunnen ze je score drukken terwijl ze wel waarde toevoegen voor bezoekers.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
             Het belangrijkste is niet het getal zelf, maar het implementeren van de aanbevelingen die PageSpeed Insights geeft. Een website die 85/100 scoort maar alle belangrijke optimalisaties heeft doorgevoerd, kan beter presteren dan een kale website met 100/100.
@@ -203,7 +203,7 @@ export default function PageSpeedScorePage() {
             Strategische keuzes
           </h3>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            In plaats van alle mogelijke functies toe te voegen, hebben we bewust gekozen voor snelheid. Onze website doet precies wat hij moet doen - potentiele klanten informeren en converteren - zonder poespas die de prestaties zou schaden.
+            In plaats van alle mogelijke functies toe te voegen, hebben we bewust gekozen voor snelheid. Onze website doet precies wat hij moet doen: potentiele klanten informeren en converteren, zonder poespas die de prestaties zou schaden.
           </p>
 
           <div className="mb-12 border-4 border-black bg-black p-6 lg:p-8 text-white" style={{ boxShadow: '8px 8px 0 0 #CCFF00, 0 20px 50px rgba(204, 255, 0, 0.35)' }}>
@@ -239,7 +239,7 @@ export default function PageSpeedScorePage() {
             Onze aanpak: balans tussen perfectie en praktijk
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Bij Vizibly geloven we in resultaatgerichte optimalisatie. Onze perfecte score is niet het doel - het is bewijs dat we weten hoe we websites kunnen bouwen die zowel snel als effectief zijn.
+            Bij Vizibly geloven we in resultaatgerichte optimalisatie. Onze perfecte score is niet het doel: het is bewijs dat we weten hoe we websites kunnen bouwen die zowel snel als effectief zijn.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             Voor onze klanten betekent dit dat we altijd kijken naar de balans tussen technische perfectie en bedrijfsdoelstellingen. Soms betekent dat een score van 95 accepteren om cruciale functionaliteit te behouden. Andere keren kunnen we die perfecte 100 behalen zonder compromissen.

@@ -166,7 +166,7 @@ export default function GoogleCoreUpdatePage() {
             Wat betekent dit voor jouw website?
           </h2>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Deze update lijkt vooral gericht op het belonen van authentieke, waardevolle content. Sites met "thin content" of over-geoptimaliseerde pagina's rapporteren de grootste dalingen. Google benadrukt opnieuw "people-first content" - content die echt nuttig is voor gebruikers.
+            Deze update lijkt vooral gericht op het belonen van authentieke, waardevolle content. Sites met "thin content" of over-geoptimaliseerde pagina's rapporteren de grootste dalingen. Google benadrukt opnieuw "people-first content": content die echt nuttig is voor gebruikers.
           </p>
 
           <h3 className="mb-4 text-brutalist-h3 text-black">

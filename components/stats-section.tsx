@@ -105,7 +105,6 @@ const defaultStats: StatItem[] = [
   { end: 7, suffix: '+', label: 'JAAR ERVARING', icon: TrendingUp },
   { end: 25, suffix: '+', label: 'KLANTEN LATEN GROEIEN', icon: Users },
   { end: 120, suffix: '%', prefix: '+', label: 'GEMIDDELDE TRAFFIC GROEI', icon: Target },
-  { end: 10, suffix: 'M+', prefix: '€', label: 'OMZET VAN KLANTEN', icon: BarChart3 },
 ];
 
 interface StatsSectionProps {
@@ -149,7 +148,7 @@ export function StatsSection({
       {sectionStyles.pattern}
 
       <div className="relative z-10 mx-auto max-w-screen-2xl px-6">
-        <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-8">
           {stats.map((stat, index) => (
             <Stat
               key={index}

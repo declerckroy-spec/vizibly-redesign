@@ -463,7 +463,7 @@ export default function LinkbuildingPage() {
               Linkbuilding in het AI-tijdperk
             </h2>
             <p className="mx-auto max-w-3xl text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-              Met de opkomst van AI-zoekmachines en AI Overviews verandert SEO. Maar linkbuilding blijft relevant - het evolueert alleen.
+              Met de opkomst van AI-zoekmachines en AI Overviews verandert SEO. Maar linkbuilding blijft relevant, het evolueert alleen.
             </p>
           </div>
 
@@ -485,19 +485,19 @@ export default function LinkbuildingPage() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-base font-bold text-black/70"><strong>E-E-A-T signalen</strong> - Expertise, Experience, Authority, Trust</span>
+                  <span className="text-base font-bold text-black/70"><strong>E-E-A-T signalen:</strong> Expertise, Experience, Authority, Trust</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-base font-bold text-black/70"><strong>Branded mentions</strong> - AI herkent merkvermeldingen</span>
+                  <span className="text-base font-bold text-black/70"><strong>Branded mentions:</strong> AI herkent merkvermeldingen</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-base font-bold text-black/70"><strong>Citeerbare content</strong> - Feiten, data en unieke inzichten</span>
+                  <span className="text-base font-bold text-black/70"><strong>Citeerbare content:</strong> Feiten, data en unieke inzichten</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-base font-bold text-black/70"><strong>Diverse bronnen</strong> - Links van meerdere typen sites</span>
+                  <span className="text-base font-bold text-black/70"><strong>Diverse bronnen:</strong> Links van meerdere typen sites</span>
                 </li>
               </ul>
             </div>

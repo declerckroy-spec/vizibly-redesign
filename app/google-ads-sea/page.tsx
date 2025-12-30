@@ -11,10 +11,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Google Ads specialist | Direct meer leads',
-  description: 'Effectieve Google Ads campagnes die direct resultaat opleveren. Van zoekadvertenties tot Shopping - wij zorgen voor maximale ROI.',
+  description: 'Effectieve Google Ads campagnes die direct resultaat opleveren. Van zoekadvertenties tot Shopping. Vizibly zorgt voor maximale ROI.',
   openGraph: {
     title: 'Google Ads specialist | Direct meer leads',
-    description: 'Effectieve Google Ads campagnes die direct resultaat opleveren. Van zoekadvertenties tot Shopping - wij zorgen voor maximale ROI.',
+    description: 'Effectieve Google Ads campagnes die direct resultaat opleveren. Van zoekadvertenties tot Shopping. Vizibly zorgt voor maximale ROI.',
     url: 'https://vizibly.nl/google-ads-sea/',
     siteName: 'Vizibly',
     locale: 'nl_NL',
@@ -34,11 +34,11 @@ export default function GoogleAdsPage() {
     },
     {
       question: 'Hoe snel zie ik resultaat met Google Ads?',
-      answer: 'Direct. Zodra je campagne live staat, kun je verkeer en leads genereren. De eerste weken zijn voor optimalisatie - daarna stabiliseren de resultaten.'
+      answer: 'Direct. Zodra je campagne live staat, kun je verkeer en leads genereren. De eerste weken zijn voor optimalisatie, daarna stabiliseren de resultaten.'
     },
     {
       question: 'Wat is het verschil tussen SEO en SEA?',
-      answer: 'SEO draait om organische resultaten - je betaalt niet per klik. SEA is betaalde advertentieruimte - je betaalt per klik. Beide hebben voor- en nadelen en vullen elkaar aan.'
+      answer: 'SEO draait om organische resultaten: je betaalt niet per klik. SEA is betaalde advertentieruimte: je betaalt per klik. Beide hebben voor- en nadelen en vullen elkaar aan.'
     }
   ];
 

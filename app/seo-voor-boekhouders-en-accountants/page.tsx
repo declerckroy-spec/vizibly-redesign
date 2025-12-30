@@ -84,7 +84,7 @@ export default function SeoVoorBoekhoudersPage() {
     {
       icon: Search,
       title: 'Analyse & Strategie',
-      description: 'We analyseren je werkgebied, identificeren kansrijke zoektermen en onderzoeken wat concurrerende kantoren doen. Van "boekhouder ZZP" tot "accountant voor startups" - we bepalen waar de kansen liggen voor jouw praktijk.',
+      description: 'We analyseren je werkgebied, identificeren kansrijke zoektermen en onderzoeken wat concurrerende kantoren doen. Van "boekhouder ZZP" tot "accountant voor startups". We bepalen waar de kansen liggen voor jouw praktijk.',
       link: '/seo-strategie',
       linkText: 'Meer over strategie'
     },
@@ -257,7 +257,7 @@ export default function SeoVoorBoekhoudersPage() {
               </h1>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Ondernemers die een boekhouder of accountant zoeken, beginnen vaak met een Google-zoekopdracht. "Boekhouder voor ZZP", "accountantskantoor [plaats]" of "administratie uitbesteden" - dit zijn momenten waarop je gevonden wilt worden. Vizibly helpt boekhouders en accountants om online beter vindbaar te worden en meer klanten aan te trekken.
+                Ondernemers die een boekhouder of accountant zoeken, beginnen vaak met een Google-zoekopdracht. "Boekhouder voor ZZP", "accountantskantoor [plaats]" of "administratie uitbesteden". Dit zijn momenten waarop je gevonden wilt worden. Vizibly helpt boekhouders en accountants om online beter vindbaar te worden en meer klanten aan te trekken.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -364,13 +364,13 @@ export default function SeoVoorBoekhoudersPage() {
             </div>
             <div className="space-y-6">
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                De financiele dienstverlening is traditioneel sterk afhankelijk van mond-tot-mondreclame en doorverwijzingen. Maar steeds meer ondernemers zoeken online naar een boekhouder of accountant. Startende ZZPers, groeiende MKB-bedrijven en ondernemers die van boekhouder willen wisselen - ze beginnen allemaal bij Google.
+                De financiele dienstverlening is traditioneel sterk afhankelijk van mond-tot-mondreclame en doorverwijzingen. Maar steeds meer ondernemers zoeken online naar een boekhouder of accountant. Startende ZZPers, groeiende MKB-bedrijven en ondernemers die van boekhouder willen wisselen: ze beginnen allemaal bij Google.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Door goed vindbaar te zijn op relevante zoektermen, bereik je deze potentiele klanten precies wanneer ze op zoek zijn. Ze hebben een concrete behoefte en zijn klaar om contact op te nemen met een geschikte partner.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Veel accountantskantoren hebben nog geen sterke online aanwezigheid. Dit biedt kansen voor voorlopers die wel investeren in SEO - je kunt relatief snel hoge posities bereiken en lokale concurrenten voorbijstreven.
+                Veel accountantskantoren hebben nog geen sterke online aanwezigheid. Dit biedt kansen voor voorlopers die wel investeren in SEO. Je kunt relatief snel hoge posities bereiken en lokale concurrenten voorbijstreven.
               </p>
             </div>
           </div>

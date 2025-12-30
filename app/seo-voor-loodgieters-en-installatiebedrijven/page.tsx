@@ -31,7 +31,7 @@ export default function SeoVoorLoodgietersPage() {
     },
     {
       question: 'Wat is belangrijker: Google Ads of SEO voor loodgieters?',
-      answer: 'Beide hebben hun plek. Google Ads geeft directe zichtbaarheid maar kost per klik - en die kosten zijn hoog voor zoektermen als "loodgieter spoed". SEO is een investering die na enkele maanden rendeert en daarna duurzaam verkeer oplevert. De ideale strategie combineert beide: Ads voor directe vraag en SEO voor langetermijngroei.'
+      answer: 'Beide hebben hun plek. Google Ads geeft directe zichtbaarheid maar kost per klik, en die kosten zijn hoog voor zoektermen als "loodgieter spoed". SEO is een investering die na enkele maanden rendeert en daarna duurzaam verkeer oplevert. De ideale strategie combineert beide: Ads voor directe vraag en SEO voor langetermijngroei.'
     },
     {
       question: 'Hoe belangrijk zijn reviews voor SEO?',
@@ -84,7 +84,7 @@ export default function SeoVoorLoodgietersPage() {
     {
       icon: Search,
       title: 'Analyse & Strategie',
-      description: 'We onderzoeken je werkgebied, analyseren de concurrentie en identificeren de zoektermen die jouw ideale klanten gebruiken. Van "loodgieter spoed" tot "cv-ketel installeren" - we bepalen waar de kansen liggen en ontwikkelen een concrete SEO-roadmap.',
+      description: 'We onderzoeken je werkgebied, analyseren de concurrentie en identificeren de zoektermen die jouw ideale klanten gebruiken. Van "loodgieter spoed" tot "cv-ketel installeren". We bepalen waar de kansen liggen en ontwikkelen een concrete SEO-roadmap.',
       link: '/seo-strategie',
       linkText: 'Meer over strategie'
     },
@@ -257,7 +257,7 @@ export default function SeoVoorLoodgietersPage() {
               </h1>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Wanneer iemand een lekkage heeft of een nieuwe cv-ketel nodig heeft, pakken ze hun telefoon. Ze zoeken op "loodgieter [plaatsnaam]" of "cv-monteur in de buurt". Op dat moment wil je gevonden worden. Vizibly helpt loodgieters en installatiebedrijven om precies daar te verschijnen waar potentiële klanten zoeken - en om te zetten in concrete opdrachten.
+                Wanneer iemand een lekkage heeft of een nieuwe cv-ketel nodig heeft, pakken ze hun telefoon. Ze zoeken op "loodgieter [plaatsnaam]" of "cv-monteur in de buurt". Op dat moment wil je gevonden worden. Vizibly helpt loodgieters en installatiebedrijven om precies daar te verschijnen waar potentiële klanten zoeken, en om te zetten in concrete opdrachten.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -370,7 +370,7 @@ export default function SeoVoorLoodgietersPage() {
                 Het mooie van SEO voor installatiebedrijven is dat je mensen bereikt op het moment dat ze je nodig hebben. Ze hebben een probleem of een project, en zoeken een betrouwbare vakman. Dit zijn warme leads die klaar zijn om te bellen.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Veel loodgieters en installateurs hebben nog geen sterke online aanwezigheid. Dit biedt kansen voor voorlopers die wel investeren in SEO - vaak kun je relatief snel hoge posities bereiken in jouw werkgebied.
+                Veel loodgieters en installateurs hebben nog geen sterke online aanwezigheid. Dit biedt kansen voor voorlopers die wel investeren in SEO. Vaak kun je relatief snel hoge posities bereiken in jouw werkgebied.
               </p>
             </div>
           </div>

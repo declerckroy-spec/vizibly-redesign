@@ -329,7 +329,7 @@ export default function SeoVoorWebshopPage() {
                 Organisch zoekverkeer heeft gemiddeld de hoogste conversieratio van alle verkeersbronnen. Waarom? Omdat mensen die zoeken op productgerichte zoektermen koopintentie hebben. Ze vergelijken, ze onderzoeken, en ze zijn klaar om te beslissen.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Bovendien is SEO een duurzame investering. Terwijl je bij advertenties elke klik betaalt, bouwt SEO aan een blijvende stroom van verkeer. Eenmaal goed gepositioneerd, blijf je profiteren - zonder dat je kosten per bezoeker omhoog gaan als je groeit.
+                Bovendien is SEO een duurzame investering. Terwijl je bij advertenties elke klik betaalt, bouwt SEO aan een blijvende stroom van verkeer. Eenmaal goed gepositioneerd, blijf je profiteren, zonder dat je kosten per bezoeker omhoog gaan als je groeit.
               </p>
             </div>
           </div>

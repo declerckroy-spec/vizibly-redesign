@@ -27,7 +27,7 @@ export default function SeoVoorDeZorgPage() {
   const faqData = [
     {
       question: 'Waarom is SEO belangrijk voor zorgaanbieders?',
-      answer: 'Steeds meer mensen beginnen hun zoektocht naar zorg online. Of het nu gaat om een fysiotherapeut, psycholoog of tandarts - de eerste stap is vaak een zoekopdracht in Google. Door goed vindbaar te zijn, bereik je mensen op het moment dat ze actief op zoek zijn naar jouw type zorg.'
+      answer: 'Steeds meer mensen beginnen hun zoektocht naar zorg online. Of het nu gaat om een fysiotherapeut, psycholoog of tandarts, de eerste stap is vaak een zoekopdracht in Google. Door goed vindbaar te zijn, bereik je mensen op het moment dat ze actief op zoek zijn naar jouw type zorg.'
     },
     {
       question: 'Hoe lang duurt het voordat SEO resultaten oplevert in de zorg?',
@@ -84,7 +84,7 @@ export default function SeoVoorDeZorgPage() {
     {
       icon: Search,
       title: 'Analyse & Strategie',
-      description: 'We analyseren je huidige online positie, onderzoeken de concurrentie in jouw vakgebied en identificeren kansrijke zoektermen. Van "fysiotherapeut [plaats]" tot "behandeling [aandoening]" - we bepalen waar de kansen liggen.',
+      description: 'We analyseren je huidige online positie, onderzoeken de concurrentie in jouw vakgebied en identificeren kansrijke zoektermen. Van "fysiotherapeut [plaats]" tot "behandeling [aandoening]": we bepalen waar de kansen liggen.',
       link: '/seo-strategie',
       linkText: 'Meer over strategie'
     },
@@ -257,7 +257,7 @@ export default function SeoVoorDeZorgPage() {
               </h1>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Mensen die zorg nodig hebben, beginnen hun zoektocht vaak online. "Fysiotherapeut in de buurt", "beste tandarts [stad]" of "psycholoog angstklachten" - op deze momenten wil je gevonden worden. Vizibly helpt zorginstellingen, praktijken en individuele zorgverleners om online beter vindbaar te worden en meer patienten te bereiken.
+                Mensen die zorg nodig hebben, beginnen hun zoektocht vaak online. "Fysiotherapeut in de buurt", "beste tandarts [stad]" of "psycholoog angstklachten": op deze momenten wil je gevonden worden. Vizibly helpt zorginstellingen, praktijken en individuele zorgverleners om online beter vindbaar te worden en meer patienten te bereiken.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -367,7 +367,7 @@ export default function SeoVoorDeZorgPage() {
                 De gezondheidszorg is traditioneel sterk afhankelijk van verwijzingen en mond-tot-mondreclame. Maar het zoekgedrag is veranderd. Mensen zoeken actief online naar zorgverleners, informatie over behandelingen en oplossingen voor hun klachten.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                SEO voor zorgaanbieders helpt je om gevonden te worden op het moment dat iemand hulp zoekt. Dit zijn warme leads - mensen met een concrete zorgvraag die actief op zoek zijn naar de juiste behandelaar of instelling.
+                SEO voor zorgaanbieders helpt je om gevonden te worden op het moment dat iemand hulp zoekt. Dit zijn warme leads: mensen met een concrete zorgvraag die actief op zoek zijn naar de juiste behandelaar of instelling.
               </p>
               <p className="text-base font-bold text-black/80 lg:text-lg xl:text-xl">
                 Bovendien versterkt goede online zichtbaarheid je professionele reputatie. Informatieve content toont je expertise en helpt potentiele patienten bij het maken van een geinformeerde keuze.

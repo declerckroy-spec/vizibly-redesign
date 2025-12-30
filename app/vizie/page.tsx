@@ -74,7 +74,7 @@ const allBlogArticles = [
   {
     slug: 'muvera-googles-nieuwe-algoritme-dat-seo-voorgoed-verandert',
     title: 'MuVera: Google\'s nieuwe algoritme dat SEO voorgoed verandert',
-    excerpt: 'Google heeft MuVera geïntroduceerd - een multimodale verificatie-ranking die tekst, beeld en video analyseert. Dit verandert hoe we content moeten optimaliseren.',
+    excerpt: 'Google heeft MuVera geïntroduceerd: een multimodale verificatie-ranking die tekst, beeld en video analyseert. Dit verandert hoe we content moeten optimaliseren.',
     image: '/blog/muvera.jpg',
     category: 'Google Updates',
   },
@@ -165,14 +165,14 @@ const allBlogArticles = [
   {
     slug: 'de-verborgen-kracht-in-seo-gebruikersgedrag',
     title: 'De verborgen kracht in SEO: gebruikersgedrag',
-    excerpt: 'Google kijkt steeds meer naar gebruikersgedrag. Bouncepercentage, time on page, CTR - leer hoe je deze signalen verbetert voor hogere rankings.',
+    excerpt: 'Google kijkt steeds meer naar gebruikersgedrag. Bouncepercentage, time on page, CTR: leer hoe je deze signalen verbetert voor hogere rankings.',
     image: '/blog/gebruikersgedrag-seo.jpg',
     category: 'SEO Strategie',
   },
   {
     slug: 'seo-voor-beginners-de-belangrijkste-termen-uitgelegd',
     title: 'SEO voor beginners: de belangrijkste termen uitgelegd',
-    excerpt: 'Wat betekenen al die SEO-termen eigenlijk? Keywords, backlinks, on-page SEO, technische SEO - alles uitgelegd in begrijpelijke taal.',
+    excerpt: 'Wat betekenen al die SEO-termen eigenlijk? Keywords, backlinks, on-page SEO, technische SEO. Alles uitgelegd in begrijpelijke taal.',
     image: '/blog/seo-beginners.jpg',
     category: 'SEO Basics',
   },

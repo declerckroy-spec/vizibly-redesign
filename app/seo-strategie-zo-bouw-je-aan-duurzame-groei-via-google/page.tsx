@@ -362,16 +362,16 @@ export default function SeoStrategiePage() {
           </p>
           <ul className="mb-6 space-y-4 pl-6">
             <li className="text-base font-bold text-black/80 lg:text-lg">
-              <span className="font-black text-black">Posities</span> - Voor welke zoektermen sta je hoger dan vorige maand? Waar daal je? Waar win je terrein?
+              <span className="font-black text-black">Posities:</span> Voor welke zoektermen sta je hoger dan vorige maand? Waar daal je? Waar win je terrein?
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
-              <span className="font-black text-black">Organisch verkeer</span> - Hoeveel bezoekers komen via Google? Stijgt dat structureel of schommelt het alleen?
+              <span className="font-black text-black">Organisch verkeer:</span> Hoeveel bezoekers komen via Google? Stijgt dat structureel of schommelt het alleen?
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
-              <span className="font-black text-black">Omzettingen</span> - Hoeveel bezoekers worden klant? Een stijging in verkeer zonder stijging in klanten wijst op verkeerde zoektermen.
+              <span className="font-black text-black">Omzettingen:</span> Hoeveel bezoekers worden klant? Een stijging in verkeer zonder stijging in klanten wijst op verkeerde zoektermen.
             </li>
             <li className="text-base font-bold text-black/80 lg:text-lg">
-              <span className="font-black text-black">Opbrengst</span> - Tel op wat SEO oplevert. Vergelijk dat met je investering. Dat is je rendement.
+              <span className="font-black text-black">Opbrengst:</span> Tel op wat SEO oplevert. Vergelijk dat met je investering. Dat is je rendement.
             </li>
           </ul>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">

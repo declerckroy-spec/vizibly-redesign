@@ -339,7 +339,7 @@ export default function SeoCopyPage() {
               </h2>
               <div className="h-1 w-32 bg-accent mb-8"></div>
               <p className="text-base font-bold text-white/80 lg:text-lg xl:text-xl mb-6">
-                Gewone teksten zijn vaak geschreven vanuit het perspectief van de schrijver. SEO teksten daarentegen zijn geschreven vanuit de zoekintentie van de lezer - wat zoekt iemand en waarom?
+                Gewone teksten zijn vaak geschreven vanuit het perspectief van de schrijver. SEO teksten daarentegen zijn geschreven vanuit de zoekintentie van de lezer: wat zoekt iemand en waarom?
               </p>
               <p className="text-base font-bold text-white/80 lg:text-lg xl:text-xl">
                 Bij SEO copywriting onderzoeken we eerst welke vragen je doelgroep heeft, analyseren we de concurrentie, en schrijven we content die beter is dan wat er nu rankt.
@@ -388,19 +388,19 @@ export default function SeoCopyPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-sm font-bold text-black/70"><strong>Informationeel</strong> - kennis zoeken</span>
+                  <span className="text-sm font-bold text-black/70"><strong>Informationeel:</strong> kennis zoeken</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-sm font-bold text-black/70"><strong>Navigational</strong> - specifieke site zoeken</span>
+                  <span className="text-sm font-bold text-black/70"><strong>Navigational:</strong> specifieke site zoeken</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-sm font-bold text-black/70"><strong>Transactioneel</strong> - kopen of actie</span>
+                  <span className="text-sm font-bold text-black/70"><strong>Transactioneel:</strong> kopen of actie</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 flex-shrink-0 text-black mt-0.5" />
-                  <span className="text-sm font-bold text-black/70"><strong>Commercial</strong> - vergelijken voor aankoop</span>
+                  <span className="text-sm font-bold text-black/70"><strong>Commercial:</strong> vergelijken voor aankoop</span>
                 </li>
               </ul>
             </div>

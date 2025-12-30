@@ -137,7 +137,7 @@ export default function WordPressSEOPage() {
             Iemand zoekt &quot;WordPress traag na update&quot;. Yoast zegt: gebruik je zoekwoord 5 keer. Rank Math geeft je een score van 87/100. En dan?
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            Dan schrijf je een artikel dat voldoet aan de plugin, maar niet aan de zoeker. Want die wil geen artikel over zoekwoorden - die wil weten hoe hij zijn site snel krijgt. Dat is het verschil tussen plugin-SEO en echte SEO.
+            Dan schrijf je een artikel dat voldoet aan de plugin, maar niet aan de zoeker. Want die wil geen artikel over zoekwoorden. Die wil weten hoe hij zijn site snel krijgt. Dat is het verschil tussen plugin-SEO en echte SEO.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
             SEO-plugins zoals Yoast SEO, Rank Math of All in One SEO zijn handige tools voor on-page basics. Ze helpen met title tags, meta descriptions en XML sitemaps. Prima. Maar ze zien niet hoe sterk je concurrenten zijn. Ze zien niet of je content de zoekintentie matcht. Ze zien niet de volledige technische staat van je site. En ze zien niet wat bezoekers doen.
@@ -237,13 +237,13 @@ export default function WordPressSEOPage() {
             <Link href="/een-perfecte-google-pagespeed-score-zin-en-onzin-van-100-100" className="font-bold">Een perfecte PageSpeed score is geen doel op zich</Link>, maar Core Web Vitals zijn wél een ranking factor.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <strong>LCP (Largest Contentful Paint) - onder 2,5 seconden:</strong> Optimaliseer featured images met WebP-formaat en lazy loading. Preload kritieke fonts.
+            <strong>LCP (Largest Contentful Paint), onder 2,5 seconden:</strong> Optimaliseer featured images met WebP-formaat en lazy loading. Preload kritieke fonts.
           </p>
           <p className="mb-6 text-base font-bold text-black/80 lg:text-lg">
-            <strong>FID/INP (Interactivity) - onder 200ms:</strong> Beperk JavaScript, vooral third-party scripts. Check je thema - veel page builders zijn JS-zwaar.
+            <strong>FID/INP (Interactivity), onder 200ms:</strong> Beperk JavaScript, vooral third-party scripts. Check je thema, veel page builders zijn JS-zwaar.
           </p>
           <p className="mb-12 text-base font-bold text-black/80 lg:text-lg">
-            <strong>CLS (Cumulative Layout Shift) - onder 0,1:</strong> Reserveer ruimte voor advertenties en embeds. Gebruik vaste dimensies voor afbeeldingen.
+            <strong>CLS (Cumulative Layout Shift), onder 0,1:</strong> Reserveer ruimte voor advertenties en embeds. Gebruik vaste dimensies voor afbeeldingen.
           </p>
 
           <h2 className="mb-6 text-brutalist-h2 text-black border-l-4 border-accent pl-6">

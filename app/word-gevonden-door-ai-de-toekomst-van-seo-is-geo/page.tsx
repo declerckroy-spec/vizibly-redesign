@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Phone, Mail, MapPin, Clock, Check, User } from "lucide-react";
+import { ArrowLeft, Clock, Check, User } from "lucide-react";
+import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/navigation";
 import { FinalCTA } from "@/components/final-cta";
@@ -243,7 +244,7 @@ export default function GeoSeoAiPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 bg-accent"></span>
-                  <span><strong>Feitelijke juistheid:</strong> AI&apos;s willen betrouwbare informatie doorgeven - ze checken jouw content tegen andere bronnen.</span>
+                  <span><strong>Feitelijke juistheid:</strong> AI&apos;s willen betrouwbare informatie doorgeven. Ze checken jouw content tegen andere bronnen.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 bg-accent"></span>
@@ -529,7 +530,7 @@ export default function GeoSeoAiPage() {
                 >
                   Neem contact met ons op
                 </Link>{" "}
-                - we kijken graag met je mee naar de volgende stap in jouw digitale zichtbaarheid.
+                . We kijken graag met je mee naar de volgende stap in jouw digitale zichtbaarheid.
               </p>
             </div>
           </div>
@@ -545,157 +546,7 @@ export default function GeoSeoAiPage() {
         description="Van SEO naar GEO. Van Google naar AI. Wij helpen je zichtbaar blijven op alle kanalen die ertoe doen."
       />
 
-      {/* Footer */}
-      <footer className="border-t-4 border-black bg-[#0a0a0a] py-24 text-white">
-        <div className="mx-auto max-w-screen-2xl px-6">
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            {/* Column 1: Logo & Info */}
-            <div>
-              <Link href="/" className="mb-6 inline-block">
-                <Image
-                src="/logo-brutalist-white.svg"
-                  alt="Vizibly"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
-              </Link>
-              <p className="mb-6 text-base font-bold text-white/70">
-                SEO bureau met een missie: jouw bedrijf zichtbaar maken in Google.
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="h-5 w-5 text-accent"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-sm font-bold text-white/70">
-                  5/5 Google Reviews
-                </span>
-              </div>
-            </div>
-
-            {/* Column 2: Diensten */}
-            <div>
-              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
-                Diensten
-              </h4>
-              <ul className="space-y-3">
-                {[
-                  { name: "SEO Strategie", href: "/seo-strategie" },
-                  { name: "SEO Copy", href: "/seo-copy" },
-                  { name: "Linkbuilding", href: "/linkbuilding" },
-                  { name: "Local SEO", href: "/local-seo" },
-                  { name: "Design & Techniek", href: "/design-techniek" },
-                  { name: "Google Ads", href: "/google-ads-sea" },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 3: Bedrijf */}
-            <div>
-              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
-                Bedrijf
-              </h4>
-              <ul className="space-y-3">
-                {[
-                  { name: "Over ons", href: "/over-ons" },
-                  { name: "Cases", href: "/cases" },
-                  { name: "Vizie", href: "/vizie" },
-                  { name: "Contact", href: "/contact" },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 4: Contact */}
-            <div>
-              <h4 className="mb-6 text-lg font-semibold uppercase tracking-widest text-accent">
-                Contact
-              </h4>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <Phone className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <a
-                    href="tel:+31642853802"
-                    className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                  >
-                    06 42 85 38 02
-                  </a>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Mail className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <a
-                    href="mailto:roy@vizibly.nl"
-                    className="text-base font-bold text-white/70 transition-colors hover:text-accent"
-                  >
-                    roy@vizibly.nl
-                  </a>
-                </li>
-                <li className="flex items-start gap-3">
-                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-base font-bold text-white/70">
-                    Eindhoven, Nederland
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-base font-bold text-white/70">
-                    Ma-Vr: 9:00 - 17:00
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t-4 border-white/10 pt-8 md:flex-row">
-            <p className="text-sm font-bold text-white/50">
-              &copy; {new Date().getFullYear()} Vizibly. Alle rechten voorbehouden.
-            </p>
-            <div className="flex gap-6">
-              <Link
-                href="/privacy"
-                className="text-sm font-bold text-white/50 transition-colors hover:text-accent"
-              >
-                Privacy
-              </Link>
-              <Link
-                href="/voorwaarden"
-                className="text-sm font-bold text-white/50 transition-colors hover:text-accent"
-              >
-                Voorwaarden
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

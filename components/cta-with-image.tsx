@@ -14,28 +14,28 @@ export function CTAWithImage() {
             <div className="mb-6">
               <div className="inline-block border-4 border-black bg-accent px-6 py-2 mb-4">
                 <p className="text-lg font-black uppercase text-black lg:text-xl">
-                  GRATIS WEBSITE-ANALYSE
+                  GRATIS ADVIESGESPREK
                 </p>
               </div>
               <p className="text-xl font-bold text-black lg:text-2xl">
-                Voor ondernemers die niet langer willen gissen waar hun klanten blijven
+                Voor ondernemers die online willen groeien
               </p>
             </div>
 
             <h2 className="mb-8 text-brutalist-h1 text-black">
-              Ontdek in 15 minuten waar je klanten kwijtraakt
+              Benieuwd wat er mogelijk is?
             </h2>
 
             <div className="mb-10">
               <p className="mb-6 text-xl font-bold text-black xl:text-2xl">
-                Je website kost je elke dag onzichtbare omzet. In een kort gesprek maken we zichtbaar:
+                In een kort gesprek van 15 minuten kijk ik samen met je naar je huidige situatie. Geen verkooppraatje, gewoon een eerlijk gesprek. Daarna weet je:
               </p>
 
               <div className="grid gap-4">
                 {[
-                  'Welke zoekwoorden je mist waar je concurrent wel op scoort',
-                  'Waar je website nu echt staat in Google',
-                  'Hoe we samen een plan maken voor jouw online groei'
+                  'Of je huidige site bezoekers binnenhaalt of juist wegjaagt',
+                  'Hoe zichtbaar je bent voor mensen die zoeken naar wat jij aanbiedt',
+                  'Welke stap het meeste oplevert voor jouw specifieke situatie'
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-4 border-l-4 border-accent pl-4">
                     <div className="flex-shrink-0 mt-1">
@@ -49,10 +49,10 @@ export function CTAWithImage() {
               </div>
             </div>
 
-            <Button asChild size="lg" className="w-fit bg-accent text-black border-accent hover:bg-black hover:text-accent hover:shadow-[6px_6px_0_0_#000000] hover:-translate-x-0.5 hover:-translate-y-0.5 px-12 py-8 text-lg">
+            <Button asChild size="lg" className="px-10 py-7 text-base">
               <Link href="/contact">
-                NEEM CONTACT OP
-                <ArrowRight className="ml-3 h-6 w-6" />
+                PLAN EEN GESPREK
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>

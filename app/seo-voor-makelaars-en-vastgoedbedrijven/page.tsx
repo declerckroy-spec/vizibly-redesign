@@ -27,7 +27,7 @@ export default function SeoVoorMakelaarsPage() {
   const faqData = [
     {
       question: 'Hoe belangrijk is SEO voor makelaars naast Funda?',
-      answer: 'Zeer belangrijk. Funda is essentieel voor woningaanbod, maar verkopers zoeken makelaars vaak eerst via Google. Zoektermen als "makelaar [plaatsnaam]" of "huis verkopen [regio]" hebben hoge commerciële waarde. Door goed te ranken op deze termen, bereik je potentiële verkopers die een makelaar zoeken - je belangrijkste bron van nieuwe opdrachten.'
+      answer: 'Zeer belangrijk. Funda is essentieel voor woningaanbod, maar verkopers zoeken makelaars vaak eerst via Google. Zoektermen als "makelaar [plaatsnaam]" of "huis verkopen [regio]" hebben hoge commerciële waarde. Door goed te ranken op deze termen, bereik je potentiële verkopers die een makelaar zoeken. Je belangrijkste bron van nieuwe opdrachten.'
     },
     {
       question: 'Hoe lang duurt het voordat SEO resultaten oplevert?',
@@ -84,7 +84,7 @@ export default function SeoVoorMakelaarsPage() {
     {
       icon: Search,
       title: 'Analyse & Strategie',
-      description: 'We analyseren je werkgebied, identificeren kansrijke zoektermen en onderzoeken wat je concurrenten doen. Van "makelaar Rotterdam" tot "huis verkopen zonder makelaar" - we bepalen waar de kansen liggen en ontwikkelen een concrete SEO-roadmap.',
+      description: 'We analyseren je werkgebied, identificeren kansrijke zoektermen en onderzoeken wat je concurrenten doen. Van "makelaar Rotterdam" tot "huis verkopen zonder makelaar": we bepalen waar de kansen liggen en ontwikkelen een concrete SEO-roadmap.',
       link: '/seo-strategie',
       linkText: 'Meer over strategie'
     },
@@ -257,7 +257,7 @@ export default function SeoVoorMakelaarsPage() {
               </h1>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Als makelaar wil je gevonden worden door mensen die hun huis willen verkopen of juist op zoek zijn naar een woning. De zoektocht begint vaak bij Google. "Makelaar Amsterdam", "huis verkopen tips" of "beste makelaar [plaats]" - op deze momenten wil je zichtbaar zijn. Vizibly helpt makelaars en vastgoedbedrijven om online beter vindbaar te worden en meer verkoopopdrachten binnen te halen.
+                Als makelaar wil je gevonden worden door mensen die hun huis willen verkopen of juist op zoek zijn naar een woning. De zoektocht begint vaak bij Google. "Makelaar Amsterdam", "huis verkopen tips" of "beste makelaar [plaats]": op deze momenten wil je zichtbaar zijn. Vizibly helpt makelaars en vastgoedbedrijven om online beter vindbaar te worden en meer verkoopopdrachten binnen te halen.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
