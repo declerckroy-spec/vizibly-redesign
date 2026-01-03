@@ -53,7 +53,7 @@ export function Footer() {
             <ul className="space-y-4">
               {navLinks.hoofdDiensten.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-base font-bold text-accent hover:text-white transition-colors">
+                  <Link href={link.href} className="text-base font-bold text-white/80 hover:text-accent transition-colors">
                     {link.label}
                   </Link>
                 </li>

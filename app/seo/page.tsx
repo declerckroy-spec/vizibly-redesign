@@ -5,16 +5,17 @@ import { FinalCTA } from '@/components/final-cta';
 import { FAQSection } from '@/components/faq-section';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Target, FileText, Link2, MapPin, Check, TrendingUp, Clock, Users, Euro } from 'lucide-react';
+import { ArrowRight, Target, FileText, Link2, MapPin, Check, TrendingUp, Clock, Users, Euro, Monitor } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import { SEOAuditIllustration } from '@/components/icons/device-showcase';
 
 export const metadata: Metadata = {
-  title: 'SEO | Gevonden worden in Google | Vanaf €500/maand',
+  title: 'SEO | Gevonden worden in Google | Vanaf €350/maand',
   description: 'Vizibly zorgt dat je gevonden wordt in Google. Van strategie tot uitvoering: content, techniek en linkbuilding. Transparante prijzen, meetbare resultaten.',
   openGraph: {
-    title: 'SEO | Gevonden worden in Google | Vanaf €500/maand',
+    title: 'SEO | Gevonden worden in Google | Vanaf €350/maand',
     description: 'Vizibly zorgt dat je gevonden wordt in Google. Van strategie tot uitvoering: content, techniek en linkbuilding. Transparante prijzen, meetbare resultaten.',
     url: 'https://vizibly.nl/seo/',
     siteName: 'Vizibly',
@@ -28,7 +29,7 @@ export default function SeoPage() {
     {
       name: 'Basis',
       subtitle: 'Voor lokale groei',
-      price: '€500',
+      price: '€350',
       period: 'p/m',
       features: [
         'Zoekwoordonderzoek',
@@ -42,7 +43,7 @@ export default function SeoPage() {
     {
       name: 'Standaard',
       subtitle: 'Voor serieuze groei',
-      price: '€1.000',
+      price: '€750',
       period: 'p/m',
       features: [
         'Uitgebreide analyse',
@@ -57,7 +58,7 @@ export default function SeoPage() {
     {
       name: 'Premium',
       subtitle: 'Maximale groei',
-      price: 'Vanaf €2.000',
+      price: 'Vanaf €1.500',
       period: 'p/m',
       features: [
         '360° website analyse',
@@ -165,7 +166,7 @@ export default function SeoPage() {
               </h1>
 
               <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Je concurrent staat bovenaan in Google. Jij op pagina 2. Het verschil? Een goede SEO-strategie en iemand die hem uitvoert.
+                Elke dag zoeken potentiële klanten naar wat jij aanbiedt. De vraag is: vinden ze jou of je concurrent?
               </p>
 
               <p className="mb-10 text-base font-bold text-black/70 lg:text-lg xl:text-xl">
@@ -174,22 +175,14 @@ export default function SeoPage() {
 
               <Button size="lg" asChild className="text-base px-8 py-5">
                 <Link href="/contact">
-                  GRATIS KENNISMAKINGSGESPREK
+                  LATEN WE KENNISMAKEN
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
-              <Image
-                src="/Bestaande afbeeldingen/Full Service SEO.jpg"
-                alt="SEO strategie"
-                fill
-                className="object-cover"
-                priority
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
+            <div className="flex items-center justify-center border-4 border-black bg-[#fafaf8] p-4 lg:p-6" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
+              <SEOAuditIllustration className="w-full h-auto max-w-lg text-black" />
             </div>
           </div>
         </div>
@@ -201,12 +194,11 @@ export default function SeoPage() {
           backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0px, #ffffff 1px, transparent 1px, transparent 30px)'
         }}></div>
         <div className="relative mx-auto max-w-screen-2xl px-6">
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12">
+          <div className="grid grid-cols-3 gap-8 lg:gap-12">
             {[
               { value: '7+', label: 'Jaar ervaring', icon: Clock },
               { value: '25+', label: 'Klanten laten groeien', icon: Users },
               { value: '+120%', label: 'Gemiddelde traffic groei', icon: TrendingUp },
-              { value: '€10M+', label: 'Omzet van klanten', icon: Euro }
             ].map((stat, index) => (
               <div
                 key={index}
@@ -237,19 +229,19 @@ export default function SeoPage() {
               <div className="h-1 w-32 bg-black mb-8"></div>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                SEO bestaat uit veel onderdelen die samen moeten werken. Vizibly pakt alles aan wat nodig is: van strategie tot uitvoering.
+                Geen losse acties, maar een complete aanpak. Van zoekwoordonderzoek tot de content die ervoor zorgt dat je gevonden wordt.
               </p>
 
               <div className="grid gap-4">
                 {[
-                  { icon: Target, text: 'Strategie op maat voor jouw markt' },
-                  { icon: FileText, text: 'Content die scoort én converteert' },
-                  { icon: Link2, text: 'Linkbuilding van relevante sites' },
-                  { icon: MapPin, text: 'Local SEO voor regionale vindbaarheid' },
+                  { icon: Target, text: 'Strategie op maat voor jouw markt', href: '/seo-strategie' },
+                  { icon: FileText, text: 'Content die scoort én converteert', href: '/seo-copy' },
+                  { icon: Link2, text: 'Linkbuilding van relevante sites', href: '/linkbuilding' },
+                  { icon: MapPin, text: 'Local SEO voor regionale vindbaarheid', href: '/local-seo' },
                 ].map((item, index) => (
                   <Link
                     key={index}
-                    href={index === 0 ? '/seo-strategie' : index === 1 ? '/seo-copy' : index === 2 ? '/linkbuilding' : '/local-seo'}
+                    href={item.href}
                     className="flex items-center gap-4 border-l-4 border-accent bg-white p-4 transition-all hover:border-black hover:bg-accent"
                   >
                     <item.icon className="h-6 w-6 text-black flex-shrink-0" />
@@ -257,15 +249,25 @@ export default function SeoPage() {
                     <ArrowRight className="h-5 w-5 text-black ml-auto" />
                   </Link>
                 ))}
+
+                {/* Optioneel: Website */}
+                <Link
+                  href="/websites"
+                  className="flex items-center gap-4 border-l-4 border-black/30 bg-white/50 p-4 transition-all hover:border-accent hover:bg-accent"
+                >
+                  <Monitor className="h-6 w-6 text-black/60 flex-shrink-0" />
+                  <span className="text-base font-bold text-black/60 lg:text-lg">Optioneel: een high-end website</span>
+                  <ArrowRight className="h-5 w-5 text-black/60 ml-auto" />
+                </Link>
               </div>
             </div>
 
             <div className="relative aspect-square overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
               <Image
-                src="/Bestaande afbeeldingen/SEO strategie.jpg"
-                alt="SEO strategie en planning"
+                src="/images/unsplash-selection/analytics-dashboard-speedcurve.jpg"
+                alt="SEO analytics dashboard met resultaten"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+                className="object-cover"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
               />
@@ -429,8 +431,8 @@ export default function SeoPage() {
             </div>
             <div className="relative aspect-video overflow-hidden border-4 border-accent" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
-                src="/Bestaande afbeeldingen/macbook-air-on-grey-wooden-table.jpeg"
-                alt="Website development"
+                src="/images/imac-workspace.jpg"
+                alt="Premium website development workspace"
                 fill
                 className="object-cover"
                 placeholder="blur"

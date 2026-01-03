@@ -33,7 +33,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:gap-6 lg:gap-10">
-            <Link href="/websites" className="text-base font-bold uppercase text-accent hover:text-white transition-colors">
+            <Link href="/websites" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Websites
             </Link>
             <Link href="/seo" className="text-base font-bold uppercase hover:text-accent transition-colors">
@@ -63,7 +63,7 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="mt-6 flex flex-col gap-4 border-t-2 border-accent pt-6 md:hidden">
-            <Link href="/websites" className="text-base font-bold uppercase text-accent hover:text-white transition-colors">Websites</Link>
+            <Link href="/websites" className="text-base font-bold uppercase hover:text-accent transition-colors">Websites</Link>
             <Link href="/seo" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO</Link>
             <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">Cases</Link>
             <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">Over</Link>

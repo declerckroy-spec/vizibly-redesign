@@ -6,6 +6,7 @@ import { FAQSection } from '@/components/faq-section';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Zap, Shield, Clock, Globe, Mail, FileCode, Check, Gauge, Palette, Search } from 'lucide-react';
+import { PremiumHeroIllustration, PremiumGrowthIllustration } from '@/components/icons/device-showcase';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -213,16 +214,8 @@ export default function WebsitesPage() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
-              <Image
-                src="/images/workspace-desk.jpg"
-                alt="Moderne werkplek met computer en design tools"
-                fill
-                className="object-cover"
-                priority
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
+            <div className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
+              <PremiumHeroIllustration className="w-full h-auto max-w-lg text-black" />
             </div>
           </div>
         </div>
@@ -294,15 +287,8 @@ export default function WebsitesPage() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
-              <Image
-                src="/images/laptop-minimal.jpg"
-                alt="Laptop op minimalistisch bureau"
-                fill
-                className="object-cover"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              />
+            <div className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
+              <PremiumGrowthIllustration className="w-full h-auto max-w-md text-black" />
             </div>
           </div>
         </div>
@@ -476,8 +462,8 @@ export default function WebsitesPage() {
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
-                src="/images/imac-workspace.jpg"
-                alt="iMac werkplek met modern design"
+                src="/images/person-browsing-google-imac.webp"
+                alt="Website en SEO synergie - iMac met Google zoekresultaten"
                 fill
                 className="object-cover"
                 placeholder="blur"

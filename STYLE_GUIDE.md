@@ -22,7 +22,8 @@ Deze style guide documenteert het complete design systeem voor de Vizibly websit
 3. [Typografie](#typografie)
 4. [Spacing & Layout](#spacing--layout)
 5. [Borders & Shadows](#borders--shadows)
-6. [Componenten](#componenten)
+6. [Premium Vector Illustraties](#premium-vector-illustraties)
+7. [Componenten](#componenten)
 7. [Secties & Patronen](#secties--patronen)
 8. [Navigatie](#navigatie)
 9. [Footer](#footer)
@@ -562,6 +563,107 @@ className="transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
 | Info boxes | `8px 8px ... #000000` + black glow |
 | Werkwijze items | `6px 6px ... #CCFF00` + lime glow |
 | Testimonial cards | `8px 8px ... #000000` + black glow |
+
+---
+
+## Premium Vector Illustraties
+
+Voor bepaalde secties gebruiken we custom vector illustraties in plaats van foto's. Deze illustraties zijn isometrisch, gedetailleerd en passen perfect bij de brutalist stijl.
+
+### Beschikbare Illustraties
+
+| Component | Beschrijving | Gebruik |
+|-----------|--------------|---------|
+| `PremiumHeroIllustration` | Isometrische device stack (laptop, phone, tablet) met floating stats | Hero secties, techniek showcase |
+| `PremiumGrowthIllustration` | Monitor met analytics dashboard en groei charts | Growth/resultaten secties |
+| `CollaborationIllustration` | Video call, chat, takenlijst, kalender | Samenwerking, combinatie diensten |
+| `SuccessIllustration` | Trofee met #1, confetti, achievement badges | Succes verhalen, resultaten |
+| `SEOAuditIllustration` | Audit document, score meter, checklist, crawler | SEO analyse, adviesgesprek CTA |
+| `HighEndDesignIllustration` | Design canvas met panels en tools | Web design, premium diensten |
+| `NoHassleResultsIllustration` | Simpel A→B pad, doorgestreepte complexiteit | Werkwijze, proces, eenvoud |
+
+### Import
+
+```tsx
+import {
+  PremiumHeroIllustration,
+  PremiumGrowthIllustration,
+  CollaborationIllustration,
+  SuccessIllustration,
+  SEOAuditIllustration,
+  HighEndDesignIllustration,
+  NoHassleResultsIllustration,
+} from '@/components/icons/device-showcase';
+```
+
+### Styling Patroon
+
+Illustraties worden altijd in een container met border en shadow geplaatst:
+
+```tsx
+// Met lime shadow (featured)
+<div
+  className="flex items-center justify-center border-4 border-black bg-[#fafaf8] p-4 lg:p-6"
+  style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}
+>
+  <PremiumHeroIllustration className="w-full h-auto max-w-lg text-black" />
+</div>
+
+// Met zwarte shadow (standaard)
+<div
+  className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6"
+  style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}
+>
+  <SEOAuditIllustration className="w-full h-auto max-w-md text-black" />
+</div>
+
+// Met lime border (op donkere achtergrond)
+<div
+  className="flex items-center justify-center border-4 border-accent bg-[#fafaf8] p-4 lg:p-6"
+  style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}
+>
+  <NoHassleResultsIllustration className="w-full h-auto max-w-lg text-black" />
+</div>
+```
+
+### 50/50 Regel: Vector + Foto Mix (KRITISCH)
+
+**Elke nieuwe pagina moet een mix van vectorillustraties en echte foto's hebben.**
+
+Dit voorkomt dat pagina's te "digitaal" of te "stockfoto" aanvoelen. De ideale verhouding is ongeveer 50/50.
+
+**Voorbeeld /websites pagina:**
+- Hero: Vector (PremiumHeroIllustration)
+- Wat je krijgt: Vector (PremiumGrowthIllustration)
+- Website + SEO: **Echte foto** (person-browsing-google-imac.webp)
+
+**Richtlijnen voor nieuwe pagina's:**
+- Minimaal 1 echte foto per pagina
+- Minimaal 1 vector illustratie per pagina (als er meerdere visuele secties zijn)
+- Wissel af: niet alle vectors naast elkaar, niet alle foto's naast elkaar
+
+### Wanneer Vector vs Foto?
+
+| Situatie | Keuze | Reden |
+|----------|-------|-------|
+| Abstracte concepten (groei, succes, samenwerking) | **Vector** | Foto's zijn te letterlijk |
+| Werkwijze/proces uitleg | **Vector** | Visueel duidelijker |
+| Diensten showcase | **Vector** | Premium, on-brand feel |
+| Team/persoonlijke foto's | **Foto** | Authenticiteit, vertrouwen |
+| Case studies | **Foto** | Concrete resultaten tonen |
+| Klant testimonials | **Foto** | Menselijk element |
+| Synergie/combinatie secties | **Foto** | Menselijk, concreet |
+
+### Huidige Gebruik
+
+| Pagina | Sectie | Type | Asset |
+|--------|--------|------|-------|
+| `/websites` | Hero | Vector | `PremiumHeroIllustration` |
+| `/websites` | Wat je krijgt | Vector | `PremiumGrowthIllustration` |
+| `/websites` | Website + SEO | **Foto** | `/images/person-browsing-google-imac.webp` |
+| Homepage | Geen gedoe, gewoon resultaat | Vector | `NoHassleResultsIllustration` |
+| Homepage | Benieuwd wat er mogelijk is? | Vector | `SEOAuditIllustration` |
+| Homepage | Roy intro | **Foto** | `/team/roy.webp` |
 
 ---
 
@@ -1993,6 +2095,27 @@ style={{ boxShadow: '8px 8px 0 0 #000000' }}
 
 // Final CTA (op lime)
 <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-8 py-5 text-base">
+```
+
+### CTA Button Teksten
+
+**Standaard CTA teksten voor de site:**
+
+| Context | Tekst | Link |
+|---------|-------|------|
+| Hero CTA (primair) | `LATEN WE KENNISMAKEN` | `/contact` |
+| Secundaire CTA | `CONTACT` | `/contact` |
+| Cases bekijken | `BEKIJK RESULTATEN` | `/cases` |
+| Final CTA | `LATEN WE KENNISMAKEN` of `PLAN EEN GESPREK` | `/contact` |
+
+**Voorbeeld:**
+```jsx
+<Button size="lg" asChild className="text-base px-8 py-5">
+  <Link href="/contact">
+    LATEN WE KENNISMAKEN
+    <ArrowRight className="ml-2 h-5 w-5" />
+  </Link>
+</Button>
 ```
 
 ---

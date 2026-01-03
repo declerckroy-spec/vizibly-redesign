@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOAuditIllustration } from '@/components/icons/device-showcase';
 
 export function CTAWithImage() {
   return (
@@ -57,16 +57,9 @@ export function CTAWithImage() {
             </Button>
           </div>
 
-          {/* Foto Sectie */}
-          <div className="relative aspect-square lg:aspect-[4/3] overflow-hidden border-4 border-black transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
-            <Image
-              src="/Bestaande afbeeldingen/seo-audit-white-blocks-on-brown-wooden.jpeg"
-              alt="SEO Analyse - Ontdek waar je klanten kwijtraakt"
-              fill
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-              className="object-cover transition-all duration-300 hover:scale-105"
-            />
+          {/* Illustratie Sectie */}
+          <div className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
+            <SEOAuditIllustration className="w-full h-auto max-w-md text-black" />
           </div>
         </div>
       </div>

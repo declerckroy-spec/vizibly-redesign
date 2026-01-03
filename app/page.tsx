@@ -9,13 +9,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Globe, Search, Zap, Check } from 'lucide-react';
+import { NoHassleResultsIllustration } from '@/components/icons/device-showcase';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
   const faqData = [
     {
-      question: 'Wat maakt jou anders dan andere bureaus?',
+      question: 'Wat maakt jou anders?',
       answer: 'Ik ben geen bureau met accountmanagers en afdelingen. Ik bouw zelf de websites én doe de SEO. Dat betekent: geen miscommunicatie tussen developer en marketeer, snellere doorlooptijd, en een site die technisch perfect scoort. Je hebt één aanspreekpunt en weet altijd waar je aan toe bent.'
     },
     {
@@ -23,12 +24,12 @@ export default function Home() {
       answer: 'Een website kan binnen 2-3 weken live staan. Voor SEO geldt: de eerste verbeteringen zijn vaak al binnen enkele weken zichtbaar, maar voor serieuze resultaten moet je rekenen op 3-6 maanden. Dat is eerlijk. Wie iets anders belooft, vertelt niet het hele verhaal.'
     },
     {
-      question: 'Wat kost een website of SEO-traject?',
-      answer: 'Websites starten vanaf €2.500 (eenmalig). SEO-trajecten vanaf €500 per maand. De exacte prijs hangt af van wat je nodig hebt en hoe ambitieus je doelen zijn. Na een kort gesprek krijg je een heldere offerte, zonder verrassingen of kleine lettertjes.'
+      question: 'Waarom geen WordPress of websitebouwer?',
+      answer: 'Templates en websitebouwers zijn prima voor een hobbysite, maar voor een bedrijf dat serieus wil groeien schieten ze tekort. Trage laadtijden, beperkte aanpasbaarheid, dertien-in-een-dozijn designs, en afhankelijk van plugins die morgen kunnen verdwijnen. Ik bouw met Next.js: razendsnel, volledig op maat, en toekomstbestendig.'
     },
     {
       question: 'Kan ik alleen een website of alleen SEO afnemen?',
-      answer: 'Ja, beide diensten zijn los af te nemen. Maar de combinatie werkt vaak het beste: een trage site remt je SEO-resultaten, en goede SEO op een matige site is zonde van je investering. Ik adviseer je graag over wat in jouw situatie het slimste is.'
+      answer: 'Ja, beide diensten zijn los af te nemen. Maar de combinatie werkt vaak het beste: een standaard template-site remt je SEO-resultaten, en goede SEO op een matige site is zonde van je investering. Ik adviseer je graag over wat in jouw situatie het slimste is.'
     }
   ];
 
@@ -147,12 +148,14 @@ export default function Home() {
             </div>
 
             <h1 className="mb-10 text-brutalist-hero leading-none">
-              Premium sites die{' '}
-              <span className="relative inline-block">
-                <span className="absolute inset-0 bg-accent"></span>
-                <span className="relative">klanten</span>
+              High-end websites{' '}
+              <span className="whitespace-nowrap">
+                die{' '}
+                <span className="relative inline">
+                  <span className="absolute -inset-1 bg-accent"></span>
+                  <span className="relative">leveren</span>
+                </span>
               </span>
-              {' '}opleveren
             </h1>
 
             <div className="mb-12 max-w-3xl border-l-8 border-black pl-8">
@@ -219,7 +222,7 @@ export default function Home() {
               </p>
 
               <p className="mb-10 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
-                Ik doe beide. Eén persoon, geen overleg tussen partijen, geen vingerwijzen. Gewoon: een site die er strak uitziet, razendsnel laadt, en gevonden wordt.
+                Ik doe beide. Eén persoon, geen overleg tussen partijen, geen vingerwijzen. Gewoon: een site die er strak uitziet, razendsnel laadt en gevonden wordt.
               </p>
 
               <div className="mb-10 grid gap-3">
@@ -314,7 +317,7 @@ export default function Home() {
 
               <div className="grid gap-8">
                 {[
-                  { number: '01', title: 'Gesprek', text: 'Jij vertelt, ik luister. 15 minuten.' },
+                  { number: '01', title: 'Gesprek', text: 'Jij vertelt, ik luister.' },
                   { number: '02', title: 'Voorstel', text: 'Helder, compleet, geen kleine lettertjes.' },
                   { number: '03', title: 'Aan de slag', text: 'Ik bouw, jij krijgt updates. Geen radiostilte.' },
                   { number: '04', title: 'Live', text: 'En daarna? Ondersteuning zolang je wilt.' }
@@ -335,15 +338,8 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden border-4 border-accent">
-              <Image
-                src="/team/vizibly-sports.webp"
-                alt="Vizibly werkwijze"
-                fill
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
-              />
+            <div className="flex items-center justify-center border-4 border-accent bg-[#fafaf8] p-4 lg:p-6" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+              <NoHassleResultsIllustration className="w-full h-auto max-w-lg text-black" />
             </div>
           </div>
         </div>

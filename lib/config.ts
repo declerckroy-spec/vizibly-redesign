@@ -3,7 +3,7 @@
 
 export const siteConfig = {
   name: 'Vizibly',
-  tagline: 'Razendsnelle websites en SEO die werkt.',
+  tagline: 'Premium websites én SEO. Één specialist, geen gedoe.',
   url: 'https://vizibly.nl',
 
   address: {
