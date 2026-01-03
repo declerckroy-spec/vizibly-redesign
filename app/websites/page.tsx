@@ -11,11 +11,11 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Websites | Premium websites vanaf €2.500',
-  description: 'Vizibly bouwt razendsnelle premium websites. 90+ pagespeed score, modern design, live binnen 2-3 weken. Inclusief hosting, domein en SSL.',
+  title: 'High-end website laten maken | Al vanaf €2.500',
+  description: 'Premium websites die klanten binnenhalen. 90+ pagespeed score, modern design, live binnen 2-3 weken. Inclusief hosting, domein en SSL.',
   openGraph: {
-    title: 'Websites | Premium websites vanaf €2.500',
-    description: 'Vizibly bouwt razendsnelle premium websites. 90+ pagespeed score, modern design, live binnen 2-3 weken. Inclusief hosting, domein en SSL.',
+    title: 'High-end website laten maken | Al vanaf €2.500',
+    description: 'Premium websites die klanten binnenhalen. 90+ pagespeed score, modern design, live binnen 2-3 weken. Inclusief hosting, domein en SSL.',
     url: 'https://vizibly.nl/websites/',
     siteName: 'Vizibly',
     locale: 'nl_NL',
@@ -27,45 +27,45 @@ export default function WebsitesPage() {
   const packages = [
     {
       name: 'Simpel',
-      subtitle: 'Compacte bedrijfssite',
+      subtitle: 'Alles om te starten',
       price: '€2.500',
       period: 'eenmalig',
       features: [
         'Tot 5 pagina\'s',
-        'Premium design',
-        'Contactformulier',
-        'Basis SEO-optimalisatie',
-        '90+ pagespeed score',
+        'Design dat past bij jouw merk',
+        'Contactformulier met spambeveiliging',
+        'Direct vindbaar in Google',
+        '90+ pagespeed score gegarandeerd',
         'Eerste maand onderhoud gratis',
       ],
       highlight: false
     },
     {
       name: 'Standaard',
-      subtitle: 'Complete bedrijfswebsite',
+      subtitle: 'Klaar om te groeien',
       price: '€3.500',
       period: 'eenmalig',
       features: [
         'Tot 10 pagina\'s',
         'Volledig custom design',
-        'Blog of nieuws sectie',
+        'Blog om autoriteit op te bouwen',
         'Uitgebreide SEO-setup',
-        'Google Analytics koppeling',
+        'Inzicht in je bezoekers',
         'Eerste maand onderhoud gratis',
       ],
       highlight: true
     },
     {
       name: 'Premium',
-      subtitle: 'Maatwerk en complexe sites',
+      subtitle: 'Maximale flexibiliteit',
       price: 'Vanaf €5.000',
       period: 'eenmalig',
       features: [
         'Onbeperkt pagina\'s',
         'High-end custom design',
-        'Koppelingen en integraties',
-        'CMS naar wens',
-        'Uitgebreide SEO-strategie',
+        'Koppelingen met je systemen',
+        'Zelf content beheren via CMS',
+        'Complete SEO-strategie',
         'Eerste maand onderhoud gratis',
       ],
       highlight: false
@@ -75,30 +75,30 @@ export default function WebsitesPage() {
   const proces = [
     {
       step: '01',
-      title: 'Intake',
-      description: 'Een gesprek over je bedrijf, doelen en wensen. Wat moet de site doen? Wie zijn je bezoekers? Hieruit volgt een heldere offerte.'
+      title: 'Gesprek',
+      description: 'Jij vertelt, ik luister. 30 minuten over je bedrijf, doelen en wensen. Hieruit volgt een heldere offerte.'
     },
     {
       step: '02',
       title: 'Design',
-      description: 'Op basis van de intake ontstaat het ontwerp. Modern, passend bij je merk, en gebouwd om te converteren. Je krijgt een preview voordat er code wordt geschreven.'
+      description: 'Je ziet het ontwerp voordat er code komt. Modern, passend bij je merk, gebouwd om te converteren.'
     },
     {
       step: '03',
-      title: 'Development',
-      description: 'De site wordt gebouwd in Next.js. Razendsnelle laadtijden, schoon en modern. Tussentijds kun je meekijken via een testomgeving.'
+      title: 'Bouwen',
+      description: 'Meekijken via een testlink. Geen radiostilte. Vragen? Direct antwoord.'
     },
     {
       step: '04',
       title: 'Live',
-      description: 'Na goedkeuring gaat de site live. Domein, hosting, SSL: alles wordt geregeld. Je krijgt een korte uitleg over hoe je zelf kleine aanpassingen kunt doen.'
+      description: 'Domein, hosting, SSL: alles geregeld. Jij focust op je bedrijf, de techniek is mijn zorg.'
     }
   ];
 
   const faqData = [
     {
       question: 'Waarom zijn jullie sites zo snel?',
-      answer: 'Vizibly bouwt met moderne technologie die significant sneller is dan traditionele systemen als WordPress. Dat is beter voor bezoekers én voor Google. Geen plugins die updates nodig hebben, geen beveiligingslekken, geen trage database. Puur snelheid en stabiliteit.'
+      answer: 'Ik bouw met dezelfde technologie als Nike, Netflix en Twitch. Geen plugins die updates nodig hebben, geen beveiligingslekken, geen trage database. Puur snelheid en stabiliteit. Het resultaat: sites die laden voordat je met je ogen knippert.'
     },
     {
       question: 'Kan ik zelf content aanpassen?',
@@ -114,7 +114,7 @@ export default function WebsitesPage() {
     },
     {
       question: 'Hoe zit het met hosting en onderhoud?',
-      answer: 'Na oplevering kun je kiezen voor een voordelig onderhoudspakket. Daarmee heb je nergens omkijken naar: hosting, updates, backups, beveiliging en kleine aanpassingen zijn geregeld. Eerste maand gratis.'
+      answer: 'Je site draait op enterprise-grade servers met 99.9% uptime. Na oplevering kun je kiezen voor een onderhoudspakket: hosting, monitoring, updates en kleine aanpassingen. Alles geregeld, zodat jij je kunt focussen op je bedrijf. Eerste maand gratis.'
     },
     {
       question: 'Hoe snel kan mijn site live staan?',
@@ -193,11 +193,11 @@ export default function WebsitesPage() {
               </h1>
 
               <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Vizibly bouwt websites waar je trots op bent. Razendsnelle laadtijden, strak design, en gebouwd om te groeien. Geen templates waar je bedrijf in gepropt wordt.
+                Laat een high end website bouwen waar je trots op bent. Razendsnelle laadtijden, strak design, en gebouwd om te groeien. Geen templates waar je bedrijf in gepropt wordt.
               </p>
 
               <p className="mb-10 text-base font-bold text-black/70 lg:text-lg xl:text-xl">
-                Je krijgt een ultiem visitekaartje voor je bedrijf. 100% veilig, supersnel, en klaar voor Google én AI-zoekmachines.
+                Je krijgt een ultiem visitekaartje voor je bedrijf. Volledig op maat, supersnel, en klaar voor Google én AI-zoekmachines.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -215,8 +215,8 @@ export default function WebsitesPage() {
 
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
-                src="/Bestaande afbeeldingen/macbook-air-on-grey-wooden-table.jpeg"
-                alt="Moderne website op laptop"
+                src="/images/workspace-desk.jpg"
+                alt="Moderne werkplek met computer en design tools"
                 fill
                 className="object-cover"
                 priority
@@ -271,17 +271,17 @@ export default function WebsitesPage() {
               <div className="h-1 w-32 bg-black mb-8"></div>
 
               <p className="mb-10 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Een website is meer dan een mooi plaatje. Je krijgt een complete oplossing die werkt, zonder dat je zelf hoeft te klooien met hosting of technische instellingen.
+                Een website is meer dan een mooi plaatje. Je krijgt een complete oplossing die werkt. Geen gedoe met hosting, geen stress over beveiliging, geen technische hoofdpijn.
               </p>
 
               <div className="grid gap-4">
                 {[
-                  { icon: Globe, text: 'Domeinregistratie en koppeling' },
-                  { icon: Shield, text: 'Hosting op snelle servers' },
-                  { icon: Zap, text: 'SSL-certificaat (https)' },
-                  { icon: Mail, text: 'Contactformulier met spambeveiliging' },
-                  { icon: FileCode, text: 'Basis e-mail setup (optioneel)' },
-                  { icon: Search, text: 'SEO-proof technische basis' },
+                  { icon: Globe, text: 'Domein geregeld en gekoppeld' },
+                  { icon: Shield, text: 'Enterprise-grade hosting (99.9% uptime)' },
+                  { icon: Zap, text: 'SSL-certificaat (het groene slotje)' },
+                  { icon: Mail, text: 'Contactformulier zonder vervelende captchas' },
+                  { icon: FileCode, text: 'Professionele e-mail setup (optioneel)' },
+                  { icon: Search, text: 'Vindbaar in Google vanaf dag één' },
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -294,12 +294,12 @@ export default function WebsitesPage() {
               </div>
             </div>
 
-            <div className="relative aspect-square overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
+            <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
               <Image
-                src="/Bestaande afbeeldingen/SEO strategie.jpg"
-                alt="Website development"
+                src="/images/laptop-minimal.jpg"
+                alt="Laptop op minimalistisch bureau"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+                className="object-cover"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AyGLUbiC7gu45mS4hkWWKRejIwypH4QQKKKKlYlmJPoP/2Q=="
               />
@@ -331,17 +331,17 @@ export default function WebsitesPage() {
               </p>
 
               <p className="mb-8 text-base font-bold text-white/80 lg:text-lg xl:text-xl">
-                Vizibly bouwt met dezelfde technologie als Nike, Netflix en Twitch. High-end kwaliteit, nu ook voor MKB.
+                Ik bouw met dezelfde technologie als Nike, Netflix en Twitch. High-end kwaliteit, nu ook bereikbaar voor MKB.
               </p>
             </div>
 
             <div className="flex flex-col justify-center">
               <div className="grid gap-6">
                 {[
-                  { title: 'Razendsnelle laadtijd', description: 'Geen database queries, geen zware plugins. Pure snelheid.' },
-                  { title: 'Geen onderhoudsstress', description: 'Geen wekelijkse plugin-updates. Geen security patches. Het werkt gewoon.' },
-                  { title: 'Betere SEO-scores', description: 'Google houdt van snelle sites. Snellere site = hogere rankings.' },
-                  { title: 'Schaalbaar', description: 'Of je nu 100 of 100.000 bezoekers hebt, de site blijft snel.' }
+                  { title: 'Razendsnelle laadtijd', description: 'Bezoekers wachten niet. Jouw site laadt in een oogwenk.' },
+                  { title: 'Geen onderhoudsstress', description: 'Geen wekelijkse updates. Geen beveiligingslekken. Het werkt gewoon.' },
+                  { title: 'Hogere rankings', description: 'Google beloont snelle sites. Sneller = hoger in de zoekresultaten.' },
+                  { title: 'Klaar voor groei', description: 'Of je nu 100 of 100.000 bezoekers krijgt, de site blijft snel.' }
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -422,9 +422,12 @@ export default function WebsitesPage() {
             ))}
           </div>
 
-          <p className="mt-12 text-center text-base font-bold text-black/60 lg:text-lg">
-            Na oplevering is een voordelig onderhoudspakket beschikbaar. Eerste maand gratis.
-          </p>
+          <div className="mt-16 mx-auto max-w-3xl border-4 border-black bg-white p-8 text-center" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
+            <h3 className="mb-4 text-xl font-black uppercase text-black lg:text-2xl">Nergens omkijken naar?</h3>
+            <p className="text-base font-bold text-black/80 lg:text-lg">
+              Na oplevering kun je kiezen voor een onderhoudspakket. Hosting, updates, kleine wijzigingen, monitoring: alles geregeld zodat jij je kunt focussen op je bedrijf. Eerste maand gratis.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -468,13 +471,13 @@ export default function WebsitesPage() {
       </section>
 
       {/* Website + SEO Synergie Section */}
-      <section className="relative bg-[#fafaf8] py-32 lg:py-40">
+      <section className="relative bg-white py-32 lg:py-40">
         <div className="mx-auto max-w-screen-2xl px-6">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="relative aspect-[4/3] overflow-hidden border-4 border-black" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
               <Image
-                src="/Bestaande afbeeldingen/Full Service SEO.jpg"
-                alt="Website en SEO synergie"
+                src="/images/imac-workspace.jpg"
+                alt="iMac werkplek met modern design"
                 fill
                 className="object-cover"
                 placeholder="blur"
@@ -493,7 +496,7 @@ export default function WebsitesPage() {
               <div className="h-1 w-32 bg-black mb-8"></div>
 
               <p className="mb-8 text-base font-bold text-black/80 lg:text-lg xl:text-xl">
-                Een snelle website is de basis. Maar zonder bezoekers heb je er weinig aan. Daarom biedt Vizibly ook SEO, zodat je niet alleen een mooie site hebt, maar ook gevonden wordt.
+                Een snelle website is de basis. Maar zonder bezoekers heb je er weinig aan. Daarom bied ik ook SEO, zodat je niet alleen een mooie site hebt, maar ook gevonden wordt.
               </p>
 
               <p className="mb-8 text-base font-bold text-black/70 lg:text-lg xl:text-xl">
@@ -502,7 +505,7 @@ export default function WebsitesPage() {
 
               <div className="mb-10 border-4 border-black bg-accent/20 p-6">
                 <p className="text-base font-bold text-black lg:text-lg">
-                  Website én SEO in één hand? Geen miscommunicatie, snellere doorlooptijd, en een site die technisch perfect scoort.
+                  Eén aanspreekpunt voor techniek én marketing. Snellere doorlooptijd, perfecte afstemming, en een site die technisch scoort.
                 </p>
               </div>
 
