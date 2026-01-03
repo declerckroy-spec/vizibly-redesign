@@ -1327,13 +1327,33 @@ className="transition-colors hover:border-accent"
 </div>
 ```
 
-### Grayscale naar Kleur
+### Grayscale naar Kleur (Premium Effect)
+
+**BELANGRIJK:** Alle sectie-afbeeldingen op dienstpagina's (/websites, /seo, etc.) krijgen het grayscale hover effect. Dit geeft de site een premium, editorial look.
 
 ```jsx
+// Afbeelding in sectie (direct op Image component)
+<Image
+  src="/images/afbeelding.jpg"
+  alt="Beschrijving"
+  fill
+  className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+/>
+
+// Wrapper variant (voor logo's in carousel)
 <div className="grayscale group-hover:grayscale-0 transition-all duration-300">
   <Image ... />
 </div>
 ```
+
+**Wanneer gebruiken:**
+| Context | Grayscale effect? |
+|---------|-------------------|
+| Sectie afbeeldingen (dienstpagina's) | Ja |
+| Hero afbeeldingen | Nee (vectors gebruiken) |
+| Case study cards | Nee (scale effect) |
+| Logo carousel | Ja |
+| Blog featured images | Optioneel |
 
 ### Glow Overlay
 

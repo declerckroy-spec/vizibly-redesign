@@ -685,7 +685,8 @@ import {
 
 | Pagina | Title |
 |--------|-------|
-| Homepage | Vizibly: jouw SEO specialist |
+| Homepage | Vizibly \| High-end websites en SEO |
+| SEO | SEO \| Gevonden worden in Google \| Vanaf €350/maand |
 | SEO Strategie | SEO strategie \| Data-gedreven groeiplan |
 | SEO Copy | SEO teksten laten schrijven \| Vanaf €70 |
 | Linkbuilding | Linkbuilding uitbesteden \| Vanaf €200/maand |
@@ -712,6 +713,16 @@ import {
 - "Linkbuilding diensten" (niet wervend, geen USP)
 - "SEO Teksten Laten Schrijven" (title case)
 ```
+
+### SEO Pakketten Prijzen (Referentie)
+
+De actuele prijzen op de /seo pagina:
+
+| Pakket | Prijs | Doelgroep |
+|--------|-------|-----------|
+| Basis | €350/maand | Lokale groei |
+| Standaard | €750/maand | Serieuze groei (populair) |
+| Premium | Vanaf €1.500/maand | Maximale groei |
 
 ### Metadata Template
 
