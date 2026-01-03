@@ -13,6 +13,17 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      // Over pagina redirect
+      {
+        source: '/over-ons',
+        destination: '/over/',
+        permanent: true,
+      },
+      {
+        source: '/over-ons/',
+        destination: '/over/',
+        permanent: true,
+      },
       // Nieuwe structuur redirects
       {
         source: '/full-service-seo',

@@ -86,7 +86,7 @@ export function ClientsSection({
   clients = defaultClients,
   variant = 'black',
   label = 'ZIJ GINGEN JE AL VOOR',
-  heading = 'Ondernemers die nu\nwél gevonden worden',
+  heading = 'Ondernemers die nu wél gevonden worden',
   bottomText = 'andere ondernemers die vandaag hun concurrenten voorbij schieten',
   additionalCount = 25,
 }: ClientsSectionProps) {

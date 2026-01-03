@@ -60,7 +60,7 @@ export default function FAQPage() {
           question: 'Wat maakt Vizibly anders dan andere SEO bureaus?',
           answer: (
             <>
-              Vizibly hanteert een data-gedreven, maatwerk aanpak. We beginnen altijd met een grondige 360-graden analyse van je huidige situatie en ontwikkelen een plan specifiek voor jouw bedrijf, sector en doelen. We werken transparant en houden je altijd op de hoogte van wat we doen en welke resultaten we behalen. Lees meer <Link href="/over-ons" className="font-bold">over ons</Link> en onze werkwijze.
+              Vizibly hanteert een data-gedreven, maatwerk aanpak. We beginnen altijd met een grondige 360-graden analyse van je huidige situatie en ontwikkelen een plan specifiek voor jouw bedrijf, sector en doelen. We werken transparant en houden je altijd op de hoogte van wat we doen en welke resultaten we behalen. Lees meer <Link href="/over" className="font-bold">over mij</Link> en mijn werkwijze.
             </>
           )
         },

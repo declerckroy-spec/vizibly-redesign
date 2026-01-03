@@ -59,7 +59,7 @@ export function CTAWithImage() {
 
           {/* Illustratie Sectie */}
           <div className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
-            <SEOAuditIllustration className="w-full h-auto max-w-md text-black" />
+            <SEOAuditIllustration className="w-full h-auto max-w-md text-black grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" />
           </div>
         </div>
       </div>

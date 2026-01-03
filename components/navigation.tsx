@@ -42,7 +42,7 @@ export function Navigation() {
             <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Cases
             </Link>
-            <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">
+            <Link href="/over" className="text-base font-bold uppercase hover:text-accent transition-colors">
               Over
             </Link>
             <Button asChild size="lg" variant="lime" className="ml-4 text-base px-6 py-4">
@@ -66,7 +66,7 @@ export function Navigation() {
             <Link href="/websites" className="text-base font-bold uppercase hover:text-accent transition-colors">Websites</Link>
             <Link href="/seo" className="text-base font-bold uppercase hover:text-accent transition-colors">SEO</Link>
             <Link href="/cases" className="text-base font-bold uppercase hover:text-accent transition-colors">Cases</Link>
-            <Link href="/over-ons" className="text-base font-bold uppercase hover:text-accent transition-colors">Over</Link>
+            <Link href="/over" className="text-base font-bold uppercase hover:text-accent transition-colors">Over</Link>
             <Button asChild size="lg" variant="lime" className="w-full text-base">
               <Link href="/contact">CONTACT</Link>
             </Button>

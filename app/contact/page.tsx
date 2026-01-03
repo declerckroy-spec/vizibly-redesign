@@ -250,8 +250,8 @@ export default function ContactPage() {
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button size="lg" asChild className="bg-black text-white border-black hover:bg-white hover:text-black px-6 py-4 text-base">
-                <Link href="/over-ons">
-                  OVER VIZIBLY
+                <Link href="/over">
+                  OVER MIJ
                 </Link>
               </Button>
               <Button size="lg" asChild variant="outline" className="border-black text-black hover:bg-black hover:text-white px-6 py-4 text-base">

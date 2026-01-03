@@ -223,7 +223,7 @@ Raadpleeg documentatie in deze volgorde:
 |--------|-------|--------|
 | Homepage | `/` | Done |
 | SEO Strategie | `/seo-strategie` | Done |
-| Over Ons | `/over-ons` | Done |
+| Over | `/over` | Done |
 | Contact | `/contact` | Done |
 | Blog/Vizie | `/vizie` | Done |
 | SEO Copy | `/seo-copy` | Done |
@@ -352,7 +352,7 @@ vizibly-redesign/
 │   ├── layout.tsx               # Root layout met fonts & metadata
 │   ├── page.tsx                 # Homepage (reference implementation)
 │   ├── contact/page.tsx         # Contact pagina
-│   ├── over-ons/page.tsx        # Over Ons pagina
+│   ├── over/page.tsx             # Over pagina
 │   ├── seo-strategie/page.tsx   # SEO Strategie pagina
 │   ├── vizie/page.tsx           # Blog listing pagina
 │   ├── seo-copy/page.tsx        # SEO Copy dienst pagina
@@ -731,7 +731,7 @@ Elke pagina moet bevatten:
 ```tsx
 // Next.js Metadata export
 export const metadata: Metadata = {
-  title: 'Zoekterm vooraan, max 50 tekens',  // Geen Vizibly behalve homepage/over-ons/contact
+  title: 'Zoekterm vooraan, max 50 tekens',  // Geen Vizibly behalve homepage/over/contact
   description: 'Beschrijving...',
   openGraph: {
     title: 'Zoekterm vooraan, max 50 tekens',

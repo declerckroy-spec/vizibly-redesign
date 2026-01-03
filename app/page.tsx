@@ -238,7 +238,7 @@ export default function Home() {
               </div>
 
               <Button asChild size="lg" variant="lime" className="w-fit">
-                <Link href="/over-ons">MEER OVER MIJ</Link>
+                <Link href="/over">MEER OVER MIJ</Link>
               </Button>
             </div>
           </div>
@@ -339,7 +339,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-center border-4 border-accent bg-[#fafaf8] p-4 lg:p-6" style={{ boxShadow: '8px 8px 0 0 #CCFF00' }}>
-              <NoHassleResultsIllustration className="w-full h-auto max-w-lg text-black" />
+              <NoHassleResultsIllustration className="w-full h-auto max-w-lg text-black grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" />
             </div>
           </div>
         </div>

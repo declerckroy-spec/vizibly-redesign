@@ -215,7 +215,7 @@ export default function WebsitesPage() {
             </div>
 
             <div className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6" style={{ boxShadow: '12px 12px 0 0 #CCFF00, 0 25px 60px rgba(204, 255, 0, 0.4)' }}>
-              <PremiumHeroIllustration className="w-full h-auto max-w-lg text-black" />
+              <PremiumHeroIllustration className="w-full h-auto max-w-lg text-black grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" />
             </div>
           </div>
         </div>
@@ -288,7 +288,7 @@ export default function WebsitesPage() {
             </div>
 
             <div className="flex items-center justify-center border-4 border-black bg-white p-4 lg:p-6" style={{ boxShadow: '12px 12px 0 0 #000000, 0 25px 60px rgba(0, 0, 0, 0.3)' }}>
-              <PremiumGrowthIllustration className="w-full h-auto max-w-md text-black" />
+              <PremiumGrowthIllustration className="w-full h-auto max-w-md text-black grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]" />
             </div>
           </div>
         </div>

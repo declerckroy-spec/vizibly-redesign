@@ -1,43 +1,22 @@
-# Sessie Notities - 29 December 2024
+# Sessie Notities - 3 Januari 2026
 
-## Waar zijn we gebleven?
+## Wat is er gedaan?
 
-De homepage is geherstructureerd met een meer storytelling-gerichte aanpak. De gebruiker wil nog de wijzigingen reviewen en mogelijk feedback geven.
+### Homepage Afgerond
+1. **Headline gewijzigd:** "High-end websites die leveren" (met lime highlight op "leveren")
+2. **"die leveren" samen gehouden** met `whitespace-nowrap` zodat ze niet splitsen
+3. **Clients sectie:** "Ondernemers die nu wél gevonden worden" op één regel (geen forced line break)
+4. **Gesprek stap:** "15 minuten" verwijderd, nu alleen "Jij vertelt, ik luister."
+5. **FAQ herschreven:**
+   - "Wat maakt jou anders?" (geen "dan andere bureaus")
+   - Tijdlijn vraag ongewijzigd
+   - Kosten vraag vervangen door "Waarom geen WordPress of websitebouwer?"
+   - Focus op: trage laadtijden, beperkte aanpasbaarheid, dertien-in-een-dozijn designs, plugin-afhankelijkheid
+   - Laatste vraag: "standaard template-site" ipv "trage site"
 
-## Wat is er gedaan vandaag?
+## Status
+- Homepage: **Compleet**
+- Dev server: localhost:3001
 
-### Homepage Herstructurering
-1. **Hero sectie:** Vereenvoudigd met focus op "gevonden worden", animated decorations (████) behouden
-2. **Roy sectie:** Titel verwijderd, content vloeit nu natuurlijk als storytelling
-3. **Diensten sectie:** Geen header meer, alleen compacte cards zonder prijzen
-4. **Websites beschrijving:** Rijker gemaakt ("Strak design, razendsnel, en gebouwd om te groeien. Geen templates, maar een site die past bij jouw bedrijf.")
-5. **Link teksten:** "BEKIJK VOORBEELDEN" en "LEES MEER" in plaats van generieke tekst
-6. **Self-referential line verwijderd:** "Deze site is daar een voorbeeld van" niet meer op homepage
-
-### Andere wijzigingen
-- Footer: Google reviews sterren toegevoegd (5/5 op Google)
-- SEO pagina: Em-dash gefixed, AI/GEO mentions subtiel toegevoegd
-- Websites pagina: AI/GEO mention toegevoegd
-- CLAUDE.md: Kritische em-dash regel toegevoegd bovenaan
-
-## Design Principes Toegepast
-- StoryBrand framework (klant als held, merk als gids)
-- Nederlandse B2B communicatiestijl (direct maar professioneel, niet pushy)
-- Geen prijzen op homepage
-- Focus op "hoe ik werk" ipv alleen "wat ik doe"
-- Persoonlijker ("ik" ipv "Vizibly")
-
-## Te reviewen
-- Homepage op http://localhost:3000/
-- Gebruiker wil kijken of het nu de juiste "spark" heeft
-- Mogelijk nog feedback op de nieuwe aanpak
-
-## Technische Status
-- Build: Succesvol (alle 56 pagina's)
-- Dev server: Draait op localhost:3000
-- Geen TypeScript errors
-
-## Volgende keer
-- Gebruiker laat homepage wijzigingen reviewen
-- Mogelijk verdere aanpassingen op basis van feedback
-- Check of de storytelling aanpak goed voelt
+## Volgende stappen
+- Andere pagina's optimaliseren

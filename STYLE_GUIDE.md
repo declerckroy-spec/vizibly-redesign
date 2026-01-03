@@ -718,7 +718,7 @@ Dit effect is ingebouwd in de Button component via variants.
 
 ```jsx
 <Button size="lg" variant="outline" asChild className="text-base px-8 py-5">
-  <Link href="/over-ons">OVER VIZIBLY</Link>
+  <Link href="/over">OVER MIJ</Link>
 </Button>
 ```
 - Transparant → lime op hover
@@ -1329,7 +1329,7 @@ className="transition-colors hover:border-accent"
 
 ### Grayscale naar Kleur (Premium Effect)
 
-**BELANGRIJK:** Alle sectie-afbeeldingen op dienstpagina's (/websites, /seo, etc.) krijgen het grayscale hover effect. Dit geeft de site een premium, editorial look.
+**BELANGRIJK:** Alle sectie-afbeeldingen én vector illustraties op dienstpagina's (/websites, /seo, homepage, etc.) krijgen het grayscale hover effect. Dit geeft de site een premium, editorial look.
 
 ```jsx
 // Afbeelding in sectie (direct op Image component)
@@ -1338,6 +1338,11 @@ className="transition-colors hover:border-accent"
   alt="Beschrijving"
   fill
   className="object-cover grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+/>
+
+// Vector illustratie (direct op SVG component)
+<PremiumHeroIllustration
+  className="w-full h-auto max-w-lg text-black grayscale hover:grayscale-0 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
 />
 
 // Wrapper variant (voor logo's in carousel)
@@ -1350,7 +1355,7 @@ className="transition-colors hover:border-accent"
 | Context | Grayscale effect? |
 |---------|-------------------|
 | Sectie afbeeldingen (dienstpagina's) | Ja |
-| Hero afbeeldingen | Nee (vectors gebruiken) |
+| Vector illustraties (hero's, secties) | Ja |
 | Case study cards | Nee (scale effect) |
 | Logo carousel | Ja |
 | Blog featured images | Optioneel |

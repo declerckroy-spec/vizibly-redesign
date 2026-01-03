@@ -62,7 +62,7 @@ export const navLinks = {
   ],
   // Bedrijf links
   bedrijf: [
-    { href: '/over-ons', label: 'Over' },
+    { href: '/over', label: 'Over' },
     { href: '/cases', label: 'Cases' },
     { href: '/vizie', label: 'Vizie' },
     { href: '/contact', label: 'Contact' },

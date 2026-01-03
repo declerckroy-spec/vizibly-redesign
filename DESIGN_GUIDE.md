@@ -555,7 +555,7 @@ max-w-screen-2xl     /* 1536px - STANDAARD CONTAINER */
 ### Secondary CTA (Outline)
 ```jsx
 <Button size="lg" variant="outline" asChild className="text-lg px-12 py-8">
-  <Link href="/over-ons">OVER VIZIBLY</Link>
+  <Link href="/over">OVER MIJ</Link>
 </Button>
 ```
 
